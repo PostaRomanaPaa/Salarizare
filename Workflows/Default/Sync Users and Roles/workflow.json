@@ -1,0 +1,1057 @@
+{
+  "InputFields": [],
+  "OutputFields": [
+    {
+      "Id": 1,
+      "Name": "AllData",
+      "DefaultValue": "[AllData]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 4,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "Id": 4,
+  "GlobalId": "b76ae7d9-5ec7-430d-8b41-ea0e7a2095c2",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "b76ae7d9-5ec7-430d-8b41-ea0e7a2095c2",
+  "EnvironmentId": 1,
+  "Name": "Sync Users and Roles",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 79,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 65,
+        "Description": "Server Request",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "PostData",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 520,
+            "Name": "InputParameters",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 521,
+            "Name": "URL",
+            "Value": "https://task.ro.post/api/GetUsers",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 522,
+            "Name": "UrlTokenContext",
+            "Value": "Url",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 523,
+            "Name": "UseSSL",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 524,
+            "Name": "Timeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 525,
+            "Name": "HttpMethod",
+            "Value": "GET",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 526,
+            "Name": "Data",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 527,
+            "Name": "DoNotEscapeTokens",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 528,
+            "Name": "DisableReferer",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 529,
+            "Name": "Headers",
+            "Value": [
+              {
+                "value": "187e3c1869cb4a679ee9cb903a4b33c7",
+                "name": "Authorization"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 530,
+            "Name": "UseDNNProxySettings",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 531,
+            "Name": "AddCurrentCookies",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 532,
+            "Name": "Events",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 533,
+            "Name": "IgnoreErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 534,
+            "Name": "OnError",
+            "Value": {
+              "Id": 80,
+              "EventName": "error",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 535,
+            "Name": "OutputParameters",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 536,
+            "Name": "CookieContainerToken",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 537,
+            "Name": "OutputTokenName",
+            "Value": "AllData",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 538,
+            "Name": "OutputHeaders",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 65,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0kii6vu"
+      },
+      {
+        "Id": 66,
+        "Description": "Create List from JSON",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromJson",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 539,
+            "Name": "JsonModel",
+            "Value": "[AllData]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 66,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 540,
+            "Name": "EntityName",
+            "Value": "DataUser",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 66,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 541,
+            "Name": "OnError",
+            "Value": {
+              "Id": 81,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 66,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 542,
+            "Name": "EnforceISODateTime",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 66,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0qwwdl3"
+      },
+      {
+        "Id": 67,
+        "Description": "Load User",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadUser",
+        "OrderIndex": 2,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 543,
+            "Name": "Id",
+            "Value": "1",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 67,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 544,
+            "Name": "Portal",
+            "Value": "0",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 67,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0xcoxp9"
+      },
+      {
+        "Id": 68,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 3,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 545,
+            "Name": "EntityName",
+            "Value": "DataUser",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 68,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 546,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 68,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 547,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 68,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 597,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 82,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 69,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "RunSql",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 548,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 549,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 550,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 551,
+                      "Name": "SqlQuery",
+                      "Value": "select TaskUserId from app.Angajat\nwhere Email = @Email",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 552,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "Email",
+                          "value": "[DataUser:Email]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 553,
+                      "Name": "OutputTokenName",
+                      "Value": "UserId",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 554,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 555,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 83,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 556,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 69,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 70,
+                  "Description": "Create",
+                  "ActionErrorMessage": null,
+                  "Condition": "[UserId] == \"\"",
+                  "ActionType": "ExecuteActions",
+                  "OrderIndex": 1,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 577,
+                      "Name": "ActionList",
+                      "Value": {
+                        "Id": 84,
+                        "EventName": "click",
+                        "Actions": [
+                          {
+                            "Id": 80,
+                            "Description": "Creare Angajat",
+                            "ActionErrorMessage": null,
+                            "Condition": null,
+                            "ActionType": "PlantAnApp.CreateEntity.4ed4fc83-1032-4f81-b9e2-6fa062a856a4",
+                            "OrderIndex": 0,
+                            "IsDisabled": false,
+                            "ActionParameters": [
+                              {
+                                "Id": 605,
+                                "Name": "ConnectionString",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 80,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 606,
+                                "Name": "TaskUserID",
+                                "Value": "[DataUser:UserId]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 80,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 607,
+                                "Name": "Email",
+                                "Value": "[DataUser:Email]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 80,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 608,
+                                "Name": "DisplayName",
+                                "Value": "[DataUser:DisplayName]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 80,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 609,
+                                "Name": "Marca",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 80,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 610,
+                                "Name": "OnError",
+                                "Value": {
+                                  "Id": 92,
+                                  "EventName": "OnError",
+                                  "Actions": [],
+                                  "IsInvalid": false
+                                },
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 80,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 611,
+                                "Name": "OutputToken",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 80,
+                                "OrderIndex": 0
+                              }
+                            ],
+                            "DiagramUID": null
+                          }
+                        ],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 70,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 578,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 85,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 70,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 74,
+                  "Description": "Update",
+                  "ActionErrorMessage": null,
+                  "Condition": "[UserId] != \"\"",
+                  "ActionType": "ExecuteActions",
+                  "OrderIndex": 2,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 588,
+                      "Name": "ActionList",
+                      "Value": {
+                        "Id": 86,
+                        "EventName": "click",
+                        "Actions": [
+                          {
+                            "Id": 75,
+                            "Description": null,
+                            "ActionErrorMessage": null,
+                            "Condition": null,
+                            "ActionType": "RunSql",
+                            "OrderIndex": 0,
+                            "IsDisabled": false,
+                            "ActionParameters": [
+                              {
+                                "Id": 579,
+                                "Name": "DbConnector",
+                                "Value": {
+                                  "Entry": "",
+                                  "Group": "",
+                                  "EntireGroup": false,
+                                  "Type": "Database",
+                                  "IsExpression": false,
+                                  "Expression": ""
+                                },
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 580,
+                                "Name": "ConnectionString",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 581,
+                                "Name": "QueryTimeout",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 582,
+                                "Name": "SqlQuery",
+                                "Value": "update app.Angajat\nset DisplayName = @DisplayName,\nEmail = @Email \nwhere TaskUserID = @UserId",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 583,
+                                "Name": "BindTokens",
+                                "Value": [
+                                  {
+                                    "name": "UserId",
+                                    "value": "[DataUser:UserId]"
+                                  },
+                                  {
+                                    "name": "Email",
+                                    "value": "[DataUser:Email]"
+                                  },
+                                  {
+                                    "name": "DisplayName",
+                                    "value": "[DataUser:DisplayName]"
+                                  }
+                                ],
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 584,
+                                "Name": "OutputTokenName",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 585,
+                                "Name": "ExtractColumns",
+                                "Value": [],
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 586,
+                                "Name": "OnError",
+                                "Value": {
+                                  "Id": 87,
+                                  "EventName": "OnError",
+                                  "Actions": [],
+                                  "IsInvalid": false
+                                },
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 587,
+                                "Name": "ShowErrors",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 75,
+                                "OrderIndex": 0
+                              }
+                            ],
+                            "DiagramUID": null
+                          }
+                        ],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 74,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 589,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 88,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 74,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 76,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": "[DataUser:HasUserInfo]",
+                  "ActionType": "ExecuteActions",
+                  "OrderIndex": 3,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 592,
+                      "Name": "ActionList",
+                      "Value": {
+                        "Id": 89,
+                        "EventName": "click",
+                        "Actions": [
+                          {
+                            "Id": 77,
+                            "Description": null,
+                            "ActionErrorMessage": null,
+                            "Condition": null,
+                            "ActionType": "ParseJsonIntoTokens",
+                            "OrderIndex": 0,
+                            "IsDisabled": false,
+                            "ActionParameters": [
+                              {
+                                "Id": 590,
+                                "Name": "JsonString",
+                                "Value": "[DataUser:UserInfo]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 77,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 591,
+                                "Name": "BaseTokenName",
+                                "Value": "UI",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 77,
+                                "OrderIndex": 0
+                              }
+                            ],
+                            "DiagramUID": null
+                          },
+                          {
+                            "Id": 81,
+                            "Description": "Parse UI",
+                            "ActionErrorMessage": null,
+                            "Condition": null,
+                            "ActionType": "ParseJsonIntoTokens",
+                            "OrderIndex": 1,
+                            "IsDisabled": false,
+                            "ActionParameters": [
+                              {
+                                "Id": 612,
+                                "Name": "JsonString",
+                                "Value": "[UI:0]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 81,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 613,
+                                "Name": "BaseTokenName",
+                                "Value": "DataUserInfo",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 81,
+                                "OrderIndex": 0
+                              }
+                            ],
+                            "DiagramUID": null
+                          },
+                          {
+                            "Id": 82,
+                            "Description": "update UserInfo",
+                            "ActionErrorMessage": null,
+                            "Condition": null,
+                            "ActionType": "RunSql",
+                            "OrderIndex": 2,
+                            "IsDisabled": false,
+                            "ActionParameters": [
+                              {
+                                "Id": 614,
+                                "Name": "ConnectionString",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 615,
+                                "Name": "QueryTimeout",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 616,
+                                "Name": "SqlQuery",
+                                "Value": "update app.Angajat\r\nset Marca = @Marca\r\nwhere TaskUserID = @UserId;",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 617,
+                                "Name": "OnError",
+                                "Value": {
+                                  "Id": 93,
+                                  "EventName": "OnError",
+                                  "Actions": [],
+                                  "IsInvalid": false
+                                },
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 618,
+                                "Name": "ShowErrors",
+                                "Value": false,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 619,
+                                "Name": "DbConnector",
+                                "Value": {
+                                  "Entry": "",
+                                  "Group": "",
+                                  "EntireGroup": false,
+                                  "Type": "Database",
+                                  "IsExpression": false,
+                                  "Expression": ""
+                                },
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 620,
+                                "Name": "BindTokens",
+                                "Value": [
+                                  {
+                                    "name": "Marca",
+                                    "value": "[DataUserInfo:Marca]"
+                                  },
+                                  {
+                                    "name": "UserId",
+                                    "value": "[DataUser:UserId]"
+                                  }
+                                ],
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 621,
+                                "Name": "OutputTokenName",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 622,
+                                "Name": "ExtractColumns",
+                                "Value": [],
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 82,
+                                "OrderIndex": 0
+                              }
+                            ],
+                            "DiagramUID": null
+                          }
+                        ],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 76,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 593,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 90,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 76,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 68,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 598,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 68,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 599,
+            "Name": "OnError",
+            "Value": {
+              "Id": 91,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 68,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0hzr4w9"
+      },
+      {
+        "Id": 79,
+        "Description": "Clear Cache Item",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ClearCacheItem",
+        "OrderIndex": 4,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 600,
+            "Name": "ClearAllCache",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 79,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 601,
+            "Name": "ClearTabsCache",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 79,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 602,
+            "Name": "ClearPortalsCache",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 79,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 603,
+            "Name": "PortalIds",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 79,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 604,
+            "Name": "CacheKey",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 79,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1jq1jni"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 3,
+  "CreatedOn": "2025-03-17T12:32:17.9410308+00:00",
+  "LastModifiedBy": 3,
+  "LastModifiedOn": "2025-09-16T09:42:33.4992758+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

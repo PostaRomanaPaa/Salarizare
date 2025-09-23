@@ -1,0 +1,48 @@
+{
+  "ApiId": "fa43b38e6a802a4df340dc",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Update Users",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "RepeatInterval",
+      "Parameters": {
+        "Start": {
+          "Date": "2025-09-16T00:00:00Z",
+          "Time": "04:00:37 AM"
+        },
+        "Interval": {
+          "Qty": "12",
+          "Unit": {
+            "Value": "Hours",
+            "IsExpression": false,
+            "Expression": null
+          }
+        },
+        "SkipIfRunning": "",
+        "OnMissfire": {
+          "Value": "FireNow",
+          "IsExpression": false,
+          "Expression": null
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.b76ae7d95ec7430d8b41ea0e7a2095c2",
+      "Description": "",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 1,
+      "IsDisabled": false,
+      "Parameters": {
+        "OnError": [],
+        "ContinueOnError": "",
+        "AllData": ""
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

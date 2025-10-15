@@ -111,6 +111,318 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 4
+    },
+    {
+      "Id": 11,
+      "GlobalId": "a409b50c-58a3-4e4c-aa60-cad75843708e",
+      "EntityVersionId": 5,
+      "Name": "Cod Judet",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 12,
+      "GlobalId": "f272e483-8cf3-43af-8ced-6306c4f15fa8",
+      "EntityVersionId": 5,
+      "Name": "Oficiu Teritorial",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 6
+    },
+    {
+      "Id": 13,
+      "GlobalId": "30918575-5269-4df8-a6a4-d4a28444739f",
+      "EntityVersionId": 5,
+      "Name": "Cod Oficiu",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 14,
+      "GlobalId": "a295031a-70ef-4c07-9b7b-d6a9127d5738",
+      "EntityVersionId": 5,
+      "Name": "Cod Functie",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 8
+    },
+    {
+      "Id": 15,
+      "GlobalId": "99aec7e1-6b0f-4fee-8bf7-3c98e4d3ff86",
+      "EntityVersionId": 5,
+      "Name": "Clasa Grila Salarizare",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 9
+    },
+    {
+      "Id": 16,
+      "GlobalId": "090006d2-f74e-4aee-94a0-758556fe9a20",
+      "EntityVersionId": 5,
+      "Name": "Impozabil/Scutit",
+      "Type": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "InputType": {
+          "Id": "Boolean",
+          "Name": "Boolean",
+          "ValueType": 0,
+          "Length": 1,
+          "Icon": "check_circle_outline"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 10
+    },
+    {
+      "Id": 17,
+      "GlobalId": "c415a2e4-2235-4f30-ab43-8b57d15c5724",
+      "EntityVersionId": 5,
+      "Name": "Tip Norma",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 11
+    },
+    {
+      "Id": 18,
+      "GlobalId": "61353101-9d5e-49cd-b419-21e28b6bcf46",
+      "EntityVersionId": 5,
+      "Name": "Procent",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 12
+    },
+    {
+      "Id": 19,
+      "GlobalId": "ed42a40c-75d4-46c1-b97e-dfb4f8f30a8f",
+      "EntityVersionId": 5,
+      "Name": "Procent Fidelitate",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 13
+    },
+    {
+      "Id": 20,
+      "GlobalId": "510759de-212c-4aa9-b26c-6d7b19b13dca",
+      "EntityVersionId": 5,
+      "Name": "Procent Management",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 14
+    },
+    {
+      "Id": 21,
+      "GlobalId": "712b3060-f595-4a8a-ac7c-64bc22dbaf4e",
+      "EntityVersionId": 5,
+      "Name": "Stare Angajat",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 15
+    },
+    {
+      "Id": 22,
+      "GlobalId": "3a7ba56b-33b7-4a8e-8463-8c5445983d56",
+      "EntityVersionId": 5,
+      "Name": "Sindicat",
+      "Type": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "InputType": {
+          "Id": "Boolean",
+          "Name": "Boolean",
+          "ValueType": 0,
+          "Length": 1,
+          "Icon": "check_circle_outline"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 16
     }
   ],
   "RolePermissions": {
@@ -335,8 +647,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-09-16T08:22:04.51",
   "CreatedBy": "Ciprian Aelenei",
-  "LastModifiedBy": "",
-  "LastModifiedOn": null,
+  "LastModifiedBy": "Ciprian Aelenei",
+  "LastModifiedOn": "2025-10-02T11:17:46.76",
   "Icon": "user",
   "Type": 0,
   "BuiltInType": null,

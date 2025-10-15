@@ -24,7 +24,7 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Users</rolename>
+            <rolename>Low-Code Engineer</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
@@ -42,25 +42,25 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
+            <rolename>Managers</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Managers</rolename>
+            <rolename>Users</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Low-Code Engineer</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Citizen Developers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
         </permission>
     </tabpermissions>
     <tabsettings>

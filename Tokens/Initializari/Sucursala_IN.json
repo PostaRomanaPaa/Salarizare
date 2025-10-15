@@ -1,0 +1,24 @@
+{
+  "id": 47,
+  "globalId": "23df36ad-7f66-4e8e-a9c5-45887ab513e8",
+  "namespace": {
+    "id": 9,
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "portalId": 0,
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "Sucursala_IN",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "select codsucursala from app.Sucursala where codSucursala = '[TknParams:CodSucursala]'",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

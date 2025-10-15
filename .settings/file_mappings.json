@@ -1,6 +1,7 @@
 {
   "Settings": {
-    "LogoPath": "Static/logo.png",
+    "LogoPath": "Static/SiteLogo.png",
+    "FaviconFilePath": "Static/favicon.ico",
     "AppDefinitionPath": "Static/app.json"
   },
   "Pages": [
@@ -45,6 +46,11 @@
       "ContentPath": "Pages/registration/tab.xml"
     },
     {
+      "GlobalId": "e527b56e-2cf7-4509-86b2-f2efefcf6c92",
+      "TabPath": "//SesiunedeLucru",
+      "ContentPath": "Pages/SesiunedeLucru/tab.xml"
+    },
+    {
       "GlobalId": "b427d0cb-8bac-4f18-94cf-ad41892aba89",
       "ParentPageGlobalId": "8d4789bf-7361-4896-869e-2498c2b39479",
       "TabPath": "//Angajati//Detail",
@@ -54,6 +60,202 @@
       "GlobalId": "8d4789bf-7361-4896-869e-2498c2b39479",
       "TabPath": "//Angajati",
       "ContentPath": "Pages/Angajati/tab.xml"
+    },
+    {
+      "GlobalId": "30eec84e-a659-4340-a60d-827b38c872be",
+      "ParentPageGlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "TabPath": "//Lichidari//Detail",
+      "ContentPath": "Pages/Lichidari/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "TabPath": "//Lichidari",
+      "ContentPath": "Pages/Lichidari/tab.xml"
+    },
+    {
+      "GlobalId": "c26ce117-53d4-4d69-8129-2189640578f2",
+      "ParentPageGlobalId": "28b73729-4915-4907-8d06-b23440613d4f",
+      "TabPath": "//Nomenclatoare//Ani//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Ani/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "28b73729-4915-4907-8d06-b23440613d4f",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//Ani",
+      "ContentPath": "Pages/Nomenclatoare/Ani/tab.xml"
+    },
+    {
+      "GlobalId": "a047b2b5-dcd9-4c30-8608-75dabe1739b7",
+      "ParentPageGlobalId": "a19535fc-d263-486b-885e-55aed0254315",
+      "TabPath": "//Nomenclatoare//Lunile//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "a19535fc-d263-486b-885e-55aed0254315",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//Lunile",
+      "ContentPath": "Pages/Nomenclatoare/Lunile/tab.xml"
+    },
+    {
+      "GlobalId": "d3a9c1c3-33bf-4ebf-a66a-66f52ecc4b40",
+      "ParentPageGlobalId": "354b0a6f-5223-4ea1-910e-385fa2c4e669",
+      "TabPath": "//Nomenclatoare//CursuriEuro//Detail",
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "354b0a6f-5223-4ea1-910e-385fa2c4e669",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//CursuriEuro",
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/tab.xml"
+    },
+    {
+      "GlobalId": "d9904fdd-b2be-4e84-ae90-7e2d74f884f3",
+      "ParentPageGlobalId": "106c24b6-b706-466d-8b97-c6f161c064a8",
+      "TabPath": "//Nomenclatoare//CertificateMedicale//Detail",
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "762b78b9-4806-4ed3-a3e7-efa30589fcbe",
+      "ParentPageGlobalId": "3b701b9a-9d69-4a85-a321-408f6dc1561f",
+      "TabPath": "//Nomenclatoare//CertificateMedicale//LimiteCM//Detail",
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "3b701b9a-9d69-4a85-a321-408f6dc1561f",
+      "ParentPageGlobalId": "106c24b6-b706-466d-8b97-c6f161c064a8",
+      "TabPath": "//Nomenclatoare//CertificateMedicale//LimiteCM",
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/tab.xml"
+    },
+    {
+      "GlobalId": "106c24b6-b706-466d-8b97-c6f161c064a8",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//CertificateMedicale",
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/tab.xml"
+    },
+    {
+      "GlobalId": "20808319-ec1b-4824-88c0-4428285d9f61",
+      "ParentPageGlobalId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "TabPath": "//Nomenclatoare//CaseSanatate//Detail",
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//CaseSanatate",
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/tab.xml"
+    },
+    {
+      "GlobalId": "05e0995f-b26d-4004-a8fd-20c8b74d23e3",
+      "ParentPageGlobalId": "5d6027d9-01a0-4fa4-84d9-64fd00871407",
+      "TabPath": "//Nomenclatoare//Functii//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Functii/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "5d6027d9-01a0-4fa4-84d9-64fd00871407",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//Functii",
+      "ContentPath": "Pages/Nomenclatoare/Functii/tab.xml"
+    },
+    {
+      "GlobalId": "2655dad8-c063-4fc0-82e4-7d1a735606dd",
+      "ParentPageGlobalId": "8186d17b-f8ad-47cf-88e5-e608032aebea",
+      "TabPath": "//Nomenclatoare//GrileSalarizare//Detail",
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "8186d17b-f8ad-47cf-88e5-e608032aebea",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//GrileSalarizare",
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/tab.xml"
+    },
+    {
+      "GlobalId": "913e5978-74e6-4460-8c79-2fe54a69d401",
+      "ParentPageGlobalId": "9109cbd8-6dde-4687-88cd-ddbec2a5b8fe",
+      "TabPath": "//Nomenclatoare//Judete//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Judete/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "9109cbd8-6dde-4687-88cd-ddbec2a5b8fe",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//Judete",
+      "ContentPath": "Pages/Nomenclatoare/Judete/tab.xml"
+    },
+    {
+      "GlobalId": "1350233d-5c65-424e-92b7-5195073564a1",
+      "ParentPageGlobalId": "43ccabd0-2f95-46fe-b45d-68d901675551",
+      "TabPath": "//Nomenclatoare//Organigrame//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "43ccabd0-2f95-46fe-b45d-68d901675551",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//Organigrame",
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/tab.xml"
+    },
+    {
+      "GlobalId": "6f8d82d6-ec8f-47e9-a777-9ecbf55d25c9",
+      "ParentPageGlobalId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "TabPath": "//Nomenclatoare//Sucursale//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//Sucursale",
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/tab.xml"
+    },
+    {
+      "GlobalId": "0756e02f-5a2f-4270-8efc-4df9e105e644",
+      "ParentPageGlobalId": "51331d5b-519e-4833-8648-4d3c4ab76951",
+      "TabPath": "//Nomenclatoare//PunctedeLucrusiImpozitePrimarii//Detail",
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "51331d5b-519e-4833-8648-4d3c4ab76951",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//PunctedeLucrusiImpozitePrimarii",
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/tab.xml"
+    },
+    {
+      "GlobalId": "3b9ed02d-2457-4db5-8e98-e79ed65a4902",
+      "ParentPageGlobalId": "171b2e12-88d4-40dd-ba83-8fa2962fc6f4",
+      "TabPath": "//Nomenclatoare//Sindicate//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "171b2e12-88d4-40dd-ba83-8fa2962fc6f4",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//Sindicate",
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/tab.xml"
+    },
+    {
+      "GlobalId": "4a8ebc14-b5a2-429c-a67e-5443a81aca8f",
+      "ParentPageGlobalId": "3ca071a8-deb7-4406-920a-077bfd9348e6",
+      "TabPath": "//Nomenclatoare//TipuriNorma//Detail",
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "3ca071a8-deb7-4406-920a-077bfd9348e6",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//TipuriNorma",
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/tab.xml"
+    },
+    {
+      "GlobalId": "83f7756f-b9ba-4917-906d-9e16e3661ee5",
+      "ParentPageGlobalId": "9258982a-3610-4677-97eb-8d77703732a9",
+      "TabPath": "//Nomenclatoare//ZileLibere//Detail",
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "9258982a-3610-4677-97eb-8d77703732a9",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare//ZileLibere",
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/tab.xml"
+    },
+    {
+      "GlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Nomenclatoare",
+      "ContentPath": "Pages/Nomenclatoare/tab.xml"
     }
   ],
   "Modules": [
@@ -148,6 +350,24 @@
       "ContentPath": "Pages/registration/Register Form.xml"
     },
     {
+      "GlobalId": "7496e61f-5a15-4004-a702-02684fa3708f",
+      "ParentPageId": "e527b56e-2cf7-4509-86b2-f2efefcf6c92",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/SesiunedeLucru/Enter Title.xml"
+    },
+    {
+      "GlobalId": "3ab9777c-9415-4d77-b0ee-2f2bc5d7d660",
+      "ParentPageId": "e527b56e-2cf7-4509-86b2-f2efefcf6c92",
+      "ModuleTitle": "avt.Action Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/SesiunedeLucru/Untitled avt.Action Form 3 in ContentPane.xml"
+    },
+    {
       "GlobalId": "bde6440d-9db9-47a3-ac18-fa1c52188b5e",
       "ParentPageId": "8d4789bf-7361-4896-869e-2498c2b39479",
       "ModuleTitle": "Header",
@@ -173,6 +393,42 @@
       "PaneName": "ContentPane",
       "Order": 5,
       "ContentPath": "Pages/Angajati/Angajat Form.xml"
+    },
+    {
+      "GlobalId": "50d68fb1-96eb-4c02-be23-12b2d344f7b8",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Lichidari/Header.xml"
+    },
+    {
+      "GlobalId": "faf24d69-49bb-41a6-9949-5a1d5cfdaa7a",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "Lichidari Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Lichidari/Lichidari Listing.xml"
+    },
+    {
+      "GlobalId": "af4b12a2-c56c-4a29-a1e5-3d963fd91e80",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "Lichidare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Lichidari/Lichidare Form.xml"
+    },
+    {
+      "GlobalId": "21bba6b2-65be-43c1-83be-ceef36429cb4",
+      "ParentPageId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Enter Title.xml"
     },
     {
       "GlobalId": "b970fc97-228a-4b03-8cf2-8de314bf45e4",
@@ -209,6 +465,987 @@
       "PaneName": "ContentPane",
       "Order": 7,
       "ContentPath": "Pages/Angajati/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "665efdec-de7f-4769-865a-d2b101bc212c",
+      "ParentPageId": "30eec84e-a659-4340-a60d-827b38c872be",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Lichidari/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "bb0840e0-60c0-4dc2-9239-d5607b8d77c0",
+      "ParentPageId": "30eec84e-a659-4340-a60d-827b38c872be",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Lichidari/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "3de8143a-5764-43ea-92a2-78c1b19ffbf1",
+      "ParentPageId": "30eec84e-a659-4340-a60d-827b38c872be",
+      "ModuleTitle": "Lichidare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Lichidari/Detail/Lichidare Form.xml"
+    },
+    {
+      "GlobalId": "d0069d9d-8e9e-427e-b049-bee4a6d88973",
+      "ParentPageId": "30eec84e-a659-4340-a60d-827b38c872be",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Lichidari/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "a9dccd6c-67cb-46e0-a6a6-d0a8a3d8fb0a",
+      "ParentPageId": "28b73729-4915-4907-8d06-b23440613d4f",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Ani/Header.xml"
+    },
+    {
+      "GlobalId": "d10cb247-4248-4ad6-9eb1-da48cfcf551e",
+      "ParentPageId": "28b73729-4915-4907-8d06-b23440613d4f",
+      "ModuleTitle": "Ani Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Ani/Ani Listing.xml"
+    },
+    {
+      "GlobalId": "2ce0fa78-c9cf-4e14-a376-5f7f0ea91002",
+      "ParentPageId": "28b73729-4915-4907-8d06-b23440613d4f",
+      "ModuleTitle": "An Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Ani/An Form.xml"
+    },
+    {
+      "GlobalId": "34a49eb7-5bae-404d-b2a2-f9680d0f9880",
+      "ParentPageId": "a19535fc-d263-486b-885e-55aed0254315",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Header.xml"
+    },
+    {
+      "GlobalId": "7d2bd268-65c2-406e-bfb3-5ef560a4e333",
+      "ParentPageId": "a19535fc-d263-486b-885e-55aed0254315",
+      "ModuleTitle": "Lunile Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Lunile Listing.xml"
+    },
+    {
+      "GlobalId": "2b7aa708-d5b2-4f69-ab3d-d55618429469",
+      "ParentPageId": "a19535fc-d263-486b-885e-55aed0254315",
+      "ModuleTitle": "Luna Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Luna Form.xml"
+    },
+    {
+      "GlobalId": "ab3830a7-4386-4a36-9bad-5f3210175b33",
+      "ParentPageId": "354b0a6f-5223-4ea1-910e-385fa2c4e669",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Header.xml"
+    },
+    {
+      "GlobalId": "a03c4925-87a1-4e64-a517-36b43877bc1a",
+      "ParentPageId": "354b0a6f-5223-4ea1-910e-385fa2c4e669",
+      "ModuleTitle": "Cursuri Euro Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Cursuri Euro Listing.xml"
+    },
+    {
+      "GlobalId": "edc308b7-6a4a-4510-be9e-1d4abf7dd779",
+      "ParentPageId": "354b0a6f-5223-4ea1-910e-385fa2c4e669",
+      "ModuleTitle": "Curs Euro Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Curs Euro Form.xml"
+    },
+    {
+      "GlobalId": "fd9cc07e-016a-4a85-8085-b0b4a44dcd42",
+      "ParentPageId": "106c24b6-b706-466d-8b97-c6f161c064a8",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Header.xml"
+    },
+    {
+      "GlobalId": "2cd74687-c734-4dee-a09d-b84dcd408bb4",
+      "ParentPageId": "106c24b6-b706-466d-8b97-c6f161c064a8",
+      "ModuleTitle": "Certificate Medicale Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Certificate Medicale Listing.xml"
+    },
+    {
+      "GlobalId": "95cf8516-451b-439a-a0b1-6d2f203caadd",
+      "ParentPageId": "106c24b6-b706-466d-8b97-c6f161c064a8",
+      "ModuleTitle": "Certificat Medical Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Certificat Medical Form.xml"
+    },
+    {
+      "GlobalId": "c9caa806-3857-4fa2-889f-ae916951e7ff",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Header.xml"
+    },
+    {
+      "GlobalId": "04fab77f-8d42-4ee5-ade5-538fa11b331b",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "Case Sanatate Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Case Sanatate Listing.xml"
+    },
+    {
+      "GlobalId": "6c9edfb5-cc76-46f7-bbdf-8ccb3fc2792d",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "Casa Sanatate Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Casa Sanatate Form.xml"
+    },
+    {
+      "GlobalId": "69d86fcd-3bda-4f28-a421-0974e6d5a2b4",
+      "ParentPageId": "5d6027d9-01a0-4fa4-84d9-64fd00871407",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Functii/Header.xml"
+    },
+    {
+      "GlobalId": "b53ab1fa-d367-43b5-b423-7e10db625cf0",
+      "ParentPageId": "5d6027d9-01a0-4fa4-84d9-64fd00871407",
+      "ModuleTitle": "Functii Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Functii/Functii Listing.xml"
+    },
+    {
+      "GlobalId": "396bd621-77be-424c-bfc7-d0c30e595756",
+      "ParentPageId": "5d6027d9-01a0-4fa4-84d9-64fd00871407",
+      "ModuleTitle": "Functie Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Functii/Functie Form.xml"
+    },
+    {
+      "GlobalId": "5b15fe4a-026d-4c23-8c7e-f1b21cc547d1",
+      "ParentPageId": "8186d17b-f8ad-47cf-88e5-e608032aebea",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Header.xml"
+    },
+    {
+      "GlobalId": "7c4e952a-2340-4dc6-9afb-9d8924b14c4e",
+      "ParentPageId": "8186d17b-f8ad-47cf-88e5-e608032aebea",
+      "ModuleTitle": "Grile Salarizare Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Grile Salarizare Listing.xml"
+    },
+    {
+      "GlobalId": "527b1b27-efcd-49ba-be32-ca0e48fa7106",
+      "ParentPageId": "8186d17b-f8ad-47cf-88e5-e608032aebea",
+      "ModuleTitle": "Grila Salarizare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Grila Salarizare Form.xml"
+    },
+    {
+      "GlobalId": "5b8178e3-cdb1-460f-bbdf-b341fd4a5fdb",
+      "ParentPageId": "9109cbd8-6dde-4687-88cd-ddbec2a5b8fe",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Judete/Header.xml"
+    },
+    {
+      "GlobalId": "ef68f253-a536-4156-a797-cdbd98eeac06",
+      "ParentPageId": "9109cbd8-6dde-4687-88cd-ddbec2a5b8fe",
+      "ModuleTitle": "Judete Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Judete/Judete Listing.xml"
+    },
+    {
+      "GlobalId": "7e9a74e1-93a2-4591-84e7-24178bf893a8",
+      "ParentPageId": "9109cbd8-6dde-4687-88cd-ddbec2a5b8fe",
+      "ModuleTitle": "Judet Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Judete/Judet Form.xml"
+    },
+    {
+      "GlobalId": "8d379bea-55b3-491b-a366-2a183fe352d1",
+      "ParentPageId": "43ccabd0-2f95-46fe-b45d-68d901675551",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Header.xml"
+    },
+    {
+      "GlobalId": "e61ba2d9-0c1b-40af-a959-26761a628383",
+      "ParentPageId": "43ccabd0-2f95-46fe-b45d-68d901675551",
+      "ModuleTitle": "Organigrame Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Organigrame Listing.xml"
+    },
+    {
+      "GlobalId": "cb9308c4-0cb7-4a87-a9b6-3d0c92085bf9",
+      "ParentPageId": "43ccabd0-2f95-46fe-b45d-68d901675551",
+      "ModuleTitle": "Organigrama Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Organigrama Form.xml"
+    },
+    {
+      "GlobalId": "fb3f0f94-dd26-47e2-afdf-7f550b80a15a",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Header.xml"
+    },
+    {
+      "GlobalId": "6b527571-4bae-408c-aa01-259d2e45df58",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "Sucursale Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Sucursale Listing.xml"
+    },
+    {
+      "GlobalId": "c0fe0ecf-e8f4-4db4-a1d4-c70661117d39",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "Sucursala Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Sucursala Form.xml"
+    },
+    {
+      "GlobalId": "4f92ec68-4c2c-4dff-bf9a-0a336ebd33e2",
+      "ParentPageId": "51331d5b-519e-4833-8648-4d3c4ab76951",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Header.xml"
+    },
+    {
+      "GlobalId": "6aba3dc5-0270-4b17-a6ee-82eee22c1107",
+      "ParentPageId": "51331d5b-519e-4833-8648-4d3c4ab76951",
+      "ModuleTitle": "Puncte de Lucru si Impozite Primarii Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Puncte de Lucru si Impozite Primarii Listing.xml"
+    },
+    {
+      "GlobalId": "873bae32-c5e2-4418-96f5-a38b705cc4e1",
+      "ParentPageId": "51331d5b-519e-4833-8648-4d3c4ab76951",
+      "ModuleTitle": "Punct Lucru si Impozit Primarii Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Punct Lucru si Impozit Primarii Form.xml"
+    },
+    {
+      "GlobalId": "e9b028cd-627b-49c7-96f9-bb50504118c4",
+      "ParentPageId": "171b2e12-88d4-40dd-ba83-8fa2962fc6f4",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Header.xml"
+    },
+    {
+      "GlobalId": "c254a23f-6fd2-4f0e-836c-af44daab2e08",
+      "ParentPageId": "171b2e12-88d4-40dd-ba83-8fa2962fc6f4",
+      "ModuleTitle": "Sindicate Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Sindicate Listing.xml"
+    },
+    {
+      "GlobalId": "3ae23568-73ac-4286-8a32-bb8e062be08f",
+      "ParentPageId": "171b2e12-88d4-40dd-ba83-8fa2962fc6f4",
+      "ModuleTitle": "Sindicat Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Sindicat Form.xml"
+    },
+    {
+      "GlobalId": "c301d53d-cbf0-4b64-b224-951e6aab61f3",
+      "ParentPageId": "3ca071a8-deb7-4406-920a-077bfd9348e6",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Header.xml"
+    },
+    {
+      "GlobalId": "15c84679-ddf6-4f78-b474-16dafc79c4f5",
+      "ParentPageId": "3ca071a8-deb7-4406-920a-077bfd9348e6",
+      "ModuleTitle": "Tipuri Norma Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Tipuri Norma Listing.xml"
+    },
+    {
+      "GlobalId": "93785960-f211-4718-afad-69b5464efc1e",
+      "ParentPageId": "3ca071a8-deb7-4406-920a-077bfd9348e6",
+      "ModuleTitle": "Tip Norma Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Tip Norma Form.xml"
+    },
+    {
+      "GlobalId": "7693526f-a1cc-4618-a013-e98f4ed8897c",
+      "ParentPageId": "9258982a-3610-4677-97eb-8d77703732a9",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Header.xml"
+    },
+    {
+      "GlobalId": "ef3caea3-150e-4795-a8e7-9e2484a26d49",
+      "ParentPageId": "9258982a-3610-4677-97eb-8d77703732a9",
+      "ModuleTitle": "Zile Libere Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Zile Libere Listing.xml"
+    },
+    {
+      "GlobalId": "57c5dc48-50b2-4bec-bb80-82771eae0555",
+      "ParentPageId": "9258982a-3610-4677-97eb-8d77703732a9",
+      "ModuleTitle": "Zi Libera Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Zi Libera Form.xml"
+    },
+    {
+      "GlobalId": "e6813979-4660-4023-9960-96b53143e19f",
+      "ParentPageId": "2655dad8-c063-4fc0-82e4-7d1a735606dd",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "1f83c478-dbe3-40c6-93a5-4d86f425319b",
+      "ParentPageId": "2655dad8-c063-4fc0-82e4-7d1a735606dd",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "90673287-00b1-4037-80e5-4df99084d1b8",
+      "ParentPageId": "2655dad8-c063-4fc0-82e4-7d1a735606dd",
+      "ModuleTitle": "Grila Salarizare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Detail/Grila Salarizare Form.xml"
+    },
+    {
+      "GlobalId": "5f1eb85e-0d9b-4e89-837e-dae149b07b32",
+      "ParentPageId": "2655dad8-c063-4fc0-82e4-7d1a735606dd",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/GrileSalarizare/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "85543a7a-ca26-45df-ac2f-d499e1853577",
+      "ParentPageId": "4a8ebc14-b5a2-429c-a67e-5443a81aca8f",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "3cee366e-90af-4085-a666-fd1bf3964bf5",
+      "ParentPageId": "4a8ebc14-b5a2-429c-a67e-5443a81aca8f",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "d595a837-70d9-4b4a-b032-8130e5bb58e4",
+      "ParentPageId": "4a8ebc14-b5a2-429c-a67e-5443a81aca8f",
+      "ModuleTitle": "Tip Norma Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Detail/Tip Norma Form.xml"
+    },
+    {
+      "GlobalId": "8776fd9d-624d-47ec-bd05-e7ac3e1536cf",
+      "ParentPageId": "4a8ebc14-b5a2-429c-a67e-5443a81aca8f",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/TipuriNorma/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "05492cbb-869a-4933-9de4-69a58cf9ba29",
+      "ParentPageId": "05e0995f-b26d-4004-a8fd-20c8b74d23e3",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Functii/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "bd2819ea-a842-4932-a6ba-095633e9037f",
+      "ParentPageId": "05e0995f-b26d-4004-a8fd-20c8b74d23e3",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Functii/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "3954470a-bab8-46f7-85bf-d4a5396a377a",
+      "ParentPageId": "05e0995f-b26d-4004-a8fd-20c8b74d23e3",
+      "ModuleTitle": "Functie Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Functii/Detail/Functie Form.xml"
+    },
+    {
+      "GlobalId": "192c1d6d-5d32-4fb5-b31f-2bd074afe9f4",
+      "ParentPageId": "05e0995f-b26d-4004-a8fd-20c8b74d23e3",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Functii/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "272ab695-dd03-4848-97d9-39f875a70768",
+      "ParentPageId": "6f8d82d6-ec8f-47e9-a777-9ecbf55d25c9",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "848d7b98-d7a4-46c0-9fea-f52c4ed522af",
+      "ParentPageId": "6f8d82d6-ec8f-47e9-a777-9ecbf55d25c9",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "56c4b0a8-37fb-409d-b7f0-c611558512db",
+      "ParentPageId": "6f8d82d6-ec8f-47e9-a777-9ecbf55d25c9",
+      "ModuleTitle": "Sucursala Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Detail/Sucursala Form.xml"
+    },
+    {
+      "GlobalId": "e920ad5a-f1ec-4fec-997e-15c1a532d9e4",
+      "ParentPageId": "6f8d82d6-ec8f-47e9-a777-9ecbf55d25c9",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Sucursale/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "3ada45a5-97c2-47a6-be78-8d2d74be6123",
+      "ParentPageId": "913e5978-74e6-4460-8c79-2fe54a69d401",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Judete/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "251c14de-d9ae-496c-859b-c63d30af56f1",
+      "ParentPageId": "913e5978-74e6-4460-8c79-2fe54a69d401",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Judete/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "e81789df-4a0c-4bf6-ad9d-c26818c5aa59",
+      "ParentPageId": "913e5978-74e6-4460-8c79-2fe54a69d401",
+      "ModuleTitle": "Judet Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Judete/Detail/Judet Form.xml"
+    },
+    {
+      "GlobalId": "763e927d-b96e-4df7-86c4-71eb4434b9d1",
+      "ParentPageId": "913e5978-74e6-4460-8c79-2fe54a69d401",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Judete/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "f22d760f-f7d5-425e-9585-f86297de0750",
+      "ParentPageId": "20808319-ec1b-4824-88c0-4428285d9f61",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "739dbd9d-a5ac-46ca-a0d3-09bd58c17fe4",
+      "ParentPageId": "20808319-ec1b-4824-88c0-4428285d9f61",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "91105a72-3c13-4492-8044-afb3cc8422e1",
+      "ParentPageId": "20808319-ec1b-4824-88c0-4428285d9f61",
+      "ModuleTitle": "Casa Sanatate Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Detail/Casa Sanatate Form.xml"
+    },
+    {
+      "GlobalId": "e10f5d79-b15d-465c-bcc9-351d998dfd9e",
+      "ParentPageId": "20808319-ec1b-4824-88c0-4428285d9f61",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/CaseSanatate/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "3b969d14-e668-4263-9042-d2e6d0c2b495",
+      "ParentPageId": "83f7756f-b9ba-4917-906d-9e16e3661ee5",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "4f8298eb-8eb6-428d-83af-6adb3842b6b7",
+      "ParentPageId": "83f7756f-b9ba-4917-906d-9e16e3661ee5",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "6402027d-d4b0-40fd-a58d-a1a946ac03d4",
+      "ParentPageId": "83f7756f-b9ba-4917-906d-9e16e3661ee5",
+      "ModuleTitle": "Zi Libera Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Detail/Zi Libera Form.xml"
+    },
+    {
+      "GlobalId": "26a8cc1c-9c7e-433c-abb6-8dde5932563a",
+      "ParentPageId": "83f7756f-b9ba-4917-906d-9e16e3661ee5",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/ZileLibere/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "98969056-4dd3-4057-a668-6e3d7ac7fa01",
+      "ParentPageId": "1350233d-5c65-424e-92b7-5195073564a1",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "77227d56-a2a4-4b75-8092-6c39f58955f8",
+      "ParentPageId": "1350233d-5c65-424e-92b7-5195073564a1",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "4af407e7-c110-4015-8378-e55b536d3415",
+      "ParentPageId": "1350233d-5c65-424e-92b7-5195073564a1",
+      "ModuleTitle": "Organigrama Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Detail/Organigrama Form.xml"
+    },
+    {
+      "GlobalId": "68838812-d102-4b9b-bc86-1fc349f543ca",
+      "ParentPageId": "1350233d-5c65-424e-92b7-5195073564a1",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Organigrame/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "f3f01621-9b10-41e8-9364-7a84b21bced5",
+      "ParentPageId": "3b9ed02d-2457-4db5-8e98-e79ed65a4902",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "4a4f2d48-f551-42ac-8cb4-bab75b19a5d3",
+      "ParentPageId": "3b9ed02d-2457-4db5-8e98-e79ed65a4902",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "58483d24-c0bc-4efc-9b61-7c9752a9af35",
+      "ParentPageId": "3b9ed02d-2457-4db5-8e98-e79ed65a4902",
+      "ModuleTitle": "Sindicat Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Detail/Sindicat Form.xml"
+    },
+    {
+      "GlobalId": "d852f2ec-bf34-44a4-b7c8-3d4937100840",
+      "ParentPageId": "3b9ed02d-2457-4db5-8e98-e79ed65a4902",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Sindicate/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "6096560d-3237-42c1-b13a-db0008b08efc",
+      "ParentPageId": "0756e02f-5a2f-4270-8efc-4df9e105e644",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "fc8ea523-2c6e-4a65-a88e-9345732f1984",
+      "ParentPageId": "0756e02f-5a2f-4270-8efc-4df9e105e644",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "8981e0cd-5749-4afc-b4f6-5f5ebc01c69b",
+      "ParentPageId": "0756e02f-5a2f-4270-8efc-4df9e105e644",
+      "ModuleTitle": "Punct Lucru si Impozit Primarii Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Detail/Punct Lucru si Impozit Primarii Form.xml"
+    },
+    {
+      "GlobalId": "f8301ac7-2f4c-440b-98a8-237c7302ebfa",
+      "ParentPageId": "0756e02f-5a2f-4270-8efc-4df9e105e644",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "42bbec3b-9d5f-4b1d-94ec-ef4837962cd5",
+      "ParentPageId": "d3a9c1c3-33bf-4ebf-a66a-66f52ecc4b40",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "5d87ba21-136f-4be0-afe6-f2e326f177fc",
+      "ParentPageId": "d3a9c1c3-33bf-4ebf-a66a-66f52ecc4b40",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "5ee8d06f-8ce1-4a23-a6e9-80bb7a669d27",
+      "ParentPageId": "d3a9c1c3-33bf-4ebf-a66a-66f52ecc4b40",
+      "ModuleTitle": "Curs Euro Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Detail/Curs Euro Form.xml"
+    },
+    {
+      "GlobalId": "2065f63f-02f9-4985-9658-0d76ee40fcd0",
+      "ParentPageId": "d3a9c1c3-33bf-4ebf-a66a-66f52ecc4b40",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/CursuriEuro/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "8992279f-1a6a-42bf-93ff-5dcf2f3ae4fa",
+      "ParentPageId": "d9904fdd-b2be-4e84-ae90-7e2d74f884f3",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "33446c89-2dca-4d37-ab04-b5555327d086",
+      "ParentPageId": "d9904fdd-b2be-4e84-ae90-7e2d74f884f3",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "f25ab4c4-ecc0-47a6-95c4-b41f0c6c3f44",
+      "ParentPageId": "d9904fdd-b2be-4e84-ae90-7e2d74f884f3",
+      "ModuleTitle": "Certificat Medical Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Detail/Certificat Medical Form.xml"
+    },
+    {
+      "GlobalId": "4c8df25b-7f29-4082-b1e1-8d2f8ebd4ac6",
+      "ParentPageId": "d9904fdd-b2be-4e84-ae90-7e2d74f884f3",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "5e8de394-53b1-4df1-bdb8-aae3ab33348d",
+      "ParentPageId": "3b701b9a-9d69-4a85-a321-408f6dc1561f",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Header.xml"
+    },
+    {
+      "GlobalId": "e5abc9e4-7de1-40da-b5b7-8f9fe396fe85",
+      "ParentPageId": "3b701b9a-9d69-4a85-a321-408f6dc1561f",
+      "ModuleTitle": "Limite CM Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Limite CM Listing.xml"
+    },
+    {
+      "GlobalId": "2e0806ee-a121-49ca-9d8d-7c34fa872724",
+      "ParentPageId": "3b701b9a-9d69-4a85-a321-408f6dc1561f",
+      "ModuleTitle": "Limita CM Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Limita CM Form.xml"
+    },
+    {
+      "GlobalId": "5ff75076-6db8-4abf-bbba-7d80399fe884",
+      "ParentPageId": "c26ce117-53d4-4d69-8129-2189640578f2",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Ani/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "ce14e598-8909-45ce-a704-b034ccfb3fd5",
+      "ParentPageId": "c26ce117-53d4-4d69-8129-2189640578f2",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Ani/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "8eb7c7d0-e813-4a6d-b192-d2cb69c8b21f",
+      "ParentPageId": "c26ce117-53d4-4d69-8129-2189640578f2",
+      "ModuleTitle": "An Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Ani/Detail/An Form.xml"
+    },
+    {
+      "GlobalId": "71445a13-280f-49ed-88ca-040510ce2e12",
+      "ParentPageId": "c26ce117-53d4-4d69-8129-2189640578f2",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Ani/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "37195652-73f7-4fb3-a1ca-8e7e6b8cd595",
+      "ParentPageId": "a047b2b5-dcd9-4c30-8608-75dabe1739b7",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "4eb3928b-7fc5-4f42-8e53-c03540156040",
+      "ParentPageId": "a047b2b5-dcd9-4c30-8608-75dabe1739b7",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "b0cd8458-66c8-497a-b0c7-2f26a204ca75",
+      "ParentPageId": "a047b2b5-dcd9-4c30-8608-75dabe1739b7",
+      "ModuleTitle": "Luna Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Detail/Luna Form.xml"
+    },
+    {
+      "GlobalId": "f57e7b0e-850d-44e9-a0a0-bc8a744f15b6",
+      "ParentPageId": "a047b2b5-dcd9-4c30-8608-75dabe1739b7",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Lunile/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "2ab4b527-1bb6-4f08-90b3-dbbd29e346d8",
+      "ParentPageId": "762b78b9-4806-4ed3-a3e7-efa30589fcbe",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "7d0c8de1-549b-4534-8dd4-6008011fb0af",
+      "ParentPageId": "762b78b9-4806-4ed3-a3e7-efa30589fcbe",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "a8ec8c02-908f-454d-8218-485ce58e450f",
+      "ParentPageId": "762b78b9-4806-4ed3-a3e7-efa30589fcbe",
+      "ModuleTitle": "Limita CM Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Detail/Limita CM Form.xml"
+    },
+    {
+      "GlobalId": "08f77912-f4a8-412f-9126-d1badb0f074e",
+      "ParentPageId": "762b78b9-4806-4ed3-a3e7-efa30589fcbe",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/CertificateMedicale/LimiteCM/Detail/Tabs.xml"
     }
   ],
   "TokenNamespaces": [
@@ -227,6 +1464,14 @@
     {
       "GlobalId": "9204be38-c5ae-44b8-b355-e44da69c7e4b",
       "Name": "PAASysDocuments"
+    },
+    {
+      "GlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "Name": "Helper"
+    },
+    {
+      "GlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+      "Name": "Initializari"
     }
   ],
   "Tokens": [
@@ -375,6 +1620,36 @@
       "NamespaceGlobalId": "9204be38-c5ae-44b8-b355-e44da69c7e4b",
       "DefinitionPath": "Tokens/PAASysDocuments/MoveFile.json",
       "SourcePath": "Tokens/PAASysDocuments/MoveFile.cshtml"
+    },
+    {
+      "GlobalId": "c15eaafc-a5c1-4af3-938f-ae1c01bf500b",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/ConversieDataZi.json"
+    },
+    {
+      "GlobalId": "7d5675a0-32fa-4ba3-aa75-61c36edcefb5",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/ConversieDataLuna.json"
+    },
+    {
+      "GlobalId": "6e791de8-68eb-48ff-8706-dc974f30646e",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/ConversieDataAn.json"
+    },
+    {
+      "GlobalId": "eeda43ec-4078-484f-be81-61f7b1bae8bf",
+      "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+      "DefinitionPath": "Tokens/Initializari/An_IN.json"
+    },
+    {
+      "GlobalId": "699c5da9-6c54-4dc0-9db9-821384559483",
+      "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+      "DefinitionPath": "Tokens/Initializari/Luna_IN.json"
+    },
+    {
+      "GlobalId": "23df36ad-7f66-4e8e-a9c5-45887ab513e8",
+      "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+      "DefinitionPath": "Tokens/Initializari/Sucursala_IN.json"
     }
   ],
   "Namespaces": [],
@@ -401,6 +1676,86 @@
       "GlobalId": "4ed4fc83-1032-4f81-b9e2-6fa062a856a4",
       "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
       "ContentPath": "Entities/Default/Angajat.json"
+    },
+    {
+      "GlobalId": "b689c30a-2a6a-4d93-a9dd-c867ae719747",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Grila Salarizare.json"
+    },
+    {
+      "GlobalId": "7dfe3ad4-fc7c-4f30-9b7e-1b3f874c2024",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Tip Norma.json"
+    },
+    {
+      "GlobalId": "4ba73456-142c-473a-a7f3-6004d7af6995",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Functie.json"
+    },
+    {
+      "GlobalId": "05af1df7-27a8-43c5-b223-c07c195c1dea",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Sucursala.json"
+    },
+    {
+      "GlobalId": "38c387bc-50d8-4e9b-897a-cc4687adbf71",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Judet.json"
+    },
+    {
+      "GlobalId": "b51f6fbb-f336-47fc-bd09-69e56884500d",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Casa Sanatate.json"
+    },
+    {
+      "GlobalId": "87cb2871-7416-4ed7-ae3a-efe9228a5edf",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Zi Libera.json"
+    },
+    {
+      "GlobalId": "db8576b4-954f-452f-b29f-b2fc8291348a",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Organigrama.json"
+    },
+    {
+      "GlobalId": "e44677c6-b00f-4f96-b51c-18f932c67101",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Sindicat.json"
+    },
+    {
+      "GlobalId": "36349a75-bf47-47bc-8cf1-88611cde4599",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Lichidare.json"
+    },
+    {
+      "GlobalId": "288ae9f7-8d1e-48e7-aef7-c9ac3837b388",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Punct Lucru si Impozit Primarii.json"
+    },
+    {
+      "GlobalId": "62585843-4ab2-45ad-b228-46340e77043b",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Curs Euro.json"
+    },
+    {
+      "GlobalId": "03d71cc5-a46b-4265-8d37-a38c2d2f9df0",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Certificat Medical.json"
+    },
+    {
+      "GlobalId": "76a1b231-aa81-4a52-9172-571c69be443a",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Limita CM.json"
+    },
+    {
+      "GlobalId": "0e761b5e-981b-4c39-ad90-6b3ef2dad9a0",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/An.json"
+    },
+    {
+      "GlobalId": "fb898bf8-3f6c-432a-ac8c-6630948a685d",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Luna.json"
     }
   ],
   "ApiMethods": [],
@@ -410,6 +1765,11 @@
       "GlobalId": "038e24c0-90e5-4d78-89bf-4eebc987a1ac",
       "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
       "ContentPath": "Automation/Default/Update Users_6.json"
+    },
+    {
+      "GlobalId": "0adf4288-90ae-4a7b-a1eb-14dc48f26a00",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Automation/Default/Actualizare Zile Libere_7.json"
     }
   ],
   "Connectors": [
@@ -434,6 +1794,24 @@
       "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
       "DefinitionPath": "Workflows/Default/Sync Users and Roles/workflow.json",
       "DiagramPath": "Workflows/Default/Sync Users and Roles/diagram.xml"
+    },
+    {
+      "GlobalId": "2234dc21-8186-4fa4-a1ba-564359cbc340",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "DefinitionPath": "Workflows/Default/Sync Zile Libere/workflow.json",
+      "DiagramPath": "Workflows/Default/Sync Zile Libere/diagram.xml"
+    },
+    {
+      "GlobalId": "2c62eb0a-bb4c-4604-881c-535f836dca63",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "DefinitionPath": "Workflows/Default/Import Grile salarizare/workflow.json",
+      "DiagramPath": "Workflows/Default/Import Grile salarizare/diagram.xml"
+    },
+    {
+      "GlobalId": "4eed29b3-f00c-4174-88bb-d35f3114186f",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "DefinitionPath": "Workflows/Default/Import Organigrama CNPR/workflow.json",
+      "DiagramPath": "Workflows/Default/Import Organigrama CNPR/diagram.xml"
     }
   ]
 }

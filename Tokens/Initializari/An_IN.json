@@ -1,0 +1,24 @@
+{
+  "id": 45,
+  "globalId": "eeda43ec-4078-484f-be81-61f7b1bae8bf",
+  "namespace": {
+    "id": 9,
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "portalId": 0,
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "An_IN",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT An from app.An where [An]='[TknParams:An]'",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

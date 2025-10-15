@@ -1,0 +1,24 @@
+{
+  "id": 46,
+  "globalId": "699c5da9-6c54-4dc0-9db9-821384559483",
+  "namespace": {
+    "id": 9,
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "portalId": 0,
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "Luna_IN",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "select Luna from app.Luna where luna = '[TknParams:Luna]'",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

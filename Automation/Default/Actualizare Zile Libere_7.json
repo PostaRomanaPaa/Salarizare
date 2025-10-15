@@ -1,0 +1,37 @@
+{
+  "ApiId": "c5433cb321a2d8b4bb2726",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Actualizare Zile Libere",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "CronTrigger",
+      "Parameters": {
+        "CronExpression": "",
+        "SkipIfRunning": "",
+        "OnMissfire": {
+          "Value": null,
+          "IsExpression": false,
+          "Expression": null
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.2234dc2181864fa4a1ba564359cbc340",
+      "Description": "",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "OnError": [],
+        "ContinueOnError": "",
+        "Output": ""
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

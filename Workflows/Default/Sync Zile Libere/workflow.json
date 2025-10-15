@@ -1,0 +1,552 @@
+{
+  "InputFields": [],
+  "OutputFields": [
+    {
+      "Id": 2,
+      "Name": "Output",
+      "DefaultValue": "[DataZileLibere]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 5,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "Id": 5,
+  "GlobalId": "2234dc21-8186-4fa4-a1ba-564359cbc340",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "2234dc21-8186-4fa4-a1ba-564359cbc340",
+  "EnvironmentId": 1,
+  "Name": "Sync Zile Libere",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 94,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 83,
+        "Description": "Server Request",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ServerRequestHttpClient",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 623,
+            "Name": "URL",
+            "Value": "https://zilelibere.webventure.ro/api/[DateTime:now|yyyy]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 624,
+            "Name": "UrlTokenContext",
+            "Value": "Url",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 625,
+            "Name": "UseSSL",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 626,
+            "Name": "Certificate",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 627,
+            "Name": "Timeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 628,
+            "Name": "HttpMethod",
+            "Value": "GET",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 629,
+            "Name": "Data",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 630,
+            "Name": "DoNotEscapeTokens",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 631,
+            "Name": "DisableReferer",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 632,
+            "Name": "UseDNNProxySettings",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 633,
+            "Name": "AddCurrentCookies",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 634,
+            "Name": "IgnoreErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 635,
+            "Name": "OnError",
+            "Value": {
+              "Id": 95,
+              "EventName": "error",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 636,
+            "Name": "CookieContainerToken",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 637,
+            "Name": "Headers",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 638,
+            "Name": "OutputTokenName",
+            "Value": "DataZileLibere",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 639,
+            "Name": "OutputHeaders",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 83,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0kl2mzh"
+      },
+      {
+        "Id": 84,
+        "Description": "Create List from JSON",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromJson",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 640,
+            "Name": "JsonModel",
+            "Value": "[DataZileLibere]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 84,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 641,
+            "Name": "EntityName",
+            "Value": "ListZileLibere",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 84,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 642,
+            "Name": "OnError",
+            "Value": {
+              "Id": 96,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 84,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 643,
+            "Name": "EnforceISODateTime",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 84,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0ih1hwo"
+      },
+      {
+        "Id": 85,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 2,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 644,
+            "Name": "EntityName",
+            "Value": "ListZileLibere",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 85,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 645,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 85,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 649,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 97,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 87,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "LoadEntitiesFromJson",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 653,
+                      "Name": "JsonModel",
+                      "Value": "[ListZileLibere:date]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 87,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 654,
+                      "Name": "EntityName",
+                      "Value": "ListDataZileLibere",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 87,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 655,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 99,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 87,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 656,
+                      "Name": "EnforceISODateTime",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 87,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 88,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "ExecuteActionsOnEntityList",
+                  "OrderIndex": 1,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 657,
+                      "Name": "EntityName",
+                      "Value": "ListDataZileLibere",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 88,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 658,
+                      "Name": "ContextBehavior",
+                      "Value": "UpdateAllTokens",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 88,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 662,
+                      "Name": "ActionList",
+                      "Value": {
+                        "Id": 100,
+                        "EventName": "click",
+                        "Actions": [
+                          {
+                            "Id": 90,
+                            "Description": null,
+                            "ActionErrorMessage": null,
+                            "Condition": null,
+                            "ActionType": "PlantAnApp.CreateEntity.87cb2871-7416-4ed7-ae3a-efe9228a5edf",
+                            "OrderIndex": 0,
+                            "IsDisabled": false,
+                            "ActionParameters": [
+                              {
+                                "Id": 666,
+                                "Name": "ConnectionString",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 90,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 667,
+                                "Name": "Luna",
+                                "Value": "[Helper:ConversieDataLuna(data=\"[ListDataZileLibere:date]\")]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 90,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 668,
+                                "Name": "Zi",
+                                "Value": "[Helper:ConversieDataZi(data=\"[ListDataZileLibere:date]\")]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 90,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 669,
+                                "Name": "An",
+                                "Value": "[Helper:ConversieDataAn(data=\"[ListDataZileLibere:date]\")]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 90,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 670,
+                                "Name": "Nume",
+                                "Value": "[ListZileLibere:name]",
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 90,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 671,
+                                "Name": "OnError",
+                                "Value": {
+                                  "Id": 102,
+                                  "EventName": "OnError",
+                                  "Actions": [],
+                                  "IsInvalid": false
+                                },
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 90,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 672,
+                                "Name": "OutputToken",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 90,
+                                "OrderIndex": 0
+                              }
+                            ],
+                            "DiagramUID": null
+                          }
+                        ],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 88,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 663,
+                      "Name": "ContinueOnError",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 88,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 664,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 101,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 88,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 665,
+                      "Name": "Filters",
+                      "Value": [],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 88,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 85,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 650,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 85,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 651,
+            "Name": "OnError",
+            "Value": {
+              "Id": 98,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 85,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 652,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 85,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0cza37q"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 3,
+  "CreatedOn": "2025-10-08T10:48:02.9779617+00:00",
+  "LastModifiedBy": 3,
+  "LastModifiedOn": "2025-10-08T11:43:41.6034762+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

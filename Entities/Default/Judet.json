@@ -32,7 +32,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 1
+      "OrderIndex": 2
     },
     {
       "Id": 50,
@@ -58,7 +58,33 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 2
+      "OrderIndex": 3
+    },
+    {
+      "Id": 271,
+      "GlobalId": "48731ce3-bf05-491a-ae75-371ed66c6349",
+      "EntityVersionId": 11,
+      "Name": "Cod Sucursala",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 10,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 1
     }
   ],
   "RolePermissions": {
@@ -242,7 +268,7 @@
   "CreatedDate": "2025-10-03T11:00:08.04",
   "CreatedBy": "Ciprian Aelenei",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-10-07T07:37:13.7333333",
+  "LastModifiedOn": "2025-10-16T12:13:35.02",
   "Icon": "atom",
   "Type": 0,
   "BuiltInType": null,

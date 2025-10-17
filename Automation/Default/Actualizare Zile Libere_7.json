@@ -9,7 +9,7 @@
       "IsEnabled": true,
       "TriggerDefId": "CronTrigger",
       "Parameters": {
-        "CronExpression": "",
+        "CronExpression": "0 0 6 1 1 ? *",
         "SkipIfRunning": "",
         "OnMissfire": {
           "Value": null,

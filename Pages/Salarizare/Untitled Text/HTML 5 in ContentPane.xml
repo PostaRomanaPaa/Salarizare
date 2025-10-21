@@ -1,0 +1,89 @@
+<module type="DNNHTML" version="09.13.07.00">
+    <contentKey />
+    <moduleID>620</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>1200</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Admins</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Text/HTML</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>e73fa69c-17d1-4779-8a61-b5b78ab52583</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>DNN_HTML</definition>
+    <moduledefinition>Text/HTML</moduledefinition>
+    <content type="DNNHTML" version="09.13.07.00"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;p&amp;gt;&amp;amp;lt;div class=&amp;amp;quot;btn-toolbar mt-3&amp;amp;quot; role=&amp;amp;quot;toolbar&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;lt;div class=&amp;amp;quot;btn-group mr-2&amp;amp;quot; role=&amp;amp;quot;group&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;!-- Tabele de Sistem Dropdown --&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;div class=&amp;amp;quot;btn-group&amp;amp;quot; role=&amp;amp;quot;group&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;button id=&amp;amp;quot;btnTabele&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; class=&amp;amp;quot;btn btn-primary dropdown-toggle&amp;amp;quot; data-toggle=&amp;amp;quot;dropdown&amp;amp;quot; aria-haspopup=&amp;amp;quot;true&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; Tabele de Sistem&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/button&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;div class=&amp;amp;quot;dropdown-menu&amp;amp;quot; aria-labelledby=&amp;amp;quot;btnTabele&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/Ani&amp;amp;quot;&amp;amp;gt;Ani&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/Luni&amp;amp;quot;&amp;amp;gt;Luni&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/CursuriEuro&amp;amp;quot;&amp;amp;gt;Cursuri Euro&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/Impozitare&amp;amp;quot;&amp;amp;gt;Impozitare&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/LimiteCM&amp;amp;quot;&amp;amp;gt;Limite CM&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/LimiteCO&amp;amp;quot;&amp;amp;gt;Limite CO&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/ProcentCAR&amp;amp;quot;&amp;amp;gt;Procente CAR-Sindicat&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/SalariiMinime&amp;amp;quot;&amp;amp;gt;Salarii Minime Brute pe Economie&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/TaxeMandate&amp;amp;quot;&amp;amp;gt;Taxe Mandate Poștale&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/TicheteMasa&amp;amp;quot;&amp;amp;gt;Tichete Masă&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/TipuriNorma&amp;amp;quot;&amp;amp;gt;Tipuri Normă&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Tabele/ZileLibere&amp;amp;quot;&amp;amp;gt;Zile Libere&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/div&amp;amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;!-- Nomenclatoare Dropdown --&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;div class=&amp;amp;quot;btn-group&amp;amp;quot; role=&amp;amp;quot;group&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;button id=&amp;amp;quot;btnNomenclatoare&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; class=&amp;amp;quot;btn btn-primary dropdown-toggle&amp;amp;quot; data-toggle=&amp;amp;quot;dropdown&amp;amp;quot; aria-haspopup=&amp;amp;quot;true&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; Nomenclatoare&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/button&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;div class=&amp;amp;quot;dropdown-menu&amp;amp;quot; aria-labelledby=&amp;amp;quot;btnNomenclatoare&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Nomenclatoare/Functii&amp;amp;quot;&amp;amp;gt;Funcții&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Nomenclatoare/Clase&amp;amp;quot;&amp;amp;gt;Clase&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Nomenclatoare/Posturi&amp;amp;quot;&amp;amp;gt;Posturi&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Nomenclatoare/Departamente&amp;amp;quot;&amp;amp;gt;Departamente&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/div&amp;amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;!-- Importuri Dropdown --&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;div class=&amp;amp;quot;btn-group&amp;amp;quot; role=&amp;amp;quot;group&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;button id=&amp;amp;quot;btnImport&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; class=&amp;amp;quot;btn btn-primary dropdown-toggle&amp;amp;quot; data-toggle=&amp;amp;quot;dropdown&amp;amp;quot; aria-haspopup=&amp;amp;quot;true&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; Importuri&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/button&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;div class=&amp;amp;quot;dropdown-menu&amp;amp;quot; aria-labelledby=&amp;amp;quot;btnImport&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Importuri/PersonalHR&amp;amp;quot;&amp;amp;gt;Import date personal HR&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a class=&amp;amp;quot;dropdown-item&amp;amp;quot; href=&amp;amp;quot;/Importuri/Salarizare&amp;amp;quot;&amp;amp;gt;Import date Salarizare&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;/div&amp;amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;!-- Calcule direct redirect --&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;nbsp; &amp;amp;lt;a href=&amp;amp;quot;/Calcule/Lichidare&amp;amp;quot; class=&amp;amp;quot;btn btn-success&amp;amp;quot;&amp;amp;gt;Calcule Lichidare&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp; &amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;lt;/p&amp;gt;
+]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+</module>

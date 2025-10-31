@@ -1,0 +1,457 @@
+{
+  "InputFields": [
+    {
+      "Id": 7,
+      "Name": "FilePath",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 10,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "OutputFields": [],
+  "Id": 10,
+  "GlobalId": "427093c8-8181-40d9-bf28-4d1e8372a8d7",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "427093c8-8181-40d9-bf28-4d1e8372a8d7",
+  "EnvironmentId": 1,
+  "Name": "Import Functii",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 171,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 143,
+        "Description": "Create List from Excel (.xlsx)",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1075,
+            "Name": "FilePath",
+            "Value": "[FilePath]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1076,
+            "Name": "EntityName",
+            "Value": "ListaFunctii",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1077,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1078,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1079,
+            "Name": "SheetName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1080,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1081,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1082,
+            "Name": "OnError",
+            "Value": {
+              "Id": 172,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1083,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "Tip Mediu",
+                "value": "Tip Mediu"
+              },
+              {
+                "name": "Cod Functie",
+                "value": "Cod Functie"
+              },
+              {
+                "name": "Denumire Functie",
+                "value": "Denumire Functie"
+              },
+              {
+                "name": "Tip Functie",
+                "value": "Tip Functie"
+              },
+              {
+                "name": "Procent Functie",
+                "value": "Procent Functie"
+              },
+              {
+                "name": "Clasa Minima",
+                "value": "Clasa Minima"
+              },
+              {
+                "name": "Clasa Maxima",
+                "value": "Clasa Maxima"
+              },
+              {
+                "name": "Clasa Stagiu",
+                "value": "Clasa Stagiu"
+              },
+              {
+                "name": "Clasa Intermediara",
+                "value": "Clasa Intermediara"
+              },
+              {
+                "name": "Clasa Medie",
+                "value": "Clasa Medie"
+              },
+              {
+                "name": "Luna",
+                "value": "Luna"
+              },
+              {
+                "name": "Anul",
+                "value": "Anul"
+              },
+              {
+                "name": "Cod Sucursala",
+                "value": "Cod Sucursala"
+              },
+              {
+                "name": "Cod COR",
+                "value": "Cod COR"
+              },
+              {
+                "name": "GM",
+                "value": "GM"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 143,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0fiiry4"
+      },
+      {
+        "Id": 144,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1084,
+            "Name": "EntityName",
+            "Value": "ListaFunctii",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 144,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1085,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 144,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1104,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 173,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 145,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "PlantAnApp.CreateEntity.4ba73456-142c-473a-a7f3-6004d7af6995",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 1086,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1087,
+                      "Name": "TipMediu",
+                      "Value": "[ListaFunctii:Tip Mediu]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1088,
+                      "Name": "CodFunctie",
+                      "Value": "[ListaFunctii:Cod Functie]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1089,
+                      "Name": "DenumireFunctie",
+                      "Value": "[ListaFunctii:Denumire Functie]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1090,
+                      "Name": "TipFunctie",
+                      "Value": "[ListaFunctii:Tip Functie]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1091,
+                      "Name": "ProcentFunctie",
+                      "Value": "[ListaFunctii:Procent Functie]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1092,
+                      "Name": "ClasaMinima",
+                      "Value": "[ListaFunctii:Clasa Minima]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1093,
+                      "Name": "ClasaMaxima",
+                      "Value": "[ListaFunctii:Clasa Maxima]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1094,
+                      "Name": "ClasaStagiu",
+                      "Value": "[ListaFunctii:Clasa Stagiu]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1095,
+                      "Name": "ClasaIntermediara",
+                      "Value": "[ListaFunctii:Clasa Intermediara]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1096,
+                      "Name": "ClasaMedie",
+                      "Value": "[ListaFunctii:Clasa Medie]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1097,
+                      "Name": "Luna",
+                      "Value": "[ListaFunctii:Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1098,
+                      "Name": "Anul",
+                      "Value": "[ListaFunctii:Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1099,
+                      "Name": "CodSucursala",
+                      "Value": "[ListaFunctii:Cod Sucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1100,
+                      "Name": "CodCOR",
+                      "Value": "[ListaFunctii:Cod COR]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1101,
+                      "Name": "GM",
+                      "Value": "[ListaFunctii:GM]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1102,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 174,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1103,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 145,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 144,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1105,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 144,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1106,
+            "Name": "OnError",
+            "Value": {
+              "Id": 175,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 144,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1107,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 144,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1canes8"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 5,
+  "CreatedOn": "2025-10-28T11:25:08.996031+00:00",
+  "LastModifiedBy": 5,
+  "LastModifiedOn": "2025-10-28T11:25:08.996031+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

@@ -1,4 +1,4 @@
-<module type="ActionGrid" version="05.27.134.00">
+<module type="ActionGrid" version="05.27.143.00">
     <contentKey />
     <moduleID>522</moduleID>
     <alignment />
@@ -31,10 +31,10 @@
     <tabmodulesettings />
     <definition>Action Grid</definition>
     <moduledefinition>avt.ActionGrid</moduledefinition>
-    <content type="ActionGrid" version="05.27.134.00"><![CDATA[&lt;ActionGrid&gt;
+    <content type="ActionGrid" version="05.27.143.00"><![CDATA[&lt;ActionGrid&gt;
   &lt;Settings&gt;
     &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.134&lt;/Build&gt;
+    &lt;Build&gt;5.27.143&lt;/Build&gt;
     &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
     &lt;ModuleId&gt;522&lt;/ModuleId&gt;
     &lt;DataSource&gt;{&quot;DefinitionId&quot;:&quot;PlantAnApp.EntityDatasource.62585843-4ab2-45ad-b228-46340e77043b&quot;,&quot;Parameters&quot;:{},&quot;Fields&quot;:[{&quot;Title&quot;:&quot;Anul&quot;,&quot;Name&quot;:&quot;Anul&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:false,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;Luna&quot;,&quot;Name&quot;:&quot;Luna&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:false,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;Cursul EURO&quot;,&quot;Name&quot;:&quot;CursulEURO&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:false,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedBy&quot;,&quot;Name&quot;:&quot;CreatedBy&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedDate&quot;,&quot;Name&quot;:&quot;CreatedDate&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedBy&quot;,&quot;Name&quot;:&quot;LastModifiedBy&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedDate&quot;,&quot;Name&quot;:&quot;LastModifiedDate&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedByUsername&quot;,&quot;Name&quot;:&quot;CreatedByUsername&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedByDisplayName&quot;,&quot;Name&quot;:&quot;CreatedByDisplayName&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedByEmail&quot;,&quot;Name&quot;:&quot;CreatedByEmail&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedByUsername&quot;,&quot;Name&quot;:&quot;LastModifiedByUsername&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedByDisplayName&quot;,&quot;Name&quot;:&quot;LastModifiedByDisplayName&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedByEmail&quot;,&quot;Name&quot;:&quot;LastModifiedByEmail&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;Id&quot;,&quot;Name&quot;:&quot;Id&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:0}]}&lt;/DataSource&gt;
@@ -89,7 +89,7 @@
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;TooltipContent /&gt;
     &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
-    &lt;TooltipIcon&gt;glyphicon-info-sign&lt;/TooltipIcon&gt;
+    &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
     &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
     &lt;TooltipInEdit&gt;right&lt;/TooltipInEdit&gt;
     &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
@@ -136,6 +136,7 @@
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
       &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
@@ -238,6 +239,7 @@
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
       &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
@@ -313,6 +315,7 @@
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
       &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
@@ -373,6 +376,7 @@
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
       &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
       &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;

@@ -65,9 +65,9 @@
   &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
   &lt;WidgetProvider&gt;{&quot;name&quot;:&quot;WidgetProvider&quot;,&quot;value&quot;:&quot;Bootstrap5&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/WidgetProvider&gt;
   &lt;OpenAction&gt;{&quot;name&quot;:&quot;OpenAction&quot;,&quot;value&quot;:&quot;Click&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/OpenAction&gt;
-  &lt;RevisionNumber&gt;1&lt;/RevisionNumber&gt;
+  &lt;RevisionNumber&gt;2&lt;/RevisionNumber&gt;
   &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-  &lt;RevisionLastChangedDate&gt;2025-10-16T12:11:39.9601630+00:00&lt;/RevisionLastChangedDate&gt;
+  &lt;RevisionLastChangedDate&gt;2025-10-21T13:54:55.0633677+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;Tabs&gt;
     &lt;Tab&gt;
       &lt;Title&gt;Details&lt;/Title&gt;
@@ -79,7 +79,7 @@
       &lt;IconUrl /&gt;
       &lt;IconClass /&gt;
       &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
@@ -89,6 +89,12 @@
         &lt;en-US&gt;Details&lt;/en-US&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;609&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;609&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;

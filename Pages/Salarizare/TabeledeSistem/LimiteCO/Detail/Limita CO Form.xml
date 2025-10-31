@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.111.00">
+<module type="ActionForm" version="05.27.116.00">
     <contentKey />
     <moduleID>594</moduleID>
     <alignment />
@@ -31,7 +31,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.111.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.27.116.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[692]]&gt;&lt;/Id&gt;
@@ -332,10 +332,10 @@
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;Limita CO Form&lt;/Title&gt;
-    &lt;CssName&gt;limita-co-form&lt;/CssName&gt;
+    &lt;Title&gt;TS Limita CO Form&lt;/Title&gt;
+    &lt;CssName&gt;ts-limita-co-form&lt;/CssName&gt;
     &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.111&lt;/Build&gt;
+    &lt;Build&gt;5.27.116&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -352,7 +352,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;594&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.111&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.27.116&lt;/ModuleVersion&gt;
     &lt;TabId&gt;104&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -386,9 +386,9 @@
     &lt;RootClasses /&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;2&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;4&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2025-10-16T11:27:19.2737133+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2025-10-21T13:54:14.6833212+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -396,7 +396,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.337&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.73&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -413,7 +413,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.367&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -430,7 +430,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.4&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -445,9 +445,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.413&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.76&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Limita CO&quot;},{&quot;name&quot;:&quot;original:LimitaInferioara&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:LimitaSuperioara&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ZileCO&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add TS Limita CO&quot;},{&quot;name&quot;:&quot;original:LimitaInferioara&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:LimitaSuperioara&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ZileCO&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
@@ -459,9 +459,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.2d8837d9-c1d2-4782-9995-bd0268e245ec&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.353&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.73&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewLimitaCOId&quot;,&quot;LimitaInferioara&quot;:&quot;[p_LimitaInferioara]&quot;,&quot;LimitaSuperioara&quot;:&quot;[p_LimitaSuperioara]&quot;,&quot;ZileCO&quot;:&quot;[p_ZileCO]&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewTSLimitaCOId&quot;,&quot;LimitaInferioara&quot;:&quot;[p_LimitaInferioara]&quot;,&quot;LimitaSuperioara&quot;:&quot;[p_LimitaSuperioara]&quot;,&quot;ZileCO&quot;:&quot;[p_ZileCO]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
       &lt;FieldName&gt;Add&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -476,9 +476,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.2d8837d9-c1d2-4782-9995-bd0268e245ec&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.383&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:LimitaCOId=]&quot;,&quot;LimitaInferioara&quot;:&quot;[p_LimitaInferioara]&quot;,&quot;LimitaSuperioara&quot;:&quot;[p_LimitaSuperioara]&quot;,&quot;ZileCO&quot;:&quot;[p_ZileCO]&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:TSLimitaCOId=]&quot;,&quot;LimitaInferioara&quot;:&quot;[p_LimitaInferioara]&quot;,&quot;LimitaSuperioara&quot;:&quot;[p_LimitaSuperioara]&quot;,&quot;ZileCO&quot;:&quot;[p_ZileCO]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -494,7 +494,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.413&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.76&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -510,15 +510,16 @@
       &lt;Description&gt;Check if in edit mode&lt;/Description&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:LimitaCOId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.413&lt;/LastModified&gt;
+      &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:TSLimitaCOId=])&lt;/Condition&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.76&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Limita CO&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit TS Limita CO&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.CheckEditMode&quot;}&lt;/MetadataJson&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.CheckEditMode&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;!string.IsNullOrWhiteSpace([QueryString:TSLimitaCOId=])&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.CheckEditMode&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;!string.IsNullOrWhiteSpace([QueryString:TSLimitaCOId=])&lt;/PAP_GeneratedCondition&gt;
       &lt;/Metadata&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
@@ -526,9 +527,9 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.353&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.73&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/TabeledeSistem/LimiteCO/Detail?LimitaCOId=[NewLimitaCOId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/TabeledeSistem/LimiteCO/Detail?TSLimitaCOId=[NewTSLimitaCOId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
       &lt;FieldName&gt;Add&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -542,7 +543,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.383&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;32a68969-d196-4f12-b109-31cd526c5537&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -558,9 +559,9 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.2d8837d9-c1d2-4782-9995-bd0268e245ec&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.43&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.76&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:LimitaCOId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:TSLimitaCOId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadEntityValues&quot;,&quot;EntityIdentifier&quot;:&quot;2d8837d9-c1d2-4782-9995-bd0268e245ec&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
@@ -575,7 +576,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.353&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.73&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;9a50caec-2d87-4795-b200-5010a778ea2f&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -591,7 +592,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.383&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;698c3424-20fd-45ad-ace5-a41b9bc4145d&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -606,7 +607,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.367&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.73&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;2f396179-bed3-422b-a7ea-305c86c1abb6&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -622,9 +623,9 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.383&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/TabeledeSistem/LimiteCO/Detail?LimitaCOId=[QueryString:LimitaCOId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/TabeledeSistem/LimiteCO/Detail?TSLimitaCOId=[QueryString:TSLimitaCOId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
@@ -638,7 +639,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.4&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;9a50caec-2d87-4795-b200-5010a778ea2f&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;
@@ -653,7 +654,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-16T11:27:19.4&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-10-21T13:54:14.747&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;2f396179-bed3-422b-a7ea-305c86c1abb6&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;594&lt;/ModuleId&gt;

@@ -1,0 +1,24 @@
+{
+  "id": 75,
+  "globalId": "d5b1e890-0994-458d-b605-9ed3fdd9438f",
+  "namespace": {
+    "id": 7,
+    "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+    "portalId": 0,
+    "name": "Helper",
+    "isSystem": false
+  },
+  "name": "ExcludeConfigForm",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "declare @URL nvarchar(MAX) = '[TknParams:URL]'\r\n\r\nSELECT IIF(@URL LIKE '%Configuration%', 'False', 'True')",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

@@ -24,13 +24,13 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Admins</rolename>
+            <rolename>All Users</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
+            <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Managers</rolename>
+            <rolename>Low-Code Engineer</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
@@ -42,9 +42,25 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
+            <rolename>Citizen Developers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
             <rolename>Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Users</rolename>
         </permission>
     </tabpermissions>
     <tabsettings />
-    <tabUrls />
+    <tabUrls>
+        <tabUrl SeqNum="1" Url="/Salarizare/Salarizare-v2" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="2" Url="/Salarizare-v2" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="3" Url="/Salarizare-v2" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+    </tabUrls>
 </tab>

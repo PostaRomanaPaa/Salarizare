@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.111.00">
+<module type="ActionForm" version="05.27.116.00">
     <contentKey />
     <moduleID>519</moduleID>
     <alignment />
@@ -31,7 +31,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.111.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.27.116.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[462]]&gt;&lt;/Id&gt;
@@ -52,8 +52,15 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCod Impozit:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:CodImpozit=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eDenumire Punct de Lucru:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:DenumirePunctdeLucru=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCod Judet:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:CodJudet=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCod Sucursala:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:CodSucursala=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCod Impozit:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:CodImpozit=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eDenumire Punct de Lucru:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:DenumirePunctdeLucru=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCod Judet:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:CodJudet=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
       &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;entity-details-container&quot;&gt;
+    &lt;div class=&quot;properties-container text&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;short_text&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Cod Sucursala:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:CodSucursala=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
     &lt;div class=&quot;properties-container text&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
             &lt;span class=&quot;material-icons&quot;&gt;short_text&lt;/span&gt;
@@ -68,9 +75,9 @@
         &lt;/div&gt;
         &lt;div class=&quot;entity-value&quot;&gt;[original:DenumirePunctdeLucru=&#39;-&#39;]&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;properties-container integer&quot;&gt;
+    &lt;div class=&quot;properties-container text&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
-            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;short_text&lt;/span&gt;
             &lt;span class=&quot;entity-property-name&quot;&gt;Cod Judet:&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class=&quot;entity-value&quot;&gt;[original:CodJudet=&#39;-&#39;]&lt;/div&gt;
@@ -99,7 +106,7 @@
     &lt;Title&gt;Details Form&lt;/Title&gt;
     &lt;CssName&gt;details-form&lt;/CssName&gt;
     &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.111&lt;/Build&gt;
+    &lt;Build&gt;5.27.116&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -116,7 +123,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;519&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.111&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.27.116&lt;/ModuleVersion&gt;
     &lt;TabId&gt;76&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -150,9 +157,9 @@
     &lt;RootClasses&gt;detail-form-root&lt;/RootClasses&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;2&lt;/RevisionNumber&gt;
-    &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2025-10-06T12:22:56.2336933+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionNumber&gt;7&lt;/RevisionNumber&gt;
+    &lt;RevisionLastChangedBy&gt;alexandra.vasilescu@ro.post&lt;/RevisionLastChangedBy&gt;
+    &lt;RevisionLastChangedDate&gt;2025-10-29T10:08:39.3979643+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -160,8 +167,8 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-06T12:22:56.287&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
+      &lt;LastModified&gt;2025-10-29T10:08:39.43&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;519&lt;/ModuleId&gt;
       &lt;EventName&gt;init&lt;/EventName&gt;
@@ -175,9 +182,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-06T12:22:56.297&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:CodImpozit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:DenumirePunctdeLucru&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodJudet&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;LastModified&gt;2025-10-29T10:08:39.443&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:CodImpozit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:DenumirePunctdeLucru&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodSucursala&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodJudet&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;519&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
@@ -189,9 +196,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.288ae9f7-8d1e-48e7-aef7-c9ac3837b388&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-06T12:22:56.297&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:PunctLucrusiImpozitPrimariiId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
+      &lt;LastModified&gt;2025-10-29T10:08:39.443&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:NomPunctLucrusiImpozitPrimariiId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;519&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadVariablesValues&quot;,&quot;EntityIdentifier&quot;:&quot;288ae9f7-8d1e-48e7-aef7-c9ac3837b388&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;

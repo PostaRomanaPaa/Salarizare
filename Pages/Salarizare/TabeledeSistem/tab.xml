@@ -7,7 +7,7 @@
     <disabled>false</disabled>
     <enddate>0001-01-01T00:00:00</enddate>
     <issecure>false</issecure>
-    <visible>true</visible>
+    <visible>false</visible>
     <issystem>false</issystem>
     <keywords />
     <pageheadtext />
@@ -34,5 +34,8 @@
         </permission>
     </tabpermissions>
     <tabsettings />
-    <tabUrls />
+    <tabUrls>
+        <tabUrl SeqNum="1" Url="/Salarizare/Tabele-de-Sistem" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="2" Url="/Salarizare/Tabele-de-Sistem" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+    </tabUrls>
 </tab>

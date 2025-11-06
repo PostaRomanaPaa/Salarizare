@@ -1,0 +1,23 @@
+{
+  "id": 109,
+  "globalId": "5592b31c-2285-4500-9c1b-580e0e32c447",
+  "namespace": {
+    "id": 7,
+    "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+    "name": "Helper",
+    "isSystem": false
+  },
+  "name": "CheckerURL",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "declare @URL nvarchar(255) = '[TknParams:URL]'\r\n\r\nSELECT \r\n  CASE \r\n    WHEN @URL LIKE '/Configuration%' THEN 'true'\r\n    ELSE 'false'\r\n  END",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

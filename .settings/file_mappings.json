@@ -63,6 +63,48 @@
       "ContentPath": "Pages/SesiunedeLucru/tab.xml"
     },
     {
+      "GlobalId": "2b110d9d-f76c-4305-a6a3-1683c0aaa50d",
+      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
+      "TabPath": "//Salarizare//CalculSalarii//Avans",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Avans/tab.xml"
+    },
+    {
+      "GlobalId": "b05c8426-edb3-4154-87e2-5d3a6a2c7c1f",
+      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
+      "TabPath": "//Salarizare//CalculSalarii//Prime",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Prime/tab.xml"
+    },
+    {
+      "GlobalId": "393cd5f1-2d94-4219-b1c3-b774e8b727f4",
+      "ParentPageGlobalId": "9b7517e1-244c-4e2d-9bb5-e68b12cf6905",
+      "TabPath": "//Salarizare//CalculSalarii//ConcediideOdihna//IntroducereImportConcediiOdihna",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/IntroducereImportConcediiOdihna/tab.xml"
+    },
+    {
+      "GlobalId": "e23c6e44-0d89-4501-8283-2b49fcde6e7f",
+      "ParentPageGlobalId": "9b7517e1-244c-4e2d-9bb5-e68b12cf6905",
+      "TabPath": "//Salarizare//CalculSalarii//ConcediideOdihna//StatedeplataavansConcediiOdihna",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/StatedeplataavansConcediiOdihna/tab.xml"
+    },
+    {
+      "GlobalId": "9b7517e1-244c-4e2d-9bb5-e68b12cf6905",
+      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
+      "TabPath": "//Salarizare//CalculSalarii//ConcediideOdihna",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/tab.xml"
+    },
+    {
+      "GlobalId": "af05624f-0396-42ce-9439-aa0c676090d7",
+      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
+      "TabPath": "//Salarizare//CalculSalarii//ConcediiMedicale",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediiMedicale/tab.xml"
+    },
+    {
+      "GlobalId": "a0967186-9279-491a-8f63-5ff279472be4",
+      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
+      "TabPath": "//Salarizare//CalculSalarii//BazaCalculIndemnizatiiAsigurariSociale",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/BazaCalculIndemnizatiiAsigurariSociale/tab.xml"
+    },
+    {
       "GlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
       "ParentPageGlobalId": "472569c4-dc40-4e62-8a6e-0540e607a15b",
       "TabPath": "//Salarizare//CalculSalarii",
@@ -117,18 +159,6 @@
       "ContentPath": "Pages/Salarizare/Nomenclatoare/Functii/tab.xml"
     },
     {
-      "GlobalId": "20808319-ec1b-4824-88c0-4428285d9f61",
-      "ParentPageGlobalId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
-      "TabPath": "//Salarizare//Nomenclatoare//CaseSanatate//Detail",
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Detail/tab.xml"
-    },
-    {
-      "GlobalId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
-      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
-      "TabPath": "//Salarizare//Nomenclatoare//CaseSanatate",
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/tab.xml"
-    },
-    {
       "GlobalId": "d9904fdd-b2be-4e84-ae90-7e2d74f884f3",
       "ParentPageGlobalId": "106c24b6-b706-466d-8b97-c6f161c064a8",
       "TabPath": "//Salarizare//Nomenclatoare//CertificateMedicale//Detail",
@@ -139,6 +169,18 @@
       "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
       "TabPath": "//Salarizare//Nomenclatoare//CertificateMedicale",
       "ContentPath": "Pages/Salarizare/Nomenclatoare/CertificateMedicale/tab.xml"
+    },
+    {
+      "GlobalId": "20808319-ec1b-4824-88c0-4428285d9f61",
+      "ParentPageGlobalId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "TabPath": "//Salarizare//Nomenclatoare//CaseSanatate//Detail",
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Salarizare//Nomenclatoare//CaseSanatate",
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/tab.xml"
     },
     {
       "GlobalId": "2655dad8-c063-4fc0-82e4-7d1a735606dd",
@@ -177,18 +219,6 @@
       "ContentPath": "Pages/Salarizare/Nomenclatoare/Organigrame/tab.xml"
     },
     {
-      "GlobalId": "6f8d82d6-ec8f-47e9-a777-9ecbf55d25c9",
-      "ParentPageGlobalId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
-      "TabPath": "//Salarizare//Nomenclatoare//Sucursale//Detail",
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Detail/tab.xml"
-    },
-    {
-      "GlobalId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
-      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
-      "TabPath": "//Salarizare//Nomenclatoare//Sucursale",
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/tab.xml"
-    },
-    {
       "GlobalId": "0756e02f-5a2f-4270-8efc-4df9e105e644",
       "ParentPageGlobalId": "51331d5b-519e-4833-8648-4d3c4ab76951",
       "TabPath": "//Salarizare//Nomenclatoare//PunctedeLucrusiImpozitePrimarii//Detail",
@@ -199,6 +229,18 @@
       "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
       "TabPath": "//Salarizare//Nomenclatoare//PunctedeLucrusiImpozitePrimarii",
       "ContentPath": "Pages/Salarizare/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/tab.xml"
+    },
+    {
+      "GlobalId": "6f8d82d6-ec8f-47e9-a777-9ecbf55d25c9",
+      "ParentPageGlobalId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "TabPath": "//Salarizare//Nomenclatoare//Sucursale//Detail",
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ParentPageGlobalId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "TabPath": "//Salarizare//Nomenclatoare//Sucursale",
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/tab.xml"
     },
     {
       "GlobalId": "3b9ed02d-2457-4db5-8e98-e79ed65a4902",
@@ -387,27 +429,27 @@
       "ContentPath": "Pages/Salarizare/ImportdatepersonaldelaHRlaSalarizare/tab.xml"
     },
     {
-      "GlobalId": "472569c4-dc40-4e62-8a6e-0540e607a15b",
-      "TabPath": "//Salarizare",
-      "ContentPath": "Pages/Salarizare/tab.xml"
-    },
-    {
       "GlobalId": "30eec84e-a659-4340-a60d-827b38c872be",
       "ParentPageGlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
-      "TabPath": "//SalarizareOld//CalculLichidare//Lichidari//Detail",
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Detail/tab.xml"
+      "TabPath": "//Salarizare//CalculLichidare//Lichidari//Detail",
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Detail/tab.xml"
     },
     {
       "GlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
       "ParentPageGlobalId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "TabPath": "//SalarizareOld//CalculLichidare//Lichidari",
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/tab.xml"
+      "TabPath": "//Salarizare//CalculLichidare//Lichidari",
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/tab.xml"
     },
     {
       "GlobalId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ParentPageGlobalId": "515879ab-01cc-4fb7-bbf3-8580a100ba53",
-      "TabPath": "//SalarizareOld//CalculLichidare",
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/tab.xml"
+      "ParentPageGlobalId": "472569c4-dc40-4e62-8a6e-0540e607a15b",
+      "TabPath": "//Salarizare//CalculLichidare",
+      "ContentPath": "Pages/Salarizare/CalculLichidare/tab.xml"
+    },
+    {
+      "GlobalId": "472569c4-dc40-4e62-8a6e-0540e607a15b",
+      "TabPath": "//Salarizare",
+      "ContentPath": "Pages/Salarizare/tab.xml"
     },
     {
       "GlobalId": "f503d919-41b6-45cd-bcfa-676e323db2fb",
@@ -441,6 +483,39 @@
       "GlobalId": "a285fa91-2862-4cc5-b701-5130874bb2fc",
       "TabPath": "//TSPrestatii",
       "ContentPath": "Pages/TSPrestatii/tab.xml"
+    },
+    {
+      "GlobalId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ParentPageGlobalId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "TabPath": "//CasieriPlatitori//Detail",
+      "ContentPath": "Pages/CasieriPlatitori/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "TabPath": "//CasieriPlatitori",
+      "ContentPath": "Pages/CasieriPlatitori/tab.xml"
+    },
+    {
+      "GlobalId": "2e1ef4ac-2928-4f9d-9305-b636d69ae568",
+      "ParentPageGlobalId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "TabPath": "//Salariati//Detail",
+      "ContentPath": "Pages/Salariati/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "TabPath": "//Salariati",
+      "ContentPath": "Pages/Salariati/tab.xml"
+    },
+    {
+      "GlobalId": "16716e7e-1b31-4a9f-bb90-82a261ce883c",
+      "ParentPageGlobalId": "3b6c044b-1895-4a85-be20-f5c196044e7b",
+      "TabPath": "//ConcediideOdihna//Detail",
+      "ContentPath": "Pages/ConcediideOdihna/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "3b6c044b-1895-4a85-be20-f5c196044e7b",
+      "TabPath": "//ConcediideOdihna",
+      "ContentPath": "Pages/ConcediideOdihna/tab.xml"
     }
   ],
   "Modules": [
@@ -690,20 +765,20 @@
     {
       "GlobalId": "3ab9777c-9415-4d77-b0ee-2f2bc5d7d660",
       "ParentPageId": "e527b56e-2cf7-4509-86b2-f2efefcf6c92",
-      "ModuleTitle": "avt.Action Form",
+      "ModuleTitle": "SesiuneCurenta Form",
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
       "Order": 3,
-      "ContentPath": "Pages/SesiunedeLucru/Untitled avt.Action Form 3 in ContentPane.xml"
+      "ContentPath": "Pages/SesiunedeLucru/SesiuneCurenta Form.xml"
     },
     {
-      "GlobalId": "2cd28a52-8bb8-475c-8a0b-4501d040c8af",
+      "GlobalId": "cc30a77b-65a6-425a-a958-dc84534e04b4",
       "ParentPageId": "e527b56e-2cf7-4509-86b2-f2efefcf6c92",
-      "ModuleTitle": "Text/HTML",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "MBP_1",
+      "ModuleTitle": "avt.ActionGrid",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "HeaderPane",
       "Order": 1,
-      "ContentPath": "Pages/SesiunedeLucru/Untitled Text/HTML 1 in MBP_1.xml"
+      "ContentPath": "Pages/SesiunedeLucru/Untitled avt.ActionGrid 1 in HeaderPane.xml"
     },
     {
       "GlobalId": "a5aa9832-e934-4d7b-b85f-4f42102206a1",
@@ -711,8 +786,17 @@
       "ModuleTitle": "SessionForm",
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
-      "Order": 3,
+      "Order": 1,
       "ContentPath": "Pages/SesiunedeLucru/SessionForm.xml"
+    },
+    {
+      "GlobalId": "2cd28a52-8bb8-475c-8a0b-4501d040c8af",
+      "ParentPageId": "e527b56e-2cf7-4509-86b2-f2efefcf6c92",
+      "ModuleTitle": "Text/HTML",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/SesiunedeLucru/Untitled Text/HTML 3 in MBP_1.xml"
     },
     {
       "GlobalId": "8306d0b9-883a-4fa2-8cd0-7b7bf3c1e7ca",
@@ -735,11 +819,20 @@
     {
       "GlobalId": "743bd34d-1e35-439c-a2f0-03ff9b244c22",
       "ParentPageId": "472569c4-dc40-4e62-8a6e-0540e607a15b",
-      "ModuleTitle": "avt.Action Form",
+      "ModuleTitle": "Salarizare Form",
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
       "Order": 3,
-      "ContentPath": "Pages/Salarizare/Untitled avt.Action Form 3 in ContentPane.xml"
+      "ContentPath": "Pages/Salarizare/Salarizare Form.xml"
+    },
+    {
+      "GlobalId": "cfd8ccdd-8205-4308-89cf-9a00d67de554",
+      "ParentPageId": "472569c4-dc40-4e62-8a6e-0540e607a15b",
+      "ModuleTitle": "Session Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/Session Form.xml"
     },
     {
       "GlobalId": "ee603774-1ba2-4c50-9a05-a2ce85bece02",
@@ -747,8 +840,8 @@
       "ModuleTitle": "Text/HTML",
       "FriendlyName": "Text/HTML",
       "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/Untitled Text/HTML 1 in MBP_1.xml"
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/Untitled Text/HTML 3 in MBP_1.xml"
     },
     {
       "GlobalId": "ce17ff4e-7102-41ef-9a61-26dd97aa6213",
@@ -756,7 +849,7 @@
       "ModuleTitle": "SessionForm",
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
-      "Order": 3,
+      "Order": 5,
       "ContentPath": "Pages/Salarizare/SessionForm.xml"
     },
     {
@@ -1066,6 +1159,114 @@
       "ContentPath": "Pages/TSPrestatii/SessionForm.xml"
     },
     {
+      "GlobalId": "6db173db-374e-4cfd-a02c-4a56c9e41f30",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/CasieriPlatitori/Header.xml"
+    },
+    {
+      "GlobalId": "910036e5-5f87-424f-bfd5-07d72bd87be4",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "Casieri Platitori Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/CasieriPlatitori/Casieri Platitori Listing.xml"
+    },
+    {
+      "GlobalId": "c9aa6c9f-6366-438a-ac5d-a7f8435daca1",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "Casier Platitor Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/CasieriPlatitori/Casier Platitor Form.xml"
+    },
+    {
+      "GlobalId": "3c5c0eec-5cc7-40d6-ae52-c7db449d420d",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/CasieriPlatitori/SessionForm.xml"
+    },
+    {
+      "GlobalId": "b528072e-90fe-4d86-be1e-fd3ca0c496f0",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/Header.xml"
+    },
+    {
+      "GlobalId": "4a2402cd-21ff-4225-823d-60a8b8c4137d",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "Salariati Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salariati/Salariati Listing.xml"
+    },
+    {
+      "GlobalId": "4c5daf25-b703-47a2-b18e-a91a28d43e78",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "Salariat Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salariati/Salariat Form.xml"
+    },
+    {
+      "GlobalId": "5946b0fe-c54b-4a2b-a8de-6b4be887b0e8",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/SessionForm.xml"
+    },
+    {
+      "GlobalId": "39b9b0b7-503b-474f-bccd-939345afc620",
+      "ParentPageId": "3b6c044b-1895-4a85-be20-f5c196044e7b",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/ConcediideOdihna/Header.xml"
+    },
+    {
+      "GlobalId": "3b2f1caa-0a11-4181-8dbb-5cf96c4927f9",
+      "ParentPageId": "3b6c044b-1895-4a85-be20-f5c196044e7b",
+      "ModuleTitle": "Concedii de Odihna Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/ConcediideOdihna/Concedii de Odihna Listing.xml"
+    },
+    {
+      "GlobalId": "0275fc89-4681-4c7d-ab5e-c78268e070f5",
+      "ParentPageId": "3b6c044b-1895-4a85-be20-f5c196044e7b",
+      "ModuleTitle": "Concediu de Odihna Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/ConcediideOdihna/Concediu de Odihna Form.xml"
+    },
+    {
+      "GlobalId": "24067201-0dea-4dbc-8e1f-c4ce75487f35",
+      "ParentPageId": "3b6c044b-1895-4a85-be20-f5c196044e7b",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/ConcediideOdihna/SessionForm.xml"
+    },
+    {
       "GlobalId": "b970fc97-228a-4b03-8cf2-8de314bf45e4",
       "ParentPageId": "b427d0cb-8bac-4f18-94cf-ad41892aba89",
       "ModuleTitle": "Header Form",
@@ -1136,33 +1337,6 @@
       "PaneName": "ContentPane",
       "Order": 1,
       "ContentPath": "Pages/SesiunedeLucru/PreluarePersonal/Enter Title.xml"
-    },
-    {
-      "GlobalId": "d9860c58-5706-4480-908c-10710cf846d4",
-      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ModuleTitle": "Enter Title",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Enter Title.xml"
-    },
-    {
-      "GlobalId": "65815bfe-7dab-4a57-9850-b072f0d8ede5",
-      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ModuleTitle": "Text/HTML",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Untitled Text/HTML 1 in MBP_1.xml"
-    },
-    {
-      "GlobalId": "0e4c1a13-6d9c-405f-bf39-2f0411fca100",
-      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 3,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/SessionForm.xml"
     },
     {
       "GlobalId": "2ed628f5-87e7-40dd-81e5-0de3ffaaa398",
@@ -1242,8 +1416,26 @@
       "ModuleTitle": "SessionForm",
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
-      "Order": 3,
+      "Order": 1,
       "ContentPath": "Pages/Salarizare/CalculSalarii/SessionForm.xml"
+    },
+    {
+      "GlobalId": "4719291b-fef7-456e-88e9-6b1ebd82952f",
+      "ParentPageId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
+      "ModuleTitle": "Calcul Salarii Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P3_33_2",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Calcul Salarii Form.xml"
+    },
+    {
+      "GlobalId": "f7dfca24-c509-4fb3-a83f-1509f585332f",
+      "ParentPageId": "6d20aa4c-078f-43a1-83d9-3708cb032c40",
+      "ModuleTitle": "Nomenclatoare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Nomenclatoare Form.xml"
     },
     {
       "GlobalId": "06301d14-f804-43c6-8fc0-66367ec08aa5",
@@ -1251,8 +1443,8 @@
       "ModuleTitle": "avt.TabsPro",
       "FriendlyName": "avt.TabsPro",
       "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Untitled avt.TabsPro 1 in ContentPane.xml"
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Untitled avt.TabsPro 3 in ContentPane.xml"
     },
     {
       "GlobalId": "8aa4a408-ae08-4986-8f17-45f3a52fc1cb",
@@ -1260,7 +1452,7 @@
       "ModuleTitle": "Grila Form",
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
-      "Order": 3,
+      "Order": 5,
       "ContentPath": "Pages/Salarizare/Nomenclatoare/Grila Form.xml"
     },
     {
@@ -1269,8 +1461,8 @@
       "ModuleTitle": "avt.Action Form",
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
-      "Order": 5,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Untitled avt.Action Form 5 in ContentPane.xml"
+      "Order": 7,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Untitled avt.Action Form 7 in ContentPane.xml"
     },
     {
       "GlobalId": "21bba6b2-65be-43c1-83be-ceef36429cb4",
@@ -1278,7 +1470,7 @@
       "ModuleTitle": "Enter Title",
       "FriendlyName": "Text/HTML",
       "PaneName": "ContentPane",
-      "Order": 7,
+      "Order": 9,
       "ContentPath": "Pages/Salarizare/Nomenclatoare/Enter Title.xml"
     },
     {
@@ -1307,6 +1499,15 @@
       "PaneName": "ContentPane",
       "Order": 1,
       "ContentPath": "Pages/Salarizare/TabeledeSistem/Enter Title.xml"
+    },
+    {
+      "GlobalId": "3fefa349-5411-4e60-949f-bb9efac361f6",
+      "ParentPageId": "b177d78c-c851-461e-9c83-7f0b07f7a405",
+      "ModuleTitle": "TS Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/TabeledeSistem/TS Form.xml"
     },
     {
       "GlobalId": "dea6e8ff-7508-439c-98d4-9f60195ef78b",
@@ -1352,6 +1553,168 @@
       "PaneName": "MBP_1",
       "Order": 3,
       "ContentPath": "Pages/Salarizare/ImportdatepersonaldelaHRlaSalarizare/SessionForm.xml"
+    },
+    {
+      "GlobalId": "d9860c58-5706-4480-908c-10710cf846d4",
+      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Enter Title.xml"
+    },
+    {
+      "GlobalId": "65815bfe-7dab-4a57-9850-b072f0d8ede5",
+      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ModuleTitle": "Text/HTML",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Untitled Text/HTML 1 in MBP_1.xml"
+    },
+    {
+      "GlobalId": "0e4c1a13-6d9c-405f-bf39-2f0411fca100",
+      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculLichidare/SessionForm.xml"
+    },
+    {
+      "GlobalId": "1a5108f1-dc01-4828-a131-12fb953802b5",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/CasieriPlatitori/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "9493d8a9-7cf7-47bf-be6e-905ef8083618",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/CasieriPlatitori/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "de88f162-2202-4a0b-992d-28ca7dcb091a",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Casier Platitor Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/CasieriPlatitori/Detail/Casier Platitor Form.xml"
+    },
+    {
+      "GlobalId": "9e97c221-54b0-4a91-b8f7-f4b43c833157",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/CasieriPlatitori/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "6dd1fc68-e9c2-4d7f-a6e8-7c36173e8f31",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/CasieriPlatitori/Detail/SessionForm.xml"
+    },
+    {
+      "GlobalId": "e5ab72df-be1c-4b8f-b793-3fb065dbcb76",
+      "ParentPageId": "2e1ef4ac-2928-4f9d-9305-b636d69ae568",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "4ccfad59-a818-46f4-9f3f-bb71cf56fc45",
+      "ParentPageId": "2e1ef4ac-2928-4f9d-9305-b636d69ae568",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salariati/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "ed939cec-d500-4e1a-838f-c940725103aa",
+      "ParentPageId": "2e1ef4ac-2928-4f9d-9305-b636d69ae568",
+      "ModuleTitle": "Salariat Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salariati/Detail/Salariat Form.xml"
+    },
+    {
+      "GlobalId": "570be4ae-f32c-4219-8b1a-2e4f5811e415",
+      "ParentPageId": "2e1ef4ac-2928-4f9d-9305-b636d69ae568",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Salariati/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "44c1fa56-f6e6-4045-a694-781255e2f953",
+      "ParentPageId": "2e1ef4ac-2928-4f9d-9305-b636d69ae568",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/Detail/SessionForm.xml"
+    },
+    {
+      "GlobalId": "d88f043a-a35c-4a14-b0c0-1444137763a5",
+      "ParentPageId": "16716e7e-1b31-4a9f-bb90-82a261ce883c",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/ConcediideOdihna/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "32e32b05-1876-447c-8951-d53e05f95476",
+      "ParentPageId": "16716e7e-1b31-4a9f-bb90-82a261ce883c",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/ConcediideOdihna/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "2e804cd6-e51d-4449-ba92-423b78e19f04",
+      "ParentPageId": "16716e7e-1b31-4a9f-bb90-82a261ce883c",
+      "ModuleTitle": "Concediu de Odihna Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/ConcediideOdihna/Detail/Concediu de Odihna Form.xml"
+    },
+    {
+      "GlobalId": "24484051-1f16-4bdc-a2d3-256445a24188",
+      "ParentPageId": "16716e7e-1b31-4a9f-bb90-82a261ce883c",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/ConcediideOdihna/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "313ce1fa-8ff9-4fd9-87a7-2f4198fb6b4c",
+      "ParentPageId": "16716e7e-1b31-4a9f-bb90-82a261ce883c",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/ConcediideOdihna/Detail/SessionForm.xml"
     },
     {
       "GlobalId": "f032bf01-048a-4bf9-8f98-e83ac2769431",
@@ -1489,51 +1852,6 @@
       "ContentPath": "Pages/Salarizare/Nomenclatoare/Functii/SessionForm.xml"
     },
     {
-      "GlobalId": "c9caa806-3857-4fa2-889f-ae916951e7ff",
-      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
-      "ModuleTitle": "Header",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Header.xml"
-    },
-    {
-      "GlobalId": "04fab77f-8d42-4ee5-ade5-538fa11b331b",
-      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
-      "ModuleTitle": "Case Sanatate Listing",
-      "FriendlyName": "avt.ActionGrid",
-      "PaneName": "ContentPane",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Case Sanatate Listing.xml"
-    },
-    {
-      "GlobalId": "6c9edfb5-cc76-46f7-bbdf-8ccb3fc2792d",
-      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
-      "ModuleTitle": "Nom Casa Sanatate Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 5,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Nom Casa Sanatate Form.xml"
-    },
-    {
-      "GlobalId": "00f3e437-37e3-4bc4-83a8-dd2318e9297d",
-      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
-      "ModuleTitle": "Text/HTML",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Untitled Text/HTML 1 in MBP_1.xml"
-    },
-    {
-      "GlobalId": "2603be64-c3ea-4f84-a42a-760d76d3f30c",
-      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/SessionForm.xml"
-    },
-    {
       "GlobalId": "fd9cc07e-016a-4a85-8085-b0b4a44dcd42",
       "ParentPageId": "106c24b6-b706-466d-8b97-c6f161c064a8",
       "ModuleTitle": "Header",
@@ -1577,6 +1895,51 @@
       "PaneName": "MBP_1",
       "Order": 3,
       "ContentPath": "Pages/Salarizare/Nomenclatoare/CertificateMedicale/SessionForm.xml"
+    },
+    {
+      "GlobalId": "c9caa806-3857-4fa2-889f-ae916951e7ff",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Header.xml"
+    },
+    {
+      "GlobalId": "04fab77f-8d42-4ee5-ade5-538fa11b331b",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "Case Sanatate Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Case Sanatate Listing.xml"
+    },
+    {
+      "GlobalId": "6c9edfb5-cc76-46f7-bbdf-8ccb3fc2792d",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "Nom Casa Sanatate Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Nom Casa Sanatate Form.xml"
+    },
+    {
+      "GlobalId": "00f3e437-37e3-4bc4-83a8-dd2318e9297d",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "Text/HTML",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/Untitled Text/HTML 1 in MBP_1.xml"
+    },
+    {
+      "GlobalId": "2603be64-c3ea-4f84-a42a-760d76d3f30c",
+      "ParentPageId": "7e3837be-c068-49e9-ab92-53a10f7daf98",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/CaseSanatate/SessionForm.xml"
     },
     {
       "GlobalId": "5b15fe4a-026d-4c23-8c7e-f1b21cc547d1",
@@ -1714,51 +2077,6 @@
       "ContentPath": "Pages/Salarizare/Nomenclatoare/Organigrame/SessionForm.xml"
     },
     {
-      "GlobalId": "fb3f0f94-dd26-47e2-afdf-7f550b80a15a",
-      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
-      "ModuleTitle": "Header",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Header.xml"
-    },
-    {
-      "GlobalId": "6b527571-4bae-408c-aa01-259d2e45df58",
-      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
-      "ModuleTitle": "Sucursale Listing",
-      "FriendlyName": "avt.ActionGrid",
-      "PaneName": "ContentPane",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Sucursale Listing.xml"
-    },
-    {
-      "GlobalId": "c0fe0ecf-e8f4-4db4-a1d4-c70661117d39",
-      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
-      "ModuleTitle": "Sucursala Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 5,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Sucursala Form.xml"
-    },
-    {
-      "GlobalId": "b2d7746e-cf2e-4b30-83d9-98e1cf109c2b",
-      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
-      "ModuleTitle": "Text/HTML",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Untitled Text/HTML 1 in MBP_1.xml"
-    },
-    {
-      "GlobalId": "d76a660d-68e1-4f17-862b-42f26ba919d3",
-      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/SessionForm.xml"
-    },
-    {
       "GlobalId": "4f92ec68-4c2c-4dff-bf9a-0a336ebd33e2",
       "ParentPageId": "51331d5b-519e-4833-8648-4d3c4ab76951",
       "ModuleTitle": "Header",
@@ -1802,6 +2120,51 @@
       "PaneName": "MBP_1",
       "Order": 3,
       "ContentPath": "Pages/Salarizare/Nomenclatoare/PunctedeLucrusiImpozitePrimarii/SessionForm.xml"
+    },
+    {
+      "GlobalId": "fb3f0f94-dd26-47e2-afdf-7f550b80a15a",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Header.xml"
+    },
+    {
+      "GlobalId": "6b527571-4bae-408c-aa01-259d2e45df58",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "Sucursale Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Sucursale Listing.xml"
+    },
+    {
+      "GlobalId": "c0fe0ecf-e8f4-4db4-a1d4-c70661117d39",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "Sucursala Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Sucursala Form.xml"
+    },
+    {
+      "GlobalId": "b2d7746e-cf2e-4b30-83d9-98e1cf109c2b",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "Text/HTML",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/Untitled Text/HTML 1 in MBP_1.xml"
+    },
+    {
+      "GlobalId": "d76a660d-68e1-4f17-862b-42f26ba919d3",
+      "ParentPageId": "6d113f77-cfad-4735-b8d2-7266a164e17e",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/Nomenclatoare/Sucursale/SessionForm.xml"
     },
     {
       "GlobalId": "e9b028cd-627b-49c7-96f9-bb50504118c4",
@@ -1900,7 +2263,7 @@
       "FriendlyName": "Text/HTML",
       "PaneName": "ContentPane",
       "Order": 1,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Header.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Header.xml"
     },
     {
       "GlobalId": "faf24d69-49bb-41a6-9949-5a1d5cfdaa7a",
@@ -1909,7 +2272,7 @@
       "FriendlyName": "avt.ActionGrid",
       "PaneName": "ContentPane",
       "Order": 3,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Lichidari Listing.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Lichidari Listing.xml"
     },
     {
       "GlobalId": "af4b12a2-c56c-4a29-a1e5-3d963fd91e80",
@@ -1918,7 +2281,7 @@
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
       "Order": 5,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Lichidare Form.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Lichidare Form.xml"
     },
     {
       "GlobalId": "0fe2a5f3-ce05-4408-9a9c-7fe5f97110b6",
@@ -1927,7 +2290,7 @@
       "FriendlyName": "Text/HTML",
       "PaneName": "MBP_1",
       "Order": 1,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Untitled Text/HTML 1 in MBP_1.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Untitled Text/HTML 1 in MBP_1.xml"
     },
     {
       "GlobalId": "22dedfc1-6a50-4d74-a214-1d2b8dfa90e5",
@@ -1936,7 +2299,7 @@
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
       "Order": 3,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/SessionForm.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/SessionForm.xml"
     },
     {
       "GlobalId": "a9dccd6c-67cb-46e0-a6a6-d0a8a3d8fb0a",
@@ -2479,6 +2842,105 @@
       "ContentPath": "Pages/Salarizare/TabeledeSistem/ZileLibere/SessionForm.xml"
     },
     {
+      "GlobalId": "7946fd31-97a2-40b3-8bf7-3158e00d9b10",
+      "ParentPageId": "2b110d9d-f76c-4305-a6a3-1683c0aaa50d",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Avans/Enter Title.xml"
+    },
+    {
+      "GlobalId": "a7bb1d99-0ae2-4bb0-b524-1f51029ed632",
+      "ParentPageId": "2b110d9d-f76c-4305-a6a3-1683c0aaa50d",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Avans/SessionForm.xml"
+    },
+    {
+      "GlobalId": "48f5f2ab-5201-4467-823b-4fc265935906",
+      "ParentPageId": "b05c8426-edb3-4154-87e2-5d3a6a2c7c1f",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Prime/Enter Title.xml"
+    },
+    {
+      "GlobalId": "6431c64c-32b0-48f5-8e9d-9c33acc923fe",
+      "ParentPageId": "b05c8426-edb3-4154-87e2-5d3a6a2c7c1f",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Prime/SessionForm.xml"
+    },
+    {
+      "GlobalId": "b49d5da7-992b-4aa3-aa45-906b6e8ca303",
+      "ParentPageId": "9b7517e1-244c-4e2d-9bb5-e68b12cf6905",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/Enter Title.xml"
+    },
+    {
+      "GlobalId": "2d1768c1-a1a2-4036-bd3a-75763e22ee4e",
+      "ParentPageId": "9b7517e1-244c-4e2d-9bb5-e68b12cf6905",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/SessionForm.xml"
+    },
+    {
+      "GlobalId": "4254cfc9-c7bc-4b8a-bc40-12aba9ee74eb",
+      "ParentPageId": "9b7517e1-244c-4e2d-9bb5-e68b12cf6905",
+      "ModuleTitle": "Pagina Concedii Odihna Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P3_33_2",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/Pagina Concedii Odihna Form.xml"
+    },
+    {
+      "GlobalId": "b7470d4c-d4d4-4991-8d30-ef66a60c8c1a",
+      "ParentPageId": "af05624f-0396-42ce-9439-aa0c676090d7",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediiMedicale/Enter Title.xml"
+    },
+    {
+      "GlobalId": "195b0111-f024-4f1d-8e43-a31bf761e5f8",
+      "ParentPageId": "af05624f-0396-42ce-9439-aa0c676090d7",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediiMedicale/SessionForm.xml"
+    },
+    {
+      "GlobalId": "b4fe277b-8ba1-454a-9500-6e28f7edab2f",
+      "ParentPageId": "a0967186-9279-491a-8f63-5ff279472be4",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/BazaCalculIndemnizatiiAsigurariSociale/Enter Title.xml"
+    },
+    {
+      "GlobalId": "aec2a4e0-f149-4427-926a-f8dc6cd023df",
+      "ParentPageId": "a0967186-9279-491a-8f63-5ff279472be4",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/BazaCalculIndemnizatiiAsigurariSociale/SessionForm.xml"
+    },
+    {
       "GlobalId": "e6813979-4660-4023-9960-96b53143e19f",
       "ParentPageId": "2655dad8-c063-4fc0-82e4-7d1a735606dd",
       "ModuleTitle": "Header Form",
@@ -2971,7 +3433,7 @@
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
       "Order": 1,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Detail/Header Form.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Detail/Header Form.xml"
     },
     {
       "GlobalId": "bb0840e0-60c0-4dc2-9239-d5607b8d77c0",
@@ -2980,7 +3442,7 @@
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
       "Order": 3,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Detail/Details Form.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Detail/Details Form.xml"
     },
     {
       "GlobalId": "3de8143a-5764-43ea-92a2-78c1b19ffbf1",
@@ -2989,7 +3451,7 @@
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
       "Order": 5,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Detail/Lichidare Form.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Detail/Lichidare Form.xml"
     },
     {
       "GlobalId": "d0069d9d-8e9e-427e-b049-bee4a6d88973",
@@ -2998,7 +3460,7 @@
       "FriendlyName": "avt.TabsPro",
       "PaneName": "ContentPane",
       "Order": 7,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Detail/Tabs.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Detail/Tabs.xml"
     },
     {
       "GlobalId": "2e35118f-349c-48f9-95cd-6118cea2d931",
@@ -3007,7 +3469,7 @@
       "FriendlyName": "Text/HTML",
       "PaneName": "MBP_1",
       "Order": 1,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Detail/Untitled Text/HTML 1 in MBP_1.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Detail/Untitled Text/HTML 1 in MBP_1.xml"
     },
     {
       "GlobalId": "a9454f52-d8d8-4948-942f-98d70b364aa3",
@@ -3016,7 +3478,7 @@
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
       "Order": 3,
-      "ContentPath": "Pages/SalarizareOld/CalculLichidare/Lichidari/Detail/SessionForm.xml"
+      "ContentPath": "Pages/Salarizare/CalculLichidare/Lichidari/Detail/SessionForm.xml"
     },
     {
       "GlobalId": "6096560d-3237-42c1-b13a-db0008b08efc",
@@ -3874,6 +4336,51 @@
       "ContentPath": "Pages/Salarizare/Nomenclatoare/AlteDrepturi/Detail/SessionForm.xml"
     },
     {
+      "GlobalId": "97758cf5-d498-4e69-bfda-cedc673bbe68",
+      "ParentPageId": "393cd5f1-2d94-4219-b1c3-b774e8b727f4",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/IntroducereImportConcediiOdihna/Enter Title.xml"
+    },
+    {
+      "GlobalId": "e575f561-2f1b-4243-b53b-c956d327146b",
+      "ParentPageId": "393cd5f1-2d94-4219-b1c3-b774e8b727f4",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/IntroducereImportConcediiOdihna/SessionForm.xml"
+    },
+    {
+      "GlobalId": "05cb23f3-e653-4ac7-87fc-89126d6eb18f",
+      "ParentPageId": "393cd5f1-2d94-4219-b1c3-b774e8b727f4",
+      "ModuleTitle": "Concedii Odihna Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P3_33_2",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/IntroducereImportConcediiOdihna/Concedii Odihna Form.xml"
+    },
+    {
+      "GlobalId": "24b69297-0335-4bf0-96a5-3b3684640308",
+      "ParentPageId": "e23c6e44-0d89-4501-8283-2b49fcde6e7f",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/StatedeplataavansConcediiOdihna/Enter Title.xml"
+    },
+    {
+      "GlobalId": "d2cb89b9-7a98-4328-9842-4f9a2b7f4894",
+      "ParentPageId": "e23c6e44-0d89-4501-8283-2b49fcde6e7f",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/ConcediideOdihna/StatedeplataavansConcediiOdihna/SessionForm.xml"
+    },
+    {
       "GlobalId": "8c053293-68e2-4ac8-a4a3-80a73355b6b7",
       "ParentPageId": "5e5c0f42-fe27-44ce-a3cd-48744862d518",
       "ModuleTitle": "Header Form",
@@ -4122,6 +4629,31 @@
       "DefinitionPath": "Tokens/Helper/ExcludeConfigForm.json"
     },
     {
+      "GlobalId": "b9774e63-6bbd-4fec-ac94-f163af2ef991",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/CheckPageURL.json"
+    },
+    {
+      "GlobalId": "b0197cb1-849c-4310-b31f-f7a2bc5109bb",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/CheckPageURL.json"
+    },
+    {
+      "GlobalId": "fe8e717c-479a-4de6-b0a1-32b906768600",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/CheckPageURL.json"
+    },
+    {
+      "GlobalId": "a6f50456-cfbd-48d0-b4d0-a1dba36669b7",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/CheckPageURL.json"
+    },
+    {
+      "GlobalId": "5592b31c-2285-4500-9c1b-580e0e32c447",
+      "NamespaceGlobalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+      "DefinitionPath": "Tokens/Helper/CheckerURL.json"
+    },
+    {
       "GlobalId": "eeda43ec-4078-484f-be81-61f7b1bae8bf",
       "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
       "DefinitionPath": "Tokens/Initializari/An_IN.json"
@@ -4135,6 +4667,11 @@
       "GlobalId": "23df36ad-7f66-4e8e-a9c5-45887ab513e8",
       "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
       "DefinitionPath": "Tokens/Initializari/Sucursala_IN.json"
+    },
+    {
+      "GlobalId": "59242fa6-f59c-4372-b073-cdd9c01c4495",
+      "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+      "DefinitionPath": "Tokens/Initializari/ZileLucratoare.json"
     }
   ],
   "Namespaces": [
@@ -4312,6 +4849,21 @@
       "GlobalId": "43caf942-c3c1-47eb-a880-43e8dfb11fb0",
       "NamespaceGlobalId": "87022bc8-faa9-4467-b7fb-22b3c7b3cda8",
       "ContentPath": "Entities/Tabele Sistem/TS Prestatie.json"
+    },
+    {
+      "GlobalId": "39f8abbd-ff0e-43bb-82df-c5feaf64be08",
+      "NamespaceGlobalId": "efd3860d-7404-4c44-8e03-30f0fb47903b",
+      "ContentPath": "Entities/Nomenclatoare/Casier Platitor.json"
+    },
+    {
+      "GlobalId": "a6448019-69d9-4c28-a69d-eb67587cd8fd",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Salariat.json"
+    },
+    {
+      "GlobalId": "002c4fe7-0cf1-4bb3-a43b-f51d47f6411c",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/Concediu de Odihna.json"
     }
   ],
   "ApiMethods": [],
@@ -4370,12 +4922,6 @@
       "DiagramPath": "Workflows/Default/Import Alte Drepturi/diagram.xml"
     },
     {
-      "GlobalId": "ef26cf67-5294-48b9-b1f3-66b050ee77aa",
-      "NamespaceGlobalId": "160ba766-6834-4fcc-801a-c578127fe522",
-      "DefinitionPath": "Workflows/System/Get App Builder Updates/workflow.json",
-      "DiagramPath": "Workflows/System/Get App Builder Updates/diagram.xml"
-    },
-    {
       "GlobalId": "427093c8-8181-40d9-bf28-4d1e8372a8d7",
       "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
       "DefinitionPath": "Workflows/Default/Import Functii/workflow.json",
@@ -4404,6 +4950,24 @@
       "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
       "DefinitionPath": "Workflows/Default/Import Prestatii/workflow.json",
       "DiagramPath": "Workflows/Default/Import Prestatii/diagram.xml"
+    },
+    {
+      "GlobalId": "3966e163-80f3-4b7e-a615-fad15110bbad",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "DefinitionPath": "Workflows/Default/Import Casieri Platitori/workflow.json",
+      "DiagramPath": "Workflows/Default/Import Casieri Platitori/diagram.xml"
+    },
+    {
+      "GlobalId": "ef26cf67-5294-48b9-b1f3-66b050ee77aa",
+      "NamespaceGlobalId": "160ba766-6834-4fcc-801a-c578127fe522",
+      "DefinitionPath": "Workflows/System/Get App Builder Updates/workflow.json",
+      "DiagramPath": "Workflows/System/Get App Builder Updates/diagram.xml"
+    },
+    {
+      "GlobalId": "fdc926d5-fa83-4f1c-a6e1-1c268a0bed57",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "DefinitionPath": "Workflows/Default/Import Personal/workflow.json",
+      "DiagramPath": "Workflows/Default/Import Personal/diagram.xml"
     }
   ]
 }

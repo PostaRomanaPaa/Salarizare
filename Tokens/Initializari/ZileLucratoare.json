@@ -1,0 +1,23 @@
+{
+  "id": 103,
+  "globalId": "59242fa6-f59c-4372-b073-cdd9c01c4495",
+  "namespace": {
+    "id": 9,
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "ZileLucratoare",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "UserSession",
+  "src": {
+    "sql": "DECLARE @Anul INT = select distinct an from app.Salariat;\r\nDECLARE @Luna INT = select distinct luna from app.Salariat;\r\n\r\n;WITH Zile AS (\r\n    SELECT DATEFROMPARTS(@Anul, @Luna, 1) AS Data\r\n    UNION ALL\r\n    SELECT DATEADD(DAY, 1, Data)\r\n    FROM Zile\r\n    WHERE MONTH(DATEADD(DAY, 1, Data)) = @Luna\r\n)\r\nSELECT COUNT(*) AS ZileLucratoare\r\nFROM Zile\r\nWHERE DATENAME(WEEKDAY, Data) NOT IN ('Saturday', 'Sunday');",
+    "defaultColumn": "",
+    "columns": "ZileLucratoare",
+    "connectionString": "",
+    "type": "db"
+  }
+}

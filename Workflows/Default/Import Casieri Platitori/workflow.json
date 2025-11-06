@@ -1,0 +1,370 @@
+{
+  "InputFields": [
+    {
+      "Id": 12,
+      "Name": "FilePath",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 15,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "OutputFields": [],
+  "Id": 15,
+  "GlobalId": "3966e163-80f3-4b7e-a615-fad15110bbad",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "3966e163-80f3-4b7e-a615-fad15110bbad",
+  "EnvironmentId": 1,
+  "Name": "Import Casieri Platitori",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 198,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 160,
+        "Description": "Create List from Excel (.xlsx)",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1216,
+            "Name": "FilePath",
+            "Value": "[FilePath]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1217,
+            "Name": "EntityName",
+            "Value": "ListaCasieriP",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1218,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1219,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1220,
+            "Name": "SheetName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1221,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1222,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1223,
+            "Name": "OnError",
+            "Value": {
+              "Id": 199,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1224,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "Cod Sucursala",
+                "value": "Cod Sucursala"
+              },
+              {
+                "name": "Cod Plata",
+                "value": "Cod Plata"
+              },
+              {
+                "name": "Tip Cod Plata",
+                "value": "Tip Cod Plata"
+              },
+              {
+                "name": "Suma",
+                "value": "Suma"
+              },
+              {
+                "name": "Suma Litere",
+                "value": "Suma Litere"
+              },
+              {
+                "name": "Cod Casier",
+                "value": "Cod Casier"
+              },
+              {
+                "name": "Judet",
+                "value": "Judet"
+              },
+              {
+                "name": "Numar Nota de Plata",
+                "value": "Numar Nota de Plata"
+              },
+              {
+                "name": "Tip Plata",
+                "value": "Tip Plata"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 160,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_094rluf"
+      },
+      {
+        "Id": 161,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1225,
+            "Name": "EntityName",
+            "Value": "ListaCasieriP",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 161,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1226,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 161,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1238,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 200,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 162,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "PlantAnApp.CreateEntity.39f8abbd-ff0e-43bb-82df-c5feaf64be08",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 1227,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1228,
+                      "Name": "CodSucursala",
+                      "Value": "[ListaCasieriP:Cod Sucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1229,
+                      "Name": "CodPlata",
+                      "Value": "[ListaCasieriP:Cod Plata]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1230,
+                      "Name": "TipCodPlata",
+                      "Value": "[ListaCasieriP:Tip Cod Plata]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1231,
+                      "Name": "Suma",
+                      "Value": "[ListaCasieriP:Suma]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1232,
+                      "Name": "SumaLitere",
+                      "Value": "[ListaCasieriP:Suma Litere]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1233,
+                      "Name": "CodCasier",
+                      "Value": "[ListaCasieriP:Cod Casier]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1234,
+                      "Name": "Judet",
+                      "Value": "[ListaCasieriP:Judet]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1235,
+                      "Name": "NumarNotadePlata",
+                      "Value": "[ListaCasieriP:Numar Nota de Plata]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1236,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 201,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1237,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 162,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 161,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1239,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 161,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1240,
+            "Name": "OnError",
+            "Value": {
+              "Id": 202,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 161,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1241,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 161,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_07chvf3"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 5,
+  "CreatedOn": "2025-10-31T10:26:14.9455251+00:00",
+  "LastModifiedBy": 5,
+  "LastModifiedOn": "2025-10-31T10:26:14.9455251+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

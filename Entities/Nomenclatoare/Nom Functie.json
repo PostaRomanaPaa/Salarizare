@@ -57,7 +57,7 @@
       "IsRequired": true,
       "IsSearchable": true,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 2
     },
     {
@@ -291,7 +291,7 @@
       "IsRequired": true,
       "IsSearchable": false,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 11
     },
     {
@@ -317,7 +317,7 @@
       "IsRequired": true,
       "IsSearchable": false,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 12
     },
     {
@@ -580,7 +580,7 @@
   "CreatedDate": "2025-10-03T10:48:04.82",
   "CreatedBy": "Ciprian Aelenei",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-10-27T14:28:48.2033333",
+  "LastModifiedOn": "2025-11-04T15:31:37.8166667",
   "Icon": "certificate",
   "Type": 0,
   "BuiltInType": null,

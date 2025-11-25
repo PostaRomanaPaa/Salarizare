@@ -1,0 +1,23 @@
+{
+  "id": 110,
+  "globalId": "8102d08c-7047-4642-b6e7-e0f8b95cbc11",
+  "namespace": {
+    "id": 10,
+    "globalId": "072487c0-5131-4ab8-9461-c63e9e2c989b",
+    "name": "UserInfo",
+    "isSystem": false
+  },
+  "name": "Nume",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "select DisplayName from app.Angajat where Marca='[tknparams:Marca]'",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

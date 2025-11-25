@@ -1,0 +1,16 @@
+@inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
+@{
+
+ var Tip=TknParams.Tip.Value.ToString();
+ 
+ if (Tip =="Cu Plata")
+ @: <span class="badge bg-warning text-dark">Cu plata</span>
+ 
+ if (Tip =="Fara Plata")
+ @: <span class="badge bg-success">Fara Plata</span>
+ 
+ 
+ if (Tip =="")
+ @:<span class="badge bg-dark">Alerta</span>
+ 
+ }

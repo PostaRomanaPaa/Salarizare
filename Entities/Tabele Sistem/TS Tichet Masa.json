@@ -61,30 +61,30 @@
       "OrderIndex": 2
     },
     {
-      "Id": 252,
-      "GlobalId": "5e0929aa-25c9-4c41-80f7-4c12f9eeac84",
+      "Id": 425,
+      "GlobalId": "ab900c8f-f7df-4ff3-9dcf-2e0c7af8cf2d",
       "EntityVersionId": 26,
-      "Name": "An",
+      "Name": "Anul",
       "Type": {
-        "Id": "EntityRef",
-        "Name": "Entity Reference",
+        "Id": "Integer",
+        "Name": "Number (Integer)",
         "InputType": {
-          "Id": "EntityRef",
-          "Name": "Entity Reference",
-          "ValueType": 7,
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
           "Length": 4,
-          "Icon": null
+          "Icon": "looks_one"
         }
       },
       "DefaultValue": null,
       "NullRecordsValue": null,
-      "EntityVersionRefId": 21,
+      "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 3
+      "OrderIndex": 4
     }
   ],
   "RolePermissions": {
@@ -268,7 +268,7 @@
   "CreatedDate": "2025-10-16T10:03:12.3066667",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-10-21T14:00:32.5766667",
+  "LastModifiedOn": "2025-11-20T15:43:59.5733333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

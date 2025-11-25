@@ -1,6 +1,6 @@
 {
   "Children": [],
-  "DisplayInMenu": true,
+  "DisplayInMenu": false,
   "ParentPageId": -1,
   "DisplayAfter": null,
   "RecordNamePropertyId": 310,
@@ -965,9 +965,9 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 11
     },
     {
@@ -1204,7 +1204,7 @@
   "CreatedDate": "2025-10-31T13:54:53.5566667",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-11-04T14:48:14.8433333",
+  "LastModifiedOn": "2025-11-19T14:58:12.0666667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

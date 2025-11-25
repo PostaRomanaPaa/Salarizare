@@ -1,0 +1,100 @@
+@inherits PlantAnApp.Tokens.Core.RazorTokenBase
+@using System
+@using System.Collections.Generic
+@using System.Globalization
+@using avt.MyTokens.Core.Objects
+
+@{
+    // TokenParameters (TknParamsObject – MyTokens)
+    var tknParams = TokenParameters as TknParamsObject;
+
+    if (tknParams == null)
+    {
+        @:0
+        return;
+    }
+
+    ITokenObject startObj;
+    ITokenObject endObj;
+
+    if (!tknParams.Properties.TryGetValue("StartDate", out startObj))
+    {
+        startObj = new ValueObject<object>("");
+    }
+
+    if (!tknParams.Properties.TryGetValue("EndDate", out endObj))
+    {
+        endObj = new ValueObject<object>("");
+    }
+
+    var startParam = startObj.ToString();
+    var endParam   = endObj.ToString();
+
+    DateTime startDate;
+    DateTime endDate;
+
+    // FORMAT: zi/luna/an -> "dd/MM/yyyy"
+    var dateFormat = "dd/MM/yyyy";
+    var culture = CultureInfo.InvariantCulture;
+
+    // Parse StartDate
+    if (!DateTime.TryParseExact(startParam, dateFormat, culture,
+            DateTimeStyles.None, out startDate))
+    {
+        if (!DateTime.TryParse(startParam, out startDate))
+        {
+            @:0
+            return;
+        }
+    }
+
+    // Parse EndDate
+    if (!DateTime.TryParseExact(endParam, dateFormat, culture,
+            DateTimeStyles.None, out endDate))
+    {
+        if (!DateTime.TryParse(endParam, out endDate))
+        {
+            @:0
+            return;
+        }
+    }
+
+    // Normalizam la date (fara timp)
+    startDate = startDate.Date;
+    endDate = endDate.Date;
+
+    // Daca userul a inversat datele, le schimbam
+    if (endDate < startDate)
+    {
+        var temp = startDate;
+        startDate = endDate;
+        endDate = temp;
+    }
+
+    // --- Sarbatori legale Romania 2025–2027 ---
+
+    var holidays = new HashSet<DateTime>
+    {
+       
+    };
+
+    // --- Calcul zile lucratoare (cu weekend + cu sarbatori) ---
+
+    int workingDays = 0;
+
+    for (var date = startDate; date <= endDate; date = date.AddDays(1))
+    {
+        bool isWeekend =
+            date.DayOfWeek == DayOfWeek.Saturday ||
+            date.DayOfWeek == DayOfWeek.Sunday;
+
+        bool isHoliday = holidays.Contains(date);
+
+       
+        
+        workingDays++;
+        
+    }
+
+    @workingDays
+}

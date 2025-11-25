@@ -29,9 +29,9 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 1
     },
     {
@@ -83,7 +83,7 @@
       "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 3
     },
     {
@@ -139,58 +139,6 @@
       "OrderIndex": 5
     },
     {
-      "Id": 355,
-      "GlobalId": "f502424f-7b13-4c32-95f5-e931c974a6d9",
-      "EntityVersionId": 36,
-      "Name": "Calcul",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 6
-    },
-    {
-      "Id": 356,
-      "GlobalId": "2ccc0d4d-b9bb-410f-9b0a-38a422c00983",
-      "EntityVersionId": 36,
-      "Name": "Nrord",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 8
-    },
-    {
       "Id": 357,
       "GlobalId": "07f1a9d9-5634-483e-8ba3-b356266c4d62",
       "EntityVersionId": 36,
@@ -214,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 9
+      "OrderIndex": 7
     },
     {
       "Id": 358,
@@ -240,7 +188,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 10
+      "OrderIndex": 8
     },
     {
       "Id": 359,
@@ -266,33 +214,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 11
-    },
-    {
-      "Id": 360,
-      "GlobalId": "5f66dbcb-1f70-4139-9318-6b6a4d9a7f0b",
-      "EntityVersionId": 36,
-      "Name": "Interval 2 Data de Safrsit",
-      "Type": {
-        "Id": "Date",
-        "Name": "Date",
-        "InputType": {
-          "Id": "Date",
-          "Name": "Date",
-          "ValueType": 3,
-          "Length": 3,
-          "Icon": "calendar_today"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 12
+      "OrderIndex": 9
     },
     {
       "Id": 361,
@@ -318,7 +240,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 13
+      "OrderIndex": 11
     },
     {
       "Id": 362,
@@ -344,13 +266,65 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 14
+      "OrderIndex": 12
     },
     {
       "Id": 363,
       "GlobalId": "2a1aefb3-b7de-44e6-8009-2c9f0176af9c",
       "EntityVersionId": 36,
-      "Name": "Nr Zile CO Interval 1",
+      "Name": "Nr Zile CO 1",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 13
+    },
+    {
+      "Id": 364,
+      "GlobalId": "19d3fa35-5cb8-4bb6-bba8-1c6f628ec3b1",
+      "EntityVersionId": 36,
+      "Name": "Nr Zile CO 2",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 14
+    },
+    {
+      "Id": 365,
+      "GlobalId": "06d95bd2-ded9-4904-9912-a2d1b74166b4",
+      "EntityVersionId": 36,
+      "Name": "Nr Zile CO 3",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -371,58 +345,6 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 15
-    },
-    {
-      "Id": 364,
-      "GlobalId": "19d3fa35-5cb8-4bb6-bba8-1c6f628ec3b1",
-      "EntityVersionId": 36,
-      "Name": "Nr Zile CO Interval 2",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 16
-    },
-    {
-      "Id": 365,
-      "GlobalId": "06d95bd2-ded9-4904-9912-a2d1b74166b4",
-      "EntityVersionId": 36,
-      "Name": "Nr Zile CO Interval 3",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 17
     },
     {
       "Id": 366,
@@ -448,7 +370,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 18
+      "OrderIndex": 16
     },
     {
       "Id": 367,
@@ -474,7 +396,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 19
+      "OrderIndex": 17
     },
     {
       "Id": 368,
@@ -500,13 +422,65 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 20
+      "OrderIndex": 18
     },
     {
       "Id": 369,
       "GlobalId": "19760431-1b88-432b-bbb1-e13a7f91e6cf",
       "EntityVersionId": 36,
-      "Name": "Avans CO Interval 1",
+      "Name": "Avans CO 1",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 19
+    },
+    {
+      "Id": 370,
+      "GlobalId": "46e1ef06-c166-4945-bcc7-ad99c2a76190",
+      "EntityVersionId": 36,
+      "Name": "Avans CO 2",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 20
+    },
+    {
+      "Id": 371,
+      "GlobalId": "f58fcd30-2793-4652-9523-9f4086395f5d",
+      "EntityVersionId": 36,
+      "Name": "Avans CO 3",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -529,10 +503,10 @@
       "OrderIndex": 21
     },
     {
-      "Id": 370,
-      "GlobalId": "46e1ef06-c166-4945-bcc7-ad99c2a76190",
+      "Id": 372,
+      "GlobalId": "9d0a5336-01c5-4c19-943e-1767b3684c1b",
       "EntityVersionId": 36,
-      "Name": "Avans CO Interval 2",
+      "Name": "Baza Calcul 1",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -555,10 +529,10 @@
       "OrderIndex": 22
     },
     {
-      "Id": 371,
-      "GlobalId": "f58fcd30-2793-4652-9523-9f4086395f5d",
+      "Id": 373,
+      "GlobalId": "b8941b9f-8561-4346-927d-a240b3fad8bf",
       "EntityVersionId": 36,
-      "Name": "Avans CO Interval 3",
+      "Name": "Baza Calcul 2",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -581,10 +555,10 @@
       "OrderIndex": 23
     },
     {
-      "Id": 372,
-      "GlobalId": "9d0a5336-01c5-4c19-943e-1767b3684c1b",
+      "Id": 374,
+      "GlobalId": "743910da-5eed-4649-a447-5eb50b6308b3",
       "EntityVersionId": 36,
-      "Name": "Baza Calcul Interval 1",
+      "Name": "Baza Calcul 3",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -605,58 +579,6 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 24
-    },
-    {
-      "Id": 373,
-      "GlobalId": "b8941b9f-8561-4346-927d-a240b3fad8bf",
-      "EntityVersionId": 36,
-      "Name": "Baza Calcul Interval 2",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 25
-    },
-    {
-      "Id": 374,
-      "GlobalId": "743910da-5eed-4649-a447-5eb50b6308b3",
-      "EntityVersionId": 36,
-      "Name": "Baza Calcul Interval 3",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 26
     },
     {
       "Id": 375,
@@ -682,11 +604,37 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 27
+      "OrderIndex": 25
     },
     {
-      "Id": 376,
-      "GlobalId": "e9c59cbf-f730-4449-a4fa-4927f56c12da",
+      "Id": 380,
+      "GlobalId": "38c5adff-aebf-4ac4-b9ce-4dcc5287a64f",
+      "EntityVersionId": 36,
+      "Name": "Interval 2 Data de Sfarsit",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 10
+    },
+    {
+      "Id": 433,
+      "GlobalId": "9f4e19b5-a133-4a2b-a25d-830d5aa056e6",
       "EntityVersionId": 36,
       "Name": "Avans",
       "Type": {
@@ -708,7 +656,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 7
+      "OrderIndex": 6
     }
   ],
   "RolePermissions": {
@@ -892,7 +840,7 @@
   "CreatedDate": "2025-11-05T15:15:03.4633333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-11-06T12:50:35.5566667",
+  "LastModifiedOn": "2025-11-25T08:54:15.7966667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

@@ -33,7 +33,7 @@
     {
       "Id": 20,
       "Name": "DataSfInit",
-      "DefaultValue": "[DateCM:DatadeSfarsit]",
+      "DefaultValue": "[DateCM:DataFormatata]",
       "Type": "Output",
       "InputType": "Text",
       "EntityVersionId": null,
@@ -88,7 +88,7 @@
           {
             "Id": 1689,
             "Name": "SqlQuery",
-            "Value": "SELECT TOP 1 * FROM app.ConcediuMedical\r\nWHERE Marca = @IdMarca\r\nORDER BY Id DESC",
+            "Value": "SELECT TOP 1 \r\nCodCertMed, \r\nCONVERT(VARCHAR(10), DATEADD(DAY, 1, DatadeSfarsit), 103) AS DataFormatata\r\nFROM app.ConcediuMedical\r\nWHERE Marca = @IdMarca\r\nORDER BY Id DESC",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 221,
@@ -111,7 +111,7 @@
           {
             "Id": 1691,
             "Name": "ShowErrors",
-            "Value": false,
+            "Value": null,
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 221,
@@ -315,7 +315,7 @@
               },
               {
                 "name": "Data Sfarsit Initial",
-                "value": "[DateCM:DatadeSfarsit]"
+                "value": "[DateCM:DataFormatata]"
               }
             ],
             "ParentParameterId": null,
@@ -332,7 +332,7 @@
   "CreatedBy": 5,
   "CreatedOn": "2025-11-19T15:31:35.0738998+00:00",
   "LastModifiedBy": 5,
-  "LastModifiedOn": "2025-11-25T13:07:09.828649+00:00",
+  "LastModifiedOn": "2025-11-25T14:12:19.2600717+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

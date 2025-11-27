@@ -883,7 +883,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;button&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-lg&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;block&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ConnectedForms&quot;:&quot;&quot;,&quot;Actions&quot;:[]}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-lg&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-warning&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;block&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ConnectedForms&quot;:&quot;&quot;,&quot;Actions&quot;:[]}&lt;/InputData&gt;
       &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
       &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
       &lt;ButtonSize&gt;
@@ -894,7 +894,7 @@
       &lt;/ButtonSize&gt;
       &lt;ButtonType&gt;
         &lt;Expression /&gt;
-        &lt;Value&gt;btn-info&lt;/Value&gt;
+        &lt;Value&gt;btn-warning&lt;/Value&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/ButtonType&gt;
@@ -928,8 +928,8 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;158&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;13&lt;/RowIndex&gt;
+      &lt;ViewOrder&gt;146&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;12&lt;/RowIndex&gt;
       &lt;ColSpan&gt;10&lt;/ColSpan&gt;
       &lt;ColOffset&gt;1&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -991,16 +991,16 @@
     &lt;RootClasses /&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;38&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;39&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2025-11-21T11:16:52.5898114+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2025-11-25T13:20:51.1325418+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-11-21T11:16:52.68&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-11-25T13:20:51.193&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:141,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;755&lt;/ModuleId&gt;
@@ -1013,7 +1013,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-11-21T11:16:52.7&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-11-25T13:20:51.21&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:142,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;755&lt;/ModuleId&gt;
@@ -1026,7 +1026,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-11-21T11:16:52.783&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-11-25T13:20:51.273&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:163,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;755&lt;/ModuleId&gt;
@@ -1039,7 +1039,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-11-21T11:16:52.75&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-11-25T13:20:51.25&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:165,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;755&lt;/ModuleId&gt;
@@ -1052,7 +1052,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-11-21T11:16:52.763&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-11-25T13:20:51.25&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:166,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;755&lt;/ModuleId&gt;
@@ -1065,7 +1065,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-11-21T11:16:52.737&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-11-25T13:20:51.237&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:159,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;755&lt;/ModuleId&gt;

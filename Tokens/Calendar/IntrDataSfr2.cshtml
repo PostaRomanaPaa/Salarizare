@@ -13,7 +13,6 @@
         return;
     }
 
-    // Citim parametrii StartDate, EndDate
     ITokenObject startObj;
     ITokenObject endObj;
 
@@ -30,15 +29,14 @@
     var startParam = startObj.ToString();
     var endParam   = endObj.ToString();
 
-    // Parsăm datele (acceptăm dd/MM/yyyy, d/M/yyyy etc.)
     DateTime startDate;
     DateTime endDate;
 
     var formats = new[] {
-        "dd/MM/yyyy",
-        "d/M/yyyy",
-        "d/MM/yyyy",
-        "dd/M/yyyy"
+        "MM/dd/yyyy",
+        "M/d/yyyy",
+        "MM/d/yyyy",
+        "M/dd/yyyy"
     };
 
     var culture = new CultureInfo("ro-RO");
@@ -60,7 +58,6 @@
     startDate = startDate.Date;
     endDate = endDate.Date;
 
-    // Dacă sunt inversate, le întoarcem
     if (endDate < startDate)
     {
         var tmp = startDate;
@@ -68,19 +65,15 @@
         endDate = tmp;
     }
 
-    // --- Construim până la 3 intervale, fiecare în maxim o lună ---
-
     DateTime? int1Start = null, int1End = null;
     DateTime? int2Start = null, int2End = null;
     DateTime? int3Start = null, int3End = null;
 
-    // Interval 1
     int1Start = startDate;
     var endOfMonth1 = new DateTime(startDate.Year, startDate.Month,
         DateTime.DaysInMonth(startDate.Year, startDate.Month));
     int1End = endDate <= endOfMonth1 ? endDate : endOfMonth1;
 
-    // Interval 2 (dacă mai avem zile)
     if (int1End.Value < endDate)
     {
         var s2 = int1End.Value.AddDays(1);
@@ -89,77 +82,69 @@
             DateTime.DaysInMonth(s2.Year, s2.Month));
         int2End = endDate <= endOfMonth2 ? endDate : endOfMonth2;
 
-        // Interval 3 (dacă mai avem zile după al doilea)
         if (int2End.Value < endDate)
         {
             var s3 = int2End.Value.AddDays(1);
             int3Start = s3;
-            int3End = endDate; // restul în al treilea interval
+            int3End = endDate;
         }
     }
 
-    // --- Sărbători legale România 2025–2027 ---
-
     var holidays = new HashSet<DateTime>
     {
-        // 2025
         new DateTime(2025, 1, 1),
         new DateTime(2025, 1, 2),
         new DateTime(2025, 1, 6),
         new DateTime(2025, 1, 7),
         new DateTime(2025, 1, 24),
-        new DateTime(2025, 4, 18), // Vinerea Mare
-        new DateTime(2025, 4, 20), // Paște
-        new DateTime(2025, 4, 21), // A 2-a zi Paște
+        new DateTime(2025, 4, 18),
+        new DateTime(2025, 4, 20),
+        new DateTime(2025, 4, 21),
         new DateTime(2025, 5, 1),
         new DateTime(2025, 6, 1),
-        new DateTime(2025, 6, 8),  // Rusalii
-        new DateTime(2025, 6, 9),  // A 2-a zi Rusalii
+        new DateTime(2025, 6, 8),
+        new DateTime(2025, 6, 9),
         new DateTime(2025, 8, 15),
         new DateTime(2025, 11, 30),
         new DateTime(2025, 12, 1),
         new DateTime(2025, 12, 25),
         new DateTime(2025, 12, 26),
 
-        // 2026
         new DateTime(2026, 1, 1),
         new DateTime(2026, 1, 2),
         new DateTime(2026, 1, 6),
         new DateTime(2026, 1, 7),
         new DateTime(2026, 1, 24),
-        new DateTime(2026, 4, 10), // Vinerea Mare
-        new DateTime(2026, 4, 12), // Paște
-        new DateTime(2026, 4, 13), // A 2-a zi Paște
+        new DateTime(2026, 4, 10),
+        new DateTime(2026, 4, 12),
+        new DateTime(2026, 4, 13),
         new DateTime(2026, 5, 1),
-        new DateTime(2026, 5, 31), // Rusalii
-        new DateTime(2026, 6, 1),  // A 2-a zi Rusalii + Ziua Copilului
+        new DateTime(2026, 5, 31),
+        new DateTime(2026, 6, 1),
         new DateTime(2026, 8, 15),
         new DateTime(2026, 11, 30),
         new DateTime(2026, 12, 1),
         new DateTime(2026, 12, 25),
         new DateTime(2026, 12, 26),
 
-        // 2027
         new DateTime(2027, 1, 1),
         new DateTime(2027, 1, 2),
         new DateTime(2027, 1, 6),
         new DateTime(2027, 1, 7),
         new DateTime(2027, 1, 24),
-        new DateTime(2027, 4, 30), // Vinerea Mare
-        new DateTime(2027, 5, 1),  // Ziua Muncii
-        new DateTime(2027, 5, 2),  // Paște
-        new DateTime(2027, 5, 3),  // A 2-a zi Paște
-        new DateTime(2027, 6, 1),  // Ziua Copilului
-        new DateTime(2027, 6, 20), // Rusalii
-        new DateTime(2027, 6, 21), // A 2-a zi Rusalii
+        new DateTime(2027, 4, 30),
+        new DateTime(2027, 5, 1),
+        new DateTime(2027, 5, 2),
+        new DateTime(2027, 5, 3),
+        new DateTime(2027, 6, 1),
+        new DateTime(2027, 6, 20),
+        new DateTime(2027, 6, 21),
         new DateTime(2027, 8, 15),
         new DateTime(2027, 11, 30),
         new DateTime(2027, 12, 1),
         new DateTime(2027, 12, 25),
         new DateTime(2027, 12, 26)
     };
-
-    // --- Calcul zile lucrătoare (L–V, fără sărbători) pe fiecare interval ---
 
     int int1Days = 0, int2Days = 0, int3Days = 0;
 
@@ -214,28 +199,8 @@
         }
     }
 
-    // --- Construim stringul concatenat ---
-    // 0 Int1Start
-    // 1 Int1End
-    // 2 Int1Days (zile lucrătoare)
-    // 3 Int2Start
-    // 4 Int2End
-    // 5 Int2Days
-    // 6 Int3Start
-    // 7 Int3End
-    // 8 Int3Days
-
-    string sInt1Start = int1Start.HasValue ? int1Start.Value.ToString("dd/MM/yyyy") : "";
-    string sInt1End   = int1End.HasValue   ? int1End.Value.ToString("dd/MM/yyyy")   : "";
-    string sInt2Start = int2Start.HasValue ? int2Start.Value.ToString("dd/MM/yyyy") : "";
-    string sInt2End   = int2End.HasValue   ? int2End.Value.ToString("dd/MM/yyyy")   : "";
-    string sInt3Start = int3Start.HasValue ? int3Start.Value.ToString("dd/MM/yyyy") : "";
-    string sInt3End   = int3End.HasValue   ? int3End.Value.ToString("dd/MM/yyyy")   : "";
-
-    string sInt1Days = int1Days > 0 ? int1Days.ToString() : "";
-    string sInt2Days = int2Days > 0 ? int2Days.ToString() : "";
-    string sInt3Days = int3Days > 0 ? int3Days.ToString() : "";
-
+    string sInt2End   = int2End.HasValue   ? int2End.Value.ToString("MM/dd/yyyy")   : "";
+    
     var packed = sInt2End;
 
     @packed

@@ -1,0 +1,23 @@
+{
+  "id": 127,
+  "globalId": "e3ce6c4d-a194-4eb2-8cab-d1cc175800b3",
+  "namespace": {
+    "id": 9,
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "CorectieData",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "DateTime start = DateTime.Parse(\"[TknParams:Start]\");\r\nDateTime end = DateTime.Parse(\"[TknParams:End]\");\r\n\r\nif (end < start) {\r\n    // swap\r\n    var temp = start;\r\n    start = end;\r\n    end = temp;\r\n}\r\n\r\nreturn start.ToString(\"yyyy-MM-dd\") + \"|\" + end.ToString(\"yyyy-MM-dd\");\r\n",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

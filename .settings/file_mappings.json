@@ -3276,12 +3276,21 @@
       "ContentPath": "Pages/Salarizare/CalculSalarii/Retineri/Enter Title.xml"
     },
     {
+      "GlobalId": "c8010d41-b1e2-4f73-a51f-21d7e10c9bc2",
+      "ParentPageId": "211e962f-ad72-4a75-8699-abec80c86f79",
+      "ModuleTitle": "avt.ActionGrid",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Retineri/Untitled avt.ActionGrid 3 in ContentPane.xml"
+    },
+    {
       "GlobalId": "4aedaaa5-8065-4e29-b538-b02a47f83171",
       "ParentPageId": "211e962f-ad72-4a75-8699-abec80c86f79",
       "ModuleTitle": "SessionForm",
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
-      "Order": 3,
+      "Order": 1,
       "ContentPath": "Pages/Salarizare/CalculSalarii/Retineri/SessionForm.xml"
     },
     {
@@ -3555,12 +3564,21 @@
       "ContentPath": "Pages/Salarizare/CalculSalarii/CAR/Enter Title.xml"
     },
     {
+      "GlobalId": "9796b56a-3141-44b6-9a06-dc9e3eeabfae",
+      "ParentPageId": "efe51205-d15a-4e88-8aa8-018d001fed4c",
+      "ModuleTitle": "avt.ActionGrid",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CAR/Untitled avt.ActionGrid 3 in ContentPane.xml"
+    },
+    {
       "GlobalId": "658e4794-7b43-412f-94b8-bd577ce8b833",
       "ParentPageId": "efe51205-d15a-4e88-8aa8-018d001fed4c",
       "ModuleTitle": "SessionForm",
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
-      "Order": 3,
+      "Order": 1,
       "ContentPath": "Pages/Salarizare/CalculSalarii/CAR/SessionForm.xml"
     },
     {
@@ -3573,12 +3591,21 @@
       "ContentPath": "Pages/Salarizare/CalculSalarii/Diurna/Enter Title.xml"
     },
     {
+      "GlobalId": "29f43273-20bd-41ef-bda0-1c13a25ee94d",
+      "ParentPageId": "f227963f-4d8c-4444-a931-9077befd0789",
+      "ModuleTitle": "avt.ActionGrid",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/Diurna/Untitled avt.ActionGrid 3 in ContentPane.xml"
+    },
+    {
       "GlobalId": "9bc8ab24-4011-4d1c-9fbd-dbe42ddc8283",
       "ParentPageId": "f227963f-4d8c-4444-a931-9077befd0789",
       "ModuleTitle": "SessionForm",
       "FriendlyName": "avt.Action Form",
       "PaneName": "MBP_1",
-      "Order": 3,
+      "Order": 1,
       "ContentPath": "Pages/Salarizare/CalculSalarii/Diurna/SessionForm.xml"
     },
     {
@@ -5405,14 +5432,24 @@
       "DefinitionPath": "Tokens/Initializari/Sucursala_IN.json"
     },
     {
+      "GlobalId": "59242fa6-f59c-4372-b073-cdd9c01c4495",
+      "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+      "DefinitionPath": "Tokens/Initializari/ZileLucratoare_old.json"
+    },
+    {
       "GlobalId": "24140862-9ae5-41e5-a921-060f440ab43d",
       "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
       "DefinitionPath": "Tokens/Initializari/ZileLucratoareLunar.json"
     },
     {
-      "GlobalId": "59242fa6-f59c-4372-b073-cdd9c01c4495",
+      "GlobalId": "a03661cc-9bb1-4133-ad55-8814f4abbcc7",
       "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
-      "DefinitionPath": "Tokens/Initializari/ZileLucratoare_old.json"
+      "DefinitionPath": "Tokens/Initializari/CounterStatPlata.json"
+    },
+    {
+      "GlobalId": "e3ce6c4d-a194-4eb2-8cab-d1cc175800b3",
+      "NamespaceGlobalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+      "DefinitionPath": "Tokens/Initializari/CorectieData.json"
     },
     {
       "GlobalId": "8102d08c-7047-4642-b6e7-e0f8b95cbc11",
@@ -5437,34 +5474,10 @@
       "SourcePath": "Tokens/Calendar/CalculZileCalendaristice.cshtml"
     },
     {
-      "GlobalId": "517c52f2-a7bf-4c05-b38e-40b775844d5a",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/IntrDataStart1.json",
-      "SourcePath": "Tokens/Calendar/IntrDataStart1.cshtml"
-    },
-    {
       "GlobalId": "6d9168fb-147d-46ed-aa0d-f4c8b425666b",
       "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
       "DefinitionPath": "Tokens/Calendar/IntrDataSfr1.json",
       "SourcePath": "Tokens/Calendar/IntrDataSfr1.cshtml"
-    },
-    {
-      "GlobalId": "6d82cf86-e965-4dc7-9e6a-931e69a8268e",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/NrZileLuc1.json",
-      "SourcePath": "Tokens/Calendar/NrZileLuc1.cshtml"
-    },
-    {
-      "GlobalId": "8c136b30-7e07-4d3b-b2b1-7db1c8ead72c",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/IntrDataStart2.json",
-      "SourcePath": "Tokens/Calendar/IntrDataStart2.cshtml"
-    },
-    {
-      "GlobalId": "fe50bf56-0f7c-449f-b31f-fe4ac78adcae",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/NrZileLuc2.json",
-      "SourcePath": "Tokens/Calendar/NrZileLuc2.cshtml"
     },
     {
       "GlobalId": "8f9def88-5b35-4242-a7fb-424b8d4cfc94",
@@ -5479,10 +5492,34 @@
       "SourcePath": "Tokens/Calendar/IntrDataSfr3.cshtml"
     },
     {
+      "GlobalId": "517c52f2-a7bf-4c05-b38e-40b775844d5a",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/IntrDataStart1.json",
+      "SourcePath": "Tokens/Calendar/IntrDataStart1.cshtml"
+    },
+    {
+      "GlobalId": "8c136b30-7e07-4d3b-b2b1-7db1c8ead72c",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/IntrDataStart2.json",
+      "SourcePath": "Tokens/Calendar/IntrDataStart2.cshtml"
+    },
+    {
       "GlobalId": "8a3ed27e-fcb9-4656-9d67-c67728016d6d",
       "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
       "DefinitionPath": "Tokens/Calendar/IntrDataStart3.json",
       "SourcePath": "Tokens/Calendar/IntrDataStart3.cshtml"
+    },
+    {
+      "GlobalId": "6d82cf86-e965-4dc7-9e6a-931e69a8268e",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/NrZileLuc1.json",
+      "SourcePath": "Tokens/Calendar/NrZileLuc1.cshtml"
+    },
+    {
+      "GlobalId": "fe50bf56-0f7c-449f-b31f-fe4ac78adcae",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/NrZileLuc2.json",
+      "SourcePath": "Tokens/Calendar/NrZileLuc2.cshtml"
     },
     {
       "GlobalId": "8ea6b34e-db13-4198-b483-b4db8f15652a",

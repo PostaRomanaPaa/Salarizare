@@ -32,7 +32,7 @@
       "IsSearchable": true,
       "IsFilterable": true,
       "IsSortable": true,
-      "OrderIndex": 1
+      "OrderIndex": 4
     },
     {
       "Id": 351,
@@ -58,7 +58,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 2
+      "OrderIndex": 5
     },
     {
       "Id": 352,
@@ -84,7 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 3
+      "OrderIndex": 6
     },
     {
       "Id": 353,
@@ -110,7 +110,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 4
+      "OrderIndex": 7
     },
     {
       "Id": 354,
@@ -136,7 +136,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 5
+      "OrderIndex": 8
     },
     {
       "Id": 357,
@@ -162,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 7
+      "OrderIndex": 10
     },
     {
       "Id": 358,
@@ -188,7 +188,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 8
+      "OrderIndex": 11
     },
     {
       "Id": 359,
@@ -214,7 +214,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 9
+      "OrderIndex": 12
     },
     {
       "Id": 361,
@@ -240,7 +240,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 11
+      "OrderIndex": 14
     },
     {
       "Id": 362,
@@ -266,7 +266,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 12
+      "OrderIndex": 15
     },
     {
       "Id": 363,
@@ -292,7 +292,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 13
+      "OrderIndex": 16
     },
     {
       "Id": 364,
@@ -318,7 +318,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 14
+      "OrderIndex": 17
     },
     {
       "Id": 365,
@@ -344,7 +344,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 15
+      "OrderIndex": 18
     },
     {
       "Id": 366,
@@ -370,7 +370,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 16
+      "OrderIndex": 19
     },
     {
       "Id": 367,
@@ -396,7 +396,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 17
+      "OrderIndex": 20
     },
     {
       "Id": 368,
@@ -422,7 +422,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 18
+      "OrderIndex": 21
     },
     {
       "Id": 369,
@@ -448,7 +448,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 19
+      "OrderIndex": 22
     },
     {
       "Id": 370,
@@ -474,7 +474,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 20
+      "OrderIndex": 23
     },
     {
       "Id": 371,
@@ -500,7 +500,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 21
+      "OrderIndex": 24
     },
     {
       "Id": 372,
@@ -526,7 +526,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 22
+      "OrderIndex": 25
     },
     {
       "Id": 373,
@@ -552,7 +552,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 23
+      "OrderIndex": 26
     },
     {
       "Id": 374,
@@ -578,7 +578,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 24
+      "OrderIndex": 27
     },
     {
       "Id": 375,
@@ -604,7 +604,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 25
+      "OrderIndex": 28
     },
     {
       "Id": 380,
@@ -630,7 +630,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 10
+      "OrderIndex": 13
     },
     {
       "Id": 433,
@@ -656,7 +656,85 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 9
+    },
+    {
+      "Id": 439,
+      "GlobalId": "f461cbde-7d55-443e-9897-f173d3520152",
+      "EntityVersionId": 36,
+      "Name": "Cod Sucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 440,
+      "GlobalId": "cf6d1e5e-cf80-4ead-8b05-a5635cdab5ea",
+      "EntityVersionId": 36,
+      "Name": "Anul",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 441,
+      "GlobalId": "baad7fdc-9fac-47c8-a2be-bc636b0a037a",
+      "EntityVersionId": 36,
+      "Name": "Luna",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 3
     }
   ],
   "RolePermissions": {
@@ -840,7 +918,7 @@
   "CreatedDate": "2025-11-05T15:15:03.4633333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-11-25T08:54:15.7966667",
+  "LastModifiedOn": "2025-12-03T20:48:13.2666667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

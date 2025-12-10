@@ -30,8 +30,8 @@
       "IsDeleted": false,
       "IsRequired": true,
       "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 2
     },
     {
@@ -81,9 +81,9 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": true,
-      "IsSearchable": false,
+      "IsSearchable": true,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 1
     },
     {
@@ -108,8 +108,8 @@
       "IsDeleted": false,
       "IsRequired": true,
       "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 4
     }
   ],
@@ -293,8 +293,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-03T13:45:03.7333333",
   "CreatedBy": "Alexandra Vasilescu",
-  "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2025-10-29T10:08:38.8366667",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2025-12-05T09:20:47.6066667",
   "Icon": "landmark",
   "Type": 0,
   "BuiltInType": null,

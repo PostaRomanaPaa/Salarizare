@@ -50,7 +50,7 @@
           {
             "Id": 1608,
             "Name": "URL",
-            "Value": "https://task.ro.post/api/GetUsers",
+            "Value": "https://task.ro.post/api/GetCO",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 207,
@@ -124,8 +124,8 @@
             "Name": "Headers",
             "Value": [
               {
-                "value": "187e3c1869cb4a679ee9cb903a4b33c7",
-                "name": "Authorization"
+                "name": "Authorization",
+                "value": "187e3c1869cb4a679ee9cb903a4b33c7"
               }
             ],
             "ParentParameterId": null,
@@ -213,7 +213,7 @@
           {
             "Id": 1625,
             "Name": "OutputHeaders",
-            "Value": null,
+            "Value": [],
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 207,
@@ -243,7 +243,7 @@
           {
             "Id": 1627,
             "Name": "EntityName",
-            "Value": "DataUser",
+            "Value": "COdata",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 208,
@@ -545,6 +545,141 @@
                               {
                                 "Id": 1650,
                                 "Name": "OutputToken",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1739,
+                                "Name": "CodJudet",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1740,
+                                "Name": "OficiuTeritorial",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1741,
+                                "Name": "CodOficiu",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1742,
+                                "Name": "CodFunctie",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1743,
+                                "Name": "ClasaGrilaSalarizare",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1744,
+                                "Name": "ImpozabilScutit",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1745,
+                                "Name": "TipNorma",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1746,
+                                "Name": "Procent",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1747,
+                                "Name": "ProcentFidelitate",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1748,
+                                "Name": "ProcentManagement",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1749,
+                                "Name": "StareAngajat",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1750,
+                                "Name": "Sindicat",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1751,
+                                "Name": "CodSucursala",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1752,
+                                "Name": "Luna",
+                                "Value": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "ActionId": 213,
+                                "OrderIndex": 0
+                              },
+                              {
+                                "Id": 1753,
+                                "Name": "Anul",
                                 "Value": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
@@ -867,7 +1002,7 @@
                               {
                                 "Id": 1672,
                                 "Name": "ShowErrors",
-                                "Value": false,
+                                "Value": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
                                 "ActionId": 219,
@@ -1050,7 +1185,7 @@
   "CreatedBy": 3,
   "CreatedOn": "2025-11-21T08:59:15.4923422+00:00",
   "LastModifiedBy": 3,
-  "LastModifiedOn": "2025-11-21T09:03:22.3988738+00:00",
+  "LastModifiedOn": "2025-12-09T10:13:28.10855+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

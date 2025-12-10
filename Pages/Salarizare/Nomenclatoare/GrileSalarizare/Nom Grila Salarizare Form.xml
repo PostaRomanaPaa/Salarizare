@@ -407,9 +407,9 @@
     &lt;RootClasses /&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;8&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;10&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2025-10-21T13:52:43.2634389+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2025-12-05T08:45:38.9252758+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -417,7 +417,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.31&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.973&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -434,7 +434,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.34&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -451,7 +451,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.357&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -466,7 +466,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.357&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:39.003&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Nom Grila Salarizare&quot;},{&quot;name&quot;:&quot;original:TipMediu&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Clasa&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Salariu&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -480,7 +480,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.b689c30a-2a6a-4d93-a9dd-c867ae719747&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.327&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.973&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewNomGrilaSalarizareId&quot;,&quot;TipMediu&quot;:&quot;[p_TipMediu]&quot;,&quot;Clasa&quot;:&quot;[p_Clasa]&quot;,&quot;Salariu&quot;:&quot;[p_Salariu]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -497,7 +497,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.b689c30a-2a6a-4d93-a9dd-c867ae719747&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.34&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:NomGrilaSalarizareId=]&quot;,&quot;TipMediu&quot;:&quot;[p_TipMediu]&quot;,&quot;Clasa&quot;:&quot;[p_Clasa]&quot;,&quot;Salariu&quot;:&quot;[p_Salariu]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -515,7 +515,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.357&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:39.003&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -532,7 +532,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:NomGrilaSalarizareId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.373&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:39.003&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Nom Grila Salarizare&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -548,7 +548,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.327&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.973&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Nomenclatoare/GrileSalarizare/Detail?GrilaSalarizareId=[NewGrilaSalarizareId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -564,7 +564,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.34&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;1f83c478-dbe3-40c6-93a5-4d86f425319b&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -580,7 +580,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.b689c30a-2a6a-4d93-a9dd-c867ae719747&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.373&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:39.003&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:NomGrilaSalarizareId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -597,7 +597,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.327&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.973&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;7c4e952a-2340-4dc6-9afb-9d8924b14c4e&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -613,7 +613,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.34&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;e6813979-4660-4023-9960-96b53143e19f&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -628,7 +628,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.327&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;527b1b27-efcd-49ba-be32-ca0e48fa7106&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -644,7 +644,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.34&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Nomenclatoare/GrileSalarizare/Detail?GrilaSalarizareId=[QueryString:GrilaSalarizareId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -660,7 +660,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.357&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;7c4e952a-2340-4dc6-9afb-9d8924b14c4e&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;
@@ -675,7 +675,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-10-21T13:52:43.357&lt;/LastModified&gt;
+      &lt;LastModified&gt;2025-12-05T08:45:38.987&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;527b1b27-efcd-49ba-be32-ca0e48fa7106&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;457&lt;/ModuleId&gt;

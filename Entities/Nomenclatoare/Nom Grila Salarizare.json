@@ -29,9 +29,9 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 1
     },
     {
@@ -56,8 +56,8 @@
       "IsDeleted": false,
       "IsRequired": true,
       "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 2
     },
     {
@@ -268,7 +268,7 @@
   "CreatedDate": "2025-10-03T09:06:23.52",
   "CreatedBy": "Ciprian Aelenei",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-10-21T13:52:41.9266667",
+  "LastModifiedOn": "2025-12-05T08:45:37.7833333",
   "Icon": "align-left",
   "Type": 0,
   "BuiltInType": null,

@@ -262,6 +262,14 @@
               {
                 "name": "Indemnizatie Loialitate",
                 "value": "Indemnizatie Loialitate"
+              },
+              {
+                "name": "Luna",
+                "value": "Luna"
+              },
+              {
+                "name": "Anul",
+                "value": "Anul"
               }
             ],
             "ParentParameterId": null,
@@ -679,6 +687,24 @@
                       "IsExpression": false,
                       "ActionId": 204,
                       "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1737,
+                      "Name": "Luna",
+                      "Value": "[ListaPersonal:Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 204,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1738,
+                      "Name": "Anul",
+                      "Value": "[ListaPersonal:Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 204,
+                      "OrderIndex": 0
                     }
                   ],
                   "DiagramUID": null
@@ -732,7 +758,7 @@
   "CreatedBy": 9,
   "CreatedOn": "2025-10-31T14:37:54.6402543+00:00",
   "LastModifiedBy": 9,
-  "LastModifiedOn": "2025-11-03T09:09:56.0074499+00:00",
+  "LastModifiedOn": "2025-12-04T13:43:41.2789483+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

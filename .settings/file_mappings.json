@@ -135,6 +135,12 @@
       "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidare/tab.xml"
     },
     {
+      "GlobalId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
+      "TabPath": "//Salarizare//CalculSalarii//CalculLichidare",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/tab.xml"
+    },
+    {
       "GlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
       "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
       "TabPath": "//Salarizare//CalculSalarii//Lichidari",
@@ -145,12 +151,6 @@
       "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
       "TabPath": "//Salarizare//CalculSalarii//Salariati",
       "ContentPath": "Pages/Salarizare/CalculSalarii/Salariati/tab.xml"
-    },
-    {
-      "GlobalId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
-      "TabPath": "//Salarizare//CalculSalarii//CalculLichidare",
-      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/tab.xml"
     },
     {
       "GlobalId": "30eec84e-a659-4340-a60d-827b38c872be",
@@ -3321,6 +3321,42 @@
       "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidare/Pagina Lichidare Form.xml"
     },
     {
+      "GlobalId": "d9860c58-5706-4480-908c-10710cf846d4",
+      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Enter Title.xml"
+    },
+    {
+      "GlobalId": "aee1d743-06c0-45b2-a180-66720d2b71b3",
+      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ModuleTitle": "Lichidare supla",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidare supla.xml"
+    },
+    {
+      "GlobalId": "65815bfe-7dab-4a57-9850-b072f0d8ede5",
+      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ModuleTitle": "Text/HTML",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Untitled Text/HTML 1 in MBP_1.xml"
+    },
+    {
+      "GlobalId": "0e4c1a13-6d9c-405f-bf39-2f0411fca100",
+      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/SessionForm.xml"
+    },
+    {
       "GlobalId": "50d68fb1-96eb-4c02-be23-12b2d344f7b8",
       "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
       "ModuleTitle": "Header",
@@ -3400,42 +3436,6 @@
       "PaneName": "MBP_1",
       "Order": 1,
       "ContentPath": "Pages/Salarizare/CalculSalarii/Salariati/SessionForm.xml"
-    },
-    {
-      "GlobalId": "d9860c58-5706-4480-908c-10710cf846d4",
-      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ModuleTitle": "Enter Title",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Enter Title.xml"
-    },
-    {
-      "GlobalId": "aee1d743-06c0-45b2-a180-66720d2b71b3",
-      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ModuleTitle": "Lichidare supla",
-      "FriendlyName": "avt.ActionGrid",
-      "PaneName": "ContentPane",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidare supla.xml"
-    },
-    {
-      "GlobalId": "65815bfe-7dab-4a57-9850-b072f0d8ede5",
-      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ModuleTitle": "Text/HTML",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Untitled Text/HTML 1 in MBP_1.xml"
-    },
-    {
-      "GlobalId": "0e4c1a13-6d9c-405f-bf39-2f0411fca100",
-      "ParentPageId": "7f105888-8e7b-4990-8d21-5a5257108504",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/SessionForm.xml"
     },
     {
       "GlobalId": "665efdec-de7f-4769-865a-d2b101bc212c",
@@ -5474,40 +5474,16 @@
       "SourcePath": "Tokens/Calendar/CalculZileCalendaristice.cshtml"
     },
     {
-      "GlobalId": "6d9168fb-147d-46ed-aa0d-f4c8b425666b",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/IntrDataSfr1.json",
-      "SourcePath": "Tokens/Calendar/IntrDataSfr1.cshtml"
-    },
-    {
-      "GlobalId": "8f9def88-5b35-4242-a7fb-424b8d4cfc94",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/IntrDataSfr2.json",
-      "SourcePath": "Tokens/Calendar/IntrDataSfr2.cshtml"
-    },
-    {
-      "GlobalId": "adcededf-768f-40cc-b74d-f20a9a7e083e",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/IntrDataSfr3.json",
-      "SourcePath": "Tokens/Calendar/IntrDataSfr3.cshtml"
-    },
-    {
       "GlobalId": "517c52f2-a7bf-4c05-b38e-40b775844d5a",
       "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
       "DefinitionPath": "Tokens/Calendar/IntrDataStart1.json",
       "SourcePath": "Tokens/Calendar/IntrDataStart1.cshtml"
     },
     {
-      "GlobalId": "8c136b30-7e07-4d3b-b2b1-7db1c8ead72c",
+      "GlobalId": "6d9168fb-147d-46ed-aa0d-f4c8b425666b",
       "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/IntrDataStart2.json",
-      "SourcePath": "Tokens/Calendar/IntrDataStart2.cshtml"
-    },
-    {
-      "GlobalId": "8a3ed27e-fcb9-4656-9d67-c67728016d6d",
-      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
-      "DefinitionPath": "Tokens/Calendar/IntrDataStart3.json",
-      "SourcePath": "Tokens/Calendar/IntrDataStart3.cshtml"
+      "DefinitionPath": "Tokens/Calendar/IntrDataSfr1.json",
+      "SourcePath": "Tokens/Calendar/IntrDataSfr1.cshtml"
     },
     {
       "GlobalId": "6d82cf86-e965-4dc7-9e6a-931e69a8268e",
@@ -5516,10 +5492,34 @@
       "SourcePath": "Tokens/Calendar/NrZileLuc1.cshtml"
     },
     {
+      "GlobalId": "8c136b30-7e07-4d3b-b2b1-7db1c8ead72c",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/IntrDataStart2.json",
+      "SourcePath": "Tokens/Calendar/IntrDataStart2.cshtml"
+    },
+    {
+      "GlobalId": "8f9def88-5b35-4242-a7fb-424b8d4cfc94",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/IntrDataSfr2.json",
+      "SourcePath": "Tokens/Calendar/IntrDataSfr2.cshtml"
+    },
+    {
       "GlobalId": "fe50bf56-0f7c-449f-b31f-fe4ac78adcae",
       "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
       "DefinitionPath": "Tokens/Calendar/NrZileLuc2.json",
       "SourcePath": "Tokens/Calendar/NrZileLuc2.cshtml"
+    },
+    {
+      "GlobalId": "adcededf-768f-40cc-b74d-f20a9a7e083e",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/IntrDataSfr3.json",
+      "SourcePath": "Tokens/Calendar/IntrDataSfr3.cshtml"
+    },
+    {
+      "GlobalId": "8a3ed27e-fcb9-4656-9d67-c67728016d6d",
+      "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
+      "DefinitionPath": "Tokens/Calendar/IntrDataStart3.json",
+      "SourcePath": "Tokens/Calendar/IntrDataStart3.cshtml"
     },
     {
       "GlobalId": "8ea6b34e-db13-4198-b483-b4db8f15652a",
@@ -5864,6 +5864,12 @@
       "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
       "DefinitionPath": "Workflows/Default/Import CONCEDII din HR/workflow.json",
       "DiagramPath": "Workflows/Default/Import CONCEDII din HR/diagram.xml"
+    },
+    {
+      "GlobalId": "1106430f-fc18-49a3-b19e-c565d92ff667",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "DefinitionPath": "Workflows/Default/Conditii Form CM/workflow.json",
+      "DiagramPath": "Workflows/Default/Conditii Form CM/diagram.xml"
     }
   ]
 }

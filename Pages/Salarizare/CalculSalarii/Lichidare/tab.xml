@@ -7,7 +7,7 @@
     <disabled>false</disabled>
     <enddate>0001-01-01T00:00:00</enddate>
     <issecure>false</issecure>
-    <visible>false</visible>
+    <visible>true</visible>
     <issystem>false</issystem>
     <keywords />
     <pageheadtext />
@@ -24,49 +24,13 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Admins</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Citizen Developers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Managers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
-            <allowaccess>true</allowaccess>
             <rolename>Admins</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Citizen Developers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Managers</rolename>
+            <rolename>Admins</rolename>
         </permission>
     </tabpermissions>
     <tabsettings />

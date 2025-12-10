@@ -30,8 +30,8 @@
       "IsDeleted": false,
       "IsRequired": true,
       "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 1
     },
     {
@@ -264,8 +264,8 @@
       "IsDeleted": false,
       "IsRequired": true,
       "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 4
     },
     {
@@ -567,6 +567,50 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "9": [
+      {
+        "Id": 634,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 635,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 636,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
+    ],
+    "-1": [
+      {
+        "Id": 637,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": -1,
+        "RoleName": "All Users",
+        "Value": "all"
+      }
     ]
   },
   "Id": 9,
@@ -580,7 +624,7 @@
   "CreatedDate": "2025-10-03T10:48:04.82",
   "CreatedBy": "Ciprian Aelenei",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-11-04T15:31:37.8166667",
+  "LastModifiedOn": "2025-12-05T07:56:04.6366667",
   "Icon": "certificate",
   "Type": 0,
   "BuiltInType": null,

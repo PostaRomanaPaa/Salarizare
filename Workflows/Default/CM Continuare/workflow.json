@@ -1,0 +1,437 @@
+{
+  "InputFields": [
+    {
+      "Id": 26,
+      "Name": "Marca",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 27,
+      "Name": "CodCertMed",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 28,
+      "Name": "DatadeInceputNou",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Date",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 29,
+      "Name": "AnSesCurenta",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 30,
+      "Name": "LunaSesCurenta",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 4
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 31,
+      "Name": "CMInitialID",
+      "DefaultValue": "",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 32,
+      "Name": "SerieCMInitial",
+      "DefaultValue": "",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 33,
+      "Name": "NrCMInitial",
+      "DefaultValue": "",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 34,
+      "Name": "IsContinuareValida",
+      "DefaultValue": "",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 35,
+      "Name": "Mesaj",
+      "DefaultValue": "",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 21,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 4
+    }
+  ],
+  "Id": 21,
+  "GlobalId": "7bb1ce65-7bb8-41bd-8283-61129937fa19",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "7bb1ce65-7bb8-41bd-8283-61129937fa19",
+  "EnvironmentId": 1,
+  "Name": "CM Continuare",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 282,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 229,
+        "Description": "Identificare CM initial",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1754,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1755,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1756,
+            "Name": "SqlQuery",
+            "Value": "WITH LunaCurenta AS (\r\n    SELECT \r\n        DATEFROMPARTS(@AnSesCurenta, @LunaSesCurenta, 1) AS PrimaZi,\r\n        EOMONTH(DATEFROMPARTS(@AnSesCurenta, @LunaSesCurenta, 1)) AS UltimaZi\r\n),\r\n\r\nCMInitial AS (\r\n    SELECT TOP 1 \r\n        Id,\r\n        SerieCM,\r\n        NrCM,\r\n        DatadeInceput,\r\n        DatadeSfarsit\r\n    FROM app.ConcediuMedical\r\n    WHERE Marca = @Marca\r\n      AND CodCertMed = @CodCertMed\r\n      AND CMContinuare = 'N'\r\n      AND DatadeSfarsit <= (SELECT UltimaZi FROM LunaCurenta)\r\n      AND @DatadeInceputNou = DATEADD(DAY, 1, DatadeSfarsit)\r\n    ORDER BY DatadeSfarsit DESC\r\n)\r\n\r\nSELECT \r\n    c.Id AS CMInitialId,\r\n    c.SerieCM AS SerieCMInitial,\r\n    c.NrCM AS NrCMInitial,\r\n    CASE \r\n        WHEN c.Id IS NOT NULL THEN 1 ELSE 0 \r\n    END AS IsContinuareValida,\r\n    CASE \r\n        WHEN c.Id IS NULL THEN 'Nu exista un CM initial valid pentru continuitate.'\r\n        ELSE 'Continuarea este valida si s-au preluat datele CM initial.'\r\n    END AS Mesaj\r\nFROM CMInitial c;\r\n",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1757,
+            "Name": "OnError",
+            "Value": {
+              "Id": 283,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1758,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1759,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1760,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "Marca",
+                "value": "[Marca]"
+              },
+              {
+                "name": "CodCertMed",
+                "value": "[CodCertMed]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1761,
+            "Name": "OutputTokenName",
+            "Value": "Query",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1762,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 229,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_13sc1ib"
+      },
+      {
+        "Id": 230,
+        "Description": "Split",
+        "ActionErrorMessage": "",
+        "Condition": "",
+        "ActionType": "PlantAnApp.ExecuteConditionally",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1763,
+            "Name": "ConditionedActions",
+            "Value": [
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[Query.IsContinuareValida] == 1"
+                },
+                "Actions": {
+                  "Id": 284,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 231,
+                      "Description": "Update Serie/Nr CM Initial",
+                      "ActionErrorMessage": null,
+                      "Condition": null,
+                      "ActionType": "RunSql",
+                      "OrderIndex": 0,
+                      "IsDisabled": false,
+                      "ActionParameters": [
+                        {
+                          "Id": 1765,
+                          "Name": "ConnectionString",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1766,
+                          "Name": "QueryTimeout",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1767,
+                          "Name": "SqlQuery",
+                          "Value": "update app.ConcediuMedical set SerieCMInitial = [Query.SerieCMInitial],NrCMInitial    = [Query.NrCMInitial]\r\n",
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1768,
+                          "Name": "OnError",
+                          "Value": {
+                            "Id": 285,
+                            "EventName": "OnError",
+                            "Actions": [],
+                            "IsInvalid": false
+                          },
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1769,
+                          "Name": "ShowErrors",
+                          "Value": false,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1770,
+                          "Name": "DbConnector",
+                          "Value": {
+                            "Entry": "",
+                            "Group": "",
+                            "EntireGroup": false,
+                            "Type": "Database",
+                            "IsExpression": false,
+                            "Expression": ""
+                          },
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1771,
+                          "Name": "BindTokens",
+                          "Value": [],
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1772,
+                          "Name": "OutputTokenName",
+                          "Value": null,
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        },
+                        {
+                          "Id": 1773,
+                          "Name": "ExtractColumns",
+                          "Value": [],
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 231,
+                          "OrderIndex": 0
+                        }
+                      ],
+                      "DiagramUID": "Activity_0788831"
+                    }
+                  ],
+                  "IsInvalid": false
+                }
+              },
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "Query.IsContinuareValida == 0"
+                },
+                "Actions": {
+                  "Id": 286,
+                  "EventName": "click",
+                  "Actions": [],
+                  "IsInvalid": false
+                }
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 230,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Gateway_1sntzm3"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 9,
+  "CreatedOn": "2025-12-11T15:40:58.9642481+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2025-12-11T15:47:48.8762171+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

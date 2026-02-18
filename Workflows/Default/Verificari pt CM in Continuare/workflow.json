@@ -2,7 +2,21 @@
   "InputFields": [
     {
       "Id": 15,
-      "Name": "IdMarca",
+      "Name": "Marca",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 18,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 40,
+      "Name": "CodCertMed",
       "DefaultValue": "",
       "Type": "Input",
       "InputType": "Integer",
@@ -13,13 +27,27 @@
       "Required": false,
       "Description": null,
       "OrderIndex": 1
+    },
+    {
+      "Id": 41,
+      "Name": "DataInceput",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Date",
+      "EntityVersionId": null,
+      "WorkflowId": 18,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
     }
   ],
   "OutputFields": [
     {
       "Id": 16,
-      "Name": "CodIndInit",
-      "DefaultValue": "[CodCertifInit]",
+      "Name": "StatusValidare",
+      "DefaultValue": "[StatusValidare]",
       "Type": "Output",
       "InputType": "Text",
       "EntityVersionId": null,
@@ -29,20 +57,6 @@
       "Required": false,
       "Description": null,
       "OrderIndex": 0
-    },
-    {
-      "Id": 20,
-      "Name": "DataSfInit",
-      "DefaultValue": "[DateCM:DataFormatata]",
-      "Type": "Output",
-      "InputType": "Text",
-      "EntityVersionId": null,
-      "WorkflowId": 18,
-      "ContractFieldId": null,
-      "IsDeleted": false,
-      "Required": false,
-      "Description": null,
-      "OrderIndex": 1
     }
   ],
   "Id": 18,
@@ -88,7 +102,7 @@
           {
             "Id": 1689,
             "Name": "SqlQuery",
-            "Value": "SELECT TOP 1 \r\nCodCertMed, \r\nCONVERT(VARCHAR(10), DATEADD(DAY, 1, DatadeSfarsit), 103) AS DataFormatata\r\nFROM app.ConcediuMedical\r\nWHERE Marca = @IdMarca\r\nORDER BY Id DESC",
+            "Value": "SELECT CASE \r\n    WHEN NOT EXISTS (\r\n        SELECT 1 \r\n        FROM app.ConcediuMedical \r\n        WHERE Marca = @Marca \r\n          AND CodCertMedical = @CodCertMedical\r\n    ) THEN 'Lipsa_CM_initial'\r\n\r\n    WHEN (\r\n        SELECT TOP 1 DATEADD(DAY, 1, DatadeSfarsit)\r\n        FROM app.ConcediuMedical\r\n        WHERE Marca = @Marca \r\n          AND CodCertMedical = @CodCertMedical\r\n        ORDER BY DatadeSfarsit DESC\r\n    ) != @DatadeInceput THEN 'Data_neconsecutiva'\r\n\r\n    ELSE 'OK'\r\nEND AS StatusValidare;\r\n",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 221,
@@ -138,8 +152,16 @@
             "Name": "BindTokens",
             "Value": [
               {
-                "name": "IdMarca",
-                "value": "[IdMarca]"
+                "name": "Marca",
+                "value": "[Marca]"
+              },
+              {
+                "name": "CodCertMedical",
+                "value": "[CodCertMed]"
+              },
+              {
+                "name": "DatadeInceput",
+                "value": "[DataInceput]"
               }
             ],
             "ParentParameterId": null,
@@ -150,7 +172,7 @@
           {
             "Id": 1694,
             "Name": "OutputTokenName",
-            "Value": "DateCM",
+            "Value": "StatusValidare",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 221,
@@ -169,122 +191,12 @@
         "DiagramUID": "Activity_1y4r1tc"
       },
       {
-        "Id": 222,
-        "Description": "Cauta cod idemn",
-        "ActionErrorMessage": null,
-        "Condition": null,
-        "ActionType": "RunSql",
-        "OrderIndex": 1,
-        "IsDisabled": false,
-        "ActionParameters": [
-          {
-            "Id": 1696,
-            "Name": "ConnectionString",
-            "Value": null,
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1697,
-            "Name": "QueryTimeout",
-            "Value": null,
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1698,
-            "Name": "SqlQuery",
-            "Value": "SELECT CodCertificat FROM app.NomCertificatMedical\r\nWHERE Id = @CodCM",
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1699,
-            "Name": "OnError",
-            "Value": {
-              "Id": 276,
-              "EventName": "OnError",
-              "Actions": [],
-              "IsInvalid": false
-            },
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1700,
-            "Name": "ShowErrors",
-            "Value": false,
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1701,
-            "Name": "DbConnector",
-            "Value": {
-              "Entry": "",
-              "Group": "",
-              "EntireGroup": false,
-              "Type": "Database",
-              "IsExpression": false,
-              "Expression": ""
-            },
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1702,
-            "Name": "BindTokens",
-            "Value": [
-              {
-                "name": "CodCm",
-                "value": "[DateCM:CodCertMed]"
-              }
-            ],
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1703,
-            "Name": "OutputTokenName",
-            "Value": "CodCertifInit",
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          },
-          {
-            "Id": 1704,
-            "Name": "ExtractColumns",
-            "Value": [],
-            "ParentParameterId": null,
-            "IsExpression": false,
-            "ActionId": 222,
-            "OrderIndex": 0
-          }
-        ],
-        "DiagramUID": "Activity_0dnpupi"
-      },
-      {
         "Id": 223,
         "Description": "Log Event",
         "ActionErrorMessage": null,
         "Condition": "0",
         "ActionType": "LogEvent",
-        "OrderIndex": 2,
+        "OrderIndex": 1,
         "IsDisabled": false,
         "ActionParameters": [
           {
@@ -332,7 +244,7 @@
   "CreatedBy": 5,
   "CreatedOn": "2025-11-19T15:31:35.0738998+00:00",
   "LastModifiedBy": 5,
-  "LastModifiedOn": "2025-11-25T14:12:19.2600717+00:00",
+  "LastModifiedOn": "2026-01-21T14:43:26.7476382+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

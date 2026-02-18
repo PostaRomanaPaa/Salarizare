@@ -57,14 +57,29 @@
       "OrderIndex": 3
     }
   ],
-  "OutputFields": [],
+  "OutputFields": [
+    {
+      "Id": 25,
+      "Name": "CounterZPU",
+      "DefaultValue": "[Data:Zile50]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 20,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
   "Id": 20,
   "GlobalId": "1106430f-fc18-49a3-b19e-c565d92ff667",
   "ContractId": null,
   "ConfigGenerationGlobalId": "1106430f-fc18-49a3-b19e-c565d92ff667",
   "EnvironmentId": 1,
   "Name": "Conditii Form CM",
-  "Description": "",
+  "Description": "Folosesc p_zile50 care se afla deja in entitate, drept counter pentru zilele platite de unitate deja",
   "IsDebug": false,
   "IsSystem": false,
   "ActionList": {
@@ -73,7 +88,7 @@
     "Actions": [
       {
         "Id": 224,
-        "Description": "",
+        "Description": "Split",
         "ActionErrorMessage": "",
         "Condition": "",
         "ActionType": "PlantAnApp.ExecuteConditionally",
@@ -154,7 +169,7 @@
                   "Actions": [
                     {
                       "Id": 226,
-                      "Description": "Run SQL Query",
+                      "Description": "Cauta ultimul CM al Marcii",
                       "ActionErrorMessage": null,
                       "Condition": null,
                       "ActionType": "RunSql",
@@ -205,7 +220,7 @@
                         {
                           "Id": 1719,
                           "Name": "ShowErrors",
-                          "Value": false,
+                          "Value": null,
                           "ParentParameterId": null,
                           "IsExpression": false,
                           "ActionId": 226,
@@ -268,9 +283,9 @@
                     },
                     {
                       "Id": 227,
-                      "Description": "Run SQL Query",
+                      "Description": "Actualizeaza nr de zile platite de unitate",
                       "ActionErrorMessage": null,
-                      "Condition": null,
+                      "Condition": "0",
                       "ActionType": "RunSql",
                       "OrderIndex": 1,
                       "IsDisabled": false,
@@ -319,7 +334,7 @@
                         {
                           "Id": 1728,
                           "Name": "ShowErrors",
-                          "Value": false,
+                          "Value": null,
                           "ParentParameterId": null,
                           "IsExpression": false,
                           "ActionId": 227,
@@ -382,9 +397,9 @@
                     },
                     {
                       "Id": 228,
-                      "Description": "Create/Update Tokens",
+                      "Description": "Update counter ZPU",
                       "ActionErrorMessage": null,
-                      "Condition": null,
+                      "Condition": "0",
                       "ActionType": "ApplyTokens",
                       "OrderIndex": 2,
                       "IsDisabled": false,
@@ -443,7 +458,7 @@
   "CreatedBy": 5,
   "CreatedOn": "2025-12-02T15:45:10.2970256+00:00",
   "LastModifiedBy": 5,
-  "LastModifiedOn": "2025-12-02T15:45:10.2970256+00:00",
+  "LastModifiedOn": "2025-12-11T17:11:21.9924116+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

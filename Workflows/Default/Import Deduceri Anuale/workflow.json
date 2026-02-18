@@ -1,0 +1,327 @@
+{
+  "InputFields": [
+    {
+      "Id": 36,
+      "Name": "FilePath",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 22,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "OutputFields": [],
+  "Id": 22,
+  "GlobalId": "bfb039aa-ba5d-4a58-b29d-2f6592937157",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "bfb039aa-ba5d-4a58-b29d-2f6592937157",
+  "EnvironmentId": 1,
+  "Name": "Import Deduceri Anuale",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 287,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 232,
+        "Description": "Create List from Excel (.xlsx)",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1777,
+            "Name": "FilePath",
+            "Value": "[FilePath]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1778,
+            "Name": "EntityName",
+            "Value": "ListaDeduceri",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1779,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1780,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1781,
+            "Name": "SheetName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1782,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1783,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1784,
+            "Name": "OnError",
+            "Value": {
+              "Id": 288,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1785,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "T1",
+                "value": "T1"
+              },
+              {
+                "name": "T2",
+                "value": "T2"
+              },
+              {
+                "name": "Nr",
+                "value": "Nr"
+              },
+              {
+                "name": "Suma",
+                "value": "Suma"
+              },
+              {
+                "name": "Anul",
+                "value": "Anul"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 232,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_01mwigm"
+      },
+      {
+        "Id": 233,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1786,
+            "Name": "EntityName",
+            "Value": "ListaDeduceri",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 233,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1787,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 233,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1796,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 289,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 234,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "PlantAnApp.CreateEntity.1fdd6ab5-3adf-4351-9cf0-5657e0e93e7a",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 1788,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1789,
+                      "Name": "T1",
+                      "Value": "[ListaDeduceri:T1]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1790,
+                      "Name": "T2",
+                      "Value": "[ListaDeduceri:T2]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1791,
+                      "Name": "Nr",
+                      "Value": "[ListaDeduceri:Nr]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1792,
+                      "Name": "Suma",
+                      "Value": "[ListaDeduceri:Suma]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1793,
+                      "Name": "Anul",
+                      "Value": "[ListaDeduceri:Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1794,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 290,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1795,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 234,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 233,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1797,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 233,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1798,
+            "Name": "OnError",
+            "Value": {
+              "Id": 291,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 233,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1799,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 233,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1mqqmb9"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 9,
+  "CreatedOn": "2026-01-14T12:47:34.2425817+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-01-14T12:47:34.2425817+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

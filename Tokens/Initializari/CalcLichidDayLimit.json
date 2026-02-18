@@ -1,0 +1,21 @@
+{
+  "id": 129,
+  "globalId": "b0caa34b-afa0-411a-a8c8-17b23a037409",
+  "namespace": {
+    "id": 9,
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "CalcLichidDayLimit",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "13",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "13",
+    "evaluateTokens": false,
+    "type": "string"
+  }
+}

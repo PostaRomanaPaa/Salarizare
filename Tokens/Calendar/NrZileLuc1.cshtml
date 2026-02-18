@@ -235,8 +235,19 @@
     string sInt1Days = int1Days > 0 ? int1Days.ToString() : "";
     string sInt2Days = int2Days > 0 ? int2Days.ToString() : "";
     string sInt3Days = int3Days > 0 ? int3Days.ToString() : "";
+   
+   //am inlocuit cele 2 linii cu codul de mai jos
+   // var packed = sInt1Days;
 
-    var packed = sInt1Days;
+   //    @packed 
+    
+    string packed = "";
 
-    @packed
+// Afisam intervalul 1 DOAR daca are zile lucratoare
+if (int1Start.HasValue && int1End.HasValue && int1Days > 0)
+{
+    packed = int1Days.ToString();
+}
+
+@packed
 }

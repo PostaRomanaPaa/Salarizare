@@ -1,0 +1,23 @@
+{
+  "id": 133,
+  "globalId": "44eaa642-87ac-4b6a-a0e5-86aeac422298",
+  "namespace": {
+    "id": 9,
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "NrStatPlataIni",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "select ISNULL(MAX(NumarStatPlata), 0) + 1 as NextStat from app.ConcediudeOdihna\r\nwhere CodSucursala='[TknParams:CodSucursala]' and Anul= '[TknParams:Anul]'\r\nand Anul=2025",
+    "defaultColumn": "NextStat",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

@@ -9,32 +9,6 @@
   "GenerateApiAccess": false,
   "Properties": [
     {
-      "Id": 385,
-      "GlobalId": "753a14ab-b488-450b-9cb3-9ca88d1e40e8",
-      "EntityVersionId": 40,
-      "Name": "Cod Cert Med",
-      "Type": {
-        "Id": "EntityRef",
-        "Name": "Entity Reference",
-        "InputType": {
-          "Id": "EntityRef",
-          "Name": "Entity Reference",
-          "ValueType": 7,
-          "Length": 4,
-          "Icon": null
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": 19,
-      "IsDeleted": false,
-      "IsRequired": true,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 2
-    },
-    {
       "Id": 386,
       "GlobalId": "7717bffa-3627-459a-a3b1-5fa07a9dcf3b",
       "EntityVersionId": 40,
@@ -58,7 +32,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 4
+      "OrderIndex": 5
     },
     {
       "Id": 387,
@@ -84,7 +58,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 5
+      "OrderIndex": 6
     },
     {
       "Id": 388,
@@ -110,7 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 7
     },
     {
       "Id": 389,
@@ -136,7 +110,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 7
+      "OrderIndex": 8
     },
     {
       "Id": 390,
@@ -162,7 +136,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 8
+      "OrderIndex": 9
     },
     {
       "Id": 391,
@@ -188,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 9
+      "OrderIndex": 10
     },
     {
       "Id": 392,
@@ -214,7 +188,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 10
+      "OrderIndex": 11
     },
     {
       "Id": 393,
@@ -240,7 +214,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 11
+      "OrderIndex": 12
     },
     {
       "Id": 394,
@@ -266,7 +240,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 12
+      "OrderIndex": 13
     },
     {
       "Id": 395,
@@ -292,7 +266,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 13
+      "OrderIndex": 14
     },
     {
       "Id": 396,
@@ -318,7 +292,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 14
+      "OrderIndex": 15
     },
     {
       "Id": 397,
@@ -344,7 +318,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 15
+      "OrderIndex": 16
     },
     {
       "Id": 398,
@@ -370,7 +344,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 16
+      "OrderIndex": 17
     },
     {
       "Id": 399,
@@ -396,7 +370,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 17
+      "OrderIndex": 18
     },
     {
       "Id": 400,
@@ -422,7 +396,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 18
+      "OrderIndex": 19
     },
     {
       "Id": 401,
@@ -448,7 +422,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 19
+      "OrderIndex": 20
     },
     {
       "Id": 402,
@@ -474,7 +448,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 20
+      "OrderIndex": 21
     },
     {
       "Id": 403,
@@ -500,7 +474,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 21
+      "OrderIndex": 22
     },
     {
       "Id": 404,
@@ -526,7 +500,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 22
+      "OrderIndex": 23
     },
     {
       "Id": 405,
@@ -552,7 +526,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 23
+      "OrderIndex": 24
     },
     {
       "Id": 406,
@@ -578,7 +552,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 24
+      "OrderIndex": 25
     },
     {
       "Id": 407,
@@ -604,7 +578,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 25
+      "OrderIndex": 26
     },
     {
       "Id": 408,
@@ -630,7 +604,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 26
+      "OrderIndex": 27
     },
     {
       "Id": 409,
@@ -656,7 +630,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 27
+      "OrderIndex": 28
     },
     {
       "Id": 410,
@@ -682,7 +656,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 28
+      "OrderIndex": 29
     },
     {
       "Id": 411,
@@ -708,7 +682,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 29
+      "OrderIndex": 30
     },
     {
       "Id": 412,
@@ -734,7 +708,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 30
+      "OrderIndex": 31
     },
     {
       "Id": 413,
@@ -760,7 +734,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 31
+      "OrderIndex": 32
     },
     {
       "Id": 414,
@@ -786,7 +760,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 32
+      "OrderIndex": 33
     },
     {
       "Id": 415,
@@ -812,7 +786,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 33
+      "OrderIndex": 34
     },
     {
       "Id": 416,
@@ -838,7 +812,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 34
+      "OrderIndex": 35
     },
     {
       "Id": 417,
@@ -864,7 +838,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 35
+      "OrderIndex": 36
     },
     {
       "Id": 418,
@@ -890,7 +864,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 36
+      "OrderIndex": 37
     },
     {
       "Id": 419,
@@ -916,7 +890,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 37
+      "OrderIndex": 38
     },
     {
       "Id": 426,
@@ -945,10 +919,36 @@
       "OrderIndex": 1
     },
     {
-      "Id": 427,
-      "GlobalId": "86512e8a-c5ab-4fda-a92e-468eec84ed36",
+      "Id": 442,
+      "GlobalId": "27e40b83-4399-407c-b0dc-4ae6d3e8cd2f",
       "EntityVersionId": 40,
       "Name": "Marca",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 471,
+      "GlobalId": "0ae73aca-2c7d-4954-b4ad-2886d5fe899a",
+      "EntityVersionId": 40,
+      "Name": "CodCertMedical",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -968,7 +968,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 3
+      "OrderIndex": 2
     }
   ],
   "RolePermissions": {
@@ -1152,7 +1152,7 @@
   "CreatedDate": "2025-11-11T11:19:39.32",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2025-11-21T14:18:44.05",
+  "LastModifiedOn": "2026-02-09T09:40:43.0166667",
   "Icon": "book-medical",
   "Type": 0,
   "BuiltInType": null,

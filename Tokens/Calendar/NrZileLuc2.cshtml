@@ -236,7 +236,13 @@
     string sInt2Days = int2Days > 0 ? int2Days.ToString() : "";
     string sInt3Days = int3Days > 0 ? int3Days.ToString() : "";
 
-    var packed = sInt2Days;
+    string packed = "0";
 
-    @packed
+// Returnăm DOAR intervalul 2
+if (int2Start.HasValue && int2End.HasValue)
+{
+    packed = int2Days.ToString();
 }
+
+@packed
+    }

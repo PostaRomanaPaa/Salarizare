@@ -64,7 +64,7 @@
       "Id": 515,
       "GlobalId": "43e1418f-6e43-45e5-9a1e-0cf3f13b9644",
       "EntityVersionId": 51,
-      "Name": "An Sesiune",
+      "Name": "Anul",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -90,7 +90,7 @@
       "Id": 516,
       "GlobalId": "d9055be5-3942-4117-ac7a-95b08b85ad7b",
       "EntityVersionId": 51,
-      "Name": "Luna Sesiune",
+      "Name": "Luna",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -135,6 +135,32 @@
       "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 573,
+      "GlobalId": "3fbe5268-3cb0-4716-9cfa-c5f6439b3655",
+      "EntityVersionId": 51,
+      "Name": "Status",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": "1",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 55,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
       "IsSortable": false,
       "OrderIndex": 6
     }
@@ -354,7 +380,7 @@
   "CreatedDate": "2026-02-12T12:04:29.3666667",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-02-12T14:43:46.3233333",
+  "LastModifiedOn": "2026-03-02T10:58:59.3033333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

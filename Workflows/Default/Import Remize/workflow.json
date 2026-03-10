@@ -1,0 +1,327 @@
+{
+  "InputFields": [
+    {
+      "Id": 43,
+      "Name": "FilePath",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 24,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "OutputFields": [],
+  "Id": 24,
+  "GlobalId": "fbca303b-37f8-417f-aad6-6d258e3044d2",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "fbca303b-37f8-417f-aad6-6d258e3044d2",
+  "EnvironmentId": 1,
+  "Name": "Import Remize",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 298,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 239,
+        "Description": "Create List from Excel (.xlsx)",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1835,
+            "Name": "FilePath",
+            "Value": "[FilePath]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1836,
+            "Name": "EntityName",
+            "Value": "ListaRemize",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1837,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1838,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1839,
+            "Name": "SheetName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1840,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1841,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1842,
+            "Name": "OnError",
+            "Value": {
+              "Id": 299,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1843,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "Cod Sucursala",
+                "value": "Cod Sucursala"
+              },
+              {
+                "name": "Marca",
+                "value": "Marca"
+              },
+              {
+                "name": "Suma",
+                "value": "Suma"
+              },
+              {
+                "name": "Luna",
+                "value": "Luna"
+              },
+              {
+                "name": "Anul",
+                "value": "Anul"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 239,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0zdci9w"
+      },
+      {
+        "Id": 240,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1844,
+            "Name": "EntityName",
+            "Value": "ListaRemize",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 240,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1845,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 240,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1858,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 300,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 242,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "PlantAnApp.CreateEntity.c794d006-8749-4629-a12a-7c9335042594",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 1862,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1863,
+                      "Name": "CodSucursala",
+                      "Value": "[ListaRemize:Cod Sucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1864,
+                      "Name": "Anul",
+                      "Value": "[ListaRemize:Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1865,
+                      "Name": "Luna",
+                      "Value": "[ListaRemize:Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1866,
+                      "Name": "Marca",
+                      "Value": "[ListaRemize:Marca]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1867,
+                      "Name": "Suma",
+                      "Value": "[ListaRemize:Suma]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1869,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 303,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1870,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 242,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 240,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1859,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 240,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1860,
+            "Name": "OnError",
+            "Value": {
+              "Id": 302,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 240,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1861,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 240,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_12jo3z6"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 9,
+  "CreatedOn": "2026-02-18T14:16:28.3952534+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-02-18T14:26:45.1899451+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

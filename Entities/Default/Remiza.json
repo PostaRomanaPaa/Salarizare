@@ -137,32 +137,6 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 5
-    },
-    {
-      "Id": 508,
-      "GlobalId": "98e93ffd-8b1b-48b5-9b71-c4ff4bf58925",
-      "EntityVersionId": 49,
-      "Name": "Numar ordine",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 6
     }
   ],
   "RolePermissions": {
@@ -399,8 +373,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2026-02-10T11:09:06.28",
   "CreatedBy": "Alexandra Vasilescu",
-  "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-02-16T15:25:04.8",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-02-18T14:21:41.7533333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

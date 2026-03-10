@@ -1,0 +1,23 @@
+{
+  "id": 136,
+  "globalId": "d9cde4c3-2f5c-4424-b2e3-3208791d7829",
+  "namespace": {
+    "id": 7,
+    "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+    "name": "Helper",
+    "isSystem": false
+  },
+  "name": "TokenStatusCalculTaxePostale",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT CASE \n    WHEN EXISTS (\n        SELECT 1 \n        FROM app.PensieAlimentara \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV=0]' \n          AND Luna = '[GetOrSession:MonthV=0]' \n          AND StatusCalculTaxe = 3\n    ) THEN 3\n    WHEN EXISTS (\n        SELECT 1 \n        FROM app.PensieAlimentara \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV=0]' \n          AND Luna = '[GetOrSession:MonthV=0]' \n          AND StatusCalculTaxe = 2\n    ) THEN 2 \n    ELSE 1   \nEND AS TokenStatusTaxePostale;",
+    "defaultColumn": "TokenStatusTaxePostale",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

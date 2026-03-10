@@ -1,0 +1,763 @@
+{
+  "InputFields": [
+    {
+      "Id": 44,
+      "Name": "FisierExcel",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "EntityRef",
+      "EntityVersionId": 3,
+      "WorkflowId": 25,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 46,
+      "Name": "Anul",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 25,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 47,
+      "Name": "Luna",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 25,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 48,
+      "Name": "CodSucursala",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 25,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 3
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 49,
+      "Name": "NumarImpostori",
+      "DefaultValue": "[NumarImpostori]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 25,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "Id": 25,
+  "GlobalId": "5345a932-2121-47e3-99b0-4f9162e0cb34",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "5345a932-2121-47e3-99b0-4f9162e0cb34",
+  "EnvironmentId": 1,
+  "Name": "Import Agenti - User",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 304,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 243,
+        "Description": "Create List from Excel (.xlsx)",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1873,
+            "Name": "FilePath",
+            "Value": "[File:GetLink(FileIdentifier=\"[FisierExcel:Id]\")]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1874,
+            "Name": "EntityName",
+            "Value": "ListaAgenti",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1875,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1876,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1877,
+            "Name": "SheetName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1878,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1879,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1880,
+            "Name": "OnError",
+            "Value": {
+              "Id": 305,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1881,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "Cod Sucursala",
+                "value": "Cod Sucursala"
+              },
+              {
+                "name": "Marca",
+                "value": "Marca"
+              },
+              {
+                "name": "Suma",
+                "value": "Suma"
+              },
+              {
+                "name": "Procent",
+                "value": "Procent"
+              },
+              {
+                "name": "Cod Prestatie",
+                "value": "Cod Prestatie"
+              },
+              {
+                "name": "Nume Prestatie",
+                "value": "Nume Prestatie"
+              },
+              {
+                "name": "nrord",
+                "value": "Numar Ordine"
+              },
+              {
+                "name": "Luna",
+                "value": "Luna"
+              },
+              {
+                "name": "Anul",
+                "value": "Anul"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 243,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0zdci9w"
+      },
+      {
+        "Id": 244,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1882,
+            "Name": "EntityName",
+            "Value": "ListaAgenti",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 244,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1883,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 244,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1895,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 306,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 247,
+                  "Description": "Verifica duplicate",
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "RunSql",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 1908,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1909,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1910,
+                      "Name": "SqlQuery",
+                      "Value": "SELECT COUNT(*) AS NrExistente\r\nFROM app.Agent\r\nWHERE Anul = @Anul \r\n  AND Luna = @Luna \r\n  -- Folosim CAST pentru a ne asigura că TRIM primește un string, evitând eroarea de tip de date\r\n  AND TRIM(CAST(CodSucursala AS NVARCHAR(450))) = TRIM(CAST(@CodSucursala AS NVARCHAR(450)))\r\n  AND TRIM(CAST(Marca AS NVARCHAR(450))) = TRIM(CAST(@Marca AS NVARCHAR(450)))\r\n  \r\n  -- Tratăm CodPrestatie care poate fi NULL sau gol\r\n  AND ISNULL(TRIM(CAST(CodPrestatie AS NVARCHAR(450))), '') = ISNULL(TRIM(CAST(@CodPrestatie AS NVARCHAR(450))), '')\r\n  \r\n  -- Suma: Ambele sunt Decimal(18), deci comparăm direct sau cu ABS pentru siguranță\r\n  AND ABS(CAST(ISNULL(Suma, 0) AS DECIMAL(18,2)) - CAST(ISNULL(@Suma, 0) AS DECIMAL(18,2))) < 0.01",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1911,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 310,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1912,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1913,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1914,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[ListaAgenti:Cod Sucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[ListaAgenti:Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[ListaAgenti:Luna]"
+                        },
+                        {
+                          "name": "Marca",
+                          "value": "[ListaAgenti:Marca]"
+                        },
+                        {
+                          "name": "CodPrestatie",
+                          "value": "[ListaAgenti:Cod Prestatie]"
+                        },
+                        {
+                          "name": "Suma",
+                          "value": "[ListaAgenti:Suma]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1915,
+                      "Name": "OutputTokenName",
+                      "Value": "ExistaPrestatie",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1916,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 247,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 248,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": "0",
+                  "ActionType": "LogEvent",
+                  "OrderIndex": 1,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 1917,
+                      "Name": "EventType",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 248,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1918,
+                      "Name": "UserID",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 248,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1919,
+                      "Name": "LogProperties",
+                      "Value": [
+                        {
+                          "name": "ExistaPrestatie",
+                          "value": "[ExistaPrestatie]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 248,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 245,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": "[ExistaPrestatie] == 0 && \"[ListaAgenti:Cod Sucursala]\" == \"[CodSucursala]\"",
+                  "ActionType": "PlantAnApp.CreateEntity.8f013273-5d1c-43ee-8065-538d800f7f7f",
+                  "OrderIndex": 2,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 1884,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1885,
+                      "Name": "CodSucursala",
+                      "Value": "[ListaAgenti:Cod Sucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1886,
+                      "Name": "Marca",
+                      "Value": "[ListaAgenti:Marca]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1887,
+                      "Name": "Suma",
+                      "Value": "[ListaAgenti:Suma]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1888,
+                      "Name": "Procent",
+                      "Value": "[ListaAgenti:Procent]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1889,
+                      "Name": "CodPrestatie",
+                      "Value": "[ListaAgenti:Cod Prestatie]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1890,
+                      "Name": "NumePrestatie",
+                      "Value": "[ListaAgenti:Nume Prestatie]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1891,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 307,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1892,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1893,
+                      "Name": "Anul",
+                      "Value": "[ListaAgenti:Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1894,
+                      "Name": "Luna",
+                      "Value": "[ListaAgenti:Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 245,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 244,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1896,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 244,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1897,
+            "Name": "OnError",
+            "Value": {
+              "Id": 308,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 244,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1898,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 244,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_12jo3z6"
+      },
+      {
+        "Id": 246,
+        "Description": "Nr Erori",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 2,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1899,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1900,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1901,
+            "Name": "SqlQuery",
+            "Value": ";WITH Parametri AS (\r\n    SELECT [Initializari:ZileLucratoare_old(Anul = [Anul], Luna = [Luna])] AS ZileLucratoare\r\n),\r\nSalariatiFaraZile AS (\r\n    SELECT a.Marca\r\n    FROM app.Salariat a\r\n    CROSS JOIN Parametri p\r\n    OUTER APPLY (\r\n        SELECT SUM(ISNULL(c.NrZileCO1, 0) + ISNULL(c.NrZileCO2, 0) + ISNULL(c.NrZileCO3, 0)) AS ZileCO\r\n        FROM app.ConcediudeOdihna c\r\n        WHERE c.Marca = a.Marca \r\n          AND c.CodSucursala = a.CodSucursala\r\n          AND (\r\n               (MONTH(c.Interval1DatadeInceput) = @Luna AND YEAR(c.Interval1DatadeInceput) = @Anul) OR\r\n               (MONTH(c.Interval2DatadeInceput) = @Luna AND YEAR(c.Interval2DatadeInceput) = @Anul) OR\r\n               (MONTH(c.Interval3DatadeInceput) = @Luna AND YEAR(c.Interval3DatadeInceput) = @Anul)\r\n          )\r\n    ) co\r\n    OUTER APPLY (\r\n        SELECT SUM(m.TotZileLucratoare) AS ZileCM\r\n        FROM app.ConcediuMedical m\r\n        WHERE m.Marca = a.Marca \r\n          AND m.AnulDePlata = @Anul \r\n          AND m.LunaDePlata = @Luna\r\n          AND m.CodSucursala = @CodSucursala\r\n    ) cm\r\n    WHERE a.Anul = @Anul \r\n      AND a.Luna = @Luna \r\n      AND a.CodSucursala = @CodSucursala\r\n      AND (p.ZileLucratoare - ISNULL(co.ZileCO, 0) - ISNULL(cm.ZileCM, 0)) <= 0\r\n)\r\nSELECT COUNT(DISTINCT ag.Marca) AS NumarImpostori\r\nFROM app.Agent ag\r\nWHERE ag.Anul = @Anul \r\n  AND ag.Luna = @Luna \r\n  AND ag.CodSucursala = @CodSucursala\r\n  AND ag.Marca IN (SELECT Marca FROM SalariatiFaraZile);",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1902,
+            "Name": "OnError",
+            "Value": {
+              "Id": 309,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1903,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1904,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1905,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1906,
+            "Name": "OutputTokenName",
+            "Value": "NumarImpostori",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1907,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 246,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0djzovj"
+      },
+      {
+        "Id": 250,
+        "Description": "Log Event",
+        "ActionErrorMessage": null,
+        "Condition": "0",
+        "ActionType": "LogEvent",
+        "OrderIndex": 3,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 1923,
+            "Name": "EventType",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 250,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1924,
+            "Name": "UserID",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 250,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 1925,
+            "Name": "LogProperties",
+            "Value": [
+              {
+                "name": "NumarImpostori",
+                "value": "[NumarImpostori]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 250,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_05fapiq"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 5,
+  "CreatedOn": "2026-03-04T11:51:01.7324606+00:00",
+  "LastModifiedBy": 5,
+  "LastModifiedOn": "2026-03-10T09:34:07.8908359+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

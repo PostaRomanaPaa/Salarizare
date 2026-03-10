@@ -226,24 +226,6 @@
                       "OrderIndex": 0
                     },
                     {
-                      "Id": 1825,
-                      "Name": "AnSesiuneCurenta",
-                      "Value": "[ListaAgenti:Anul]",
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "ActionId": 238,
-                      "OrderIndex": 0
-                    },
-                    {
-                      "Id": 1826,
-                      "Name": "LunaSesiuneCurenta",
-                      "Value": "[ListaAgenti:Luna]",
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "ActionId": 238,
-                      "OrderIndex": 0
-                    },
-                    {
                       "Id": 1827,
                       "Name": "Marca",
                       "Value": "[ListaAgenti:Marca]",
@@ -289,15 +271,6 @@
                       "OrderIndex": 0
                     },
                     {
-                      "Id": 1832,
-                      "Name": "NumarOrdine",
-                      "Value": "[ListaAgenti:nrord]",
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "ActionId": 238,
-                      "OrderIndex": 0
-                    },
-                    {
                       "Id": 1833,
                       "Name": "OnError",
                       "Value": {
@@ -315,6 +288,24 @@
                       "Id": 1834,
                       "Name": "OutputToken",
                       "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 238,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1871,
+                      "Name": "Anul",
+                      "Value": "[ListaAgenti:Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 238,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 1872,
+                      "Name": "Luna",
+                      "Value": "[ListaAgenti:Luna]",
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "ActionId": 238,
@@ -371,8 +362,8 @@
   },
   "CreatedBy": 9,
   "CreatedOn": "2026-02-17T08:53:37.6490865+00:00",
-  "LastModifiedBy": 9,
-  "LastModifiedOn": "2026-02-17T09:16:38.060358+00:00",
+  "LastModifiedBy": 5,
+  "LastModifiedOn": "2026-03-02T10:13:11.6772614+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

@@ -1,7 +1,7 @@
 {
   "Children": [],
   "DisplayInMenu": false,
-  "ParentPageId": 127,
+  "ParentPageId": 184,
   "DisplayAfter": null,
   "RecordNamePropertyId": 492,
   "UpdateRecordNameProperty": null,
@@ -38,7 +38,7 @@
       "Id": 493,
       "GlobalId": "9ae3c124-172d-4747-97c0-59647d7c9cdf",
       "EntityVersionId": 48,
-      "Name": "An Sesiune Curenta",
+      "Name": "Anul",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -64,7 +64,7 @@
       "Id": 494,
       "GlobalId": "fb2ed558-debc-4f68-b097-a6363b3391d5",
       "EntityVersionId": 48,
-      "Name": "Luna Sesiune Curenta",
+      "Name": "Luna",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -136,7 +136,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 5
     },
     {
       "Id": 498,
@@ -162,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 7
+      "OrderIndex": 6
     },
     {
       "Id": 499,
@@ -188,7 +188,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 8
+      "OrderIndex": 7
     },
     {
       "Id": 500,
@@ -214,33 +214,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 9
-    },
-    {
-      "Id": 501,
-      "GlobalId": "7e1f78f7-2046-47d9-8f8b-83ff341bd5d9",
-      "EntityVersionId": 48,
-      "Name": "Numar Ordine",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 10
+      "OrderIndex": 8
     }
   ],
   "RolePermissions": {
@@ -478,12 +452,12 @@
   "CreatedDate": "2026-02-09T09:46:54.29",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-02-10T15:18:19.9966667",
+  "LastModifiedOn": "2026-03-02T09:43:00.0833333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,
   "EnableIndexing": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
   "EntityTabGlobalId": "38bb3a68-87d2-4351-a2b2-363b6e8411e2",
-  "EntityParentTabGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6"
+  "EntityParentTabGlobalId": "20dde91f-37c8-4645-b6e2-4179e4061f8b"
 }

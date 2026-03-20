@@ -5,8 +5,8 @@
       "Name": "FisierExcel",
       "DefaultValue": null,
       "Type": "Input",
-      "InputType": "EntityRef",
-      "EntityVersionId": 3,
+      "InputType": "Text",
+      "EntityVersionId": null,
       "WorkflowId": 25,
       "ContractFieldId": null,
       "IsDeleted": false,
@@ -60,8 +60,8 @@
   "OutputFields": [
     {
       "Id": 49,
-      "Name": "NumarImpostori",
-      "DefaultValue": "[NumarImpostori]",
+      "Name": "RezultatErori",
+      "DefaultValue": "[RezultatErori]",
       "Type": "Output",
       "InputType": "Text",
       "EntityVersionId": null,
@@ -98,7 +98,7 @@
           {
             "Id": 1873,
             "Name": "FilePath",
-            "Value": "[File:GetLink(FileIdentifier=\"[FisierExcel:Id]\")]",
+            "Value": "[File:GetLink(FileIdentifier=[FisierExcel=0])]",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 243,
@@ -618,7 +618,7 @@
           {
             "Id": 1901,
             "Name": "SqlQuery",
-            "Value": ";WITH Parametri AS (\r\n    SELECT [Initializari:ZileLucratoare_old(Anul = [Anul], Luna = [Luna])] AS ZileLucratoare\r\n),\r\nSalariatiFaraZile AS (\r\n    SELECT a.Marca\r\n    FROM app.Salariat a\r\n    CROSS JOIN Parametri p\r\n    OUTER APPLY (\r\n        SELECT SUM(ISNULL(c.NrZileCO1, 0) + ISNULL(c.NrZileCO2, 0) + ISNULL(c.NrZileCO3, 0)) AS ZileCO\r\n        FROM app.ConcediudeOdihna c\r\n        WHERE c.Marca = a.Marca \r\n          AND c.CodSucursala = a.CodSucursala\r\n          AND (\r\n               (MONTH(c.Interval1DatadeInceput) = @Luna AND YEAR(c.Interval1DatadeInceput) = @Anul) OR\r\n               (MONTH(c.Interval2DatadeInceput) = @Luna AND YEAR(c.Interval2DatadeInceput) = @Anul) OR\r\n               (MONTH(c.Interval3DatadeInceput) = @Luna AND YEAR(c.Interval3DatadeInceput) = @Anul)\r\n          )\r\n    ) co\r\n    OUTER APPLY (\r\n        SELECT SUM(m.TotZileLucratoare) AS ZileCM\r\n        FROM app.ConcediuMedical m\r\n        WHERE m.Marca = a.Marca \r\n          AND m.AnulDePlata = @Anul \r\n          AND m.LunaDePlata = @Luna\r\n          AND m.CodSucursala = @CodSucursala\r\n    ) cm\r\n    WHERE a.Anul = @Anul \r\n      AND a.Luna = @Luna \r\n      AND a.CodSucursala = @CodSucursala\r\n      AND (p.ZileLucratoare - ISNULL(co.ZileCO, 0) - ISNULL(cm.ZileCM, 0)) <= 0\r\n)\r\nSELECT COUNT(DISTINCT ag.Marca) AS NumarImpostori\r\nFROM app.Agent ag\r\nWHERE ag.Anul = @Anul \r\n  AND ag.Luna = @Luna \r\n  AND ag.CodSucursala = @CodSucursala\r\n  AND ag.Marca IN (SELECT Marca FROM SalariatiFaraZile);",
+            "Value": ";WITH Parametri AS (\r\n    SELECT [Initializari:ZileLucratoare_old(Anul = [Anul], Luna = [Luna])] AS ZileLucratoare\r\n),\r\nSalariatiFaraZile AS (\r\n    SELECT a.Marca\r\n    FROM app.Salariat a\r\n    CROSS JOIN Parametri p\r\n    OUTER APPLY (\r\n        SELECT SUM(ISNULL(c.NrZileCO1, 0) + ISNULL(c.NrZileCO2, 0) + ISNULL(c.NrZileCO3, 0)) AS ZileCO\r\n        FROM app.ConcediudeOdihna c\r\n        WHERE c.Marca = a.Marca \r\n          AND c.CodSucursala = a.CodSucursala\r\n          AND (\r\n               (MONTH(c.Interval1DatadeInceput) = @Luna AND YEAR(c.Interval1DatadeInceput) = @Anul) OR\r\n               (MONTH(c.Interval2DatadeInceput) = @Luna AND YEAR(c.Interval2DatadeInceput) = @Anul) OR\r\n               (MONTH(c.Interval3DatadeInceput) = @Luna AND YEAR(c.Interval3DatadeInceput) = @Anul)\r\n          )\r\n    ) co\r\n    OUTER APPLY (\r\n        SELECT SUM(m.TotZileLucratoare) AS ZileCM\r\n        FROM app.ConcediuMedical m\r\n        WHERE m.Marca = a.Marca \r\n          AND m.AnulDePlata = @Anul \r\n          AND m.LunaDePlata = @Luna\r\n          AND m.CodSucursala = @CodSucursala\r\n    ) cm\r\n    WHERE a.Anul = @Anul \r\n      AND a.Luna = @Luna \r\n      AND a.CodSucursala = @CodSucursala\r\n      AND (p.ZileLucratoare - ISNULL(co.ZileCO, 0) - ISNULL(cm.ZileCM, 0)) <= 0\r\n)\r\n-- Folosim ISNULL pe un subquery pentru a decide statusul dintr-o singură lovitură\r\nSELECT ISNULL(\r\n    (SELECT TOP 1 'GASIT' \r\n     FROM app.Agent ag \r\n     WHERE ag.Anul = @Anul AND ag.Luna = @Luna AND ag.CodSucursala = @CodSucursala \r\n     AND ag.Marca IN (SELECT Marca FROM SalariatiFaraZile)), \r\n    'CURAT'\r\n) AS RezultatErori;",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 246,
@@ -688,7 +688,7 @@
           {
             "Id": 1906,
             "Name": "OutputTokenName",
-            "Value": "NumarImpostori",
+            "Value": "RezultatErori",
             "ParentParameterId": null,
             "IsExpression": false,
             "ActionId": 246,
@@ -710,7 +710,7 @@
         "Id": 250,
         "Description": "Log Event",
         "ActionErrorMessage": null,
-        "Condition": "0",
+        "Condition": null,
         "ActionType": "LogEvent",
         "OrderIndex": 3,
         "IsDisabled": false,
@@ -739,7 +739,7 @@
             "Value": [
               {
                 "name": "NumarImpostori",
-                "value": "[NumarImpostori]"
+                "value": "[RezultatErori]"
               }
             ],
             "ParentParameterId": null,
@@ -756,7 +756,7 @@
   "CreatedBy": 5,
   "CreatedOn": "2026-03-04T11:51:01.7324606+00:00",
   "LastModifiedBy": 5,
-  "LastModifiedOn": "2026-03-10T09:34:07.8908359+00:00",
+  "LastModifiedOn": "2026-03-19T08:47:09.9477519+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

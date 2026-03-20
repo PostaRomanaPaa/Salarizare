@@ -24,6 +24,18 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
             <rolename>All Users</rolename>
         </permission>
         <permission>
@@ -56,8 +68,47 @@
             <allowaccess>true</allowaccess>
             <rolename>Users</rolename>
         </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Users</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Utilizator_Module_Operative_Test</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Utilizator_Module_Operative_Test</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Payroll_Operator</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Payroll_Operator</rolename>
+        </permission>
     </tabpermissions>
-    <tabsettings />
+    <tabsettings>
+        <tabsetting>
+            <settingname>AllowIndex</settingname>
+            <settingvalue>True</settingvalue>
+        </tabsetting>
+        <tabsetting>
+            <settingname>LinkNewWindow</settingname>
+            <settingvalue>False</settingvalue>
+        </tabsetting>
+    </tabsettings>
     <tabUrls>
         <tabUrl SeqNum="1" Url="/Salarizare/Import-date-personal" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
     </tabUrls>

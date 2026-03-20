@@ -1,5 +1,5 @@
 <tab>
-    <content>Salariati</content>
+    <content>Detail</content>
     <contentKey />
     <containersrc>[G]containers/PageBuilder/nocardnotitle.ascx</containersrc>
     <cultureCode />
@@ -16,7 +16,7 @@
     <sitemappriority>0.5</sitemappriority>
     <skinsrc>[G]skins/pagebuilder/default-bs5.ascx</skinsrc>
     <startdate>0001-01-01T00:00:00</startdate>
-    <name>Salariati</name>
+    <name>Detail</name>
     <title />
     <url type="Normal" />
     <tabpermissions>
@@ -46,6 +46,12 @@
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Payroll_Operator</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Citizen Developers</rolename>
@@ -63,7 +69,5 @@
             <settingvalue>table</settingvalue>
         </tabsetting>
     </tabsettings>
-    <tabUrls>
-        <tabUrl SeqNum="1" Url="/Salariati" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-    </tabUrls>
+    <tabUrls />
 </tab>

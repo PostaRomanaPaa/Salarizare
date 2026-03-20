@@ -292,7 +292,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 12
+      "OrderIndex": 13
     },
     {
       "Id": 489,
@@ -318,7 +318,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 13
+      "OrderIndex": 14
     },
     {
       "Id": 490,
@@ -345,6 +345,32 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 1
+    },
+    {
+      "Id": 598,
+      "GlobalId": "71d3ddd7-3f14-4aee-9e9d-f84a32673d5e",
+      "EntityVersionId": 47,
+      "Name": "Judet",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 12
     }
   ],
   "RolePermissions": {
@@ -569,6 +595,48 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "13": [
+      {
+        "Id": 956,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 957,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 958,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 959,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
     ]
   },
   "Id": 47,
@@ -581,8 +649,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2026-02-06T09:55:13.32",
   "CreatedBy": "Cristian Tudorache",
-  "LastModifiedBy": "Cristian Tudorache",
-  "LastModifiedOn": "2026-03-05T09:03:31.99",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-03-19T13:48:57.9",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

@@ -129,22 +129,22 @@
       "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuLichidare/tab.xml"
     },
     {
+      "GlobalId": "2492954e-7150-44e0-a120-dd83100ad3f4",
+      "ParentPageGlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "TabPath": "//Salarizare//CalculSalarii//CalculLichidare//Lichidari//Detail",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ParentPageGlobalId": "7f105888-8e7b-4990-8d21-5a5257108504",
+      "TabPath": "//Salarizare//CalculSalarii//CalculLichidare//Lichidari",
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/tab.xml"
+    },
+    {
       "GlobalId": "7f105888-8e7b-4990-8d21-5a5257108504",
       "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
       "TabPath": "//Salarizare//CalculSalarii//CalculLichidare",
       "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/tab.xml"
-    },
-    {
-      "GlobalId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
-      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
-      "TabPath": "//Salarizare//CalculSalarii//Lichidari",
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidari/tab.xml"
-    },
-    {
-      "GlobalId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
-      "ParentPageGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6",
-      "TabPath": "//Salarizare//CalculSalarii//Salariati",
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Salariati/tab.xml"
     },
     {
       "GlobalId": "30eec84e-a659-4340-a60d-827b38c872be",
@@ -772,6 +772,17 @@
       "GlobalId": "9251dd6a-26ea-444c-9c6f-b9982c96c1f3",
       "TabPath": "//ControlLichidari",
       "ContentPath": "Pages/ControlLichidari/tab.xml"
+    },
+    {
+      "GlobalId": "8309a863-57b4-4af9-bcd5-3a7361e478c1",
+      "ParentPageGlobalId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "TabPath": "//Salariati//Detail",
+      "ContentPath": "Pages/Salariati/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "TabPath": "//Salariati",
+      "ContentPath": "Pages/Salariati/tab.xml"
     }
   ],
   "Modules": [
@@ -1586,6 +1597,42 @@
       "ContentPath": "Pages/ControlLichidari/SessionForm.xml"
     },
     {
+      "GlobalId": "b528072e-90fe-4d86-be1e-fd3ca0c496f0",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/Header.xml"
+    },
+    {
+      "GlobalId": "4a2402cd-21ff-4225-823d-60a8b8c4137d",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "Salariati Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salariati/Salariati Listing.xml"
+    },
+    {
+      "GlobalId": "4c5daf25-b703-47a2-b18e-a91a28d43e78",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "Salariat Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salariati/Salariat Form.xml"
+    },
+    {
+      "GlobalId": "5946b0fe-c54b-4a2b-a8de-6b4be887b0e8",
+      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/SessionForm.xml"
+    },
+    {
       "GlobalId": "b970fc97-228a-4b03-8cf2-8de314bf45e4",
       "ParentPageId": "b427d0cb-8bac-4f18-94cf-ad41892aba89",
       "ModuleTitle": "Header Form",
@@ -1836,6 +1883,51 @@
       "PaneName": "MBP_1",
       "Order": 1,
       "ContentPath": "Pages/CasieriPlatitori/Detail/SessionForm.xml"
+    },
+    {
+      "GlobalId": "89126b22-1fc4-4b3e-b511-356432e3de5c",
+      "ParentPageId": "8309a863-57b4-4af9-bcd5-3a7361e478c1",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "aec638ad-daf9-41ec-ab8c-af0d21cc54db",
+      "ParentPageId": "8309a863-57b4-4af9-bcd5-3a7361e478c1",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salariati/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "5880832e-9b8f-4658-886a-90228f0145b5",
+      "ParentPageId": "8309a863-57b4-4af9-bcd5-3a7361e478c1",
+      "ModuleTitle": "Salariat Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salariati/Detail/Salariat Form.xml"
+    },
+    {
+      "GlobalId": "cc78cecb-a13f-43fe-8ea9-276327cdf28e",
+      "ParentPageId": "8309a863-57b4-4af9-bcd5-3a7361e478c1",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Salariati/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "124451a0-8fd7-4b5d-9188-fdbb61f797a6",
+      "ParentPageId": "8309a863-57b4-4af9-bcd5-3a7361e478c1",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salariati/Detail/SessionForm.xml"
     },
     {
       "GlobalId": "d88f043a-a35c-4a14-b0c0-1444137763a5",
@@ -3548,87 +3640,6 @@
       "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/SessionForm.xml"
     },
     {
-      "GlobalId": "50d68fb1-96eb-4c02-be23-12b2d344f7b8",
-      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
-      "ModuleTitle": "Header",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidari/Header.xml"
-    },
-    {
-      "GlobalId": "faf24d69-49bb-41a6-9949-5a1d5cfdaa7a",
-      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
-      "ModuleTitle": "Lichidari Listing",
-      "FriendlyName": "avt.ActionGrid",
-      "PaneName": "ContentPane",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidari/Lichidari Listing.xml"
-    },
-    {
-      "GlobalId": "af4b12a2-c56c-4a29-a1e5-3d963fd91e80",
-      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
-      "ModuleTitle": "Lichidare Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 5,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidari/Lichidare Form.xml"
-    },
-    {
-      "GlobalId": "0fe2a5f3-ce05-4408-9a9c-7fe5f97110b6",
-      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
-      "ModuleTitle": "Text/HTML",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidari/Untitled Text/HTML 1 in MBP_1.xml"
-    },
-    {
-      "GlobalId": "22dedfc1-6a50-4d74-a214-1d2b8dfa90e5",
-      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Lichidari/SessionForm.xml"
-    },
-    {
-      "GlobalId": "b528072e-90fe-4d86-be1e-fd3ca0c496f0",
-      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
-      "ModuleTitle": "Header",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Salariati/Header.xml"
-    },
-    {
-      "GlobalId": "4a2402cd-21ff-4225-823d-60a8b8c4137d",
-      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
-      "ModuleTitle": "Salariati Listing",
-      "FriendlyName": "avt.ActionGrid",
-      "PaneName": "ContentPane",
-      "Order": 3,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Salariati/Salariati Listing.xml"
-    },
-    {
-      "GlobalId": "4c5daf25-b703-47a2-b18e-a91a28d43e78",
-      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
-      "ModuleTitle": "Salariat Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 5,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Salariati/Salariat Form.xml"
-    },
-    {
-      "GlobalId": "5946b0fe-c54b-4a2b-a8de-6b4be887b0e8",
-      "ParentPageId": "cdfeb0a8-d862-4f11-9ec1-cf4d76d5a020",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/Salariati/SessionForm.xml"
-    },
-    {
       "GlobalId": "665efdec-de7f-4769-865a-d2b101bc212c",
       "ParentPageId": "30eec84e-a659-4340-a60d-827b38c872be",
       "ModuleTitle": "Header Form",
@@ -4916,6 +4927,51 @@
       "ContentPath": "Pages/Salarizare/TabeledeSistem/Luni/Detail/SessionForm.xml"
     },
     {
+      "GlobalId": "50d68fb1-96eb-4c02-be23-12b2d344f7b8",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Header.xml"
+    },
+    {
+      "GlobalId": "faf24d69-49bb-41a6-9949-5a1d5cfdaa7a",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "Lichidari Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Lichidari Listing.xml"
+    },
+    {
+      "GlobalId": "af4b12a2-c56c-4a29-a1e5-3d963fd91e80",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "Lichidare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Lichidare Form.xml"
+    },
+    {
+      "GlobalId": "0fe2a5f3-ce05-4408-9a9c-7fe5f97110b6",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "Text/HTML",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Untitled Text/HTML 1 in MBP_1.xml"
+    },
+    {
+      "GlobalId": "22dedfc1-6a50-4d74-a214-1d2b8dfa90e5",
+      "ParentPageId": "80f8ae00-5f35-4090-ba0d-1d3f621716cb",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/SessionForm.xml"
+    },
+    {
       "GlobalId": "1def891e-8735-4f2a-8244-3f1ddd589844",
       "ParentPageId": "3428c85f-35ef-4643-89f1-097f8d458126",
       "ModuleTitle": "Header Form",
@@ -5642,7 +5698,7 @@
       "FriendlyName": "avt.ActionGrid",
       "PaneName": "ContentPane",
       "Order": 1,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuLichidare/CalculLichidari/Duplicate Exceptii Lichidare 1 in ContentPane.xml"
+      "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuLichidare/CalculLichidari/Exceptii Lichidare.xml"
     },
     {
       "GlobalId": "363ee253-36d3-4e99-bf66-c9a5d0b2d0ae",
@@ -5656,11 +5712,11 @@
     {
       "GlobalId": "1bb22a68-7bed-4a8c-ab36-afb55b87dc9f",
       "ParentPageId": "7812864a-403c-4090-bf79-2c1466e6be9b",
-      "ModuleTitle": "Exceptii Lichidare",
+      "ModuleTitle": "Calcul Lichidari Listing",
       "FriendlyName": "avt.ActionGrid",
       "PaneName": "ContentPane",
       "Order": 5,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuLichidare/CalculLichidari/Duplicate Exceptii Lichidare 5 in ContentPane.xml"
+      "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuLichidare/CalculLichidari/Calcul Lichidari Listing.xml"
     },
     {
       "GlobalId": "5e8d7de3-6fee-4719-82e9-7253831e8713",
@@ -6088,11 +6144,11 @@
     {
       "GlobalId": "a351e975-5310-49f7-9c57-d275ff25d22d",
       "ParentPageId": "7335b715-4b6b-4576-8fc1-09b7bf9b9598",
-      "ModuleTitle": "Sume Agenti Listing",
+      "ModuleTitle": "Calcul Agenti Listing",
       "FriendlyName": "avt.ActionGrid",
       "PaneName": "ContentPane",
       "Order": 3,
-      "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuPrestatiiAgenti/CalculAgenti/Sume Agenti Listing.xml"
+      "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuPrestatiiAgenti/CalculAgenti/Calcul Agenti Listing.xml"
     },
     {
       "GlobalId": "29ca58c1-735e-4121-a570-69e58d03aa5a",
@@ -6156,6 +6212,15 @@
       "PaneName": "MBP_1",
       "Order": 1,
       "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuPrestatiiAgenti/Agenti/SessionForm.xml"
+    },
+    {
+      "GlobalId": "6079ff5b-a404-45df-9ff9-bb45938053db",
+      "ParentPageId": "38bb3a68-87d2-4351-a2b2-363b6e8411e2",
+      "ModuleTitle": "Toast Message Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P1_75_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/MeniuPrestatiiAgenti/Agenti/Toast Message Form.xml"
     },
     {
       "GlobalId": "ef327255-f074-4a47-8653-df11cf8d5e74",
@@ -6228,6 +6293,51 @@
       "PaneName": "MBP_1",
       "Order": 1,
       "ContentPath": "Pages/Salarizare/CalculSalarii/PensiiAlimentare/Detail/SessionForm.xml"
+    },
+    {
+      "GlobalId": "aab12aca-781d-4af0-beb6-f888d0624361",
+      "ParentPageId": "2492954e-7150-44e0-a120-dd83100ad3f4",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "2a11eb3b-8b3d-4a10-b9fa-99d202f60d28",
+      "ParentPageId": "2492954e-7150-44e0-a120-dd83100ad3f4",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "8fe8c4c6-47db-4b8d-9200-d633ded32f3b",
+      "ParentPageId": "2492954e-7150-44e0-a120-dd83100ad3f4",
+      "ModuleTitle": "Lichidare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Detail/Lichidare Form.xml"
+    },
+    {
+      "GlobalId": "64c9764e-a670-4263-b772-1a185362a1d9",
+      "ParentPageId": "2492954e-7150-44e0-a120-dd83100ad3f4",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "dfb75a93-c45c-4b67-a16e-9ffb50613890",
+      "ParentPageId": "2492954e-7150-44e0-a120-dd83100ad3f4",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/Salarizare/CalculSalarii/CalculLichidare/Lichidari/Detail/SessionForm.xml"
     },
     {
       "GlobalId": "8c053293-68e2-4ac8-a4a3-80a73355b6b7",
@@ -6817,6 +6927,11 @@
       "DefinitionPath": "Tokens/UserInfo/NumeAutocomplete.json"
     },
     {
+      "GlobalId": "acf593f7-3202-4231-a936-23fef8387bc1",
+      "NamespaceGlobalId": "072487c0-5131-4ab8-9461-c63e9e2c989b",
+      "DefinitionPath": "Tokens/UserInfo/User_CodSucursala.json"
+    },
+    {
       "GlobalId": "93d13a04-9ead-4e21-870d-d48e622f02b4",
       "NamespaceGlobalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
       "DefinitionPath": "Tokens/Calendar/CalculZileLucratoare.json",
@@ -7176,7 +7291,12 @@
     }
   ],
   "ApiMethods": [],
-  "Roles": [],
+  "Roles": [
+    {
+      "Name": "Payroll_Operator",
+      "ContentPath": "Roles/Payroll_Operator.json"
+    }
+  ],
   "SchedulerJobs": [
     {
       "GlobalId": "038e24c0-90e5-4d78-89bf-4eebc987a1ac",

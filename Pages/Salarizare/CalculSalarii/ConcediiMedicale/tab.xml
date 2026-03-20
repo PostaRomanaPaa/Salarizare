@@ -1,7 +1,7 @@
 <tab>
     <content>Concedii Medicale</content>
     <contentKey />
-    <containersrc>[G]containers/PageBuilder/nocardnotitle.ascx</containersrc>
+    <containersrc />
     <cultureCode />
     <description />
     <disabled>false</disabled>
@@ -14,12 +14,24 @@
     <permanentredirect>false</permanentredirect>
     <refreshinterval>-1</refreshinterval>
     <sitemappriority>0.5</sitemappriority>
-    <skinsrc>[G]skins/pagebuilder/default-bs5.ascx</skinsrc>
+    <skinsrc />
     <startdate>0001-01-01T00:00:00</startdate>
     <name>Concedii Medicale</name>
     <title />
     <url type="Normal" />
     <tabpermissions>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
@@ -34,7 +46,19 @@
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Citizen Developers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Low-Code Engineer</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Low-Code Engineer</rolename>
         </permission>
@@ -46,18 +70,38 @@
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
+            <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Citizen Developers</rolename>
+            <rolename>Payroll_Operator</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
+            <rolename>Payroll_Operator</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Utilizator_Module_Operative_Test</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Utilizator_Module_Operative_Test</rolename>
         </permission>
     </tabpermissions>
     <tabsettings>
+        <tabsetting>
+            <settingname>LinkNewWindow</settingname>
+            <settingvalue>False</settingvalue>
+        </tabsetting>
+        <tabsetting>
+            <settingname>AllowIndex</settingname>
+            <settingvalue>True</settingvalue>
+        </tabsetting>
         <tabsetting>
             <settingname>Pa_IconClass</settingname>
             <settingvalue>book-medical</settingvalue>

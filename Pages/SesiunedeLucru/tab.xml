@@ -24,6 +24,24 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Admins</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
             <rolename>Admins</rolename>
         </permission>
         <permission>
@@ -36,19 +54,27 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Admins</rolename>
+            <rolename>Managers</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
+            <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Managers</rolename>
+            <rolename>Acces_J</rolename>
         </permission>
     </tabpermissions>
     <tabsettings>
         <tabsetting>
+            <settingname>AllowIndex</settingname>
+            <settingvalue>True</settingvalue>
+        </tabsetting>
+        <tabsetting>
             <settingname>CustomStylesheet</settingname>
             <settingvalue>PageStylesheets/  84.css</settingvalue>
+        </tabsetting>
+        <tabsetting>
+            <settingname>LinkNewWindow</settingname>
+            <settingvalue>False</settingvalue>
         </tabsetting>
     </tabsettings>
     <tabUrls />

@@ -396,47 +396,47 @@
         "RoleId": 9,
         "RoleName": "Users",
         "Value": "all"
-      },
-      {
-        "Id": 744,
-        "PermissionType": {
-          "Id": 2,
-          "Name": "Can Add"
-        },
-        "RoleId": 9,
-        "RoleName": "Users",
-        "Value": "true"
-      },
-      {
-        "Id": 745,
-        "PermissionType": {
-          "Id": 3,
-          "Name": "Can Edit"
-        },
-        "RoleId": 9,
-        "RoleName": "Users",
-        "Value": "all"
-      },
-      {
-        "Id": 746,
-        "PermissionType": {
-          "Id": 4,
-          "Name": "Can Delete"
-        },
-        "RoleId": 9,
-        "RoleName": "Users",
-        "Value": "all"
       }
     ],
-    "-1": [
+    "13": [
       {
-        "Id": 747,
+        "Id": 900,
         "PermissionType": {
           "Id": 1,
           "Name": "Can View"
         },
-        "RoleId": -1,
-        "RoleName": "All Users",
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 901,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 902,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 903,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
         "Value": "all"
       }
     ]
@@ -452,7 +452,7 @@
   "CreatedDate": "2026-02-09T09:46:54.29",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-02T09:43:00.0833333",
+  "LastModifiedOn": "2026-03-18T10:58:04.3566667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

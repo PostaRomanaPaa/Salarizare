@@ -1,5 +1,5 @@
 <tab>
-    <content>Control Lichidari</content>
+    <content>Detail</content>
     <contentKey />
     <containersrc>[G]containers/PageBuilder/nocardnotitle.ascx</containersrc>
     <cultureCode />
@@ -7,7 +7,7 @@
     <disabled>false</disabled>
     <enddate>0001-01-01T00:00:00</enddate>
     <issecure>false</issecure>
-    <visible>true</visible>
+    <visible>false</visible>
     <issystem>false</issystem>
     <keywords />
     <pageheadtext />
@@ -16,7 +16,7 @@
     <sitemappriority>0.5</sitemappriority>
     <skinsrc>[G]skins/pagebuilder/default-bs5.ascx</skinsrc>
     <startdate>0001-01-01T00:00:00</startdate>
-    <name>Control Lichidari</name>
+    <name>Detail</name>
     <title />
     <url type="Normal" />
     <tabpermissions>
@@ -69,5 +69,7 @@
             <settingvalue>table</settingvalue>
         </tabsetting>
     </tabsettings>
-    <tabUrls />
+    <tabUrls>
+        <tabUrl SeqNum="1" Url="/Control-Lichidari/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+    </tabUrls>
 </tab>

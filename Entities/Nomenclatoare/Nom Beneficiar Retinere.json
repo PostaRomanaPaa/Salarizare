@@ -494,6 +494,16 @@
         "RoleId": 9,
         "RoleName": "Users",
         "Value": "all"
+      },
+      {
+        "Id": 1192,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
       }
     ],
     "-1": [
@@ -505,6 +515,48 @@
         },
         "RoleId": -1,
         "RoleName": "All Users",
+        "Value": "all"
+      }
+    ],
+    "13": [
+      {
+        "Id": 1193,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1194,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1195,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1196,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
         "Value": "all"
       }
     ]
@@ -519,8 +571,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-16T11:53:31.41",
   "CreatedBy": "Carmen Mardare",
-  "LastModifiedBy": "Cristian Tudorache",
-  "LastModifiedOn": "2026-02-06T12:37:36.7733333",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-03-26T14:24:27.9033333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

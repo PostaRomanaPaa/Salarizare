@@ -294,7 +294,7 @@
         "Value": "all"
       },
       {
-        "Id": 1001,
+        "Id": 1055,
         "PermissionType": {
           "Id": 2,
           "Name": "Can Add"
@@ -304,7 +304,7 @@
         "Value": "true"
       },
       {
-        "Id": 1002,
+        "Id": 1056,
         "PermissionType": {
           "Id": 3,
           "Name": "Can Edit"
@@ -314,13 +314,55 @@
         "Value": "all"
       },
       {
-        "Id": 1003,
+        "Id": 1057,
         "PermissionType": {
           "Id": 4,
           "Name": "Can Delete"
         },
         "RoleId": 13,
         "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
+    "9": [
+      {
+        "Id": 1042,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1058,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1059,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1060,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
         "Value": "all"
       }
     ]
@@ -335,8 +377,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-03T12:38:05.27",
   "CreatedBy": "Alexandra Vasilescu",
-  "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-19T13:54:44.0633333",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-03-26T13:04:26.0266667",
   "Icon": "calendar-day",
   "Type": 0,
   "BuiltInType": null,

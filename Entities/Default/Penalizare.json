@@ -307,6 +307,90 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "9": [
+      {
+        "Id": 1238,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1239,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1240,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1241,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
+    ],
+    "13": [
+      {
+        "Id": 1242,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1243,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1244,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1245,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
     ]
   },
   "Id": 45,
@@ -319,8 +403,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2026-01-09T08:48:43.9",
   "CreatedBy": "Cristian Tudorache",
-  "LastModifiedBy": "Cristian Tudorache",
-  "LastModifiedOn": "2026-03-05T09:01:38.5333333",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-03-26T13:23:36.3966667",
   "Icon": "ticket-alt",
   "Type": 0,
   "BuiltInType": null,

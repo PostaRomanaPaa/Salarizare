@@ -1,7 +1,7 @@
 {
   "Children": [],
   "DisplayInMenu": true,
-  "ParentPageId": -1,
+  "ParentPageId": 94,
   "DisplayAfter": null,
   "RecordNamePropertyId": 9,
   "UpdateRecordNameProperty": null,
@@ -671,6 +671,90 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "9": [
+      {
+        "Id": 1074,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1075,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1076,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1077,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
+    ],
+    "13": [
+      {
+        "Id": 1078,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1079,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1080,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1081,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
     ]
   },
   "Id": 5,
@@ -684,11 +768,12 @@
   "CreatedDate": "2025-09-16T08:22:04.51",
   "CreatedBy": "Ciprian Aelenei",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-19T13:40:55.0266667",
+  "LastModifiedOn": "2026-03-26T13:14:24.6966667",
   "Icon": "user",
   "Type": 0,
   "BuiltInType": null,
   "EnableIndexing": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
-  "EntityTabGlobalId": "8d4789bf-7361-4896-869e-2498c2b39479"
+  "EntityTabGlobalId": "8d4789bf-7361-4896-869e-2498c2b39479",
+  "EntityParentTabGlobalId": "01deb641-6b24-4c42-9313-d69087787ad2"
 }

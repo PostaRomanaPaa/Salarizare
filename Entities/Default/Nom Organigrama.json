@@ -463,6 +463,90 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "13": [
+      {
+        "Id": 1016,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1262,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1263,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1264,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
+    "9": [
+      {
+        "Id": 1258,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1259,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1260,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1261,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
     ]
   },
   "Id": 14,
@@ -475,8 +559,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-03T12:43:29.5333333",
   "CreatedBy": "Carmen Mardare",
-  "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-12-08T13:52:01.0666667",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-03-26T13:24:11.63",
   "Icon": "traffic-light",
   "Type": 0,
   "BuiltInType": null,

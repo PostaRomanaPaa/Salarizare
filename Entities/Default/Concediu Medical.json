@@ -1,6 +1,6 @@
 {
   "Children": [],
-  "DisplayInMenu": true,
+  "DisplayInMenu": false,
   "ParentPageId": 127,
   "DisplayAfter": null,
   "RecordNamePropertyId": 407,
@@ -1139,6 +1139,90 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "9": [
+      {
+        "Id": 1123,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1124,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1125,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1126,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
+    ],
+    "13": [
+      {
+        "Id": 1127,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1128,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1129,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1130,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
     ]
   },
   "Id": 40,
@@ -1152,7 +1236,7 @@
   "CreatedDate": "2025-11-11T11:19:39.32",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-02-20T11:06:05.01",
+  "LastModifiedOn": "2026-03-26T13:17:17.7066667",
   "Icon": "book-medical",
   "Type": 0,
   "BuiltInType": null,

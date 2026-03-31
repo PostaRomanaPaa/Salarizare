@@ -349,6 +349,48 @@
         "RoleName": "Payroll_Operator",
         "Value": "all"
       }
+    ],
+    "9": [
+      {
+        "Id": 1043,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1096,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1097,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1098,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
     ]
   },
   "Id": 33,
@@ -361,8 +403,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-30T08:26:04.53",
   "CreatedBy": "Carmen Mardare",
-  "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-19T13:52:50.8833333",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-03-26T13:15:29.6066667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

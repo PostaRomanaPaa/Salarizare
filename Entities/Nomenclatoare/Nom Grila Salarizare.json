@@ -255,6 +255,90 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "13": [
+      {
+        "Id": 1014,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1235,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1236,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1237,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
+    "9": [
+      {
+        "Id": 1027,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1232,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1233,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1234,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
     ]
   },
   "Id": 7,
@@ -267,8 +351,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-03T09:06:23.52",
   "CreatedBy": "Ciprian Aelenei",
-  "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-12-05T08:45:37.7833333",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-03-26T13:23:21.5333333",
   "Icon": "align-left",
   "Type": 0,
   "BuiltInType": null,

@@ -14,7 +14,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT CASE \n    WHEN EXISTS (\n        SELECT 1 \n        FROM app.PensieAlimentara \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV=0]' \n          AND Luna = '[GetOrSession:MonthV=0]' \n          AND StatusCalculTaxe = 3\n    ) THEN 3\n    WHEN EXISTS (\n        SELECT 1 \n        FROM app.PensieAlimentara \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV=0]' \n          AND Luna = '[GetOrSession:MonthV=0]' \n          AND StatusCalculTaxe = 2\n    ) THEN 2 \n    ELSE 1   \nEND AS TokenStatusTaxePostale;",
+    "sql": "SELECT CASE \n       WHEN EXISTS (\n        SELECT 1 \n        FROM app.PensieAlimentara \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV=0]' \n          AND Luna = '[GetOrSession:MonthV=0]' \n          AND StatusCalculTaxe = 2\n    ) THEN 2 \n    ELSE 1   \nEND AS TokenStatusTaxePostale;",
     "defaultColumn": "TokenStatusTaxePostale",
     "columns": "",
     "connectionString": "",

@@ -1,7 +1,7 @@
 {
   "Children": [],
   "DisplayInMenu": false,
-  "ParentPageId": -1,
+  "ParentPageId": 103,
   "DisplayAfter": null,
   "RecordNamePropertyId": 378,
   "UpdateRecordNameProperty": null,
@@ -271,6 +271,48 @@
         "RoleName": "Payroll_Operator",
         "Value": "all"
       }
+    ],
+    "9": [
+      {
+        "Id": 1197,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1198,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1199,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1200,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
     ]
   },
   "Id": 37,
@@ -284,11 +326,12 @@
   "CreatedDate": "2025-11-07T09:46:07.11",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-03-23T07:53:26.0433333",
+  "LastModifiedOn": "2026-03-26T13:21:01.77",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,
   "EnableIndexing": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
-  "EntityTabGlobalId": "0e02f8f9-ee67-4e3c-b2d4-16fee06ba7bc"
+  "EntityTabGlobalId": "0e02f8f9-ee67-4e3c-b2d4-16fee06ba7bc",
+  "EntityParentTabGlobalId": "b177d78c-c851-461e-9c83-7f0b07f7a405"
 }

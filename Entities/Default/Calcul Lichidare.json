@@ -58,7 +58,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 31
+      "OrderIndex": 38
     },
     {
       "Id": 526,
@@ -84,7 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 32
+      "OrderIndex": 39
     },
     {
       "Id": 527,
@@ -162,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 33
+      "OrderIndex": 40
     },
     {
       "Id": 531,
@@ -714,7 +714,7 @@
       "Id": 552,
       "GlobalId": "585aea4b-33a6-4657-8289-919e2642029f",
       "EntityVersionId": 53,
-      "Name": "Alte Retineri",
+      "Name": "Total Retineri",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -734,7 +734,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 27
+      "OrderIndex": 34
     },
     {
       "Id": 553,
@@ -760,7 +760,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 28
+      "OrderIndex": 35
     },
     {
       "Id": 554,
@@ -786,7 +786,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 29
+      "OrderIndex": 36
     },
     {
       "Id": 555,
@@ -812,7 +812,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 30
+      "OrderIndex": 37
     },
     {
       "Id": 556,
@@ -864,7 +864,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 34
+      "OrderIndex": 41
     },
     {
       "Id": 582,
@@ -891,6 +891,188 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 4
+    },
+    {
+      "Id": 599,
+      "GlobalId": "93767a88-5c71-411c-b6e5-cab40482ce5e",
+      "EntityVersionId": 53,
+      "Name": "Chirii",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 27
+    },
+    {
+      "Id": 600,
+      "GlobalId": "dbeba88a-53af-40ca-9864-ad14f3d6720f",
+      "EntityVersionId": 53,
+      "Name": "Casa",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 28
+    },
+    {
+      "Id": 601,
+      "GlobalId": "de7648d5-9aff-4131-ad11-0a10c2f67c01",
+      "EntityVersionId": 53,
+      "Name": "Banca",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 29
+    },
+    {
+      "Id": 602,
+      "GlobalId": "516969b3-29f9-4dd1-a936-9c778c81c199",
+      "EntityVersionId": 53,
+      "Name": "Garantii",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 30
+    },
+    {
+      "Id": 603,
+      "GlobalId": "212826de-f6b0-4415-95f9-13f939a16298",
+      "EntityVersionId": 53,
+      "Name": "Popriri",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 31
+    },
+    {
+      "Id": 604,
+      "GlobalId": "72a64927-b092-45b5-8940-e3cb2e3109ca",
+      "EntityVersionId": 53,
+      "Name": "Imputatii",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 32
+    },
+    {
+      "Id": 605,
+      "GlobalId": "f598bda3-a70a-41db-aaea-6a62d41a5325",
+      "EntityVersionId": 53,
+      "Name": "AlteRate",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 33
     }
   ],
   "RolePermissions": {
@@ -923,7 +1105,7 @@
         },
         "RoleId": 9,
         "RoleName": "Users",
-        "Value": "own"
+        "Value": "all"
       },
       {
         "Id": 828,
@@ -933,7 +1115,7 @@
         },
         "RoleId": 9,
         "RoleName": "Users",
-        "Value": "own"
+        "Value": "all"
       }
     ],
     "-1": [
@@ -1169,8 +1351,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2026-02-23T10:40:26.1",
   "CreatedBy": "Carmen Mardare",
-  "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-19T13:41:54.7433333",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-03-30T13:28:52.9266667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

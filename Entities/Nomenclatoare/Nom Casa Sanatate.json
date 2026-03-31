@@ -229,6 +229,90 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "13": [
+      {
+        "Id": 1010,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1210,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1211,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1212,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
+    "9": [
+      {
+        "Id": 1024,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1207,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1208,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1209,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
     ]
   },
   "Id": 12,
@@ -241,8 +325,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-03T12:22:51.98",
   "CreatedBy": "Alexandra Vasilescu",
-  "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-10-21T13:51:47.3166667",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-03-26T13:21:48.95",
   "Icon": "clinic-medical",
   "Type": 0,
   "BuiltInType": null,

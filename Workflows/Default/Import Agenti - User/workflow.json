@@ -197,10 +197,6 @@
                 "value": "Cod Prestatie"
               },
               {
-                "name": "Nume Prestatie",
-                "value": "Nume Prestatie"
-              },
-              {
                 "name": "nrord",
                 "value": "Numar Ordine"
               },
@@ -495,7 +491,7 @@
                     {
                       "Id": 1890,
                       "Name": "NumePrestatie",
-                      "Value": "[ListaAgenti:Nume Prestatie]",
+                      "Value": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "ActionId": 245,
@@ -756,7 +752,7 @@
   "CreatedBy": 5,
   "CreatedOn": "2026-03-04T11:51:01.7324606+00:00",
   "LastModifiedBy": 5,
-  "LastModifiedOn": "2026-03-19T08:47:09.9477519+00:00",
+  "LastModifiedOn": "2026-03-25T14:09:32.0133839+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

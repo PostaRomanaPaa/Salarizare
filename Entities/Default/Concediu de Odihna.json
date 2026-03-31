@@ -1,7 +1,7 @@
 {
   "Children": [],
   "DisplayInMenu": false,
-  "ParentPageId": -1,
+  "ParentPageId": 141,
   "DisplayAfter": null,
   "RecordNamePropertyId": 351,
   "UpdateRecordNameProperty": null,
@@ -916,6 +916,36 @@
         "RoleId": 9,
         "RoleName": "Users",
         "Value": "all"
+      },
+      {
+        "Id": 1052,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1053,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1054,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
       }
     ],
     "13": [
@@ -972,11 +1002,12 @@
   "CreatedDate": "2025-11-05T15:15:03.4633333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-19T13:42:36.8966667",
+  "LastModifiedOn": "2026-03-26T13:16:51.92",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,
   "EnableIndexing": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
-  "EntityTabGlobalId": "3b6c044b-1895-4a85-be20-f5c196044e7b"
+  "EntityTabGlobalId": "3b6c044b-1895-4a85-be20-f5c196044e7b",
+  "EntityParentTabGlobalId": "9b7517e1-244c-4e2d-9bb5-e68b12cf6905"
 }

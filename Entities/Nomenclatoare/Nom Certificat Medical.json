@@ -256,19 +256,61 @@
         "Value": "all"
       }
     ],
+    "13": [
+      {
+        "Id": 1012,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1216,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1217,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1218,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
     "9": [
       {
-        "Id": 261,
+        "Id": 1026,
         "PermissionType": {
           "Id": 1,
           "Name": "Can View"
         },
         "RoleId": 9,
         "RoleName": "Users",
-        "Value": "own"
+        "Value": "all"
       },
       {
-        "Id": 262,
+        "Id": 1213,
         "PermissionType": {
           "Id": 2,
           "Name": "Can Add"
@@ -278,24 +320,24 @@
         "Value": "true"
       },
       {
-        "Id": 263,
+        "Id": 1214,
         "PermissionType": {
           "Id": 3,
           "Name": "Can Edit"
         },
         "RoleId": 9,
         "RoleName": "Users",
-        "Value": "own"
+        "Value": "all"
       },
       {
-        "Id": 264,
+        "Id": 1215,
         "PermissionType": {
           "Id": 4,
           "Name": "Can Delete"
         },
         "RoleId": 9,
         "RoleName": "Users",
-        "Value": "own"
+        "Value": "all"
       }
     ]
   },
@@ -310,7 +352,7 @@
   "CreatedDate": "2025-10-07T07:33:17.6833333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2025-11-26T15:07:03.6766667",
+  "LastModifiedOn": "2026-03-26T13:22:17.0866667",
   "Icon": "file-signature",
   "Type": 0,
   "BuiltInType": null,

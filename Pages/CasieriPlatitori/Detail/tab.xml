@@ -46,6 +46,18 @@
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Payroll_Operator</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Users</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Citizen Developers</rolename>
@@ -63,5 +75,11 @@
             <settingvalue>table</settingvalue>
         </tabsetting>
     </tabsettings>
-    <tabUrls />
+    <tabUrls>
+        <tabUrl SeqNum="1" Url="/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="2" Url="/Salarizare-test/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="3" Url="/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="4" Url="/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="5" Url="/Sesiune-de-Lucru/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+    </tabUrls>
 </tab>

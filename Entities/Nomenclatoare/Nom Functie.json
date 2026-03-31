@@ -568,9 +568,51 @@
         "Value": "all"
       }
     ],
+    "13": [
+      {
+        "Id": 1013,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1229,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1230,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1231,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
     "9": [
       {
-        "Id": 634,
+        "Id": 1225,
         "PermissionType": {
           "Id": 1,
           "Name": "Can View"
@@ -580,7 +622,17 @@
         "Value": "all"
       },
       {
-        "Id": 635,
+        "Id": 1226,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1227,
         "PermissionType": {
           "Id": 3,
           "Name": "Can Edit"
@@ -590,25 +642,13 @@
         "Value": "all"
       },
       {
-        "Id": 636,
+        "Id": 1228,
         "PermissionType": {
           "Id": 4,
           "Name": "Can Delete"
         },
         "RoleId": 9,
         "RoleName": "Users",
-        "Value": "all"
-      }
-    ],
-    "-1": [
-      {
-        "Id": 637,
-        "PermissionType": {
-          "Id": 1,
-          "Name": "Can View"
-        },
-        "RoleId": -1,
-        "RoleName": "All Users",
         "Value": "all"
       }
     ]
@@ -623,8 +663,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-03T10:48:04.82",
   "CreatedBy": "Ciprian Aelenei",
-  "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2025-12-05T07:56:04.6366667",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-03-26T13:23:00.2466667",
   "Icon": "certificate",
   "Type": 0,
   "BuiltInType": null,

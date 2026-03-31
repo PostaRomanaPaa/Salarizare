@@ -189,32 +189,6 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 7
-    },
-    {
-      "Id": 500,
-      "GlobalId": "de518c85-03ce-455a-b2ba-7771bd368ee7",
-      "EntityVersionId": 48,
-      "Name": "Nume Prestatie",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 8
     }
   ],
   "RolePermissions": {
@@ -396,6 +370,36 @@
         "RoleId": 9,
         "RoleName": "Users",
         "Value": "all"
+      },
+      {
+        "Id": 1061,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1062,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1063,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
       }
     ],
     "13": [
@@ -452,7 +456,7 @@
   "CreatedDate": "2026-02-09T09:46:54.29",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-18T10:58:04.3566667",
+  "LastModifiedOn": "2026-03-26T13:04:54.35",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

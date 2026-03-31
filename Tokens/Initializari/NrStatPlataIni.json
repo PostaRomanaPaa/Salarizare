@@ -14,7 +14,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "select ISNULL(MAX(NumarStatPlata), 0) + 1 as NextStat from app.ConcediudeOdihna\r\nwhere CodSucursala='[TknParams:CodSucursala]' and Anul= '[TknParams:Anul]'\r\nand Anul=2025",
+    "sql": "select ISNULL(MAX(NumarStatPlata), 0) + 1 as NextStat from app.ConcediudeOdihna\r\nwhere CodSucursala='[TknParams:CodSucursala]' and Anul= '[TknParams:Anul]'",
     "defaultColumn": "NextStat",
     "columns": "",
     "connectionString": "",

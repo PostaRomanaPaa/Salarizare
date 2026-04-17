@@ -1,0 +1,503 @@
+{
+  "InputFields": [
+    {
+      "Id": 70,
+      "Name": "CodSucursala",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 31,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 71,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 31,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 72,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 31,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 73,
+      "Name": "Fisier",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 31,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 3
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 74,
+      "Name": "CNPrezultat",
+      "DefaultValue": "[invalide]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 31,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "Id": 31,
+  "GlobalId": "b1233188-a271-47c9-bcd6-a12041d9e700",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "b1233188-a271-47c9-bcd6-a12041d9e700",
+  "EnvironmentId": 1,
+  "Name": "SendEmailCNPinvalid Initial",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 354,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 307,
+        "Description": "verifiFisier",
+        "ActionErrorMessage": null,
+        "Condition": "0",
+        "ActionType": "LogEvent",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2332,
+            "Name": "EventType",
+            "Value": "ADMIN_ALERT",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 307,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2333,
+            "Name": "UserID",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 307,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2334,
+            "Name": "LogProperties",
+            "Value": [
+              {
+                "name": "Fisier",
+                "value": "[Fisier]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 307,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0zvn0es"
+      },
+      {
+        "Id": 308,
+        "Description": "CNP-uri invalide",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2335,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2336,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2337,
+            "Name": "SqlQuery",
+            "Value": "select \r\n    max(Fisier) as Fisier,\r\n    count(*) as Total,\r\n   string_agg(\r\n    '<tr style=\"line-height:12px;\">' +\r\n    '<td style=\"padding:2px 4px;\">' + CNP + '</td>' +\r\n    '<td style=\"padding:2px 4px;\">' + Nume + '</td>' +\r\n    '<td style=\"padding:2px 4px;\">' + Mesaj + '</td>' +\r\n    '<td style=\"padding:2px 4px;\">' + Fisier + '</td>' +\r\n    '</tr>'\r\n, '') as RowsHTML\r\nfrom app.PensieFacEroare\r\nwhere CodSucursala = @CodSucursala\r\n  and Anul = @Anul\r\n  and Luna = @Luna\r\n  and Fisier = @Fisier",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2338,
+            "Name": "OnError",
+            "Value": {
+              "Id": 355,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2339,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2340,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2341,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              },
+              {
+                "name": "Fisier",
+                "value": "[Fisier]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2342,
+            "Name": "OutputTokenName",
+            "Value": "invalide",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2343,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "name": "RowsHTML",
+                "value": "RowsHTML"
+              },
+              {
+                "name": "Total",
+                "value": "Total"
+              },
+              {
+                "name": "Fisier",
+                "value": "Fisier"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 308,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0y46nnm"
+      },
+      {
+        "Id": 309,
+        "Description": "verifCNP",
+        "ActionErrorMessage": null,
+        "Condition": "0",
+        "ActionType": "LogEvent",
+        "OrderIndex": 2,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2344,
+            "Name": "EventType",
+            "Value": "ADMIN_ALERT",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 309,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2345,
+            "Name": "UserID",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 309,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2346,
+            "Name": "LogProperties",
+            "Value": [
+              {
+                "name": "CNP",
+                "value": "[CNP]"
+              },
+              {
+                "name": "Fisier",
+                "value": "[Fisier]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 309,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0vypnqg"
+      },
+      {
+        "Id": 310,
+        "Description": "Send Email",
+        "ActionErrorMessage": null,
+        "Condition": "[Total] > 0",
+        "ActionType": "SendMail",
+        "OrderIndex": 3,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2347,
+            "Name": "From",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2348,
+            "Name": "To",
+            "Value": "maria.mardare@ro.post",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2349,
+            "Name": "DetermineEmail",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2350,
+            "Name": "ToAllUsers",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2351,
+            "Name": "ReplyTo",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2352,
+            "Name": "Cc",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2353,
+            "Name": "Bcc",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2354,
+            "Name": "Subject",
+            "Value": "CNP-uri invalide - [Fisier]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2355,
+            "Name": "Format",
+            "Value": "HtmlWithoutNewline",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2356,
+            "Name": "DnnEmailTemplate",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2357,
+            "Name": "Body",
+            "Value": "<p>Buna,</p>\n<p>&lt;p style=\"margin-bottom:5px;\"&gt;<br>Au fost identificate CNP-uri invalide in fisierul: &lt;b&gt;[Fisier]&lt;/b&gt;<br>&lt;/p&gt;</p>\n<p>&lt;table style=\"border-collapse: collapse; font-size:12px;\"&gt;<br>&nbsp; &nbsp; [RowsHTML]<br>&lt;/table&gt;</p>\n<p>&lt;b&gt;Total CNP-uri invalide: [Total]&lt;/b&gt;</p>\n<p>Multumesc.</p>",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2358,
+            "Name": "PortalFiles",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2359,
+            "Name": "FileToken1",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2360,
+            "Name": "OnError",
+            "Value": {
+              "Id": 356,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2361,
+            "Name": "IgnoreErros",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2362,
+            "Name": "Credentials",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "smtp",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2363,
+            "Name": "Headers",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 310,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1ah2bnx"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 9,
+  "CreatedOn": "2026-04-08T08:22:53.4123917+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-04-08T14:39:25.279572+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

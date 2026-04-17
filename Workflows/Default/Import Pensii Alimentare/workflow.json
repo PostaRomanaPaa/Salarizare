@@ -1,0 +1,419 @@
+{
+  "InputFields": [
+    {
+      "Id": 64,
+      "Name": "FilePath",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 29,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "OutputFields": [],
+  "Id": 29,
+  "GlobalId": "8730f0a4-0041-4233-95a5-f6410761b531",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "8730f0a4-0041-4233-95a5-f6410761b531",
+  "EnvironmentId": 1,
+  "Name": "Import Pensii Alimentare",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 338,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 288,
+        "Description": "Create List from Excel (.xlsx)",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2178,
+            "Name": "FilePath",
+            "Value": "[FilePath]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2179,
+            "Name": "EntityName",
+            "Value": "ListaPensiiAlim",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2180,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2181,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2182,
+            "Name": "SheetName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2183,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2184,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2185,
+            "Name": "OnError",
+            "Value": {
+              "Id": 339,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2186,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "Cod Sucursala",
+                "value": "CodSucursala"
+              },
+              {
+                "name": "Marca",
+                "value": "Marca"
+              },
+              {
+                "name": "Nrc",
+                "value": "Nrc"
+              },
+              {
+                "name": "Rata",
+                "value": "Suma"
+              },
+              {
+                "name": "Rest",
+                "value": "Rest"
+              },
+              {
+                "name": "Destinatar",
+                "value": "Destinatar"
+              },
+              {
+                "name": "Adresa",
+                "value": "Adresa"
+              },
+              {
+                "name": "Post Restant",
+                "value": "PostRestant"
+              },
+              {
+                "name": "Luna",
+                "value": "Luna"
+              },
+              {
+                "name": "Anul",
+                "value": "Anul"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 288,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0zdci9w"
+      },
+      {
+        "Id": 289,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2187,
+            "Name": "EntityName",
+            "Value": "ListaPensiiAlim",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 289,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2188,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 289,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2197,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 340,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 291,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "PlantAnApp.CreateEntity.5032aa2e-3cd5-428c-908f-18c028f33fbb",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2201,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2202,
+                      "Name": "CodSucursala",
+                      "Value": "[ListaPensiiAlim:CodSucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2203,
+                      "Name": "Anul",
+                      "Value": "[ListaPensiiAlim:Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2204,
+                      "Name": "Luna",
+                      "Value": "[ListaPensiiAlim:Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2205,
+                      "Name": "Marca",
+                      "Value": "[ListaPensiiAlim:Marca]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2206,
+                      "Name": "Rata",
+                      "Value": "[ListaPensiiAlim:Rata]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2207,
+                      "Name": "Rest",
+                      "Value": "[ListaPensiiAlim:Rest]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2208,
+                      "Name": "Destinatar",
+                      "Value": "[ListaPensiiAlim:Destinatar]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2209,
+                      "Name": "Adresa",
+                      "Value": "[ListaPensiiAlim:Adresa]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2210,
+                      "Name": "Taxa",
+                      "Value": "[ListaPensiiAlim:Taxa]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2211,
+                      "Name": "Taxam",
+                      "Value": "[ListaPensiiAlim:Taxam]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2212,
+                      "Name": "PostRestant",
+                      "Value": "[ListaPensiiAlim::PostRestant]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2213,
+                      "Name": "Nrc",
+                      "Value": "[ListaPensiiAlim:Nrc]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2214,
+                      "Name": "StatusCalculTaxe",
+                      "Value": "1",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2215,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 343,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2216,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 291,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 289,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2198,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 289,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2199,
+            "Name": "OnError",
+            "Value": {
+              "Id": 342,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 289,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2200,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 289,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_12jo3z6"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 9,
+  "CreatedOn": "2026-04-06T05:52:00.5273283+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-04-06T07:20:44.9726606+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

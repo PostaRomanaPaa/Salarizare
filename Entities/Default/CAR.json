@@ -80,7 +80,7 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": true,
+      "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
@@ -132,7 +132,7 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": true,
+      "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
@@ -184,7 +184,7 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": true,
+      "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
@@ -262,7 +262,7 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": true,
+      "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
@@ -449,6 +449,32 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 2
+    },
+    {
+      "Id": 658,
+      "GlobalId": "ad870fe0-7b41-434c-b57d-b767ced467f8",
+      "EntityVersionId": 44,
+      "Name": "FieldId",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 18
     }
   ],
   "RolePermissions": {
@@ -716,7 +742,7 @@
   "CreatedDate": "2026-01-09T01:13:24.1133333",
   "CreatedBy": "Cristian Tudorache",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-26T13:15:31.6133333",
+  "LastModifiedOn": "2026-04-16T08:01:40.1233333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

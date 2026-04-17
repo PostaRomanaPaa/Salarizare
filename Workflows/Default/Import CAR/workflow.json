@@ -1,0 +1,1185 @@
+{
+  "InputFields": [
+    {
+      "Id": 75,
+      "Name": "Anul",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 32,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 76,
+      "Name": "Luna",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 32,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 77,
+      "Name": "CodSucursala",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 32,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 78,
+      "Name": "FisierExcel",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "EntityRef",
+      "EntityVersionId": 3,
+      "WorkflowId": 32,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 79,
+      "Name": "RezultatErori",
+      "DefaultValue": "[RezultatImport]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 32,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "Id": 32,
+  "GlobalId": "8f4a5374-1f21-480f-82c9-4e26372725ee",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "8f4a5374-1f21-480f-82c9-4e26372725ee",
+  "EnvironmentId": 1,
+  "Name": "Import CAR",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 367,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 324,
+        "Description": "Create List from Excel (.xlsx)",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2461,
+            "Name": "FilePath",
+            "Value": "[File:GetLink(FileIdentifier=[FisierExcel])]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2462,
+            "Name": "EntityName",
+            "Value": "ListaCAR",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2463,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2464,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2465,
+            "Name": "SheetName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2466,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2467,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2468,
+            "Name": "OnError",
+            "Value": {
+              "Id": 369,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2469,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "Cod Sucursala",
+                "value": "Cod Sucursala"
+              },
+              {
+                "name": "Marca",
+                "value": "Marca"
+              },
+              {
+                "name": "Suma",
+                "value": "Suma"
+              },
+              {
+                "name": "Judet",
+                "value": "Judet"
+              },
+              {
+                "name": "Luna",
+                "value": "Luna"
+              },
+              {
+                "name": "Anul",
+                "value": "Anul"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 324,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0zdci9w"
+      },
+      {
+        "Id": 325,
+        "Description": "DeleteCarExistente",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2470,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2471,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2472,
+            "Name": "SqlQuery",
+            "Value": "delete from app.CAR\r\nwhere CodSucursala = @CodSucursala\r\n  and Anul = @Anul\r\n  and Luna = @Luna\r\n  and FieldId=[FisierExcel]\r\n      ",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2473,
+            "Name": "OnError",
+            "Value": {
+              "Id": 370,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2474,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2475,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2476,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2477,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2478,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 325,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0bawoq4"
+      },
+      {
+        "Id": 326,
+        "Description": "Delete CAR cu Marci Invalide",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 2,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2479,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2480,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2481,
+            "Name": "SqlQuery",
+            "Value": "DELETE FROM app.CAREroare\r\nwhere CodSucursala = @CodSucursala\r\n  and Anul = @Anul\r\n  and Luna = @Luna\r\n  and FieldId= [FisierExcel]\r\n\r\n",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2482,
+            "Name": "OnError",
+            "Value": {
+              "Id": 371,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2483,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2484,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2485,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2486,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2487,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 326,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1yrc2pb"
+      },
+      {
+        "Id": 327,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 3,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2488,
+            "Name": "EntityName",
+            "Value": "ListaCAR",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 327,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2489,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 327,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2532,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 372,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 338,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": "[CodSucursala] != [ListaCAR:Cod Sucursala]",
+                  "ActionType": "Result.StopExecution",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 328,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": "0",
+                  "ActionType": "ApplyTokens",
+                  "OrderIndex": 1,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2490,
+                      "Name": "TokenizeTokenNames",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 328,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2491,
+                      "Name": "RecursionCount",
+                      "Value": "1",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 328,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2492,
+                      "Name": "Tokens",
+                      "Value": [
+                        {
+                          "name": "Marca",
+                          "value": "[Marca]"
+                        },
+                        {
+                          "name": "Judet",
+                          "value": "[Judet]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 328,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 329,
+                  "Description": "Cauta Marca",
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "RunSql",
+                  "OrderIndex": 2,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2493,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2494,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2495,
+                      "Name": "SqlQuery",
+                      "Value": "SELECT  Marca FROM app.Salariat \r\nWHERE CodSucursala= @CodSucursala\r\nAND Anul =@Anul\r\nAND Luna= @Luna\r\nAND Marca = @Marca",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2496,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 373,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2497,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2498,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2499,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[ListaCAR:Cod Sucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        },
+                        {
+                          "name": "Marca",
+                          "value": "[ListaCAR:Marca]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2500,
+                      "Name": "OutputTokenName",
+                      "Value": "MarcaGasita",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2501,
+                      "Name": "ExtractColumns",
+                      "Value": [
+                        {
+                          "name": "Marca",
+                          "value": "MarcaGasita"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 329,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 336,
+                  "Description": "Judet incorect",
+                  "ActionErrorMessage": null,
+                  "Condition": "[MarcaGasita] != \"\" && [String:Substring(Input=[ListaCAR:Marca],Start=1,Length=2)] != [ListaCAR:Judet]",
+                  "ActionType": "PlantAnApp.CreateEntity.a6dcb68d-79d5-4369-8da4-0eef8c37966d",
+                  "OrderIndex": 3,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2586,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2587,
+                      "Name": "CodSucursala",
+                      "Value": "[ListaCAR:Cod Sucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2588,
+                      "Name": "Anul",
+                      "Value": "[Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2589,
+                      "Name": "Luna",
+                      "Value": "[Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2590,
+                      "Name": "Marca",
+                      "Value": "[ListaCAR:Marca]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2591,
+                      "Name": "Judet",
+                      "Value": "[ListaCAR:Judet]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2592,
+                      "Name": "Mesaj",
+                      "Value": "Marca nu se potriveste cu Judetul",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2593,
+                      "Name": "FieldId",
+                      "Value": "[FisierExcel]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2594,
+                      "Name": "Fisier",
+                      "Value": "[FisierExcel:FileName]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2595,
+                      "Name": "DataTransmitere",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2596,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 381,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2597,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 336,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 334,
+                  "Description": "Marca inexistenta",
+                  "ActionErrorMessage": null,
+                  "Condition": "[MarcaGasita] == \"\" ",
+                  "ActionType": "PlantAnApp.CreateEntity.a6dcb68d-79d5-4369-8da4-0eef8c37966d",
+                  "OrderIndex": 4,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2554,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2555,
+                      "Name": "CodSucursala",
+                      "Value": "[ListaCAR:Cod Sucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2556,
+                      "Name": "Anul",
+                      "Value": "[Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2557,
+                      "Name": "Luna",
+                      "Value": "[Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2558,
+                      "Name": "Marca",
+                      "Value": "[ListaCAR:Marca]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2559,
+                      "Name": "Judet",
+                      "Value": "[ListaCAR:Judet]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2560,
+                      "Name": "Mesaj",
+                      "Value": "Marca invalida",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2561,
+                      "Name": "FieldId",
+                      "Value": "[FisierExcel]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2562,
+                      "Name": "Fisier",
+                      "Value": "[FisierExcel:FileName]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2563,
+                      "Name": "DataTransmitere",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2564,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 379,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2565,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 334,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 335,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": "[MarcaGasita] != \"\" && [ListaCAR:Marca].Substring(1, 2) == [ListaCAR:Judet]",
+                  "ActionType": "PlantAnApp.CreateEntity.08f38d7a-d79a-4f07-ad1b-381f914a84a4",
+                  "OrderIndex": 5,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2566,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2567,
+                      "Name": "Marca",
+                      "Value": "[ListaCAR:Marca]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2568,
+                      "Name": "CodSucursala",
+                      "Value": "[CodSucursala]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2569,
+                      "Name": "Anul",
+                      "Value": "[Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2570,
+                      "Name": "Luna",
+                      "Value": "[Luna]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2571,
+                      "Name": "Judet",
+                      "Value": "[ListaCAR:Judet]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2572,
+                      "Name": "FondInitial",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2573,
+                      "Name": "FondRezultat",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2574,
+                      "Name": "NumarTotalRate",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2575,
+                      "Name": "RataLunara",
+                      "Value": "[ListaCAR:Suma]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2576,
+                      "Name": "DobandaLunara",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2577,
+                      "Name": "RataRamasa",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2578,
+                      "Name": "DobandaRamasa",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2579,
+                      "Name": "DataContractului",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2580,
+                      "Name": "DataScadentei",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2581,
+                      "Name": "NumardeOrdine",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2582,
+                      "Name": "TaxaInitialaCAR",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2583,
+                      "Name": "RataFonduluiSocial",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2584,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 380,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2585,
+                      "Name": "OutputToken",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2598,
+                      "Name": "FieldId",
+                      "Value": "[FisierExcel]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 335,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 327,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2533,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 327,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2534,
+            "Name": "OnError",
+            "Value": {
+              "Id": 376,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 327,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2535,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 327,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_12jo3z6"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 5,
+  "CreatedOn": "2026-04-15T13:00:47.564097+00:00",
+  "LastModifiedBy": 5,
+  "LastModifiedOn": "2026-04-16T11:11:08.3100386+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

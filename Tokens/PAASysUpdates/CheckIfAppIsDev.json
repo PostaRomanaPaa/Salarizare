@@ -1,5 +1,5 @@
 {
-  "id": 86,
+  "id": 154,
   "globalId": "475d9330-e047-4467-b7c6-1f9a91b8fd7e",
   "namespace": {
     "id": 3,
@@ -15,7 +15,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "url": "https://services.plantanapp.com/api/AppDevCheck?URL=[TknParams:URL]",
+    "url": "https://services.plantanapp.com/api/AppDevCheck?EnvId=[TknParams:EnvId]",
     "get": "",
     "post": "",
     "headers": "",

@@ -14,7 +14,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT CASE \n    WHEN EXISTS (\n        SELECT 1 \n        FROM app.CalculLichidare \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV=0]' \n          AND Luna = '[GetOrSession:MonthV=0]' \n          AND Status = 2\n    ) THEN 2 \n    ELSE 1   \nEND AS TokenStatusLichid;",
+    "sql": "SELECT CASE \n    WHEN EXISTS (\n        SELECT 1 \n        FROM app.CalculLichidare \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV]'\n          AND Luna = '[GetOrSession:MonthV]' \n          AND Status = 2\n    ) THEN 2 \n    ELSE 1   \nEND AS TokenStatusLichid;",
     "defaultColumn": "TokenStatusLichid",
     "columns": "",
     "connectionString": "",

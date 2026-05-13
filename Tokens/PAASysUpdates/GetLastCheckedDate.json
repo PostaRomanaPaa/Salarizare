@@ -1,5 +1,5 @@
 {
-  "id": 89,
+  "id": 157,
   "globalId": "e680fa06-15cb-47c0-9667-9e9257b0efc9",
   "namespace": {
     "id": 3,
@@ -15,7 +15,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "Select FORMAT(MAX(CreatedDate), 'dddd, MMM dd, yyyy, h:mm tt') AS LastDateChecked from dbo.{objectQualifier}PlantAnApp_Updates",
+    "sql": "Select FORMAT(MAX(CreatedDate), 'dddd, MMM dd, yyyy, h:mm tt') AS LastDateChecked from {databaseOwner}[{objectQualifier}PlantAnApp_Updates]",
     "defaultColumn": "",
     "columns": "",
     "connectionString": "",

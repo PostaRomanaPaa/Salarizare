@@ -292,7 +292,7 @@
       "IsSearchable": false,
       "IsFilterable": true,
       "IsSortable": false,
-      "OrderIndex": 11
+      "OrderIndex": 14
     },
     {
       "Id": 622,
@@ -318,7 +318,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 14
+      "OrderIndex": 18
     },
     {
       "Id": 634,
@@ -344,7 +344,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 12
+      "OrderIndex": 15
     },
     {
       "Id": 635,
@@ -370,7 +370,111 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
+      "OrderIndex": 16
+    },
+    {
+      "Id": 670,
+      "GlobalId": "0dd8b81c-c705-4748-8b7a-da007f1c2d6a",
+      "EntityVersionId": 58,
+      "Name": "Contributie Personala Retinuta",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 11
+    },
+    {
+      "Id": 671,
+      "GlobalId": "9454ffa2-6430-4a8c-b7ec-e653da70318a",
+      "EntityVersionId": 58,
+      "Name": "Contributie Angajator Virata",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 12
+    },
+    {
+      "Id": 672,
+      "GlobalId": "c8fc706d-38b3-416f-8baf-a8467a694b0c",
+      "EntityVersionId": 58,
+      "Name": "Contributie Totala Virata",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
       "OrderIndex": 13
+    },
+    {
+      "Id": 673,
+      "GlobalId": "0ab7955d-81c6-4baa-9bf5-7218cc215f5a",
+      "EntityVersionId": 58,
+      "Name": "Data Transmitere",
+      "Type": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "InputType": {
+          "Id": "DateTime",
+          "Name": "Date and Time",
+          "ValueType": 5,
+          "Length": 8,
+          "Icon": "today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 17
     }
   ],
   "RolePermissions": {
@@ -638,7 +742,7 @@
   "CreatedDate": "2026-04-02T10:47:49.5733333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-04-06T13:07:50.34",
+  "LastModifiedOn": "2026-04-29T07:31:25.1733333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

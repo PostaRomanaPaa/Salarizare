@@ -1,4 +1,4 @@
-<module type="ActionGrid" version="05.27.144.00">
+<module type="ActionGrid" version="05.27.148.00">
     <contentKey />
     <moduleID>801</moduleID>
     <alignment />
@@ -33,10 +33,10 @@
     <tabmodulesettings />
     <definition>Action Grid</definition>
     <moduledefinition>avt.ActionGrid</moduledefinition>
-    <content type="ActionGrid" version="05.27.144.00"><![CDATA[&lt;ActionGrid&gt;
+    <content type="ActionGrid" version="05.27.148.00"><![CDATA[&lt;ActionGrid&gt;
   &lt;Settings&gt;
     &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.144&lt;/Build&gt;
+    &lt;Build&gt;5.27.148&lt;/Build&gt;
     &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
     &lt;ModuleId&gt;801&lt;/ModuleId&gt;
     &lt;DataSource&gt;{&quot;DefinitionId&quot;:&quot;SqlQuery&quot;,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;;WITH Parametri AS \n( SELECT [Initializari:ZileLucratoare_old(Anul = [GetOrSession:YearV],Luna = [GetOrSession:MonthV])] AS ZileLucratoare )\nSELECT\n    a.Id,\n    a.Marca,\n    a.Nume,\n    b.Salariu,\n    a.TipNorma,\n\n    p.ZileLucratoare,\n    ISNULL(co.ZileCOLuna, 0) AS ZileCOLuna,\n    ISNULL(cm.ZileCMLuna, 0) AS ZileCMLuna,\n\n    zl.ZileLucrate,\n\n    -- venituri suplimentare\n    ISNULL(ag.SumaAgent,0)    AS SumaAgent,\n    ISNULL(rem.Sume_Remiza,0) AS Sume_Remiza,\n\n    -- placeholder momentan\n    CAST(0 AS DECIMAL(18,2)) AS Sume_AlteDrepturi,\n    CAST(0 AS DECIMAL(18,2)) AS Sume_CAR,\n    CAST(0 AS DECIMAL(18,2)) AS Sume_Pensii_Alim,\n    CAST(0 AS DECIMAL(18,2)) AS Sume_Pensii_Facultative,\n\n    -- calcule\n    ca.OreLucrate,\n    ca.SalBrutEfectiv,\n    ca.TicheteTotale,\n    ca.TotalBrut,\n    ca.CAS,\n    ca.CASS,\n    ca.VenitNet,\n    ca.BazaImpozabila,\n    ca.ImpozitVenit,\n    ca.SalariuNet\n\nFROM app.Salariat a\n\nLEFT JOIN app.NomGrilaSalarizare b\n       ON b.Clasa   = a.Clasa\n      AND b.TipMediu = &#39;U&#39;\n\nLEFT JOIN app.TSTichetMasa t\n       ON t.Anul = a.Anul\n      AND t.Luna = a.Luna\n\nCROSS JOIN Parametri p\n\n-----------------------------------------------------------\n-- CO\n-----------------------------------------------------------\nOUTER APPLY (\n    SELECT\n        SUM(\n            CASE WHEN MONTH(c.Interval1DatadeInceput)=@Luna\n              AND YEAR(c.Interval1DatadeInceput)=@Anul\n                 THEN ISNULL(c.NrZileCO1,0) ELSE 0 END\n          + CASE WHEN MONTH(c.Interval2DatadeInceput)=@Luna\n              AND YEAR(c.Interval2DatadeInceput)=@Anul\n                 THEN ISNULL(c.NrZileCO2,0) ELSE 0 END\n          + CASE WHEN MONTH(c.Interval3DatadeInceput)=@Luna\n              AND YEAR(c.Interval3DatadeInceput)=@Anul\n                 THEN ISNULL(c.NrZileCO3,0) ELSE 0 END\n        ) AS ZileCOLuna\n    FROM app.ConcediudeOdihna c\n    WHERE c.Marca        = a.Marca\n      AND c.CodSucursala = @CodSucursala\n) co\n\n-----------------------------------------------------------\n-- CM\n-----------------------------------------------------------\nOUTER APPLY (\n    SELECT\n        SUM(m.TotZileLucratoare) AS ZileCMLuna\n    FROM app.ConcediuMedical m\n    WHERE m.Marca        = a.Marca\n      AND m.CodSucursala = @CodSucursala\n      AND m.AnulDePlata  = @Anul\n      AND m.LunaDePlata  = @Luna\n) cm\n\n-----------------------------------------------------------\n-- Zile lucrate\n-----------------------------------------------------------\nCROSS APPLY (\n    SELECT\n        CASE\n            WHEN p.ZileLucratoare\n                 - ISNULL(co.ZileCOLuna,0)\n                 - ISNULL(cm.ZileCMLuna,0) &amp;lt; 0\n            THEN 0\n            ELSE p.ZileLucratoare\n                 - ISNULL(co.ZileCOLuna,0)\n                 - ISNULL(cm.ZileCMLuna,0)\n        END AS ZileLucrate\n) zl\n\n-----------------------------------------------------------\n-- Suma Agent (contributivă)\n-----------------------------------------------------------\nOUTER APPLY (\n    SELECT \n        SUM(ISNULL(ca2.Suma,0)) AS SumaAgent\n    FROM app.CalculAgent ca2\n    WHERE ca2.Marca        = a.Marca\n      AND ca2.Anul    = @Anul\n      AND ca2.Luna  = @Luna\n      AND ca2.CodSucursala = @CodSucursala\n) ag\n-----------------------------------------------------------\n-- Suma Remiza (contributivă)\n-----------------------------------------------------------\nOUTER APPLY (\n    SELECT SUM(ISNULL(x.Suma,0)) AS Sume_Remiza\n    FROM app.Remiza x\n    WHERE x.Marca        = a.Marca\n      AND x.Anul        = @Anul\n      AND x.Luna        = @Luna\n      AND x.CodSucursala = @CodSucursala\n) rem\n-----------------------------------------------------------\n-- Blocuri placeholder (valoare 0)\n-----------------------------------------------------------\n--OUTER APPLY (SELECT CAST(0 AS DECIMAL(18,2)) AS Sume_Remiza) rem\nOUTER APPLY (SELECT CAST(0 AS DECIMAL(18,2)) AS Sume_CAR) car\nOUTER APPLY (SELECT CAST(0 AS DECIMAL(18,2)) AS Sume_AlteDrepturi) ad\nOUTER APPLY (SELECT CAST(0 AS DECIMAL(18,2)) AS Sume_Pensii_Alim) pa\nOUTER APPLY (SELECT CAST(0 AS DECIMAL(18,2)) AS Sume_Pensii_Facultative) pf\n\n-----------------------------------------------------------\n-- Calcule financiare\n-----------------------------------------------------------\n-----------------------------------------------------------\n-- Calcule financiare corecte\n-----------------------------------------------------------\nCROSS APPLY (\n    SELECT\n\n        -----------------------------------------\n        -- Ore lucrate\n        -----------------------------------------\n        zl.ZileLucrate * a.TipNorma * 8 AS OreLucrate,\n\n        -----------------------------------------\n        -- Brut proporțional\n        -----------------------------------------\n        ROUND(\n            (b.Salariu / (p.ZileLucratoare * 8))\n            * (zl.ZileLucrate * a.TipNorma * 8),\n            0\n        ) AS SalBrutEfectiv,\n\n        -----------------------------------------\n        -- Tichete\n        -----------------------------------------\n        ISNULL(t.Valoare,0) * zl.ZileLucrate AS TicheteTotale,\n\n        -----------------------------------------\n        -- Brut contributiv real\n        -----------------------------------------\n        (\n            ROUND(\n                (b.Salariu / (p.ZileLucratoare * 8))\n                * (zl.ZileLucrate * a.TipNorma * 8),\n                0\n            )\n            + ISNULL(ag.SumaAgent,0)\n            + ISNULL(rem.Sume_Remiza,0)\n        ) AS BrutContributiv,\n\n        -----------------------------------------\n        -- Total brut (include tichete)\n        -----------------------------------------\n        (\n            ROUND(\n                (b.Salariu / (p.ZileLucratoare * 8))\n                * (zl.ZileLucrate * a.TipNorma * 8),\n                0\n            )\n            + ISNULL(ag.SumaAgent,0)\n            + ISNULL(rem.Sume_Remiza,0)\n            + (ISNULL(t.Valoare,0) * zl.ZileLucrate)\n        ) AS TotalBrut,\n\n        -----------------------------------------\n        -- CAS\n        -----------------------------------------\n        ROUND(\n            (\n                ROUND(\n                    (b.Salariu / (p.ZileLucratoare * 8))\n                    * (zl.ZileLucrate * a.TipNorma * 8),\n                    0\n                )\n                + ISNULL(ag.SumaAgent,0)\n                + ISNULL(rem.Sume_Remiza,0)\n            ) * 0.25,\n            0\n        ) AS CAS,\n\n        -----------------------------------------\n        -- CASS\n        -----------------------------------------\n        ROUND(\n            (\n                ROUND(\n                    (b.Salariu / (p.ZileLucratoare * 8))\n                    * (zl.ZileLucrate * a.TipNorma * 8),\n                    0\n                )\n                + ISNULL(ag.SumaAgent,0)\n                + ISNULL(rem.Sume_Remiza,0)\n                + (ISNULL(t.Valoare,0) * zl.ZileLucrate)\n            ) * 0.10,\n            0\n        ) AS CASS,\n\n        -----------------------------------------\n        -- Venit net\n        -----------------------------------------\n        (\n            (\n                ROUND(\n                    (b.Salariu / (p.ZileLucratoare * 8))\n                    * (zl.ZileLucrate * a.TipNorma * 8),\n                    0\n                )\n                + ISNULL(ag.SumaAgent,0)\n                + ISNULL(rem.Sume_Remiza,0)\n                + (ISNULL(t.Valoare,0) * zl.ZileLucrate)\n            )\n            - ROUND(\n                (\n                    ROUND(\n                        (b.Salariu / (p.ZileLucratoare * 8))\n                        * (zl.ZileLucrate * a.TipNorma * 8),\n                        0\n                    )\n                    + ISNULL(ag.SumaAgent,0)\n                    + ISNULL(rem.Sume_Remiza,0)\n                ) * 0.25,\n                0\n            )\n            - ROUND(\n                (\n                    ROUND(\n                        (b.Salariu / (p.ZileLucratoare * 8))\n                        * (zl.ZileLucrate * a.TipNorma * 8),\n                        0\n                    )\n                    + ISNULL(ag.SumaAgent,0)\n                    + ISNULL(rem.Sume_Remiza,0)\n                    + (ISNULL(t.Valoare,0) * zl.ZileLucrate)\n                ) * 0.10,\n                0\n            )\n        ) AS VenitNet,\n\n        -----------------------------------------\n        -- Baza impozabilă REALĂ\n        -----------------------------------------\n        (\n            (\n                ROUND(\n                    (b.Salariu / (p.ZileLucratoare * 8))\n                    * (zl.ZileLucrate * a.TipNorma * 8),\n                    0\n                )\n                + ISNULL(ag.SumaAgent,0)\n                + ISNULL(rem.Sume_Remiza,0)\n            )\n            - ROUND(\n                (\n                    ROUND(\n                        (b.Salariu / (p.ZileLucratoare * 8))\n                        * (zl.ZileLucrate * a.TipNorma * 8),\n                        0\n                    )\n                    + ISNULL(ag.SumaAgent,0)\n                    + ISNULL(rem.Sume_Remiza,0)\n                ) * 0.25,\n                0\n            )\n            - ROUND(\n                (\n                    ROUND(\n                        (b.Salariu / (p.ZileLucratoare * 8))\n                        * (zl.ZileLucrate * a.TipNorma * 8),\n                        0\n                    )\n                    + ISNULL(ag.SumaAgent,0)\n                    + ISNULL(rem.Sume_Remiza,0)\n                ) * 0.10,\n                0\n            )\n        ) AS BazaImpozabila,\n\n        -----------------------------------------\n        -- Impozit real\n        -----------------------------------------\n        ROUND(\n            (\n                (\n                    (\n                        ROUND(\n                            (b.Salariu / (p.ZileLucratoare * 8))\n                            * (zl.ZileLucrate * a.TipNorma * 8),\n                            0\n                        )\n                        + ISNULL(ag.SumaAgent,0)\n                        + ISNULL(rem.Sume_Remiza,0)\n                    )\n                    - ROUND(\n                        (\n                            ROUND(\n                                (b.Salariu / (p.ZileLucratoare * 8))\n                                * (zl.ZileLucrate * a.TipNorma * 8),\n                                0\n                            )\n                            + ISNULL(ag.SumaAgent,0)\n                            + ISNULL(rem.Sume_Remiza,0)\n                        ) * 0.25,\n                        0\n                    )\n                    - ROUND(\n                        (\n                            ROUND(\n                                (b.Salariu / (p.ZileLucratoare * 8))\n                                * (zl.ZileLucrate * a.TipNorma * 8),\n                                0\n                            )\n                            + ISNULL(ag.SumaAgent,0)\n                            + ISNULL(rem.Sume_Remiza,0)\n                        ) * 0.10,\n                        0\n                    )\n                ) * 0.10\n            ),\n            0\n        ) AS ImpozitVenit,\n\n        -----------------------------------------\n        -- Salariu net final real\n        -----------------------------------------\n        (\n            (\n                (\n                    ROUND(\n                        (b.Salariu / (p.ZileLucratoare * 8))\n                        * (zl.ZileLucrate * a.TipNorma * 8),\n                        0\n                    )\n                    + ISNULL(ag.SumaAgent,0)\n                    + ISNULL(rem.Sume_Remiza,0)\n                )\n                - ROUND(\n                    (\n                        ROUND(\n                            (b.Salariu / (p.ZileLucratoare * 8))\n                            * (zl.ZileLucrate * a.TipNorma * 8),\n                            0\n                        )\n                        + ISNULL(ag.SumaAgent,0)\n                        + ISNULL(rem.Sume_Remiza,0)\n                    ) * 0.25,\n                    0\n                )\n                - ROUND(\n                    (\n                        ROUND(\n                            (b.Salariu / (p.ZileLucratoare * 8))\n                            * (zl.ZileLucrate * a.TipNorma * 8),\n                            0\n                        )\n                        + ISNULL(ag.SumaAgent,0)\n                        + ISNULL(rem.Sume_Remiza,0)\n                    ) * 0.10,\n                    0\n                )\n            )\n            - ROUND(\n                (\n                    (\n                        ROUND(\n                            (b.Salariu / (p.ZileLucratoare * 8))\n                            * (zl.ZileLucrate * a.TipNorma * 8),\n                            0\n                        )\n                        + ISNULL(ag.SumaAgent,0)\n                        + ISNULL(rem.Sume_Remiza,0)\n                    )\n                    - ROUND(\n                        (\n                            ROUND(\n                                (b.Salariu / (p.ZileLucratoare * 8))\n                                * (zl.ZileLucrate * a.TipNorma * 8),\n                                0\n                            )\n                            + ISNULL(ag.SumaAgent,0)\n                            + ISNULL(rem.Sume_Remiza,0)\n                        ) * 0.25,\n                        0\n                    )\n                    - ROUND(\n                        (\n                            ROUND(\n                                (b.Salariu / (p.ZileLucratoare * 8))\n                                * (zl.ZileLucrate * a.TipNorma * 8),\n                                0\n                            )\n                            + ISNULL(ag.SumaAgent,0)\n                            + ISNULL(rem.Sume_Remiza,0)\n                        ) * 0.10,\n                        0\n                    )\n                ) * 0.10,\n                0\n            )\n        ) AS SalariuNet\n\n) ca\nWHERE \na.Anul = @Anul \nAND a.Luna = @Luna \nAND a.CodSucursala = @CodSucursala \nORDER BY a.Marca, a.Nume;\n&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;name&quot;:&quot;Luna&quot;},{&quot;value&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;name&quot;:&quot;CodSucursala&quot;},{&quot;value&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;name&quot;:&quot;Anul&quot;}],&quot;IdColumn&quot;:&quot;Id&quot;,&quot;SqlQueryColumns&quot;:&quot;&quot;,&quot;SqlQueryInsert&quot;:&quot;&quot;,&quot;SqlQueryUpdate&quot;:&quot;&quot;,&quot;SqlQueryDelete&quot;:&quot;&quot;,&quot;AddUrl&quot;:&quot;&quot;,&quot;EditUrl&quot;:&quot;&quot;,&quot;ViewUrl&quot;:&quot;&quot;},&quot;Fields&quot;:[{&quot;Title&quot;:&quot;Id&quot;,&quot;Name&quot;:&quot;Id&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Marca&quot;,&quot;Name&quot;:&quot;Marca&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Nume&quot;,&quot;Name&quot;:&quot;Nume&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Salariu&quot;,&quot;Name&quot;:&quot;Salariu&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;TipNorma&quot;,&quot;Name&quot;:&quot;TipNorma&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;ZileLucratoare&quot;,&quot;Name&quot;:&quot;ZileLucratoare&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;ZileCOLuna&quot;,&quot;Name&quot;:&quot;ZileCOLuna&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;ZileCMLuna&quot;,&quot;Name&quot;:&quot;ZileCMLuna&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;ZileLucrate&quot;,&quot;Name&quot;:&quot;ZileLucrate&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;SumaAgent&quot;,&quot;Name&quot;:&quot;SumaAgent&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Sume_Remiza&quot;,&quot;Name&quot;:&quot;Sume_Remiza&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Sume_AlteDrepturi&quot;,&quot;Name&quot;:&quot;Sume_AlteDrepturi&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Sume_CAR&quot;,&quot;Name&quot;:&quot;Sume_CAR&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Sume_Pensii_Alim&quot;,&quot;Name&quot;:&quot;Sume_Pensii_Alim&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Sume_Pensii_Facultative&quot;,&quot;Name&quot;:&quot;Sume_Pensii_Facultative&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;OreLucrate&quot;,&quot;Name&quot;:&quot;OreLucrate&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;SalBrutEfectiv&quot;,&quot;Name&quot;:&quot;SalBrutEfectiv&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;TicheteTotale&quot;,&quot;Name&quot;:&quot;TicheteTotale&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;TotalBrut&quot;,&quot;Name&quot;:&quot;TotalBrut&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;CAS&quot;,&quot;Name&quot;:&quot;CAS&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;CASS&quot;,&quot;Name&quot;:&quot;CASS&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;VenitNet&quot;,&quot;Name&quot;:&quot;VenitNet&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;BazaImpozabila&quot;,&quot;Name&quot;:&quot;BazaImpozabila&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;ImpozitVenit&quot;,&quot;Name&quot;:&quot;ImpozitVenit&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;SalariuNet&quot;,&quot;Name&quot;:&quot;SalariuNet&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null}]}&lt;/DataSource&gt;
@@ -91,7 +91,7 @@
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;TooltipContent /&gt;
     &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
-    &lt;TooltipIcon&gt;glyphicon-info-sign&lt;/TooltipIcon&gt;
+    &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
     &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
     &lt;TooltipInEdit&gt;right&lt;/TooltipInEdit&gt;
     &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
@@ -135,6 +135,7 @@
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -172,6 +173,7 @@
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -225,6 +227,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -263,6 +266,7 @@
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -300,6 +304,7 @@
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -337,6 +342,7 @@
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -374,6 +380,7 @@
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -427,6 +434,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -481,6 +489,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -535,6 +544,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -573,6 +583,7 @@
       &lt;OrderIndex&gt;10&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -610,6 +621,7 @@
       &lt;OrderIndex&gt;11&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -647,6 +659,7 @@
       &lt;OrderIndex&gt;12&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -684,6 +697,7 @@
       &lt;OrderIndex&gt;13&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -737,6 +751,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -791,6 +806,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -845,6 +861,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -899,6 +916,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -953,6 +971,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -1007,6 +1026,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -1045,6 +1065,7 @@
       &lt;OrderIndex&gt;20&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -1082,6 +1103,7 @@
       &lt;OrderIndex&gt;21&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -1119,6 +1141,7 @@
       &lt;OrderIndex&gt;22&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -1172,6 +1195,7 @@
         &lt;/item&gt;
       &lt;/FormatterParameters&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;

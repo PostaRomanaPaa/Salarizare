@@ -1,0 +1,23 @@
+{
+  "id": 143,
+  "globalId": "e8f31ade-ec21-451c-addc-3bf680291d6f",
+  "namespace": {
+    "id": 7,
+    "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+    "name": "Helper",
+    "isSystem": false
+  },
+  "name": "FileData",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "select Concat('/Portals/[Portal:PortalId]/',FO.MappedPath, F.FileName) as RelativePath, F.FileName from Files F\r\ninner join Folders FO on FO.FolderId = F.FolderID\r\nwhere F.FileId = '[TknParams:FileId]'",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

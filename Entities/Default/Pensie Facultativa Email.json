@@ -32,7 +32,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 1
+      "OrderIndex": 2
     },
     {
       "Id": 637,
@@ -58,7 +58,33 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 2
+      "OrderIndex": 3
+    },
+    {
+      "Id": 699,
+      "GlobalId": "b3e060c6-2beb-48d4-b45e-047406cce6c6",
+      "EntityVersionId": 60,
+      "Name": "Cod Beneficiar",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 1
     }
   ],
   "RolePermissions": {
@@ -326,7 +352,7 @@
   "CreatedDate": "2026-04-08T08:09:49.43",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-04-08T08:37:49",
+  "LastModifiedOn": "2026-04-29T13:34:25.27",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

@@ -1,5 +1,5 @@
 {
-  "id": 90,
+  "id": 158,
   "globalId": "d4bdc1ce-b4da-4b0f-a5de-2d386d64d878",
   "namespace": {
     "id": 3,
@@ -15,7 +15,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "url": "https://services.plantanapp.com/api/GetNextMajorVersion?CurrentVersion=[TknParams:CurrentVersion]&IsDev=[TknParams:IsDev]",
+    "url": "https://services.plantanapp.com/api/GetNextMajorVersion?CurrentVersion=[TknParams:CurrentVersion]&IsDev=[TknParams:IsDev]&AllowBeta=True",
     "get": "",
     "post": "",
     "headers": "",

@@ -1,5 +1,5 @@
 {
-  "id": 92,
+  "id": 160,
   "globalId": "bba7891c-1bfe-46a7-a919-728af795dbb9",
   "namespace": {
     "id": 3,
@@ -15,7 +15,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "value": "[PAASysUpdates:GetMajorUpdate(CurrentVersion=[PAASysUpdates:ReleaseVersion], IsDev=[PAASysUpdates:CheckIfAppIsDev(URL=[URL:Domain])])]",
+    "value": "[PAASysUpdates:GetMajorUpdate(CurrentVersion=[PAASysUpdates:ReleaseVersion], IsDev=[PAASysUpdates:CheckIfAppIsDev(EnvId=[PAASysUpdates:CurrentEnvId])])]",
     "evaluateTokens": true,
     "type": "string"
   }

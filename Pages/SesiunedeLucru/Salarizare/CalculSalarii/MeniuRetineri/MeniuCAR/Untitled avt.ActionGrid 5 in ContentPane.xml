@@ -1,4 +1,4 @@
-<module type="ActionGrid" version="05.27.144.00">
+<module type="ActionGrid" version="05.27.148.00">
     <contentKey />
     <moduleID>823</moduleID>
     <alignment />
@@ -27,6 +27,12 @@
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
+            <rolename>Low-Code Engineer</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
             <rolename>Admins</rolename>
         </permission>
         <permission>
@@ -34,12 +40,6 @@
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Citizen Developers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
-            <permissionkey>EDIT</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
         </permission>
     </modulepermissions>
     <title>avt.ActionGrid</title>
@@ -51,5 +51,5 @@
     <tabmodulesettings />
     <definition>Action Grid</definition>
     <moduledefinition>avt.ActionGrid</moduledefinition>
-    <content type="ActionGrid" version="05.27.144.00"><![CDATA[&lt;ActionGrid /&gt;]]></content>
+    <content type="ActionGrid" version="05.27.148.00"><![CDATA[&lt;ActionGrid /&gt;]]></content>
 </module>

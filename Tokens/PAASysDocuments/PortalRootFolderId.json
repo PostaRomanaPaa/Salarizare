@@ -1,5 +1,5 @@
 {
-  "id": 79,
+  "id": 147,
   "globalId": "56d1163e-30de-45d3-a376-c9fcf2e632f9",
   "namespace": {
     "id": 5,
@@ -14,7 +14,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT \r\n    FolderID AS PortalRootFolder\r\nFROM dbo.{objectQualifier}Folders\r\nWHERE PortalId = '[Portal:PortalID]' AND ISNULL(FolderPath, '') = ''",
+    "sql": "SELECT \r\n    FolderID AS PortalRootFolder\r\nFROM {databaseOwner}[{objectQualifier}Folders]\r\nWHERE PortalId = '[Portal:PortalID]' AND ISNULL(FolderPath, '') = ''",
     "defaultColumn": "",
     "columns": "",
     "connectionString": "",

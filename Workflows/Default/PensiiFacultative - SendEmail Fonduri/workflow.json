@@ -1,0 +1,442 @@
+{
+  "InputFields": [
+    {
+      "Id": 86,
+      "Name": "CodSucursala",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 35,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 87,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 35,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 88,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 35,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    }
+  ],
+  "OutputFields": [],
+  "Id": 35,
+  "GlobalId": "d01b900f-f84a-434d-9629-2b9e320ad3cd",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "d01b900f-f84a-434d-9629-2b9e320ad3cd",
+  "EnvironmentId": 1,
+  "Name": "PensiiFacultative - SendEmail Fonduri",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 406,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 365,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromSql",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2853,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2854,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2855,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2856,
+            "Name": "SqlQuery",
+            "Value": "SELECT Distinct p.CodSucursala,p.Anul,p.Luna,\n    p.CodBeneficiar,\n   UPPER(e.TipFisier) as TipFisier,\n    e.Email\nFROM app.PensieFacultativa p\nINNER JOIN app.PensieFacultativaEmail e \n    ON e.CodBeneficiar = p.CodBeneficiar\nWHERE \n    p.Anul = @Anul\n    AND p.Luna = @Luna\n    AND p.CodSucursala = @CodSucursala\n",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2857,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[CodSucursala]",
+                "name": "CodSucursala"
+              },
+              {
+                "value": "[Anul]",
+                "name": "Anul"
+              },
+              {
+                "value": "[Luna]",
+                "name": "Luna"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2858,
+            "Name": "EntityName",
+            "Value": "Fonduri",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2859,
+            "Name": "ClearBeforeLoad",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2860,
+            "Name": "EntityProps",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2861,
+            "Name": "OnError",
+            "Value": {
+              "Id": 407,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 365,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0zrsbcf"
+      },
+      {
+        "Id": 366,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2862,
+            "Name": "EntityName",
+            "Value": "Fonduri",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 366,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2863,
+            "Name": "Filters",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 366,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2864,
+            "Name": "ContextBehavior",
+            "Value": "NoPreserve",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 366,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2882,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 408,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 376,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "SendMail",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2966,
+                      "Name": "Credentials",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "smtp",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2967,
+                      "Name": "From",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2968,
+                      "Name": "To",
+                      "Value": "[Fonduri:Email]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2969,
+                      "Name": "DetermineEmail",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2970,
+                      "Name": "ToAllUsers",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2971,
+                      "Name": "ReplyTo",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2972,
+                      "Name": "Cc",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2973,
+                      "Name": "Bcc",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2974,
+                      "Name": "Subject",
+                      "Value": "Pensie Facultativa [Fonduri:TipFisier] - [Luna]/[Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2975,
+                      "Name": "Format",
+                      "Value": "Html",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2976,
+                      "Name": "DnnEmailTemplate",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2977,
+                      "Name": "Body",
+                      "Value": "<p>Buna ziua, Va transmitem atasat fisierul pentru pensia facultativa. Multumim.\n\ntest wf send email</p>",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2978,
+                      "Name": "Headers",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2979,
+                      "Name": "PortalFiles",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2980,
+                      "Name": "FileToken1",
+                      "Value": "/Portals/0/ExportFisiere/[CodSucursala]_[Fonduri:TipFisier]_[Luna][Anul].csv",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2981,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 419,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2982,
+                      "Name": "IgnoreErros",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 376,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 366,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2883,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 366,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2884,
+            "Name": "OnError",
+            "Value": {
+              "Id": 410,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 366,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0rrc4tf"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 9,
+  "CreatedOn": "2026-04-29T15:29:03.8474285+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-04-30T06:28:03.7765102+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

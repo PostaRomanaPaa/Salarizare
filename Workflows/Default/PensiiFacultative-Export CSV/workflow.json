@@ -1,0 +1,901 @@
+{
+  "InputFields": [
+    {
+      "Id": 89,
+      "Name": "CodSucursala",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 36,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 90,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 36,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 91,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 36,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    }
+  ],
+  "OutputFields": [],
+  "Id": 36,
+  "GlobalId": "f365166e-19ac-45f3-a60f-4037a1116fed",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "f365166e-19ac-45f3-a60f-4037a1116fed",
+  "EnvironmentId": 1,
+  "Name": "PensiiFacultative-Export CSV",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 411,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 368,
+        "Description": "Update PF cu sumele retinute",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 0,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2885,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2886,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2887,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2888,
+            "Name": "SqlQuery",
+            "Value": "UPDATE pf\nSET \n    pf.ContributiePersonalaRetinuta = ISNULL(r.Suma, 0),\n    pf.ContributieAngajatorVirata = 0,\n    pf.ContributieTotalaVirata = ISNULL(r.Suma, 0)\nFROM app.PensieFacultativa pf\nLEFT JOIN (\n    SELECT \n        Marca,\n        CodBeneficiar,\n        SUM(ISNULL(Rata,0) + ISNULL(Dobanda,0) + ISNULL(RestDePlata,0)) AS Suma\n    FROM app.Retinere\n    WHERE \n        TipRata = 7\n        AND Anul = @Anul\n        AND Luna = @Luna\n        AND CodSucursala = @CodSucursala\n    GROUP BY Marca, CodBeneficiar\n) r\nON pf.Marca = r.Marca\nAND pf.CodBeneficiar = r.CodBeneficiar\nAND pf.Anul = @Anul\nAND pf.Luna = @Luna\nAND pf.CodSucursala = @CodSucursala\nWHERE \n    pf.Anul = @Anul\n    AND pf.Luna = @Luna\n    AND pf.CodSucursala = @CodSucursala",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2889,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[CodSucursala]",
+                "name": "CodSucursala"
+              },
+              {
+                "value": "[Anul]",
+                "name": "Anul"
+              },
+              {
+                "value": "[Luna]",
+                "name": "Luna"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2890,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2891,
+            "Name": "ExtractColumns",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2892,
+            "Name": "OnError",
+            "Value": {
+              "Id": 412,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2893,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 368,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_099z9gm"
+      },
+      {
+        "Id": 369,
+        "Description": "Verificare Date de Transmis",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 1,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2894,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2895,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2896,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2897,
+            "Name": "SqlQuery",
+            "Value": "SELECT COUNT(*) AS NrPensiiF\nFROM app.PensieFacultativa\nWHERE \n   Anul = @Anul\n    AND Luna = @Luna\n    AND CodSucursala = @CodSucursala",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2898,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[CodSucursala]",
+                "name": "CodSucursala"
+              },
+              {
+                "value": "[Anul]",
+                "name": "Anul"
+              },
+              {
+                "value": "[Luna]",
+                "name": "Luna"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2899,
+            "Name": "OutputTokenName",
+            "Value": "NrPensiiF",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2900,
+            "Name": "ExtractColumns",
+            "Value": [
+              {
+                "value": "[NrPensiiF]",
+                "name": "NrPensiiF"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2901,
+            "Name": "OnError",
+            "Value": {
+              "Id": 413,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2902,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 369,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1x4auyh"
+      },
+      {
+        "Id": 370,
+        "Description": "Create List CodBen from SQL",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromSql",
+        "OrderIndex": 2,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2903,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2904,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2905,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2906,
+            "Name": "SqlQuery",
+            "Value": "SELECT DISTINCT \n    p.CodBeneficiar,\n    e.TipFisier,\n    e.Email\nFROM app.PensieFacultativa p\nLEFT JOIN app.PensieFacultativaEmail e\n    ON e.CodBeneficiar = p.CodBeneficiar\nWHERE \n    p.Anul = @Anul\n    AND p.Luna = @Luna\n    AND p.CodSucursala = @CodSucursala\n    AND p.ContributieTotalaVirata > 0",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2907,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[CodSucursala]",
+                "name": "CodSucursala"
+              },
+              {
+                "value": "[Anul]",
+                "name": "Anul"
+              },
+              {
+                "value": "[Luna]",
+                "name": "Luna"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2908,
+            "Name": "EntityName",
+            "Value": "CodBen",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2909,
+            "Name": "ClearBeforeLoad",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2910,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "value": "CodBeneficiar",
+                "name": "CodBeneficiar"
+              },
+              {
+                "value": "TipFisier",
+                "name": "TipFisier"
+              },
+              {
+                "value": "Email",
+                "name": "Email"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2911,
+            "Name": "OnError",
+            "Value": {
+              "Id": 414,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 370,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1h5r171"
+      },
+      {
+        "Id": 371,
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 3,
+        "IsDisabled": false,
+        "ActionParameters": [
+          {
+            "Id": 2912,
+            "Name": "EntityName",
+            "Value": "CodBen",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 371,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2913,
+            "Name": "Filters",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 371,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2914,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 371,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2963,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 415,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 372,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": "0",
+                  "ActionType": "LogEvent",
+                  "OrderIndex": 0,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2915,
+                      "Name": "EventType",
+                      "Value": "ADMIN_ALERT",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 372,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2916,
+                      "Name": "UserID",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 372,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2917,
+                      "Name": "LogProperties",
+                      "Value": [
+                        {
+                          "name": "codbentest",
+                          "value": "[CodBen:Codbeneficiar]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 372,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 373,
+                  "Description": "Create ListaFonduri",
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "LoadEntitiesFromSql",
+                  "OrderIndex": 1,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2918,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2919,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2920,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2921,
+                      "Name": "SqlQuery",
+                      "Value": "SELECT p.id,\n    p.CNP,\n    p.Nume,\n    p.Cont,\n    p.CodBeneficiar,\n    p.Luna,\n    p.Anul,\n    p.ContributiePersonalaretinuta,\n    p.ContributieAngajatorVirata,\n    p.ContributieTotalaVirata,\n    e.TipFisier,\n    e.Email\nFROM app.PensieFacultativa p\nINNER JOIN app.PensieFacultativaEmail e \n    ON e.CodBeneficiar = p.CodBeneficiar\n\nWHERE \n    p.Anul = @Anul\n    AND p.Luna = @Luna\n    AND p.CodSucursala = @CodSucursala\n    AND p.CodBeneficiar = @CodBen\n    AND p.ContributieTotalaVirata > 0",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2922,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        },
+                        {
+                          "name": "CodBen",
+                          "value": "[CodBen:CodBeneficiar]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2923,
+                      "Name": "EntityName",
+                      "Value": "ListaExport",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2924,
+                      "Name": "ClearBeforeLoad",
+                      "Value": true,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2925,
+                      "Name": "EntityProps",
+                      "Value": [],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2926,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 416,
+                        "EventName": "OnError",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 373,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                },
+                {
+                  "Id": 374,
+                  "Description": "Export in .csv",
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "CSV",
+                  "OrderIndex": 2,
+                  "IsDisabled": false,
+                  "ActionParameters": [
+                    {
+                      "Id": 2927,
+                      "Name": "EntityName",
+                      "Value": "ListaExport",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2928,
+                      "Name": "Fields",
+                      "Value": [
+                        {
+                          "name": "CNP",
+                          "value": "[CNP]"
+                        },
+                        {
+                          "name": "Nume",
+                          "value": "[Nume]"
+                        },
+                        {
+                          "name": "Cont",
+                          "value": "[Cont]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "ContributiePersonalaRetinuta",
+                          "value": "[ContributiePersonalaRetinuta]"
+                        },
+                        {
+                          "name": "ContributieAngajatorVirata",
+                          "value": "[ContributieAngajatorVirata]"
+                        },
+                        {
+                          "name": "ContributieTotalaVirata",
+                          "value": "[ContributieTotalaVirata]"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2929,
+                      "Name": "IncludeAllFields",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2930,
+                      "Name": "RemoveFieldNames",
+                      "Value": true,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2931,
+                      "Name": "FieldSeparator",
+                      "Value": "comma",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2932,
+                      "Name": "inlineSeparator",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2933,
+                      "Name": "Criteria",
+                      "Value": [],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2934,
+                      "Name": "StorageLocation",
+                      "Value": "File",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2935,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2936,
+                      "Name": "AddCsvToAllowedFileTypes",
+                      "Value": true,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2937,
+                      "Name": "EncodingOption",
+                      "Value": "UTF8",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2938,
+                      "Name": "Folder",
+                      "Value": "/Export/PensiiFacultative",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2939,
+                      "Name": "Pattern",
+                      "Value": "[CodSucursala]_[Codben:TipFisier]_[Luna][Anul]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2940,
+                      "Name": "Duplicates",
+                      "Value": "Overwrite",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2941,
+                      "Name": "StoreAbsoluteURL",
+                      "Value": "FisierCSV",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2942,
+                      "Name": "StoreRelativeURL",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2943,
+                      "Name": "StorePhysicalPath",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2944,
+                      "Name": "StoreLinkClick",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 2945,
+                      "Name": "DisableForceDownload",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 374,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 371,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2964,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 371,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2965,
+            "Name": "OnError",
+            "Value": {
+              "Id": 418,
+              "EventName": "OnError",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 371,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1jl882u"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 9,
+  "CreatedOn": "2026-04-29T15:40:18.935464+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-05-08T14:31:49.357495+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

@@ -1,4 +1,4 @@
-<module type="ActionGrid" version="05.27.144.00">
+<module type="ActionGrid" version="05.27.148.00">
     <contentKey />
     <moduleID>917</moduleID>
     <alignment />
@@ -21,13 +21,13 @@
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Citizen Developers</rolename>
+            <rolename>Low-Code Engineer</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
+            <rolename>Citizen Developers</rolename>
         </permission>
     </modulepermissions>
     <title>Prestatii invalide</title>
@@ -39,10 +39,10 @@
     <tabmodulesettings />
     <definition>Action Grid</definition>
     <moduledefinition>avt.ActionGrid</moduledefinition>
-    <content type="ActionGrid" version="05.27.144.00"><![CDATA[&lt;ActionGrid&gt;
+    <content type="ActionGrid" version="05.27.148.00"><![CDATA[&lt;ActionGrid&gt;
   &lt;Settings&gt;
     &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.144&lt;/Build&gt;
+    &lt;Build&gt;5.27.148&lt;/Build&gt;
     &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
     &lt;ModuleId&gt;917&lt;/ModuleId&gt;
     &lt;DataSource&gt;{&quot;DefinitionId&quot;:&quot;SqlQuery&quot;,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;;WITH Parametri AS (\n    SELECT\n        [Initializari:ZileLucratoare_old(Anul = [GetOrSession:YearV],Luna = [GetOrSession:MonthV])] AS ZileLucratoare\n),\nExceptiiLichidate AS (\n    SELECT\n        a.Id,\n        a.Marca,\n        a.Nume,\n        a.CodSucursala,\n        p.ZileLucratoare,\n        ISNULL(co.ZileCOLuna, 0) AS ZileCO,\n        ISNULL(cm.ZileCMLuna, 0) AS ZileCM,\n        \n        CASE \n            WHEN (ISNULL(co.ZileCOLuna,0) + ISNULL(cm.ZileCMLuna,0) &amp;gt;= p.ZileLucratoare) \n                 AND ISNULL(co.ZileCOLuna,0) &amp;gt; 0 \n                 AND ISNULL(cm.ZileCMLuna,0) &amp;gt; 0 \n            THEN &#39;CO_CM&#39; \n            \n            WHEN ISNULL(co.ZileCOLuna,0) &amp;gt;= p.ZileLucratoare \n                 AND ISNULL(cm.ZileCMLuna,0)=0 \n            THEN &#39;CO&#39; \n            \n            WHEN ISNULL(cm.ZileCMLuna,0) &amp;gt;= p.ZileLucratoare \n                 AND  ISNULL(co.ZileCOLuna,0)= 0 \n            THEN &#39;CM&#39; \n        END AS TipExceptie, \n        \n        CASE \n            WHEN ISNULL(co.ZileCOLuna,0) + ISNULL(cm.ZileCMLuna,0) &amp;gt;= p.ZileLucratoare \n                 AND ISNULL(co.ZileCOLuna,0) &amp;gt; 0 \n                 AND ISNULL(cm.ZileCMLuna,0)&amp;gt;0 \n            THEN &#39;CO + CM ≥ Zile lucrătoare&#39;\n            \n            WHEN ISNULL(co.ZileCOLuna,0) &amp;gt;= p.ZileLucratoare \n                 AND ISNULL(cm.ZileCMLuna,0) = 0 \n            THEN &#39;Concediu de odihnă integral&#39;\n            \n            WHEN ISNULL(cm.ZileCMLuna,0) &amp;gt;= p.ZileLucratoare \n                 AND ISNULL(co.ZileCOLuna,0) = 0 \n            THEN &#39;Concediu medical integral&#39; \n        END AS Detalii\n\n    FROM app.Salariat a\n    CROSS JOIN Parametri p\n\n    OUTER APPLY (\n        SELECT SUM(\n            CASE WHEN c.Interval1DatadeInceput IS NOT NULL AND MONTH(c.Interval1DatadeInceput) = @Luna AND YEAR (c.Interval1DatadeInceput) = @Anul THEN ISNULL(c.NrZileCO1, 0) ELSE 0 END + \n            CASE WHEN c.Interval2DatadeInceput IS NOT NULL AND MONTH(c.Interval2DatadeInceput) = @Luna AND YEAR (c.Interval2DatadeInceput) = @Anul THEN ISNULL(c.NrZileCO2, 0) ELSE 0 END + \n            CASE WHEN c.Interval3DatadeInceput IS NOT NULL AND MONTH(c.Interval3DatadeInceput) = @Luna AND YEAR (c.Interval3DatadeInceput) = @Anul THEN ISNULL(c.NrZileCO3, 0) ELSE 0 END\n        ) AS ZileCOLuna\n        FROM app.ConcediudeOdihna c\n        WHERE c.Marca = a.Marca \n          AND c.CodSucursala = a.CodSucursala \n          AND c.CodSucursala = @CodSucursala\n    ) co\n\n    OUTER APPLY (\n        SELECT SUM(m.TotZileLucratoare) AS ZileCMLuna\n        FROM app.ConcediuMedical m\n        WHERE m.Marca = a.Marca \n          AND m.CodSucursala = @CodSucursala \n          AND m.AnulDePlata = @Anul \n          AND m.LunaDePlata = @Luna\n    ) cm\n\n    CROSS APPLY (\n        SELECT CASE \n            WHEN p.ZileLucratoare - ISNULL(co.ZileCOLuna, 0) - ISNULL(cm.ZileCMLuna, 0) &amp;lt;= 0 THEN 0 \n            ELSE p.ZileLucratoare - ISNULL(co.ZileCOLuna, 0) - ISNULL(cm.ZileCMLuna, 0) \n        END AS ZileLucrate\n    ) zl\n\n    WHERE zl.ZileLucrate = 0\n      AND a.Anul = @Anul\n      AND a.Luna = @Luna\n      AND a.CodSucursala = @CodSucursala\n)\n\nSELECT \n    ex.Id,\n    ex.Marca,\n    ex.Nume,\n    ex.TipExceptie AS MotivLipsaLunara,\n    ex.Detalii AS ExplicatieLipsa,\n    COUNT(ag.Id) AS NumarPrestatiiInregistrate,\n    ISNULL(SUM(ag.Suma), 0) AS TotalSumaPrestatiiInvalide\nFROM ExceptiiLichidate ex\nINNER JOIN app.Agent ag \n    ON ex.Marca = ag.Marca\n   AND ex.CodSucursala = ag.CodSucursala\n   AND ag.Anul = @Anul\n   AND ag.Luna = @Luna\nGROUP BY \n    ex.Id,\n    ex.Marca,\n    ex.Nume,\n    ex.TipExceptie,\n    ex.Detalii\nHAVING \n    SUM(ag.Suma) &amp;gt; 0 OR COUNT(ag.Id) &amp;gt; 0&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;name&quot;:&quot;CodSucursala&quot;},{&quot;value&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;name&quot;:&quot;Anul&quot;},{&quot;value&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;name&quot;:&quot;Luna&quot;}],&quot;IdColumn&quot;:&quot;Id&quot;,&quot;SqlQueryColumns&quot;:&quot;&quot;,&quot;SqlQueryInsert&quot;:&quot;&quot;,&quot;SqlQueryUpdate&quot;:&quot;&quot;,&quot;SqlQueryDelete&quot;:&quot;&quot;,&quot;AddUrl&quot;:&quot;&quot;,&quot;EditUrl&quot;:&quot;&quot;,&quot;ViewUrl&quot;:&quot;&quot;},&quot;Fields&quot;:[{&quot;Title&quot;:&quot;Id&quot;,&quot;Name&quot;:&quot;Id&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Marca&quot;,&quot;Name&quot;:&quot;Marca&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;Nume&quot;,&quot;Name&quot;:&quot;Nume&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;MotivLipsaLunara&quot;,&quot;Name&quot;:&quot;MotivLipsaLunara&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;ExplicatieLipsa&quot;,&quot;Name&quot;:&quot;ExplicatieLipsa&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;NumarPrestatiiInregistrate&quot;,&quot;Name&quot;:&quot;NumarPrestatiiInregistrate&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;TotalSumaPrestatiiInvalide&quot;,&quot;Name&quot;:&quot;TotalSumaPrestatiiInvalide&quot;,&quot;TypeStr&quot;:&quot;System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null}]}&lt;/DataSource&gt;
@@ -97,7 +97,7 @@
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;TooltipContent /&gt;
     &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
-    &lt;TooltipIcon&gt;glyphicon-info-sign&lt;/TooltipIcon&gt;
+    &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
     &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
     &lt;TooltipInEdit&gt;right&lt;/TooltipInEdit&gt;
     &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
@@ -141,6 +141,7 @@
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -178,6 +179,7 @@
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -215,6 +217,7 @@
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -252,6 +255,7 @@
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -289,6 +293,7 @@
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -326,6 +331,7 @@
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
@@ -363,6 +369,7 @@
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
       &lt;FormatterParameters /&gt;
       &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
       &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
       &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
       &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;

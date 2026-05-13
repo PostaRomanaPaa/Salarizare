@@ -1,5 +1,5 @@
 {
-  "id": 82,
+  "id": 150,
   "globalId": "bf73cdf4-f563-4670-a5e9-1251e964a91b",
   "namespace": {
     "id": 3,
@@ -15,7 +15,7 @@
   "cacheTime": 0,
   "cacheLayer": "Global",
   "src": {
-    "sql": "SELECT Version\nFROM {objectQualifier}Packages\nWHERE FriendlyName = '[TknParams:FriendlyName]'",
+    "sql": "SELECT Version\nFROM {databaseOwner}[{objectQualifier}Packages]\nWHERE FriendlyName = '[TknParams:FriendlyName]'",
     "defaultColumn": "Version",
     "columns": "Version",
     "connectionString": "",

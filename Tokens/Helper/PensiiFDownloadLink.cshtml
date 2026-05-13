@@ -1,0 +1,9 @@
+@inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
+@{
+    if (TknParams.FileId != null)
+    {
+        var fileId = TknParams.FileId.Value.ToString();
+
+        Write("[File:GetFileLinkClick(FileIdentifier=" + fileId + ")]");
+    }
+}

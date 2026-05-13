@@ -31,7 +31,7 @@
       "IsRequired": true,
       "IsSearchable": false,
       "IsFilterable": true,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 4
     },
     {
@@ -57,7 +57,7 @@
       "IsRequired": true,
       "IsSearchable": true,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 6
     },
     {
@@ -82,8 +82,8 @@
       "IsDeleted": false,
       "IsRequired": true,
       "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 5
     },
     {
@@ -236,7 +236,7 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": false,
+      "IsRequired": true,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
@@ -262,10 +262,10 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": false,
+      "IsRequired": true,
       "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 2
     },
     {
@@ -284,7 +284,7 @@
           "Icon": null
         }
       },
-      "DefaultValue": null,
+      "DefaultValue": "4",
       "NullRecordsValue": null,
       "EntityVersionRefId": 32,
       "IsDeleted": false,
@@ -571,8 +571,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-16T11:53:31.41",
   "CreatedBy": "Carmen Mardare",
-  "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-26T14:24:27.9033333",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-04-24T10:21:27.9766667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

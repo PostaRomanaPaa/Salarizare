@@ -35,58 +35,6 @@
       "OrderIndex": 1
     },
     {
-      "Id": 444,
-      "GlobalId": "e70bf9a8-fbd4-473c-bfa9-4d3c729cca7b",
-      "EntityVersionId": 43,
-      "Name": "Procent",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 2
-    },
-    {
-      "Id": 445,
-      "GlobalId": "5c1b6110-49ac-4926-82db-31e8f73cb2d7",
-      "EntityVersionId": 43,
-      "Name": "SumaFixa",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 3
-    },
-    {
       "Id": 446,
       "GlobalId": "1c5a197c-5cf4-43ff-a5bc-7bf6d51a9cc0",
       "EntityVersionId": 43,
@@ -110,7 +58,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 4
+      "OrderIndex": 2
     },
     {
       "Id": 447,
@@ -136,33 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 5
-    },
-    {
-      "Id": 448,
-      "GlobalId": "a0daecea-e66f-46d9-a89d-dc254d425998",
-      "EntityVersionId": 43,
-      "Name": "Data",
-      "Type": {
-        "Id": "Date",
-        "Name": "Date",
-        "InputType": {
-          "Id": "Date",
-          "Name": "Date",
-          "ValueType": 3,
-          "Length": 3,
-          "Icon": "calendar_today"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 3
     },
     {
       "Id": 449,
@@ -188,7 +110,111 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
+      "OrderIndex": 6
+    },
+    {
+      "Id": 734,
+      "GlobalId": "bcf8975b-37cf-4f55-a63b-0f4c4a66dfd4",
+      "EntityVersionId": 43,
+      "Name": "CodSucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 735,
+      "GlobalId": "5255e6e5-e681-4011-b6c0-23de43761098",
+      "EntityVersionId": 43,
+      "Name": "Nume",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
       "OrderIndex": 7
+    },
+    {
+      "Id": 736,
+      "GlobalId": "1c3ca06b-63a6-4f4d-a063-c306faa9836f",
+      "EntityVersionId": 43,
+      "Name": "Luna",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 8
+    },
+    {
+      "Id": 737,
+      "GlobalId": "2f983ca7-28dc-4ed5-aa98-dd901a874caf",
+      "EntityVersionId": 43,
+      "Name": "Anul",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 9
     }
   ],
   "RolePermissions": {
@@ -455,8 +481,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-12-14T20:24:21.19",
   "CreatedBy": "Cristian Tudorache",
-  "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-26T13:18:17.7933333",
+  "LastModifiedBy": "Cristian Tudorache",
+  "LastModifiedOn": "2026-05-13T13:52:31.2133333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

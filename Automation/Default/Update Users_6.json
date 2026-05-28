@@ -30,19 +30,14 @@
       }
     }
   ],
-  "Actions": [
+  "ActionStack": [
     {
       "ActionType": "PlantAnApp.ExecuteWorkflow.b76ae7d95ec7430d8b41ea0e7a2095c2",
       "Description": "",
-      "ExecutionType": "OnExecute",
-      "OrderIndex": 1,
+      "OrderIndex": 0,
       "IsDisabled": false,
-      "Parameters": {
-        "OnError": [],
-        "ContinueOnError": "",
-        "AllData": ""
-      }
+      "Parameters": {}
     }
   ],
-  "OnErrorActions": []
+  "OnErrorActionStack": []
 }

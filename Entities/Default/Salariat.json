@@ -258,7 +258,7 @@
           "Icon": "looks_one"
         }
       },
-      "DefaultValue": null,
+      "DefaultValue": "0.999999999",
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
@@ -284,7 +284,7 @@
           "Icon": "looks_one"
         }
       },
-      "DefaultValue": null,
+      "DefaultValue": "0.999999999",
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
@@ -310,7 +310,7 @@
           "Icon": "looks_one"
         }
       },
-      "DefaultValue": null,
+      "DefaultValue": "0.999999999",
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
@@ -362,7 +362,7 @@
           "Icon": "looks_one"
         }
       },
-      "DefaultValue": null,
+      "DefaultValue": "0.999999999",
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
@@ -711,32 +711,6 @@
       "OrderIndex": 31
     },
     {
-      "Id": 338,
-      "GlobalId": "18dfb0a6-b5c0-4f77-9778-d24f5faaf85f",
-      "EntityVersionId": 35,
-      "Name": "Procent r",
-      "Type": {
-        "Id": "Decimal",
-        "Name": "Number (Decimal)",
-        "InputType": {
-          "Id": "Decimal",
-          "Name": "Number (Decimal)",
-          "ValueType": 8,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": true,
-      "OrderIndex": 32
-    },
-    {
       "Id": 339,
       "GlobalId": "82493546-3013-4eda-a306-18d0ccd906cc",
       "EntityVersionId": 35,
@@ -1021,6 +995,32 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 39
+    },
+    {
+      "Id": 845,
+      "GlobalId": "7fb7fbec-1a2a-4504-a552-56c2f16d8831",
+      "EntityVersionId": 35,
+      "Name": "Procent Continuitate",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": "0.999999999",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 32
     }
   ],
   "RolePermissions": {
@@ -1288,7 +1288,7 @@
   "CreatedDate": "2025-10-31T13:54:53.5566667",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-04-15T08:10:37.4733333",
+  "LastModifiedOn": "2026-05-21T07:56:38.5",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

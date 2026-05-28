@@ -1,21 +1,22 @@
 {
-  "id": 118,
   "globalId": "6d9168fb-147d-46ed-aa0d-f4c8b425666b",
   "namespace": {
-    "id": 11,
     "globalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
     "name": "Calendar",
     "isSystem": false
   },
   "name": "IntrDataSfr1",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
-    "debug": false,
+    "type": "razorwebpages",
+    "lang": "csharp",
     "language": "csharp",
-    "type": "razorwebpages"
+    "params": []
   }
 }

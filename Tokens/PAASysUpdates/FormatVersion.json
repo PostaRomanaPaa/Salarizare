@@ -1,8 +1,6 @@
 {
-  "id": 171,
   "globalId": "2a045e8a-cc7d-4378-8d88-01c5d9988375",
   "namespace": {
-    "id": 3,
     "globalId": "235ea98a-72de-43fb-9311-36d7cc09216b",
     "name": "PAASysUpdates",
     "description": "",
@@ -10,15 +8,18 @@
   },
   "name": "FormatVersion",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "User",
+  "cacheTimeSec": 60,
+  "cacheLayer": "user",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
-    "url": "https://services.plantanapp.com/api/FormatVersion?ReleaseVersion=[TknParams:ReleaseVersion]",
-    "get": "",
-    "post": "",
-    "headers": "",
-    "type": "http"
+    "type": "execworkflow",
+    "workflowUid": "1f497b52-dcd0-4450-bc0b-54a5ffc46eef",
+    "defaultOutputField": "Version",
+    "params": [
+      "ReleaseVersion"
+    ]
   }
 }

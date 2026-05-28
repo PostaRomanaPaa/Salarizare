@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.125.00">
+<module type="ActionForm" version="05.28.225.00">
     <contentKey />
     <moduleID>859</moduleID>
     <alignment />
@@ -16,7 +16,92 @@
     <header />
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
     <title>Retinere Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>a4093ba9-bbc1-4504-8128-32e1c475c31a</uniqueId>
@@ -31,7 +116,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.125.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[1525]]&gt;&lt;/Id&gt;
@@ -1072,8 +1157,8 @@ document.getElementById(&quot;dnn859Submit&quot;).click();
   &lt;Settings&gt;
     &lt;Title&gt;Retinere Form&lt;/Title&gt;
     &lt;CssName&gt;retinere-form&lt;/CssName&gt;
-    &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.125&lt;/Build&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.225&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -1090,7 +1175,7 @@ document.getElementById(&quot;dnn859Submit&quot;).click();
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.125&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
     &lt;TabId&gt;178&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -1122,7 +1207,6 @@ document.getElementById(&quot;dnn859Submit&quot;).click();
     &lt;BaseId&gt;dnn859&lt;/BaseId&gt;
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
     &lt;RootClasses&gt;buzz&lt;/RootClasses&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;RevisionNumber&gt;193&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
@@ -1130,346 +1214,280 @@ document.getElementById(&quot;dnn859Submit&quot;).click();
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.453&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Add&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckAddPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.463&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;EventName&gt;init&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckAddPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.483&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Adauga Retinere&quot;},{&quot;name&quot;:&quot;original:Marca&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:NumarCurent&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodBeneficiar&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Rata&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Dobanda&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:RestdePlata&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:NumarContract&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:FondRulment&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:NumarOrdine&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodSucursala&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Luna&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Anul&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TipRata&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.InitializeVariablesWithDefaultValues&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Functionalitate populare Nume&lt;/Description&gt;
-      &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Title&quot;:&quot;Run SQL Query&quot;,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Description&quot;:&quot;Search Salariati&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=\&quot;\&quot;&quot;,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;SELECT Nume FROM app.Salariat WHERE Marca = @Marca\nAND CodSucursala=&#39;[GetOrSession:BranchV]&#39;\nand Anul=&#39;[GetOrSession:YearV]&#39;\nand Luna=&#39;[GetOrSession:MonthV]&#39;;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[p_Marca]&quot;,&quot;name&quot;:&quot;Marca&quot;}],&quot;OutputTokenName&quot;:&quot;Nume&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true},&quot;$_uid&quot;:&quot;action17743455202701555&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;Definition&quot;:{&quot;Id&quot;:&quot;RunSql&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Run SQL Query&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Executes the specified SQL query, optionally storing the output for use in other actions.&quot;},&quot;TypeStr&quot;:&quot;DnnSharp.Common.Actions.Data.ExecuteSql, DnnSharp.Common.Actions&quot;,&quot;Final&quot;:false,&quot;IsClientAction&quot;:false,&quot;Groups&quot;:[],&quot;Parameters&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;DbConnector&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Database&quot;},&quot;HelpText&quot;:{},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;ActionCredentials&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;Selection&quot;:&quot;Single&quot;,&quot;Type&quot;:&quot;Database&quot;},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[{&quot;TypeStr&quot;:&quot;DnnSharp.Common2.Services.PlantAnApp.ConfigConditions.IsPlantAnApp,DnnSharp.Common2&quot;,&quot;Settings&quot;:{}}],&quot;$_cleanHashKey&quot;:&quot;17712266828173105&quot;},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;ConnectionString&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Override Connection String&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;By default, the SQL will run against the built-in database or the selected Connection. Use this field to override the connection string. Also supports the name of a connection string from the web.config. It will respect the Provider (ODBC, SqlClient, etc.). Can contain Tokens. Read more about &amp;lt;a href=\&quot;http://www.connectionstrings.com/\&quot; target=\&quot;_blank\&quot;&amp;gt;supported formats&amp;lt;/a&amp;gt;.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;QueryTimeout&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Query Timeout&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Set a time in seconds after which a query will time out. The default is set 10 minutes or 600 seconds also this parameter can&#39;t be negative or under 10 seconds. Can contain Tokens. &quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;SqlQuery&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;SQL Query&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;SQL to execute. Can contain Tokens. &amp;lt;br/&amp;gt; &amp;lt;div style=\&quot;color:red\&quot;&amp;gt;WARNING!&amp;lt;/div&amp;gt; We encourage using binding parameters instead of using the tokens directly on sql query. Just use @param instead of [token] and bind below values as shown: Parameter Name: param ; Parameter Value: [token]. This will keep your database safe.&amp;lt;br/&amp;gt;&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Code&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;CodeMirrorMode&quot;:&quot;sql&quot;,&quot;AiAssist&quot;:&quot;sql&quot;},&quot;Validation&quot;:[{&quot;Type&quot;:&quot;Required&quot;,&quot;From&quot;:null,&quot;For&quot;:null,&quot;Settings&quot;:{}}],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;BindTokens&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Bind Tokens&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Bind the parameters above with a value or token. e.g. P. Name:param, P. Value:[token] &quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;NameColumn&quot;:&quot;Parameter Name&quot;,&quot;ValueColumn&quot;:&quot;Parameter Value&quot;,&quot;ButtonName&quot;:&quot;Bind more data&quot;},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;OutputTokenName&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Store Result&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Optionally, provide a token name that will store the result. For example, store IDs generated by inserts or select data that is needed by other actions. If the query returns more than one column, you can access them using [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;] syntax. Date fields generate additional tokens - [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;:ISO], [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;:ISODate], [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;:ISOAsUtc].&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;ExtractColumns&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Extract Columns&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Optionally, provide an association table to map columns into tokens. For date columns additional tokens are generated - [&amp;amp;lt;Column&amp;amp;gt;:ISO], [&amp;amp;lt;Column&amp;amp;gt;:ISODate], [&amp;amp;lt;Column&amp;amp;gt;:ISOAsUtc]. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;NameColumn&quot;:&quot;Column Name&quot;,&quot;ValueColumn&quot;:&quot;Store As&quot;,&quot;ButtonName&quot;:&quot;Extract More Data&quot;},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;OnError&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;On Error&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Define a list of actions to run on error. Otherwise, an error message is returned which will contain the underlying error if debug mode is on. Tokens available in this context: [Exception], [ExceptionType], [ExceptionMessage], [ExceptionStack]&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{&quot;default&quot;:&quot;[]&quot;},&quot;Default&quot;:null,&quot;Type&quot;:&quot;ActionList&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;Event&quot;:&quot;OnError&quot;},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;ShowErrors&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Show Errors&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Show errors raised from SQL. This is useful for example if the error is a nicely formatted error message.&amp;lt;br/&amp;gt;Note that if this option is turned on, admins will always get a full error message and regular users will get a generic error message.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{&quot;default&quot;:&quot;False&quot;},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Boolean&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}],&quot;Output&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;OutputTokenName&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Store Result&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Optionally, provide a token name that will store the result. For example, store IDs generated by inserts or select data that is needed by other actions. If the query returns more than one column, you can access them using [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;] syntax. Date fields generate additional tokens - [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;:ISO], [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;:ISODate], [&amp;amp;lt;OutputTokenName&amp;amp;gt;:&amp;amp;lt;ColumnName&amp;amp;gt;:ISOAsUtc].&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;ExtractColumns&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Extract Columns&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Optionally, provide an association table to map columns into tokens. For date columns additional tokens are generated - [&amp;amp;lt;Column&amp;amp;gt;:ISO], [&amp;amp;lt;Column&amp;amp;gt;:ISODate], [&amp;amp;lt;Column&amp;amp;gt;:ISOAsUtc]. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;NameColumn&quot;:&quot;Column Name&quot;,&quot;ValueColumn&quot;:&quot;Store As&quot;,&quot;ButtonName&quot;:&quot;Extract More Data&quot;,&quot;OutputToken&quot;:&quot;ValueColumn&quot;},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}],&quot;Settings&quot;:{&quot;Group&quot;:&quot;Data&quot;,&quot;FeatureFlag&quot;:&quot;Standard.DataIntegration&quot;},&quot;Conditions&quot;:null,&quot;isLicensed&quot;:true,&quot;feature&quot;:&quot;standard.dataintegration&quot;,&quot;featureUpgradeMessage&quot;:&quot;Unlock advanced database capabilities: run SQL queries, load users into context, create lists, and automate with DataBase triggers. Access powerful data sources and token types for seamless integration.&quot;}},{&quot;Title&quot;:&quot;Log Event&quot;,&quot;ActionType&quot;:&quot;LogEvent&quot;,&quot;Description&quot;:&quot;test Nume&quot;,&quot;Condition&quot;:&quot;0&quot;,&quot;Parameters&quot;:{&quot;EventType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;UserID&quot;:&quot;&quot;,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;Nume&quot;}]},&quot;$_uid&quot;:&quot;action17743455202708413&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;Definition&quot;:{&quot;Id&quot;:&quot;LogEvent&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Log Event&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Logs an event in the admin logs.&quot;},&quot;TypeStr&quot;:&quot;DnnSharp.Common.Actions.Debugging.LogEvent, DnnSharp.Common.Actions&quot;,&quot;Final&quot;:false,&quot;IsClientAction&quot;:false,&quot;Groups&quot;:[],&quot;Parameters&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;EventType&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Event Type&quot;},&quot;HelpText&quot;:{},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Select&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;DataSource&quot;:&quot;DnnSharp.Common.Actions.Debugging.eEventLogType,DnnSharp.Common.Actions&quot;,&quot;SupportsExpressions&quot;:&quot;true&quot;},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;UserID&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;User ID&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;UserID to add to the log. Can contain Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;LogProperties&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Log Properties&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Additional properties for the log. Can contain Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;ButtonName&quot;:&quot;Add&quot;,&quot;NameColumn&quot;:&quot;Name&quot;,&quot;ValueColumn&quot;:&quot;Value&quot;,&quot;SupportsOrdering&quot;:true},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}],&quot;Output&quot;:[],&quot;Settings&quot;:{&quot;Group&quot;:&quot;Logging&quot;},&quot;Conditions&quot;:null,&quot;isLicensed&quot;:true}},{&quot;Title&quot;:&quot;Create/Update Tokens&quot;,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Description&quot;:&quot;Nume&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=&#39;&#39;&quot;,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;p_NumeAngajat&quot;}],&quot;TokenizeTokenNames&quot;:&quot;&quot;,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;$_uid&quot;:&quot;action17743455202707082&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;Definition&quot;:{&quot;Id&quot;:&quot;ApplyTokens&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Create/Update Tokens&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Creates or updates tokens in the current execution tokens. Optionally, it can tokenize values recursively.&quot;},&quot;TypeStr&quot;:&quot;DnnSharp.Common.Actions.Code.ApplyTokens, DnnSharp.Common.Actions&quot;,&quot;Final&quot;:false,&quot;IsClientAction&quot;:false,&quot;Groups&quot;:[],&quot;Parameters&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;Tokens&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Tokens&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Expressions to tokenize. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;NameColumn&quot;:&quot;Token Name&quot;,&quot;ValueColumn&quot;:&quot;Token Value&quot;,&quot;ValueColumnType&quot;:&quot;LargeText&quot;,&quot;ButtonName&quot;:&quot;Add&quot;,&quot;SupportsOrdering&quot;:true},&quot;Validation&quot;:[{&quot;Type&quot;:&quot;required&quot;,&quot;From&quot;:null,&quot;For&quot;:&quot;NameColumn&quot;,&quot;Settings&quot;:{}}],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;TokenizeTokenNames&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Tokenize Token Names&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Token Value always supports Tokens. Check this option to also support Tokens in the Token Name. Usage example: If [Index] has the value of 1, using a Token Name of \&quot;Customer[Index]\&quot; will assign the Token Value to \&quot;Customer1\&quot;.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Boolean&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;RecursionCount&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Number of Recursions&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Specify how many times to apply tokenization. This is useful when tokens contain other tokens that also need to be replaced. Note that this presents a security risk when the expression has content from untrusted users. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{&quot;default&quot;:&quot;1&quot;},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[{&quot;Type&quot;:&quot;required&quot;,&quot;From&quot;:null,&quot;For&quot;:null,&quot;Settings&quot;:{}}],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}],&quot;Output&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;Tokens&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Tokens&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Expressions to tokenize. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;NameColumn&quot;:&quot;Token Name&quot;,&quot;ValueColumn&quot;:&quot;Token Value&quot;,&quot;ValueColumnType&quot;:&quot;LargeText&quot;,&quot;ButtonName&quot;:&quot;Add&quot;,&quot;SupportsOrdering&quot;:true,&quot;OutputToken&quot;:&quot;NameColumn&quot;},&quot;Validation&quot;:[{&quot;Type&quot;:&quot;required&quot;,&quot;From&quot;:null,&quot;For&quot;:&quot;NameColumn&quot;,&quot;Settings&quot;:{}}],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}],&quot;Settings&quot;:{&quot;Group&quot;:&quot;Context&quot;},&quot;Conditions&quot;:null,&quot;isLicensed&quot;:true}},{&quot;Title&quot;:&quot;Create/Update Tokens&quot;,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Description&quot;:&quot;Nume gol&quot;,&quot;Condition&quot;:&quot;[p_Marca] ==\&quot;\&quot;&quot;,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;p_NumeAngajat&quot;}],&quot;TokenizeTokenNames&quot;:&quot;&quot;,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;$_uid&quot;:&quot;action17743455202706371&quot;,&quot;$_isOpen&quot;:false,&quot;$_isLoaded&quot;:true,&quot;$_isFocus&quot;:true,&quot;EventName&quot;:&quot;click&quot;,&quot;Definition&quot;:{&quot;Id&quot;:&quot;ApplyTokens&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Create/Update Tokens&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Creates or updates tokens in the current execution tokens. Optionally, it can tokenize values recursively.&quot;},&quot;TypeStr&quot;:&quot;DnnSharp.Common.Actions.Code.ApplyTokens, DnnSharp.Common.Actions&quot;,&quot;Final&quot;:false,&quot;IsClientAction&quot;:false,&quot;Groups&quot;:[],&quot;Parameters&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;Tokens&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Tokens&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Expressions to tokenize. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;NameColumn&quot;:&quot;Token Name&quot;,&quot;ValueColumn&quot;:&quot;Token Value&quot;,&quot;ValueColumnType&quot;:&quot;LargeText&quot;,&quot;ButtonName&quot;:&quot;Add&quot;,&quot;SupportsOrdering&quot;:true},&quot;Validation&quot;:[{&quot;Type&quot;:&quot;required&quot;,&quot;From&quot;:null,&quot;For&quot;:&quot;NameColumn&quot;,&quot;Settings&quot;:{}}],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;TokenizeTokenNames&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Tokenize Token Names&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Token Value always supports Tokens. Check this option to also support Tokens in the Token Name. Usage example: If [Index] has the value of 1, using a Token Name of \&quot;Customer[Index]\&quot; will assign the Token Value to \&quot;Customer1\&quot;.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Boolean&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;RecursionCount&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Number of Recursions&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Specify how many times to apply tokenization. This is useful when tokens contain other tokens that also need to be replaced. Note that this presents a security risk when the expression has content from untrusted users. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{&quot;default&quot;:&quot;1&quot;},&quot;Default&quot;:null,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[{&quot;Type&quot;:&quot;required&quot;,&quot;From&quot;:null,&quot;For&quot;:null,&quot;Settings&quot;:{}}],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}],&quot;Output&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;Tokens&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Tokens&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Expressions to tokenize. Supports Tokens.&quot;},&quot;Placeholder&quot;:{},&quot;DefaultValue&quot;:{},&quot;Default&quot;:null,&quot;Type&quot;:&quot;NameValueCollection&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{&quot;NameColumn&quot;:&quot;Token Name&quot;,&quot;ValueColumn&quot;:&quot;Token Value&quot;,&quot;ValueColumnType&quot;:&quot;LargeText&quot;,&quot;ButtonName&quot;:&quot;Add&quot;,&quot;SupportsOrdering&quot;:true,&quot;OutputToken&quot;:&quot;NameColumn&quot;},&quot;Validation&quot;:[{&quot;Type&quot;:&quot;required&quot;,&quot;From&quot;:null,&quot;For&quot;:&quot;NameColumn&quot;,&quot;Settings&quot;:{}}],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}],&quot;Settings&quot;:{&quot;Group&quot;:&quot;Context&quot;},&quot;Conditions&quot;:null,&quot;isLicensed&quot;:true}}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Submit&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.CreateEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.457&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewRetinereId&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;NumarCurent&quot;:&quot;[Initializari:NrRetinere(CodSucursala=[GetOrSession:BranchV], Anul=[GetOrSession:YearV],Luna=[GetOrSession:MonthV],Marca=[p_Marca],TipRata=[r_TipRataId:Value])]&quot;,&quot;CodBeneficiar&quot;:&quot;[p_CodBeneficiar:Value]&quot;,&quot;Rata&quot;:&quot;[p_Rata]&quot;,&quot;Dobanda&quot;:&quot;[p_Dobanda]&quot;,&quot;RestdePlata&quot;:&quot;[p_RestdePlata]&quot;,&quot;NumarContract&quot;:&quot;[p_NumarContract]&quot;,&quot;FondRulment&quot;:&quot;[p_FondRulment]&quot;,&quot;NumarOrdine&quot;:&quot;[p_NumarOrdine]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;,&quot;TipRata&quot;:&quot;[r_TipRataId]&quot;,&quot;ConnectionString&quot;:&quot;&quot;,&quot;Judet&quot;:&quot;[p_Judet]&quot;,&quot;OnError&quot;:[]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Add&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.CreateEntity&quot;,&quot;EntityIdentifier&quot;:&quot;e0c88371-c986-4dec-a145-c9dc2ed89c74&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Add.CreateEntity&lt;/PAP_InternalIdentifier&gt;
-        &lt;EntityIdentifier&gt;e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/EntityIdentifier&gt;
-        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.UpdateEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;Condition&gt;0&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.463&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:RetinereId=]&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;NumarCurent&quot;:&quot;[p_NumarCurent]&quot;,&quot;CodBeneficiar&quot;:&quot;[p_CodBeneficiar]&quot;,&quot;Rata&quot;:&quot;[p_Rata]&quot;,&quot;Dobanda&quot;:&quot;[p_Dobanda]&quot;,&quot;RestdePlata&quot;:&quot;[p_RestdePlata]&quot;,&quot;NumarContract&quot;:&quot;[p_NumarContract]&quot;,&quot;FondRulment&quot;:&quot;[p_FondRulment]&quot;,&quot;NumarOrdine&quot;:&quot;[p_NumarOrdine]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;,&quot;TipRata&quot;:&quot;[r_TipRataId]&quot;,&quot;ConnectionString&quot;:&quot;&quot;,&quot;Judet&quot;:&quot;[p_Judet]&quot;,&quot;OnError&quot;:[]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.UpdateEntity&quot;,&quot;EntityIdentifier&quot;:&quot;e0c88371-c986-4dec-a145-c9dc2ed89c74&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Update.UpdateEntity&lt;/PAP_InternalIdentifier&gt;
-        &lt;EntityIdentifier&gt;e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/EntityIdentifier&gt;
-        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;EventName&gt;init&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Check if in edit mode&lt;/Description&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:RetinereId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.483&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Modifica Retinere&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Adauga Retinere&quot;},{&quot;name&quot;:&quot;original:Marca&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:NumarCurent&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodBeneficiar&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Rata&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Dobanda&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:RestdePlata&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:NumarContract&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:FondRulment&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:NumarOrdine&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodSucursala&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Luna&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Anul&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TipRata&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.CheckEditMode&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;!string.IsNullOrWhiteSpace([QueryString:RetinereId=])&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.CheckEditMode&lt;/PAP_InternalIdentifier&gt;
         &lt;PAP_GeneratedCondition&gt;!string.IsNullOrWhiteSpace([QueryString:RetinereId=])&lt;/PAP_GeneratedCondition&gt;
       &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;verificare token Judet&lt;/Description&gt;
-      &lt;ActionType&gt;LogEvent&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;EventType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;UserID&quot;:&quot;&quot;,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[p_Judet]&quot;,&quot;name&quot;:&quot;Token Judet&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Submit&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
+      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
+      &lt;Description&gt;Check if in edit mode&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Modifica Retinere&quot;}]}&lt;/ActionData&gt;
+      &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:RetinereId=])&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;Condition /&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.457&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/CalculSalarii/Retineri/Retineri/Detail?RetinereId=[NewRetinereId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;,&quot;BgColor&quot;:&quot;&quot;,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Add&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.ConfirmationToast&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Add.ConfirmationToast&lt;/PAP_InternalIdentifier&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.ReadEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;Condition&gt;0 &amp;amp;&amp;amp; [isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.483&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:RetinereId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadEntityValues&quot;,&quot;EntityIdentifier&quot;:&quot;e0c88371-c986-4dec-a145-c9dc2ed89c74&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.LoadEntityValues&lt;/PAP_InternalIdentifier&gt;
         &lt;EntityIdentifier&gt;e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/EntityIdentifier&gt;
         &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
       &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;UpdateForm&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Submit&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
+      &lt;ActionType&gt;PlantAnApp.ReadEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:RetinereId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;0 &amp;amp;&amp;amp; [isEdit]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.PartialUpdateEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;RecordId&quot;:&quot;[QueryString:RetinereId=]&quot;,&quot;UpdatedProperties&quot;:[{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;Rata&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[p_Rata]&quot;,&quot;IsExpression&quot;:false}},{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;Dobanda&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[p_Dobanda]&quot;,&quot;IsExpression&quot;:false}},{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;RestdePlata&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[p_RestdePlata]&quot;,&quot;IsExpression&quot;:false}},{&quot;PropertyName&quot;:{&quot;Value&quot;:&quot;FondRulment&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;PropertyValue&quot;:{&quot;Value&quot;:&quot;[p_FondRulment]&quot;,&quot;IsExpression&quot;:false}}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Condition /&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.46&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;42bb9627-e18d-48a5-96c2-4826013eab9f&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
+      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;select r.*, s.Nume from app.Retinere r\nLEFT JOIN app.Salariat s \non r.Marca = s.Marca and r.CodSucursala = s.CodSucursala and r.Anul = s.Anul and r.Luna = s.Luna \n\nwhere  r.Id = @IdSalariat&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[QueryString:RetinereId]&quot;,&quot;name&quot;:&quot;IdSalariat&quot;}],&quot;OutputTokenName&quot;:&quot;original&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;init&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;init&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;859&lt;/ModuleId&gt;
       &lt;FieldName&gt;Add&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.RefreshGrid&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Add&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Add.CreateEntity&lt;/PAP_InternalIdentifier&gt;
+        &lt;EntityIdentifier&gt;e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/EntityIdentifier&gt;
+        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;PlantAnApp.CreateEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewRetinereId&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;NumarCurent&quot;:&quot;[Initializari:NrRetinere(CodSucursala=[GetOrSession:BranchV], Anul=[GetOrSession:YearV],Luna=[GetOrSession:MonthV],Marca=[p_Marca],TipRata=[r_TipRataId:Value])]&quot;,&quot;CodBeneficiar&quot;:&quot;[p_CodBeneficiar:Value]&quot;,&quot;Rata&quot;:&quot;[p_Rata]&quot;,&quot;Dobanda&quot;:&quot;[p_Dobanda]&quot;,&quot;RestdePlata&quot;:&quot;[p_RestdePlata]&quot;,&quot;NumarContract&quot;:&quot;[p_NumarContract]&quot;,&quot;FondRulment&quot;:&quot;[p_FondRulment]&quot;,&quot;NumarOrdine&quot;:&quot;[p_NumarOrdine]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;,&quot;TipRata&quot;:&quot;[r_TipRataId]&quot;,&quot;ConnectionString&quot;:null,&quot;Judet&quot;:&quot;[p_Judet]&quot;,&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Add&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Add.ConfirmationToast&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;HideTime&quot;:&quot;10000&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;},&quot;Stack&quot;:&quot;3&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/CalculSalarii/Retineri/Retineri/Detail?RetinereId=[NewRetinereId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;,&quot;BgColor&quot;:null,&quot;CallBackJsCode&quot;:null,&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null}}&lt;/ActionData&gt;
+      &lt;Condition /&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Add&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Add.RefreshGrid&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;82dc66d9-ad2c-43c8-98bf-c8d750b1b4fa&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.RefreshDetailForm&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshDetailForm&lt;/PAP_InternalIdentifier&gt;
-      &lt;/Metadata&gt;
+      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;42bb9627-e18d-48a5-96c2-4826013eab9f&quot;}}&lt;/ActionData&gt;
+      &lt;Condition /&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.483&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;select r.*, s.Nume from app.Retinere r\nLEFT JOIN app.Salariat s \non r.Marca = s.Marca and r.CodSucursala = s.CodSucursala and r.Anul = s.Anul and r.Luna = s.Luna \n\nwhere  r.Id = @IdSalariat&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[QueryString:RetinereId]&quot;,&quot;name&quot;:&quot;IdSalariat&quot;}],&quot;OutputTokenName&quot;:&quot;original&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
-      &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.46&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;a4093ba9-bbc1-4504-8128-32e1c475c31a&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;859&lt;/ModuleId&gt;
       &lt;FieldName&gt;Add&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.ClosePopup&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Add.ClosePopup&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;a4093ba9-bbc1-4504-8128-32e1c475c31a&quot;}}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;8e7b5bb2-ef76-4f10-901d-6ad3482c7383&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;859&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.RefreshDetailTitleForm&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Update.UpdateEntity&lt;/PAP_InternalIdentifier&gt;
+        &lt;EntityIdentifier&gt;e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/EntityIdentifier&gt;
+        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;PlantAnApp.UpdateEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:RetinereId=]&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;NumarCurent&quot;:&quot;[p_NumarCurent]&quot;,&quot;CodBeneficiar&quot;:&quot;[p_CodBeneficiar]&quot;,&quot;Rata&quot;:&quot;[p_Rata]&quot;,&quot;Dobanda&quot;:&quot;[p_Dobanda]&quot;,&quot;RestdePlata&quot;:&quot;[p_RestdePlata]&quot;,&quot;NumarContract&quot;:&quot;[p_NumarContract]&quot;,&quot;FondRulment&quot;:&quot;[p_FondRulment]&quot;,&quot;NumarOrdine&quot;:&quot;[p_NumarOrdine]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;,&quot;TipRata&quot;:&quot;[r_TipRataId]&quot;,&quot;ConnectionString&quot;:null,&quot;Judet&quot;:&quot;[p_Judet]&quot;,&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;Condition&gt;0&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;PlantAnApp.PartialUpdateEntity.e0c88371-c986-4dec-a145-c9dc2ed89c74&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:null,&quot;RecordId&quot;:&quot;[QueryString:RetinereId=]&quot;,&quot;UpdatedProperties&quot;:[{&quot;PropertyName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Rata&quot;},&quot;PropertyValue&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[p_Rata]&quot;}},{&quot;PropertyName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Dobanda&quot;},&quot;PropertyValue&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[p_Dobanda]&quot;}},{&quot;PropertyName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;RestdePlata&quot;},&quot;PropertyValue&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[p_RestdePlata]&quot;}},{&quot;PropertyName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;FondRulment&quot;},&quot;PropertyValue&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[p_FondRulment]&quot;}}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshDetailForm&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;82dc66d9-ad2c-43c8-98bf-c8d750b1b4fa&quot;,&quot;Value&quot;:&quot;&quot;},&quot;Params&quot;:null}&lt;/ActionData&gt;
+      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshDetailTitleForm&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;8e7b5bb2-ef76-4f10-901d-6ad3482c7383&quot;,&quot;Value&quot;:&quot;&quot;},&quot;Params&quot;:null}&lt;/ActionData&gt;
+      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/CalculSalarii/Retineri/Retineri/Detail?RetinereId=[QueryString:RetinereId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;,&quot;BgColor&quot;:&quot;&quot;,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;859&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.ConfirmationToast&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Update.ConfirmationToast&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;HideTime&quot;:&quot;10000&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;},&quot;Stack&quot;:&quot;3&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/CalculSalarii/Retineri/Retineri/Detail?RetinereId=[QueryString:RetinereId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;,&quot;BgColor&quot;:null,&quot;CallBackJsCode&quot;:null,&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null}}&lt;/ActionData&gt;
+      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;42bb9627-e18d-48a5-96c2-4826013eab9f&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;859&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.RefreshGrid&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshGrid&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;42bb9627-e18d-48a5-96c2-4826013eab9f&quot;}}&lt;/ActionData&gt;
+      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;7&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-28T10:37:19.467&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;a4093ba9-bbc1-4504-8128-32e1c475c31a&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;859&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.ClosePopup&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Update.ClosePopup&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;7&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;a4093ba9-bbc1-4504-8128-32e1c475c31a&quot;}}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Submit&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
+      &lt;Description&gt;Functionalitate populare Nume&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:3044,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Search Salariati&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4396,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=\&quot;\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;SELECT Nume FROM app.Salariat WHERE Marca = @Marca\nAND CodSucursala=&#39;[GetOrSession:BranchV]&#39;\nand Anul=&#39;[GetOrSession:YearV]&#39;\nand Luna=&#39;[GetOrSession:MonthV]&#39;;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[p_Marca]&quot;,&quot;name&quot;:&quot;Marca&quot;}],&quot;OutputTokenName&quot;:&quot;Nume&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:true},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3045,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;test Nume&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4396,&quot;ActionType&quot;:&quot;LogEvent&quot;,&quot;Condition&quot;:&quot;0&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;EventType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null},&quot;UserID&quot;:null,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;Nume&quot;}]},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3046,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Nume&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4396,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=&#39;&#39;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;p_NumeAngajat&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3047,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Nume gol&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4396,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[p_Marca] ==\&quot;\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;p_NumeAngajat&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Submit&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;LogEvent&lt;/ActionType&gt;
+      &lt;Description&gt;verificare token Judet&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;EventType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null},&quot;UserID&quot;:null,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[p_Judet]&quot;,&quot;name&quot;:&quot;Token Judet&quot;}]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;859&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Submit&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;UpdateForm&lt;/ActionType&gt;
+      &lt;ActionData&gt;{}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
 &lt;/ActionForm&gt;]]></content>

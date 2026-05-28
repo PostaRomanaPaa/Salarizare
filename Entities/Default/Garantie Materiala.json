@@ -35,58 +35,6 @@
       "OrderIndex": 1
     },
     {
-      "Id": 722,
-      "GlobalId": "09d296ac-00db-4dff-958e-4f761ce2b1f2",
-      "EntityVersionId": 68,
-      "Name": "Numar Salarii",
-      "Type": {
-        "Id": "Integer",
-        "Name": "Number (Integer)",
-        "InputType": {
-          "Id": "Integer",
-          "Name": "Number (Integer)",
-          "ValueType": 1,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 2
-    },
-    {
-      "Id": 723,
-      "GlobalId": "00a9865a-9bb2-49e3-8c21-97024af46348",
-      "EntityVersionId": 68,
-      "Name": "Sufix Cont",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 3
-    },
-    {
       "Id": 724,
       "GlobalId": "a5dd8ce1-883f-4bfa-8016-e703833a71e3",
       "EntityVersionId": 68,
@@ -110,7 +58,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 4
+      "OrderIndex": 3
     },
     {
       "Id": 725,
@@ -136,33 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 5
-    },
-    {
-      "Id": 726,
-      "GlobalId": "9468cd61-8ced-43f1-8fb0-fddc593d4a47",
-      "EntityVersionId": 68,
-      "Name": "Suma Reintrare",
-      "Type": {
-        "Id": "Decimal",
-        "Name": "Number (Decimal)",
-        "InputType": {
-          "Id": "Decimal",
-          "Name": "Number (Decimal)",
-          "ValueType": 8,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 4
     },
     {
       "Id": 727,
@@ -188,7 +110,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 7
+      "OrderIndex": 5
     },
     {
       "Id": 728,
@@ -214,7 +136,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 8
+      "OrderIndex": 6
     },
     {
       "Id": 729,
@@ -240,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 9
+      "OrderIndex": 7
     },
     {
       "Id": 730,
@@ -272,7 +194,7 @@
       "Id": 731,
       "GlobalId": "951a809f-f66e-47f6-a9d4-797f479adc94",
       "EntityVersionId": 68,
-      "Name": "An",
+      "Name": "Anul",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -292,13 +214,13 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 11
+      "OrderIndex": 9
     },
     {
       "Id": 732,
       "GlobalId": "8590c97d-90fb-40c9-b6cb-c8c880a16d8f",
       "EntityVersionId": 68,
-      "Name": "Numar IBAN",
+      "Name": "Cont IBAN",
       "Type": {
         "Id": "Text",
         "Name": "Text",
@@ -318,7 +240,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 12
+      "OrderIndex": 2
     },
     {
       "Id": 733,
@@ -344,6 +266,110 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
+      "OrderIndex": 11
+    },
+    {
+      "Id": 740,
+      "GlobalId": "b104f3d4-f9f9-459d-9c64-a6bcc11e7305",
+      "EntityVersionId": 68,
+      "Name": "Cod Sucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 8
+    },
+    {
+      "Id": 744,
+      "GlobalId": "84100263-602f-42c1-8c5a-40d24b495025",
+      "EntityVersionId": 68,
+      "Name": "Suma Fixa ",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 12
+    },
+    {
+      "Id": 745,
+      "GlobalId": "61ad48df-629b-4e22-af9a-2b4811d81eac",
+      "EntityVersionId": 68,
+      "Name": "Suma Retrasa",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 14
+    },
+    {
+      "Id": 746,
+      "GlobalId": "36b7b915-4c36-48d0-8526-1c919a9c8466",
+      "EntityVersionId": 68,
+      "Name": "Numar Salarii",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
       "OrderIndex": 13
     }
   ],
@@ -527,8 +553,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2026-05-13T09:50:27.2033333",
   "CreatedBy": "Alexandra Vasilescu",
-  "LastModifiedBy": "",
-  "LastModifiedOn": null,
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-05-19T09:43:04.5366667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

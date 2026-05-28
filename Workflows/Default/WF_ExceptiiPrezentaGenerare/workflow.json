@@ -1,0 +1,711 @@
+{
+  "InputFields": [
+    {
+      "Id": 107,
+      "Name": "CodSucursala",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 48,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 108,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 48,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 109,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 48,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    }
+  ],
+  "OutputFields": [],
+  "Id": 48,
+  "GlobalId": "de37f9fa-3f93-4ba1-bde1-5f2d7f14a126",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "de37f9fa-3f93-4ba1-bde1-5f2d7f14a126",
+  "EnvironmentId": 1,
+  "Name": "WF_ExceptiiPrezentaGenerare",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 5887,
+    "GlobalId": "e2637924-66da-4dcd-9dd2-76f4528627ff",
+    "Actions": [
+      {
+        "Id": 4124,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Delete Exceptii Prezenta",
+        "ActionErrorMessage": null,
+        "ActionStackId": 5887,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_0lrrags",
+        "ActionParameters": [
+          {
+            "Id": 16073,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16074,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16075,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16076,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "SqlQuery",
+            "Value": "DELETE FROM app.ExceptiiPrezenta\r\nWHERE Anul = @Anul\r\n  AND Luna = @Luna\r\n  AND CodSucursala = @CodSucursala",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16077,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "OnError",
+            "Value": {
+              "Id": 5888,
+              "GlobalId": "687dd0b0-3343-4448-95db-cead46c140c6",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 5888,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16078,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16079,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16080,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16081,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16082,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4124,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 4129,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Calcul Zile Lucratoare",
+        "ActionErrorMessage": null,
+        "ActionStackId": 5887,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_03e37g4",
+        "ActionParameters": [
+          {
+            "Id": 16108,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16109,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16110,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16111,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "SqlQuery",
+            "Value": "WITH Zile AS\r\n(\r\n    SELECT DATEFROMPARTS(@Anul, @Luna, 1) AS Data\r\n\r\n    UNION ALL\r\n\r\n    SELECT DATEADD(DAY, 1, Data)\r\n    FROM Zile\r\n    WHERE MONTH(DATEADD(DAY, 1, Data)) = @Luna\r\n)\r\n\r\nSELECT\r\n    COUNT(*) AS ZileLucratoare\r\nFROM Zile z\r\n\r\nWHERE DATENAME(WEEKDAY, z.Data)\r\n      NOT IN ('Saturday', 'Sunday')\r\n\r\nAND NOT EXISTS\r\n(\r\n    SELECT 1\r\n    FROM app.ZiLibera zl\r\n    WHERE zl.An = @Anul\r\n      AND zl.Luna = @Luna\r\n      AND zl.Zi = DAY(z.Data)\r\n)\r\n\r\nAND NOT EXISTS\r\n(\r\n    SELECT 1\r\n    FROM app.ZiLiberaCCM zl\r\n    WHERE zl.An = @Anul\r\n      AND zl.Luna = @Luna\r\n      AND zl.Zi = DAY(z.Data)\r\n)\r\n\r\nOPTION (MAXRECURSION 366)",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16112,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "OnError",
+            "Value": {
+              "Id": 5893,
+              "GlobalId": "cce591ab-a89a-4dcc-b242-7fdb994984cf",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 5893,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16113,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16114,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16115,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16116,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "OutputTokenName",
+            "Value": "ZileLucratoare",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16117,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4129,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 4130,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Log Event",
+        "ActionErrorMessage": null,
+        "ActionStackId": 5887,
+        "ActionType": "LogEvent",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 2,
+        "DiagramUID": "Activity_0a1j3e9",
+        "ActionParameters": [
+          {
+            "Id": 16118,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4130,
+            "Name": "EventType",
+            "Value": "ADMIN_ALERT",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16119,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4130,
+            "Name": "UserID",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16120,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4130,
+            "Name": "LogProperties",
+            "Value": [
+              {
+                "name": "zile_lucratoare",
+                "value": "[ZileLucratoare]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 4131,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Insert Zile CO CM Lucratoare",
+        "ActionErrorMessage": null,
+        "ActionStackId": 5887,
+        "ActionType": "ExecuteActions",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 3,
+        "DiagramUID": "Activity_0sbjvxq",
+        "ActionParameters": [
+          {
+            "Id": 16141,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4131,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 5894,
+              "GlobalId": "b04b121d-c6a6-4143-963e-0dfacb57ca67",
+              "Actions": [
+                {
+                  "Id": 4133,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 5894,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 0,
+                  "DiagramUID": "4e05f6cf-24e9-4bb3-a6ae-fa415fce93a0",
+                  "ActionParameters": [
+                    {
+                      "Id": 16131,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16132,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16133,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16134,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "SqlQuery",
+                      "Value": ";WITH CO AS\r\n(\r\n    SELECT\r\n        c.Marca,\r\n        c.CodSucursala,\r\n\r\n        SUM(\r\n            ISNULL(\r\n                CASE\r\n                    WHEN MONTH(c.Interval1DatadeInceput) = @Luna\r\n                     AND YEAR(c.Interval1DatadeInceput) = @Anul\r\n                    THEN c.NrZileCO1\r\n                    ELSE 0\r\n                END\r\n            ,0)\r\n\r\n            +\r\n\r\n            ISNULL(\r\n                CASE\r\n                    WHEN MONTH(c.Interval2DatadeInceput) = @Luna\r\n                     AND YEAR(c.Interval2DatadeInceput) = @Anul\r\n                    THEN c.NrZileCO2\r\n                    ELSE 0\r\n                END\r\n            ,0)\r\n\r\n            +\r\n\r\n            ISNULL(\r\n                CASE\r\n                    WHEN MONTH(c.Interval3DatadeInceput) = @Luna\r\n                     AND YEAR(c.Interval3DatadeInceput) = @Anul\r\n                    THEN c.NrZileCO3\r\n                    ELSE 0\r\n                END\r\n            ,0)\r\n        ) AS ZileCO\r\n\r\n    FROM app.ConcediudeOdihna c\r\n\r\n    WHERE c.CodSucursala = @CodSucursala\r\n\r\n    GROUP BY\r\n        c.Marca,\r\n        c.CodSucursala\r\n),\r\n\r\nCM AS\r\n(\r\n    SELECT\r\n        m.Marca,\r\n        m.CodSucursala,\r\n\r\n        SUM(m.TotZileLucratoare) AS ZileCM\r\n\r\n    FROM app.ConcediuMedical m\r\n\r\n    WHERE m.AnulDePlata = @Anul\r\n      AND m.LunaDePlata = @Luna\r\n      AND m.CodSucursala = @CodSucursala\r\n\r\n    GROUP BY\r\n        m.Marca,\r\n        m.CodSucursala\r\n),\r\n\r\nSAL AS\r\n(\r\n    SELECT\r\n        s.Marca,\r\n        s.CodSucursala,\r\n        s.Judet,\r\n        s.TipNorma\r\n\r\n    FROM app.Salariat s\r\n\r\n    WHERE s.Anul = @Anul\r\n      AND s.Luna = @Luna\r\n      AND s.CodSucursala = @CodSucursala\r\n),\r\nALTEDREPTURI AS\r\n(\r\n    SELECT\r\n        a.Marca,\r\n        a.CodSucursala,\r\n\r\n        SUM(ISNULL(a.ZileLiberePlatite,0)) AS ZileLiberePlatite\r\n\r\n    FROM app.AltDrept a\r\n\r\n    WHERE a.Anul = @Anul\r\n      AND a.Luna = @Luna\r\n      AND a.CodSucursala = @CodSucursala\r\n\r\n    GROUP BY\r\n        a.Marca,\r\n        a.CodSucursala\r\n),\r\nDIURNE AS\r\n(\r\n    SELECT\r\n        d.Marca,\r\n        d.CodSucursala,\r\n\r\n        SUM(ISNULL(d.ZileDelegatie,0)) AS ZileDelegatie\r\n\r\n    FROM app.Diurna d\r\n\r\n    WHERE d.Anul = @Anul\r\n      AND d.Luna = @Luna\r\n      AND d.CodSucursala = @CodSucursala\r\n\r\n    GROUP BY\r\n        d.Marca,\r\n        d.CodSucursala\r\n),\r\nCFS31 AS\r\n(\r\n    SELECT\r\n        c.Marca,\r\n        c.CodSucursala,\r\n\r\n        SUM(ISNULL(c.ZileCFS31,0)) AS ZileCFS31\r\n\r\n    FROM app.CFS31 c\r\n\r\n    WHERE c.Anul = @Anul\r\n      AND c.Luna = @Luna\r\n      AND c.CodSucursala = @CodSucursala\r\n\r\n    GROUP BY\r\n        c.Marca,\r\n        c.CodSucursala\r\n),\r\n\r\nSURSA AS\r\n(\r\n    SELECT Marca, CodSucursala FROM CO\r\n\r\n    UNION\r\n\r\n    SELECT Marca, CodSucursala FROM CM\r\n\r\n    UNION\r\n\r\n    SELECT Marca, CodSucursala FROM ALTEDREPTURI\r\n\r\n    UNION\r\n\r\n    SELECT Marca, CodSucursala FROM DIURNE\r\n\r\n    UNION\r\n\r\n    SELECT Marca, CodSucursala FROM CFS31\r\n)\r\n\r\nINSERT INTO app.ExceptiiPrezenta\r\n(\r\n    Marca,\r\n    CodSucursala,\r\n    Judet,\r\n    Anul,\r\n    Luna,\r\n\r\n    TipNorma,\r\n    TipInregistrare,\r\n\r\n    ZileLucratoare,\r\n\r\n    ZileLucrate,\r\n    Zile12Norma,\r\n    ZileProgramRedus,\r\n    \r\n    ZileLucrateTotal,\r\n\r\n    OreLucrate,\r\n\r\n    ZileCO,\r\n    ZileCM,\r\n    ZileLiberePlatite,\r\n    ZileDelegatie,\r\n    ZileCFS31,\r\n\r\n    StatusValidare,\r\n    MesajValidare,\r\n\r\n    CreatedBy,\r\n    CreatedDate,\r\n    LastModifiedBy,\r\n    LastModifiedDate,\r\n\r\n    DataImport,\r\n    EsteProcesat,\r\n    Status\r\n)\r\n\r\nSELECT\r\n    src.Marca AS Marca,\r\n\r\n    src.CodSucursala AS CodSucursala,\r\n\r\n    ISNULL(s.Judet,'') AS Judet,\r\n\r\n    @Anul,\r\n    @Luna,\r\n\r\n    -------------------------------------------------\r\n    -- Tip norma\r\n    -------------------------------------------------\r\n    ISNULL(s.TipNorma,1) AS TipNorma,\r\n\r\n    -------------------------------------------------\r\n    -- Tip inregistrare\r\n    -------------------------------------------------\r\n    5 AS TipInregistrare,\r\n\r\n    -------------------------------------------------\r\n    -- Zile lucratoare luna\r\n    -------------------------------------------------\r\n    @ZileLucratoare,\r\n\r\n    -------------------------------------------------\r\n    -- Zile lucrate norma intreaga\r\n    -------------------------------------------------\r\n    CASE\r\n        WHEN ISNULL(s.TipNorma,1) = 1\r\n        THEN z.ZileCalc\r\n        ELSE 0\r\n    END AS ZileLucrate,\r\n\r\n    -------------------------------------------------\r\n    -- Zile 1/2 norma\r\n    -------------------------------------------------\r\n    CASE\r\n        WHEN ISNULL(s.TipNorma,1) = 0.5\r\n        THEN z.ZileCalc\r\n        ELSE 0\r\n    END AS Zile12Norma,\r\n\r\n    -------------------------------------------------\r\n    -- Zile program redus\r\n    -------------------------------------------------\r\n    CASE\r\n        WHEN ISNULL(s.TipNorma,1) = 0.75\r\n        THEN z.ZileCalc\r\n        ELSE 0\r\n    END AS ZileProgramRedus,\r\n\r\n    -------------------------------------------------\r\n    -- Total zile lucrate\r\n    -------------------------------------------------\r\n    (\r\n    -------------------------------------------------\r\n    -- Prezenta efectiva\r\n    -------------------------------------------------\r\n    ISNULL(\r\n        CASE\r\n            WHEN ISNULL(s.TipNorma,1) = 1\r\n            THEN z.ZileCalc\r\n            ELSE 0\r\n        END\r\n    ,0)\r\n\r\n    +\r\n\r\n    ISNULL(\r\n        CASE\r\n            WHEN ISNULL(s.TipNorma,1) = 0.5\r\n            THEN z.ZileCalc\r\n            ELSE 0\r\n        END\r\n    ,0)\r\n\r\n    +\r\n\r\n    ISNULL(\r\n        CASE\r\n            WHEN ISNULL(s.TipNorma,1) = 0.75\r\n            THEN z.ZileCalc\r\n            ELSE 0\r\n        END\r\n    ,0)\r\n\r\n    +\r\n\r\n    -------------------------------------------------\r\n    -- Alte zile considerate prezenta\r\n    -------------------------------------------------\r\n    ISNULL(ad.ZileLiberePlatite,0)\r\n\r\n    +\r\n\r\n    ISNULL(di.ZileDelegatie,0)\r\n    \r\n    +\r\n    \r\n    ISNULL(0,0) -- ZileJustificate\r\n\r\n    +\r\n    \r\n\r\n    ISNULL(0,0) -- ZileInvoire\r\n\r\n    +\r\n\r\n    ISNULL(0,0) -- ZileSomajTehnic\r\n\r\n    -------------------------------------------------\r\n    -- Zile neplatite\r\n    -------------------------------------------------\r\n    -\r\n\r\n    ISNULL(0,0) -- ZileCFS\r\n\r\n    -\r\n\r\n    ISNULL(0,0) -- ZileNemotivate\r\n\r\n   \r\n\r\n) AS ZileLucrateTotal,\r\n\r\n    -------------------------------------------------\r\n    -- Ore lucrate\r\n    -------------------------------------------------\r\n    (\r\n    z.ZileCalc\r\n    + ISNULL(ad.ZileLiberePlatite,0)\r\n    + ISNULL(di.ZileDelegatie,0)\r\n   \r\n    )\r\n    * ISNULL(s.TipNorma,1)\r\n    * 8\r\n    AS OreLucrate,\r\n\r\n    -------------------------------------------------\r\n    -- Zile CO\r\n    -------------------------------------------------\r\n    ISNULL(co.ZileCO,0) AS ZileCO,\r\n\r\n    -------------------------------------------------\r\n    -- Zile CM\r\n    -------------------------------------------------\r\n    ISNULL(cm.ZileCM,0) AS ZileCM,\r\n    \r\n    -------------------------------------------------\r\n    -- Zile Libere Platite\r\n    -------------------------------------------------\r\n    ISNULL(ad.ZileLiberePlatite,0),\r\n\r\n    -------------------------------------------------\r\n    -- Zile Delegatie\r\n    -------------------------------------------------\r\n    ISNULL(di.ZileDelegatie,0),\r\n    ISNULL(c31.ZileCFS31,0),\r\n\r\n    -------------------------------------------------\r\n    -- Status validare\r\n    -------------------------------------------------\r\n    CASE\r\n        WHEN ISNULL(co.ZileCO,0)\r\n           + ISNULL(cm.ZileCM,0)\r\n           + ISNULL(ad.ZileLiberePlatite,0)\r\n           + ISNULL(di.ZileDelegatie,0)\r\n           + ISNULL(c31.ZileCFS31,0)\r\n           > @ZileLucratoare\r\n        THEN 'EROARE'\r\n\r\n        WHEN ISNULL(co.ZileCO,0)\r\n           + ISNULL(cm.ZileCM,0)\r\n           + ISNULL(ad.ZileLiberePlatite,0)\r\n           + ISNULL(di.ZileDelegatie,0)\r\n           + ISNULL(c31.ZileCFS31,0)\r\n           = @ZileLucratoare\r\n        THEN 'OK_COMPLET'\r\n\r\n        ELSE 'OK'\r\n    END AS StatusValidare,\r\n\r\n    -------------------------------------------------\r\n    -- Mesaj validare\r\n    -------------------------------------------------\r\n    CASE\r\n        WHEN ISNULL(co.ZileCO,0)\r\n       + ISNULL(cm.ZileCM,0)\r\n       + ISNULL(ad.ZileLiberePlatite,0)\r\n       + ISNULL(di.ZileDelegatie,0)\r\n       + ISNULL(c31.ZileCFS31,0)\r\n       > @ZileLucratoare\r\n        THEN 'Total zile depaseste zilele lucratoare.'\r\n\r\n        ELSE NULL\r\n    END AS MesajValidare,\r\n\r\n    -------------------------------------------------\r\n    -- Audit\r\n    -------------------------------------------------\r\n    @UserId,\r\n    GETDATE(),\r\n\r\n    @UserId,\r\n    GETDATE(),\r\n\r\n    -------------------------------------------------\r\n    -- Import\r\n    -------------------------------------------------\r\n    GETDATE(),\r\n\r\n    -------------------------------------------------\r\n    -- Procesare\r\n    -------------------------------------------------\r\n    0,\r\n\r\n    -------------------------------------------------\r\n    -- Status\r\n    -------------------------------------------------\r\n    1\r\n\r\nFROM SURSA src\r\n\r\nLEFT JOIN CO co\r\n    ON co.Marca = src.Marca\r\n   AND co.CodSucursala = src.CodSucursala\r\n\r\nLEFT JOIN CM cm\r\n    ON cm.Marca = src.Marca\r\n   AND cm.CodSucursala = src.CodSucursala\r\n\r\nLEFT JOIN ALTEDREPTURI ad\r\n    ON ad.Marca = src.Marca\r\n   AND ad.CodSucursala = src.CodSucursala\r\n\r\nLEFT JOIN DIURNE di\r\n    ON di.Marca = src.Marca\r\n   AND di.CodSucursala = src.CodSucursala\r\n\r\nLEFT JOIN CFS31 c31\r\n    ON c31.Marca = src.Marca\r\n   AND c31.CodSucursala = src.CodSucursala\r\n\r\nLEFT JOIN SAL s\r\n    ON s.Marca = src.Marca\r\n   AND s.CodSucursala = src.CodSucursala\r\n\r\nCROSS APPLY\r\n(\r\n    SELECT\r\n        CASE\r\n            WHEN @ZileLucratoare\r\n                 - ISNULL(co.ZileCO,0)\r\n                 - ISNULL(cm.ZileCM,0) \r\n                 - ISNULL(ad.ZileLiberePlatite,0)\r\n                 - ISNULL(di.ZileDelegatie,0) \r\n                 - ISNULL(c31.ZileCFS31,0)< 0\r\n            THEN 0\r\n\r\n            ELSE\r\n                @ZileLucratoare\r\n                - ISNULL(co.ZileCO,0)\r\n                - ISNULL(cm.ZileCM,0)\r\n                - ISNULL(ad.ZileLiberePlatite,0)\r\n                - ISNULL(di.ZileDelegatie,0)\r\n                - ISNULL(c31.ZileCFS31,0)\r\n        END AS ZileCalc\r\n) z",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16135,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 5896,
+                        "GlobalId": "ce96fa90-1d2c-45d8-8b3a-06da95949353",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 5896,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16136,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16137,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16138,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "ZileLucratoare",
+                          "value": "[ZileLucratoare]"
+                        },
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        },
+                        {
+                          "name": "UserId",
+                          "value": "[User:UserID]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16139,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 16140,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4133,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ActionStackId": 5894,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 16142,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4131,
+            "Name": "OnError",
+            "Value": {
+              "Id": 5897,
+              "GlobalId": "17b622cc-5224-4c3e-b057-fa32553dce73",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 5897,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 9,
+  "CreatedOn": "2026-05-26T10:24:06.5137467+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-05-28T18:03:06.2267326+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

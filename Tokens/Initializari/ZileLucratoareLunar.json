@@ -1,21 +1,22 @@
 {
-  "id": 115,
   "globalId": "24140862-9ae5-41e5-a921-060f440ab43d",
   "namespace": {
-    "id": 9,
     "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
     "name": "Initializari",
     "isSystem": false
   },
   "name": "ZileLucratoareLunar",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
-    "value": "0",
+    "type": "string",
+    "text": "0",
     "evaluateTokens": false,
-    "type": "string"
+    "params": []
   }
 }

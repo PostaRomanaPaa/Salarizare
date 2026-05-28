@@ -1,23 +1,24 @@
 {
-  "id": 137,
   "globalId": "acf593f7-3202-4231-a936-23fef8387bc1",
   "namespace": {
-    "id": 10,
     "globalId": "072487c0-5131-4ab8-9461-c63e9e2c989b",
     "name": "UserInfo",
     "isSystem": false
   },
   "name": "User_CodSucursala",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "SELECT TOP 1 REPLACE(RoleName, 'Acces_', '') \nFROM UserRoles ur\nJOIN Roles r ON ur.RoleID = r.RoleID\nWHERE ur.UserID = [User:UserId] \n  AND r.RoleName LIKE 'Acces_%'",
-    "defaultColumn": "",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": []
   }
 }

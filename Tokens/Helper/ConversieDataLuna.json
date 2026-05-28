@@ -1,23 +1,26 @@
 {
-  "id": 43,
   "globalId": "7d5675a0-32fa-4ba3-aa75-61c36edcefb5",
   "namespace": {
-    "id": 7,
     "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
     "name": "Helper",
     "isSystem": false
   },
   "name": "ConversieDataLuna",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "SELECT MONTH(CONVERT(DATE, '[TknParams:data]', 111))",
-    "defaultColumn": "",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": [
+      "data"
+    ]
   }
 }

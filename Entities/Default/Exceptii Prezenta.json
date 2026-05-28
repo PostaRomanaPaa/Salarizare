@@ -1,0 +1,1683 @@
+{
+  "Children": [],
+  "DisplayInMenu": false,
+  "ParentPageId": 163,
+  "DisplayAfter": null,
+  "RecordNamePropertyId": 860,
+  "UpdateRecordNameProperty": null,
+  "ShowDashboardModule": false,
+  "GenerateApiAccess": false,
+  "Properties": [
+    {
+      "Id": 860,
+      "GlobalId": "2da49769-4e92-45b6-b452-d2f5cd03ce5c",
+      "EntityVersionId": 77,
+      "Name": "Cod Sucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 861,
+      "GlobalId": "7ae7c52f-f93f-4a18-89da-9a45209df6a9",
+      "EntityVersionId": 77,
+      "Name": "Anul",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 862,
+      "GlobalId": "1a984a47-0250-4667-bdb6-070f7bc4665d",
+      "EntityVersionId": 77,
+      "Name": "Luna",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 863,
+      "GlobalId": "94c7d971-522d-4cc1-8d8f-1309ef981acf",
+      "EntityVersionId": 77,
+      "Name": "Marca",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 6
+    },
+    {
+      "Id": 864,
+      "GlobalId": "7170b6bb-efc0-444c-b0a0-724c9a293465",
+      "EntityVersionId": 77,
+      "Name": "Tip Norma",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 865,
+      "GlobalId": "c651d789-3020-41bc-be82-4d8182cd0b0b",
+      "EntityVersionId": 77,
+      "Name": "Zile Lucratoare",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 866,
+      "GlobalId": "fe2484e3-6690-4a62-9395-e630d3fa39da",
+      "EntityVersionId": 77,
+      "Name": "Zile Lucrate",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 9
+    },
+    {
+      "Id": 867,
+      "GlobalId": "2b136fbb-31d8-4194-a40a-fd4021bb65fd",
+      "EntityVersionId": 77,
+      "Name": "Ore Lucrate",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 10
+    },
+    {
+      "Id": 868,
+      "GlobalId": "dd30182a-7bb1-48ec-85e4-9e61c90fde72",
+      "EntityVersionId": 77,
+      "Name": "Zile CM",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 11
+    },
+    {
+      "Id": 869,
+      "GlobalId": "83992d89-af8d-47f7-9765-7824bfaac87b",
+      "EntityVersionId": 77,
+      "Name": "Zile CO",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 12
+    },
+    {
+      "Id": 870,
+      "GlobalId": "ded3577c-58f8-4a36-bbaf-fa7ec9fcf4ac",
+      "EntityVersionId": 77,
+      "Name": "Zile ProgramRedus",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 13
+    },
+    {
+      "Id": 871,
+      "GlobalId": "e46fb41f-060b-414e-a031-dd5bb256f6ce",
+      "EntityVersionId": 77,
+      "Name": "Zile Invoire",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 15
+    },
+    {
+      "Id": 872,
+      "GlobalId": "684ed8b3-5815-4753-994a-0528a7bf6276",
+      "EntityVersionId": 77,
+      "Name": "Zile CFS",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 28
+    },
+    {
+      "Id": 873,
+      "GlobalId": "fc46a256-6cae-4df2-85a5-8befccee0e31",
+      "EntityVersionId": 77,
+      "Name": "Zile Nemotivate",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 19
+    },
+    {
+      "Id": 874,
+      "GlobalId": "8edec9e8-8668-41a4-ab05-f7b3b8c877c1",
+      "EntityVersionId": 77,
+      "Name": "Ore Nemotivate",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 20
+    },
+    {
+      "Id": 875,
+      "GlobalId": "c07914d6-478f-4f6c-966c-3f9e549a321e",
+      "EntityVersionId": 77,
+      "Name": "Zile PrezentaIncerta",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 17
+    },
+    {
+      "Id": 876,
+      "GlobalId": "da62bf22-306f-4cc2-8492-25740e6121d7",
+      "EntityVersionId": 77,
+      "Name": "Ore PrezentaIncerta",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 18
+    },
+    {
+      "Id": 877,
+      "GlobalId": "2097f7ef-aa6e-4a8a-83a1-1da3c51c1675",
+      "EntityVersionId": 77,
+      "Name": "Ore Noapte",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 21
+    },
+    {
+      "Id": 878,
+      "GlobalId": "573dd61c-558b-4c4d-89a6-24c69d49e958",
+      "EntityVersionId": 77,
+      "Name": "Ore SambataDuminica",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 22
+    },
+    {
+      "Id": 879,
+      "GlobalId": "6590b527-ed3c-4b4b-9987-4a4c9f28cbfb",
+      "EntityVersionId": 77,
+      "Name": "Ore Suplimentare50",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 23
+    },
+    {
+      "Id": 880,
+      "GlobalId": "9fc70005-b401-424e-8292-7810be20567d",
+      "EntityVersionId": 77,
+      "Name": "Ore Suplimentare100",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 24
+    },
+    {
+      "Id": 881,
+      "GlobalId": "76106ae5-739f-4f92-b678-04beaa6ac4c4",
+      "EntityVersionId": 77,
+      "Name": "Ore IntraJudetene",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 25
+    },
+    {
+      "Id": 882,
+      "GlobalId": "06a989ee-9823-4542-b6ac-653108154734",
+      "EntityVersionId": 77,
+      "Name": "Ore Administrativ",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 26
+    },
+    {
+      "Id": 883,
+      "GlobalId": "1906a5c6-421b-41ad-8620-e4f09a2a9bef",
+      "EntityVersionId": 77,
+      "Name": "Ore Garaj",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 27
+    },
+    {
+      "Id": 884,
+      "GlobalId": "81f788fc-1af0-42ba-872c-ad228db0380b",
+      "EntityVersionId": 77,
+      "Name": "ZIle CFS31",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 29
+    },
+    {
+      "Id": 885,
+      "GlobalId": "13da243c-d686-47df-b408-924298988e69",
+      "EntityVersionId": 77,
+      "Name": "Ore Lucrate1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 41
+    },
+    {
+      "Id": 886,
+      "GlobalId": "e2ce3a6e-a103-4d0b-b62f-43936e2ca68e",
+      "EntityVersionId": 77,
+      "Name": "Ore Invoire1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 42
+    },
+    {
+      "Id": 887,
+      "GlobalId": "2f6a13fa-ff8b-41c3-aa07-1ea49e945078",
+      "EntityVersionId": 77,
+      "Name": "Ore PrezentaIncerta1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 43
+    },
+    {
+      "Id": 888,
+      "GlobalId": "fb9f1cc7-1dd0-49ca-9ab8-bdd5e1579708",
+      "EntityVersionId": 77,
+      "Name": "Ore Nemotivate1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 44
+    },
+    {
+      "Id": 889,
+      "GlobalId": "12537cb3-4023-45b2-8b10-b550506e9336",
+      "EntityVersionId": 77,
+      "Name": "Ore Noapte1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 45
+    },
+    {
+      "Id": 890,
+      "GlobalId": "6b0af835-6a17-488f-a334-e580f6fc6ac5",
+      "EntityVersionId": 77,
+      "Name": "Ore SambataDuminica1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 46
+    },
+    {
+      "Id": 891,
+      "GlobalId": "cbbc30ae-f84f-4fdb-8d76-6a9008bf2597",
+      "EntityVersionId": 77,
+      "Name": "Ore Suplimentare501",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 47
+    },
+    {
+      "Id": 892,
+      "GlobalId": "d503b7b5-cd2a-4463-91e4-933ce2d54ca4",
+      "EntityVersionId": 77,
+      "Name": "Ore Suplimentare1001",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 48
+    },
+    {
+      "Id": 893,
+      "GlobalId": "0d957910-cf81-4000-a988-07f2ae54cf8c",
+      "EntityVersionId": 77,
+      "Name": "Ore IntraJudetene1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 49
+    },
+    {
+      "Id": 894,
+      "GlobalId": "772bbc3a-1e84-495a-bcf7-6242965d5348",
+      "EntityVersionId": 77,
+      "Name": "Ore Administrativ1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 50
+    },
+    {
+      "Id": 895,
+      "GlobalId": "391d7862-68c2-4220-91c6-0800d493c9a6",
+      "EntityVersionId": 77,
+      "Name": "Ore Garaj1",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 51
+    },
+    {
+      "Id": 898,
+      "GlobalId": "a1e93104-3e7e-4e2f-8724-832a0d0554b0",
+      "EntityVersionId": 77,
+      "Name": "Zile Somaj Tehnic",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 35
+    },
+    {
+      "Id": 899,
+      "GlobalId": "2b8295fa-799a-44e1-8d5a-276faf5926ee",
+      "EntityVersionId": 77,
+      "Name": "Zile1h",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 30
+    },
+    {
+      "Id": 900,
+      "GlobalId": "a1b3c3c3-1491-477f-be8b-4c4ddb9e435e",
+      "EntityVersionId": 77,
+      "Name": "Zile2h",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 31
+    },
+    {
+      "Id": 901,
+      "GlobalId": "2997db1b-960f-4ae3-9693-153ddef439c8",
+      "EntityVersionId": 77,
+      "Name": "Zile3h",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 32
+    },
+    {
+      "Id": 902,
+      "GlobalId": "e313a681-4941-454c-b634-7b3f194c30e7",
+      "EntityVersionId": 77,
+      "Name": "Zile5h",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 33
+    },
+    {
+      "Id": 903,
+      "GlobalId": "96a81ae0-abc0-49d6-bcd4-7de829d7c8df",
+      "EntityVersionId": 77,
+      "Name": "Zile7h",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 34
+    },
+    {
+      "Id": 904,
+      "GlobalId": "3f27cf77-21ee-4ad7-843b-a2f071d897a8",
+      "EntityVersionId": 77,
+      "Name": "Zile LIS75",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 36
+    },
+    {
+      "Id": 905,
+      "GlobalId": "e3df2d2f-76b5-45b7-8ecf-020397262f94",
+      "EntityVersionId": 77,
+      "Name": "Status Validare",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 53
+    },
+    {
+      "Id": 906,
+      "GlobalId": "d248da5d-aa24-402a-9ecc-5641368e5ace",
+      "EntityVersionId": 77,
+      "Name": "Mesaj Validare",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 54
+    },
+    {
+      "Id": 907,
+      "GlobalId": "63332a26-7efb-4aad-85d5-54de616e9e6f",
+      "EntityVersionId": 77,
+      "Name": "Data Import",
+      "Type": {
+        "Id": "DateTimeOffset",
+        "Name": "Local Date and Time",
+        "InputType": {
+          "Id": "DateTimeOffset",
+          "Name": "Local Date and Time",
+          "ValueType": 6,
+          "Length": 10,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 55
+    },
+    {
+      "Id": 909,
+      "GlobalId": "1c9bdec9-bdb8-4ec1-9099-2cd3ec5a54c3",
+      "EntityVersionId": 77,
+      "Name": "Status",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 55,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 57
+    },
+    {
+      "Id": 923,
+      "GlobalId": "07149998-39b0-4c20-8d29-b356ccacd0d2",
+      "EntityVersionId": 77,
+      "Name": "Ore Invoire",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 16
+    },
+    {
+      "Id": 924,
+      "GlobalId": "15e78e00-01d3-4aca-b247-7e17c8184b11",
+      "EntityVersionId": 77,
+      "Name": "Zile 12 Norma",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 8
+    },
+    {
+      "Id": 926,
+      "GlobalId": "efd8329c-f30a-4cd3-90f4-a262b0c2c185",
+      "EntityVersionId": 77,
+      "Name": "Este Procesat",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 56
+    },
+    {
+      "Id": 927,
+      "GlobalId": "e0905fb5-f13b-4b85-8991-aa738d52071b",
+      "EntityVersionId": 77,
+      "Name": "Zile Lucrate Total",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 14
+    },
+    {
+      "Id": 928,
+      "GlobalId": "830b9cc2-3e79-43a5-80c1-7a82310d524c",
+      "EntityVersionId": 77,
+      "Name": "Judet",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 930,
+      "GlobalId": "728b7d34-c246-4df9-a96f-b76a6c13554b",
+      "EntityVersionId": 77,
+      "Name": "Tip Inregistrare",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 55,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 52
+    },
+    {
+      "Id": 931,
+      "GlobalId": "acf5f4b1-9bce-4b5d-bf4f-ea5670b8fe01",
+      "EntityVersionId": 77,
+      "Name": "Zile Libere Platite",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 37
+    },
+    {
+      "Id": 932,
+      "GlobalId": "422a8513-18f8-446c-a174-4fed4586a8d0",
+      "EntityVersionId": 77,
+      "Name": "Zile Delegatie",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 39
+    },
+    {
+      "Id": 933,
+      "GlobalId": "bde534bd-b4ac-43cd-aaee-06cdf6d62473",
+      "EntityVersionId": 77,
+      "Name": "Ore ZileLiberePlatite",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 38
+    },
+    {
+      "Id": 934,
+      "GlobalId": "ad24d9f6-a984-4864-938c-27d598d7d72f",
+      "EntityVersionId": 77,
+      "Name": "Ore Delegatie",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 40
+    }
+  ],
+  "RolePermissions": {
+    "6": [
+      {
+        "Id": 1677,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1678,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "true"
+      },
+      {
+        "Id": 1679,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1680,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      }
+    ],
+    "7": [
+      {
+        "Id": 1681,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1682,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "true"
+      },
+      {
+        "Id": 1683,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1684,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      }
+    ],
+    "5": [
+      {
+        "Id": 1685,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1686,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "true"
+      },
+      {
+        "Id": 1687,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1688,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      }
+    ],
+    "8": [
+      {
+        "Id": 1689,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1690,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "true"
+      },
+      {
+        "Id": 1691,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1692,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      }
+    ]
+  },
+  "Id": 77,
+  "GlobalId": "44996996-1dc6-49e2-aa06-7e0299e0a0d9",
+  "ConfigGenerationGlobalId": "44996996-1dc6-49e2-aa06-7e0299e0a0d9",
+  "VersionId": 77,
+  "EntityTabId": 267,
+  "Name": "Exceptii Prezenta",
+  "PluralName": "Exceptii Prezente",
+  "PageUiLibrary": 2,
+  "CreatedDate": "2026-05-26T10:03:52.01",
+  "CreatedBy": "Carmen Mardare",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-05-28T18:11:32.6333333",
+  "Icon": "table",
+  "Type": 0,
+  "BuiltInType": null,
+  "EnableIndexing": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
+  "EntityTabGlobalId": "f4230a68-d278-4ff6-86bb-9c445523977f",
+  "EntityParentTabGlobalId": "b6ea477c-fbc1-4898-8c18-b82b4ada42f9"
+}

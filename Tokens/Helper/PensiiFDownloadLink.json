@@ -1,23 +1,27 @@
 {
-  "id": 140,
   "globalId": "0a004f4f-b902-418b-97bf-ee4f17642464",
   "namespace": {
-    "id": 7,
     "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
     "name": "Helper",
     "isSystem": false
   },
   "name": "PensiiFDownloadLink",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "razor",
     "compiledRazorLocation": "host",
-    "additionalAssemblies": "",
-    "debug": false,
+    "assemblies": "",
+    "debugScript": false,
+    "lang": "csharp",
     "language": "csharp",
-    "type": "razor"
+    "params": [
+      "FileId"
+    ]
   }
 }

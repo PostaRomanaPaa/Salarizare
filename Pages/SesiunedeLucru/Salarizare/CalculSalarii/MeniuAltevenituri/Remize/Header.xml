@@ -1,0 +1,119 @@
+<module type="DNNHTML" version="10.02.01.00">
+    <contentKey />
+    <moduleID>869</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>true</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Header</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>72bc74ac-ed3f-49b8-800f-62e3b6f8f0d9</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>InternalIdentifier</settingname>
+            <settingvalue>Entity_HtmlModule_c794d006-8749-4629-a12a-7c9335042594</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>DNN_HTML</definition>
+    <moduledefinition>Text/HTML</moduledefinition>
+</module>

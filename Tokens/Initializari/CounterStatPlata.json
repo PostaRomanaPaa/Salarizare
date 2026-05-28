@@ -1,21 +1,22 @@
 {
-  "id": 126,
   "globalId": "a03661cc-9bb1-4133-ad55-8814f4abbcc7",
   "namespace": {
-    "id": 9,
     "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
     "name": "Initializari",
     "isSystem": false
   },
   "name": "CounterStatPlata",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
-    "value": "0",
+    "type": "string",
+    "text": "0",
     "evaluateTokens": false,
-    "type": "string"
+    "params": []
   }
 }

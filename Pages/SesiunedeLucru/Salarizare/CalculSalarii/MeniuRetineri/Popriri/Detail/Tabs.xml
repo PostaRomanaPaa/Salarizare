@@ -1,4 +1,4 @@
-<module type="avtTabsPro" version="05.27.33.00">
+<module type="avtTabsPro" version="05.28.91.00">
     <contentKey />
     <moduleID>1001</moduleID>
     <alignment />
@@ -16,7 +16,92 @@
     <header />
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
     <title>Tabs</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>b2c2f121-33b5-45c3-836e-80aca67a3e34</uniqueId>
@@ -31,7 +116,7 @@
     <tabmodulesettings />
     <definition>avt.TabsPro</definition>
     <moduledefinition>avt.TabsPro</moduledefinition>
-    <content type="avtTabsPro" version="05.27.33.00"><![CDATA[&lt;TabsPro&gt;
+    <content type="avtTabsPro" version="05.28.91.00"><![CDATA[&lt;TabsPro&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;False&lt;/TabsFullWidth&gt;
   &lt;IsCollapsible&gt;False&lt;/IsCollapsible&gt;

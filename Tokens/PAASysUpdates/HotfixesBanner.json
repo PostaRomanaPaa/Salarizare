@@ -1,8 +1,6 @@
 {
-  "id": 163,
   "globalId": "6c8e4498-fc04-41ec-bc25-89558d646cb7",
   "namespace": {
-    "id": 3,
     "globalId": "235ea98a-72de-43fb-9311-36d7cc09216b",
     "name": "PAASysUpdates",
     "description": "",
@@ -10,15 +8,19 @@
   },
   "name": "HotfixesBanner",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "razor",
     "compiledRazorLocation": "host",
-    "additionalAssemblies": "",
-    "debug": false,
+    "assemblies": "",
+    "debugScript": false,
+    "lang": "csharp",
     "language": "csharp",
-    "type": "razor"
+    "params": []
   }
 }

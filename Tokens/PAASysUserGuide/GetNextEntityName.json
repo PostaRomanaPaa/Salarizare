@@ -1,8 +1,6 @@
 {
-  "id": 172,
   "globalId": "17e3273e-aaab-4c1f-a620-6ef1f09ae69b",
   "namespace": {
-    "id": 4,
     "globalId": "da63a535-f5c9-4478-a99b-88b7b247b6dd",
     "name": "PAASysUserGuide",
     "description": "",
@@ -10,15 +8,21 @@
   },
   "name": "GetNextEntityName",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "User",
+  "cacheTimeSec": 3600,
+  "cacheLayer": "user",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "DECLARE @EntityName nvarchar(250) = '[TknParams:Name]'\r\nDECLARE @EntityPluralName nvarchar(250) = '[TknParams:PluralName]'\r\nDECLARE @EntityNameBase nvarchar(250) = @EntityName\r\nDECLARE @EntityPluralNameBase nvarchar(250) = @EntityPluralName\r\nDECLARE @Iteration int = 1\r\nWHILE (EXISTS(SELECT object_id FROM sys.tables t WHERE schema_name(t.schema_id) = 'app' AND t.name = REPLACE(@EntityName, ' ', '')) \r\nOR EXISTS(SELECT TabId from {databaseOwner}[{objectQualifier}Tabs] WHERE TabName = @EntityPluralName)\r\nOR EXISTS(SELECT Id FROM {databaseOwner}[{objectQualifier}PlantAnApp_Configuration_Entities_EntityVersion] WHERE Name = @EntityName))\r\nBEGIN\r\nSET @EntityName = @EntityNameBase + ' ' + CAST (@Iteration AS varchar)\r\nSET @EntityPluralName = @EntityPluralNameBase + ' ' + CAST(@Iteration AS varchar)\r\nSET @Iteration = @Iteration + 1\r\nEND\r\nSELECT @EntityName AS Name, @EntityPluralName AS PluralName",
-    "defaultColumn": "Name",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": [
+      "Name",
+      "PluralName"
+    ]
   }
 }

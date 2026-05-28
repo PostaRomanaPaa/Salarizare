@@ -1,23 +1,28 @@
 {
-  "id": 149,
   "globalId": "cb838c04-8152-466d-b09d-0ece33839b5d",
   "namespace": {
-    "id": 5,
     "globalId": "9204be38-c5ae-44b8-b355-e44da69c7e4b",
     "name": "PAASysDocuments",
     "isSystem": true
   },
   "name": "MoveFile",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "razor",
     "compiledRazorLocation": "host",
-    "additionalAssemblies": "",
-    "debug": false,
-    "language": "",
-    "type": "razor"
+    "assemblies": "",
+    "debugScript": false,
+    "lang": "csharp",
+    "language": "csharp",
+    "params": [
+      "FileId",
+      "FolderId"
+    ]
   }
 }

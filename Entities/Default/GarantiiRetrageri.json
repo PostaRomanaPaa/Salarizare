@@ -1,0 +1,565 @@
+{
+  "Children": [],
+  "DisplayInMenu": false,
+  "ParentPageId": 256,
+  "DisplayAfter": null,
+  "RecordNamePropertyId": 801,
+  "UpdateRecordNameProperty": null,
+  "ShowDashboardModule": false,
+  "GenerateApiAccess": false,
+  "Properties": [
+    {
+      "Id": 801,
+      "GlobalId": "41cd4bd2-5b31-4c89-ad2a-6a4cf8164970",
+      "EntityVersionId": 74,
+      "Name": "Marca",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 802,
+      "GlobalId": "d3cb39ed-d7e6-4535-a560-6f4321073baf",
+      "EntityVersionId": 74,
+      "Name": "Nume",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 804,
+      "GlobalId": "cdbc00a7-15cc-49e7-a006-5f959189511a",
+      "EntityVersionId": 74,
+      "Name": "CNP",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 805,
+      "GlobalId": "2dea5935-dacf-4bb2-a2c3-4470e9ee03be",
+      "EntityVersionId": 74,
+      "Name": "Suma Depusa",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 806,
+      "GlobalId": "9ad68506-b4a5-4069-9197-bb151210d8f3",
+      "EntityVersionId": 74,
+      "Name": "Suma Retrasa",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 6
+    },
+    {
+      "Id": 807,
+      "GlobalId": "e5cf662d-ff47-40c1-ba4d-3db8804e8666",
+      "EntityVersionId": 74,
+      "Name": "Cont IBAN",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 808,
+      "GlobalId": "5f5bad0f-b16b-402f-9229-acdec40cbc8e",
+      "EntityVersionId": 74,
+      "Name": "Luna",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 9
+    },
+    {
+      "Id": 809,
+      "GlobalId": "30515796-d669-4feb-9c30-ed68b7afe58f",
+      "EntityVersionId": 74,
+      "Name": "Anul",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 10
+    },
+    {
+      "Id": 810,
+      "GlobalId": "d2b0f5b5-6ba8-4044-bfb9-e1ced12c5627",
+      "EntityVersionId": 74,
+      "Name": "Ordin Plata",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 11
+    },
+    {
+      "Id": 811,
+      "GlobalId": "87bcdd5f-1720-4eba-9910-d050b352dad8",
+      "EntityVersionId": 74,
+      "Name": "Data Ordin Plata",
+      "Type": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "InputType": {
+          "Id": "DateTime",
+          "Name": "Date and Time",
+          "ValueType": 5,
+          "Length": 8,
+          "Icon": "today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 12
+    },
+    {
+      "Id": 812,
+      "GlobalId": "5684adf0-0000-4ce6-b834-1842335fc209",
+      "EntityVersionId": 74,
+      "Name": "Data Transmiterii",
+      "Type": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "InputType": {
+          "Id": "DateTime",
+          "Name": "Date and Time",
+          "ValueType": 5,
+          "Length": 8,
+          "Icon": "today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 13
+    },
+    {
+      "Id": 813,
+      "GlobalId": "dc505a6b-8194-485e-9beb-f4919fce9adf",
+      "EntityVersionId": 74,
+      "Name": "Suma Confirmata Banca",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 14
+    },
+    {
+      "Id": 814,
+      "GlobalId": "008a2ebf-c3a6-4547-8e62-28b242e5cf59",
+      "EntityVersionId": 74,
+      "Name": "Fisier",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 15
+    },
+    {
+      "Id": 815,
+      "GlobalId": "a8485215-a46c-4f55-9d34-4e5fb6b4750e",
+      "EntityVersionId": 74,
+      "Name": "CodSucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 8
+    }
+  ],
+  "RolePermissions": {
+    "6": [
+      {
+        "Id": 1621,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1622,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "true"
+      },
+      {
+        "Id": 1623,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1624,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      }
+    ],
+    "7": [
+      {
+        "Id": 1625,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1626,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "true"
+      },
+      {
+        "Id": 1627,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1628,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      }
+    ],
+    "5": [
+      {
+        "Id": 1629,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1630,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "true"
+      },
+      {
+        "Id": 1631,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1632,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      }
+    ],
+    "8": [
+      {
+        "Id": 1633,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1634,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "true"
+      },
+      {
+        "Id": 1635,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1636,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      }
+    ]
+  },
+  "Id": 74,
+  "GlobalId": "e104afb9-e0ee-4733-a5c1-c0834cd02ee7",
+  "ConfigGenerationGlobalId": "e104afb9-e0ee-4733-a5c1-c0834cd02ee7",
+  "VersionId": 74,
+  "EntityTabId": 259,
+  "Name": "GarantiiRetrageri",
+  "PluralName": "GarantiiRetragere",
+  "PageUiLibrary": 2,
+  "CreatedDate": "2026-05-19T07:50:28.5933333",
+  "CreatedBy": "Alexandra Vasilescu",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-05-19T09:59:52.7933333",
+  "Icon": "table",
+  "Type": 0,
+  "BuiltInType": null,
+  "EnableIndexing": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
+  "EntityTabGlobalId": "667e0b9e-1674-4f01-b62c-59d273922064",
+  "EntityParentTabGlobalId": "3c693e8c-a9e9-48e7-9270-68656e4ae6bf"
+}

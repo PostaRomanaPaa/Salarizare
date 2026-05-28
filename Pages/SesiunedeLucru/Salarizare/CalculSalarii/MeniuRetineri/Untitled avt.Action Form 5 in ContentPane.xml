@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.125.00">
+<module type="ActionForm" version="05.28.225.00">
     <contentKey />
     <moduleID>904</moduleID>
     <alignment />
@@ -29,6 +29,90 @@
             <allowaccess>true</allowaccess>
             <rolename>Admins</rolename>
         </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
     </modulepermissions>
     <title>avt.Action Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
@@ -39,13 +123,13 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.125.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields /&gt;
   &lt;Settings&gt;
     &lt;Title&gt;avt.Action Form&lt;/Title&gt;
     &lt;CssName&gt;avt-action-form&lt;/CssName&gt;
-    &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.125&lt;/Build&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.225&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;&amp;lt;a href=&quot;[FormUrl]&quot;&amp;gt;Click here to change.&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -64,7 +148,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;904&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.125&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
     &lt;TabId&gt;159&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -96,7 +180,6 @@
     &lt;BaseId&gt;dnn904&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;RevisionNumber&gt;1&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;cristian.tudorache@ro.post&lt;/RevisionLastChangedBy&gt;

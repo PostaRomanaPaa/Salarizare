@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.125.00">
+<module type="ActionForm" version="05.28.225.00">
     <contentKey />
     <moduleID>967</moduleID>
     <alignment />
@@ -16,7 +16,92 @@
     <header />
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
     <title>Import CAR Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>820432c7-1224-4ffd-948c-9881ad1e9941</uniqueId>
@@ -26,7 +111,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.125.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[1873]]&gt;&lt;/Id&gt;
@@ -164,8 +249,8 @@
   &lt;Settings&gt;
     &lt;Title&gt;Import CAR Form&lt;/Title&gt;
     &lt;CssName&gt;import-car-form&lt;/CssName&gt;
-    &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.125&lt;/Build&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.225&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;p&amp;gt;This is a sample text, edit this to match the purpose and describe the resource you&#39;re targeting (page, file).&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href = &quot;[FormUrl]&quot;&amp;gt;ACCESS this resource&amp;lt;/a&amp;gt; now.&amp;lt;/p&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -182,7 +267,7 @@
     &lt;FieldSpacing&gt;loose&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;967&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.125&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
     &lt;TabId&gt;214&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -214,7 +299,6 @@
     &lt;BaseId&gt;dnn967&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;RevisionNumber&gt;5&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;alexandra.vasilescu@ro.post&lt;/RevisionLastChangedBy&gt;
@@ -222,45 +306,36 @@
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Fisier import -lipsa&lt;/Description&gt;
-      &lt;ActionType&gt;ShowToast&lt;/ActionType&gt;
+      &lt;ModuleId&gt;967&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Import&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowToast&lt;/ActionType&gt;
+      &lt;Description&gt;Fisier import -lipsa&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;Heading&quot;:null,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Nu ati selectat Fisierul pentru import!&amp;lt;/p&amp;gt;&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;default&quot;},&quot;BgColor&quot;:null,&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;fade&quot;},&quot;AllowToastClose&quot;:false,&quot;CallBackJsCode&quot;:null,&quot;HideTime&quot;:&quot;1000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;bottom-center&quot;},&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;},&quot;ShowLoader&quot;:false,&quot;LoaderColor&quot;:null}&lt;/ActionData&gt;
       &lt;Condition&gt;[FisierExcel] == &quot;&quot;&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-04-16T07:52:19.193&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Heading&quot;:&quot;&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Nu ati selectat Fisierul pentru import!&amp;lt;/p&amp;gt;&quot;,&quot;Icon&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;default&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BgColor&quot;:&quot;&quot;,&quot;Transition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;fade&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;AllowToastClose&quot;:&quot;&quot;,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;HideTime&quot;:&quot;1000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;bottom-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TextAlignment&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ShowLoader&quot;:&quot;&quot;,&quot;LoaderColor&quot;:&quot;&quot;}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;967&lt;/ModuleId&gt;
       &lt;FieldName&gt;Import&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.8f4a53741f21480f82c94e26372725ee&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-16T07:52:19.193&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;InputHelpText&quot;:&quot;&quot;,&quot;FisierExcel&quot;:&quot;[FisierExcel:FileId]&quot;,&quot;CodSucursala&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;Anul&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;Luna&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:&quot;&quot;,&quot;OutputHelpText&quot;:&quot;&quot;,&quot;RezultatErori&quot;:&quot;&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;967&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Import&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
+      &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.8f4a53741f21480f82c94e26372725ee&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;InputHelpText&quot;:null,&quot;FisierExcel&quot;:&quot;[FisierExcel:FileId]&quot;,&quot;CodSucursala&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;Anul&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;Luna&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:false,&quot;OutputHelpText&quot;:null,&quot;RezultatErori&quot;:null}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-04-16T07:52:19.207&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:171,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;967&lt;/ModuleId&gt;
       &lt;FieldName&gt;Import&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;171&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
 &lt;/ActionForm&gt;]]></content>

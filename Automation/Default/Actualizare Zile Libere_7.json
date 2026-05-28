@@ -19,19 +19,14 @@
       }
     }
   ],
-  "Actions": [
+  "ActionStack": [
     {
       "ActionType": "PlantAnApp.ExecuteWorkflow.2234dc2181864fa4a1ba564359cbc340",
       "Description": "",
-      "ExecutionType": "OnExecute",
       "OrderIndex": 0,
       "IsDisabled": false,
-      "Parameters": {
-        "OnError": [],
-        "ContinueOnError": "",
-        "Output": ""
-      }
+      "Parameters": {}
     }
   ],
-  "OnErrorActions": []
+  "OnErrorActionStack": []
 }

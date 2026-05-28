@@ -1,0 +1,545 @@
+{
+  "Children": [],
+  "DisplayInMenu": true,
+  "ParentPageId": 271,
+  "DisplayAfter": null,
+  "RecordNamePropertyId": 849,
+  "UpdateRecordNameProperty": null,
+  "ShowDashboardModule": false,
+  "GenerateApiAccess": false,
+  "Properties": [
+    {
+      "Id": 847,
+      "GlobalId": "884b12d0-4b42-4acc-b56a-9d2eb2634125",
+      "EntityVersionId": 76,
+      "Name": "Cod Sucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 848,
+      "GlobalId": "acf8e647-2d53-43f8-a62e-1f9cbfced554",
+      "EntityVersionId": 76,
+      "Name": "Judet",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 849,
+      "GlobalId": "99536d3d-4d4d-41c7-8139-dd28e2f79cc8",
+      "EntityVersionId": 76,
+      "Name": "Marca",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 850,
+      "GlobalId": "52f2c192-efc4-4631-8af2-5334be95da80",
+      "EntityVersionId": 76,
+      "Name": "CNP",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 851,
+      "GlobalId": "2fcd88d6-301f-46db-bcd1-331edaade200",
+      "EntityVersionId": 76,
+      "Name": "Anul",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 9
+    },
+    {
+      "Id": 852,
+      "GlobalId": "26f5b161-aa02-40b4-87af-efe69b98c922",
+      "EntityVersionId": 76,
+      "Name": "Luna ",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 8
+    },
+    {
+      "Id": 854,
+      "GlobalId": "0683b417-8070-4390-891f-8aa249cd4d15",
+      "EntityVersionId": 76,
+      "Name": "Suma",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 6
+    },
+    {
+      "Id": 855,
+      "GlobalId": "e7c5518f-4009-470f-b8d9-2345a909c1ff",
+      "EntityVersionId": 76,
+      "Name": "Detalii",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 856,
+      "GlobalId": "8a72d9aa-5643-4abf-aa6d-309c35db186e",
+      "EntityVersionId": 76,
+      "Name": "Cod Bonus",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 30,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 857,
+      "GlobalId": "85b057ef-8a6f-4bd8-9afa-9d952fda591c",
+      "EntityVersionId": 76,
+      "Name": "Status",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": "1",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 55,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 10
+    }
+  ],
+  "RolePermissions": {
+    "9": [
+      {
+        "Id": 1653,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1654,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1655,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1656,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
+    ],
+    "13": [
+      {
+        "Id": 1657,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1658,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1659,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1660,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
+    "6": [
+      {
+        "Id": 1661,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1662,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "true"
+      },
+      {
+        "Id": 1663,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1664,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      }
+    ],
+    "7": [
+      {
+        "Id": 1665,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1666,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "true"
+      },
+      {
+        "Id": 1667,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1668,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      }
+    ],
+    "5": [
+      {
+        "Id": 1669,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1670,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "true"
+      },
+      {
+        "Id": 1671,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1672,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      }
+    ],
+    "8": [
+      {
+        "Id": 1673,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1674,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "true"
+      },
+      {
+        "Id": 1675,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1676,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      }
+    ]
+  },
+  "Id": 76,
+  "GlobalId": "c882e361-73e6-496d-ba6f-c88d3fd1d244",
+  "ConfigGenerationGlobalId": "c882e361-73e6-496d-ba6f-c88d3fd1d244",
+  "VersionId": 76,
+  "EntityTabId": 265,
+  "Name": "Bonus",
+  "PluralName": "Bonusuri",
+  "PageUiLibrary": 2,
+  "CreatedDate": "2026-05-25T07:26:15.75",
+  "CreatedBy": "Cristian Tudorache",
+  "LastModifiedBy": "Cristian Tudorache",
+  "LastModifiedOn": "2026-05-27T11:38:10.1933333",
+  "Icon": "table",
+  "Type": 0,
+  "BuiltInType": null,
+  "EnableIndexing": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
+  "EntityTabGlobalId": "974a107f-36fd-4eae-b2fb-c14f00733789",
+  "EntityParentTabGlobalId": "8ccc41ea-ba0a-4c1d-82fe-223883b6d6d7"
+}

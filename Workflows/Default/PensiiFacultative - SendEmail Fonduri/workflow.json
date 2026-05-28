@@ -54,20 +54,26 @@
   "IsDebug": false,
   "IsSystem": false,
   "ActionList": {
-    "Id": 406,
-    "EventName": "Event",
+    "Id": 4258,
+    "GlobalId": "bd0b71ea-cdd1-47a3-9506-9d3d67838b6c",
     "Actions": [
       {
-        "Id": 365,
-        "Description": null,
+        "Id": 2934,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Create List from SQL",
         "ActionErrorMessage": null,
-        "Condition": null,
+        "ActionStackId": 4258,
         "ActionType": "LoadEntitiesFromSql",
-        "OrderIndex": 0,
+        "Condition": null,
+        "IsDeleted": false,
         "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_0zrsbcf",
         "ActionParameters": [
           {
-            "Id": 2853,
+            "Id": 997,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "DbConnector",
             "Value": {
               "Entry": "",
@@ -77,40 +83,56 @@
               "IsExpression": false,
               "Expression": ""
             },
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2854,
+            "Id": 998,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "ConnectionString",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2855,
+            "Id": 999,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "QueryTimeout",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2856,
+            "Id": 1000,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "SqlQuery",
             "Value": "SELECT Distinct p.CodSucursala,p.Anul,p.Luna,\n    p.CodBeneficiar,\n   UPPER(e.TipFisier) as TipFisier,\n    e.Email\nFROM app.PensieFacultativa p\nINNER JOIN app.PensieFacultativaEmail e \n    ON e.CodBeneficiar = p.CodBeneficiar\nWHERE \n    p.Anul = @Anul\n    AND p.Luna = @Luna\n    AND p.CodSucursala = @CodSucursala\n",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2857,
+            "Id": 1001,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "BindTokens",
             "Value": [
               {
@@ -126,109 +148,153 @@
                 "name": "Luna"
               }
             ],
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2858,
+            "Id": 1002,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "EntityName",
             "Value": "Fonduri",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2859,
+            "Id": 1003,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "ClearBeforeLoad",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2860,
+            "Id": 1004,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "EntityProps",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2861,
+            "Id": 1005,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2934,
             "Name": "OnError",
             "Value": {
-              "Id": 407,
-              "EventName": "OnError",
+              "Id": 4259,
+              "GlobalId": "7f71e509-e9bd-4f68-a818-8b93c5015d9f",
               "Actions": [],
               "IsInvalid": false
             },
+            "ActionStackId": 4259,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 365,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           }
         ],
-        "DiagramUID": "Activity_0zrsbcf"
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
       },
       {
-        "Id": 366,
-        "Description": null,
+        "Id": 2935,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Execute Actions for each List Entry",
         "ActionErrorMessage": null,
-        "Condition": null,
+        "ActionStackId": 4258,
         "ActionType": "ExecuteActionsOnEntityList",
-        "OrderIndex": 1,
+        "Condition": null,
+        "IsDeleted": false,
         "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_0rrc4tf",
         "ActionParameters": [
           {
-            "Id": 2862,
+            "Id": 1006,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2935,
             "Name": "EntityName",
             "Value": "Fonduri",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 366,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2863,
+            "Id": 1007,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2935,
             "Name": "Filters",
-            "Value": null,
+            "Value": [],
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 366,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2864,
+            "Id": 1008,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2935,
             "Name": "ContextBehavior",
             "Value": "NoPreserve",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 366,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2882,
+            "Id": 1009,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2935,
             "Name": "ActionList",
             "Value": {
-              "Id": 408,
-              "EventName": "click",
+              "Id": 4260,
+              "GlobalId": "9a2763ab-49cf-4669-ae10-7f5d54b7b5e4",
               "Actions": [
                 {
-                  "Id": 376,
+                  "Id": 2943,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": null,
                   "ActionErrorMessage": null,
-                  "Condition": null,
+                  "ActionStackId": 4260,
                   "ActionType": "SendMail",
-                  "OrderIndex": 0,
+                  "Condition": null,
+                  "IsDeleted": false,
                   "IsDisabled": false,
+                  "OrderIndex": 0,
+                  "DiagramUID": "7911fe5f-1631-406b-ba57-5e4df0a1780c",
                   "ActionParameters": [
                     {
-                      "Id": 2966,
+                      "Id": 1076,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "Credentials",
                       "Value": {
                         "Entry": "",
@@ -238,204 +304,285 @@
                         "IsExpression": false,
                         "Expression": ""
                       },
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2967,
+                      "Id": 1077,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "From",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2968,
+                      "Id": 1078,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "To",
                       "Value": "[Fonduri:Email]",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2969,
+                      "Id": 1079,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "DetermineEmail",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2970,
+                      "Id": 1080,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "ToAllUsers",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2971,
+                      "Id": 1081,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "ReplyTo",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2972,
+                      "Id": 1082,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "Cc",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2973,
+                      "Id": 1083,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "Bcc",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2974,
+                      "Id": 1084,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "Subject",
                       "Value": "Pensie Facultativa [Fonduri:TipFisier] - [Luna]/[Anul]",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2975,
+                      "Id": 1085,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "Format",
                       "Value": "Html",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2976,
+                      "Id": 1086,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "DnnEmailTemplate",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2977,
+                      "Id": 1087,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "Body",
-                      "Value": "<p>Buna ziua, Va transmitem atasat fisierul pentru pensia facultativa. Multumim.\n\ntest wf send email</p>",
+                      "Value": "<p>Buna ziua, Va transmitem atasat fisierul pentru pensia facultativa. Multumim. test wf send email</p>",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2978,
+                      "Id": 1088,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "Headers",
-                      "Value": null,
+                      "Value": [],
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2979,
+                      "Id": 1089,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "PortalFiles",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2980,
+                      "Id": 1090,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "FileToken1",
-                      "Value": "/Portals/0/ExportFisiere/[CodSucursala]_[Fonduri:TipFisier]_[Luna][Anul].csv",
+                      "Value": "/Portals/0/Export/Pensiifacultative/[CodSucursala]_[Fonduri:TipFisier]_[Luna][Anul].csv",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2981,
+                      "Id": 1091,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 419,
-                        "EventName": "OnError",
+                        "Id": 4269,
+                        "GlobalId": "9866ecaf-832d-4056-ab93-275d999add4b",
                         "Actions": [],
                         "IsInvalid": false
                       },
+                      "ActionStackId": 4269,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 2982,
+                      "Id": 1092,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2943,
                       "Name": "IgnoreErros",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 376,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     }
                   ],
-                  "DiagramUID": null
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
                 }
               ],
               "IsInvalid": false
             },
+            "ActionStackId": 4260,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 366,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2883,
+            "Id": 1010,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2935,
             "Name": "ContinueOnError",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 366,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 2884,
+            "Id": 1011,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2935,
             "Name": "OnError",
             "Value": {
-              "Id": 410,
-              "EventName": "OnError",
+              "Id": 4261,
+              "GlobalId": "bb2da4e8-a151-49f3-88fe-23c5d304c45a",
               "Actions": [],
               "IsInvalid": false
             },
+            "ActionStackId": 4261,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 366,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           }
         ],
-        "DiagramUID": "Activity_0rrc4tf"
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
       }
     ],
     "IsInvalid": false
   },
+  "ActionStackId": 0,
   "CreatedBy": 9,
   "CreatedOn": "2026-04-29T15:29:03.8474285+00:00",
   "LastModifiedBy": 9,
-  "LastModifiedOn": "2026-04-30T06:28:03.7765102+00:00",
+  "LastModifiedOn": "2026-05-15T06:41:34.8023438+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

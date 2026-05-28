@@ -1,23 +1,24 @@
 {
-  "id": 139,
   "globalId": "49b5a360-b825-485d-a55a-9b3c720fb54a",
   "namespace": {
-    "id": 7,
     "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
     "name": "Helper",
     "isSystem": false
   },
   "name": "TokenStatusPensiiFacultative",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "SELECT CASE \n       WHEN EXISTS (\n        SELECT 1 \n        FROM app.Pensiefacultativa \n        WHERE CodSucursala = '[GetOrSession:BranchV]' \n          AND Anul = '[GetOrSession:YearV=0]' \n          AND Luna = '[GetOrSession:MonthV=0]' \n          AND Status = 2\n    ) THEN 2 \n    ELSE 1   \nEND AS TokenStatusPF;",
-    "defaultColumn": "",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": []
   }
 }

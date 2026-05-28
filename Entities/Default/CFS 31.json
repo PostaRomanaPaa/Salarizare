@@ -1,0 +1,382 @@
+{
+  "Children": [],
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "DisplayAfter": null,
+  "RecordNamePropertyId": 935,
+  "UpdateRecordNameProperty": null,
+  "ShowDashboardModule": false,
+  "GenerateApiAccess": false,
+  "Properties": [
+    {
+      "Id": 935,
+      "GlobalId": "855e4158-e874-4e84-bb04-27499782096d",
+      "EntityVersionId": 79,
+      "Name": "Cod Sucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 936,
+      "GlobalId": "01553c46-d9b8-42f7-9c51-85a7bb62264d",
+      "EntityVersionId": 79,
+      "Name": "Anul",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 937,
+      "GlobalId": "cf8ad96b-85ec-40d1-b4b8-00c84e4ced1c",
+      "EntityVersionId": 79,
+      "Name": "Luna",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 938,
+      "GlobalId": "b61ae563-10b5-468d-a200-5f81f00c0eaf",
+      "EntityVersionId": 79,
+      "Name": "Marca",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 939,
+      "GlobalId": "efcbeb5f-75de-4b41-935f-65f158d1fce2",
+      "EntityVersionId": 79,
+      "Name": "Zile CFS31",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 6
+    },
+    {
+      "Id": 940,
+      "GlobalId": "5d0ddff2-f570-486d-b83c-076971501b68",
+      "EntityVersionId": 79,
+      "Name": "Status",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": "5",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 55,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 941,
+      "GlobalId": "1f4ebbb0-714f-4ec2-9404-95b0ff33fea9",
+      "EntityVersionId": 79,
+      "Name": "Judet",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
+    }
+  ],
+  "RolePermissions": {
+    "6": [
+      {
+        "Id": 1709,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1710,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "true"
+      },
+      {
+        "Id": 1711,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1712,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      }
+    ],
+    "7": [
+      {
+        "Id": 1713,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1714,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "true"
+      },
+      {
+        "Id": 1715,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1716,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      }
+    ],
+    "5": [
+      {
+        "Id": 1717,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1718,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "true"
+      },
+      {
+        "Id": 1719,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1720,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      }
+    ],
+    "8": [
+      {
+        "Id": 1721,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1722,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "true"
+      },
+      {
+        "Id": 1723,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1724,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      }
+    ]
+  },
+  "Id": 79,
+  "GlobalId": "1b456866-abd0-451d-a7ae-26bcac29d9c8",
+  "ConfigGenerationGlobalId": "1b456866-abd0-451d-a7ae-26bcac29d9c8",
+  "VersionId": 79,
+  "EntityTabId": 272,
+  "Name": "CFS 31",
+  "PluralName": "Concedii Fara Salar31",
+  "PageUiLibrary": 2,
+  "CreatedDate": "2026-05-28T16:59:53.4566667",
+  "CreatedBy": "Carmen Mardare",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-05-28T18:15:40.8833333",
+  "Icon": "table",
+  "Type": 0,
+  "BuiltInType": null,
+  "EnableIndexing": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
+  "EntityTabGlobalId": "7b46f7f3-3d8b-4ba9-b365-13559af426f3"
+}

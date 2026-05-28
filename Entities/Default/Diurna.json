@@ -1,7 +1,7 @@
 {
   "Children": [],
   "DisplayInMenu": true,
-  "ParentPageId": 127,
+  "ParentPageId": 263,
   "DisplayAfter": null,
   "RecordNamePropertyId": 443,
   "UpdateRecordNameProperty": null,
@@ -32,7 +32,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 1
+      "OrderIndex": 4
     },
     {
       "Id": 446,
@@ -58,7 +58,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 2
+      "OrderIndex": 6
     },
     {
       "Id": 447,
@@ -84,7 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 3
+      "OrderIndex": 7
     },
     {
       "Id": 449,
@@ -110,7 +110,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 8
     },
     {
       "Id": 734,
@@ -136,33 +136,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 5
-    },
-    {
-      "Id": 735,
-      "GlobalId": "5255e6e5-e681-4011-b6c0-23de43761098",
-      "EntityVersionId": 43,
-      "Name": "Nume",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": true,
-      "OrderIndex": 7
+      "OrderIndex": 1
     },
     {
       "Id": 736,
@@ -188,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 8
+      "OrderIndex": 3
     },
     {
       "Id": 737,
@@ -214,7 +188,33 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 9
+      "OrderIndex": 2
+    },
+    {
+      "Id": 929,
+      "GlobalId": "d5462fe5-d235-4449-a7f6-a4832ba30fcf",
+      "EntityVersionId": 43,
+      "Name": "Zile Delegatie",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
     }
   ],
   "RolePermissions": {
@@ -481,13 +481,13 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-12-14T20:24:21.19",
   "CreatedBy": "Cristian Tudorache",
-  "LastModifiedBy": "Cristian Tudorache",
-  "LastModifiedOn": "2026-05-13T13:52:31.2133333",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-05-28T11:44:51.6666667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,
   "EnableIndexing": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad",
   "EntityTabGlobalId": "7016be1e-2ef2-4812-b3ad-12beffe9e9e4",
-  "EntityParentTabGlobalId": "d8de0774-01c9-4fd9-8073-5d6605b145e6"
+  "EntityParentTabGlobalId": "cf119f85-cb6a-4397-9af2-c32cd6755d33"
 }

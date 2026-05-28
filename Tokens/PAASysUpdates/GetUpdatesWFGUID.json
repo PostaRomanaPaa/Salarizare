@@ -1,8 +1,6 @@
 {
-  "id": 161,
   "globalId": "8d0b3710-2b66-4c1d-b616-177275cb4e81",
   "namespace": {
-    "id": 3,
     "globalId": "235ea98a-72de-43fb-9311-36d7cc09216b",
     "name": "PAASysUpdates",
     "description": "",
@@ -10,15 +8,18 @@
   },
   "name": "GetUpdatesWFGUID",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "SELECT GlobalId FROM {databaseOwner}[{objectQualifier}PlantAnApp_Workflows_Workflows]\r\nWHERE Name = 'Get App Builder Updates'",
-    "defaultColumn": "",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": []
   }
 }

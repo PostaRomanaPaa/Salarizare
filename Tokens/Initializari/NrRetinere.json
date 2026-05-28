@@ -1,23 +1,30 @@
 {
-  "id": 138,
   "globalId": "624c95b9-2f9f-45b9-969a-74e9b795bd43",
   "namespace": {
-    "id": 9,
     "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
     "name": "Initializari",
     "isSystem": false
   },
   "name": "NrRetinere",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "select ISNULL(MAX(NumarCurent), 0) + 1 as NextRet from app.Retinere\r\nwhere CodSucursala='[TknParams:CodSucursala]' and Anul= '[TknParams:Anul]'\r\nand Luna='[TknParams:Luna]' and Marca='[TknParams:Marca]' and TipRata='[TknParams:TipRata]'\r\n",
-    "defaultColumn": "NextRet",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "NextRet",
+    "cols": "",
+    "connStr": "",
+    "params": [
+      "CodSucursala",
+      "Anul",
+      "Luna",
+      "Marca",
+      "TipRata"
+    ]
   }
 }

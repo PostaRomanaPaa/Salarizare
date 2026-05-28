@@ -1,21 +1,22 @@
 {
-  "id": 125,
   "globalId": "8ea6b34e-db13-4198-b483-b4db8f15652a",
   "namespace": {
-    "id": 11,
     "globalId": "4d95f52d-2cd0-4cf9-9adf-dfe0838adb12",
     "name": "Calendar",
     "isSystem": false
   },
   "name": "NrZileLuc3",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
-    "debug": false,
+    "type": "razorwebpages",
+    "lang": "csharp",
     "language": "csharp",
-    "type": "razorwebpages"
+    "params": []
   }
 }

@@ -26,522 +26,735 @@
   "IsDebug": false,
   "IsSystem": false,
   "ActionList": {
-    "Id": 94,
-    "EventName": "Event",
+    "Id": 4113,
+    "GlobalId": "a1e4b201-a135-457a-83a6-bd06589951be",
     "Actions": [
       {
-        "Id": 83,
+        "Id": 2824,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Server Request",
         "ActionErrorMessage": null,
-        "Condition": null,
+        "ActionStackId": 4113,
         "ActionType": "ServerRequestHttpClient",
-        "OrderIndex": 0,
+        "Condition": null,
+        "IsDeleted": false,
         "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_0kl2mzh",
         "ActionParameters": [
           {
-            "Id": 623,
+            "Id": 81,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "URL",
             "Value": "https://zilelibere.webventure.ro/api/[DateTime:now|yyyy]",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 624,
+            "Id": 82,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "UrlTokenContext",
             "Value": "Url",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 625,
+            "Id": 83,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "UseSSL",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 626,
+            "Id": 84,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "Certificate",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 627,
+            "Id": 85,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "Timeout",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 628,
+            "Id": 86,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "HttpMethod",
             "Value": "GET",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 629,
+            "Id": 87,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "Data",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 630,
+            "Id": 88,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "DoNotEscapeTokens",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 631,
+            "Id": 89,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "DisableReferer",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 632,
+            "Id": 90,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "UseDNNProxySettings",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 633,
+            "Id": 91,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "AddCurrentCookies",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 634,
+            "Id": 92,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "IgnoreErrors",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 635,
+            "Id": 93,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "OnError",
             "Value": {
-              "Id": 95,
-              "EventName": "error",
+              "Id": 4114,
+              "GlobalId": "e8207690-cb17-48d7-8604-21c15f410ba3",
               "Actions": [],
               "IsInvalid": false
             },
+            "ActionStackId": 4114,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 636,
+            "Id": 94,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "CookieContainerToken",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 637,
+            "Id": 95,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "Headers",
             "Value": [],
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 638,
+            "Id": 96,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "OutputTokenName",
             "Value": "DataZileLibere",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 639,
+            "Id": 97,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2824,
             "Name": "OutputHeaders",
             "Value": [],
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 83,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           }
         ],
-        "DiagramUID": "Activity_0kl2mzh"
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
       },
       {
-        "Id": 84,
+        "Id": 2825,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Create List from JSON",
         "ActionErrorMessage": null,
-        "Condition": null,
+        "ActionStackId": 4113,
         "ActionType": "LoadEntitiesFromJson",
-        "OrderIndex": 1,
+        "Condition": null,
+        "IsDeleted": false,
         "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_0ih1hwo",
         "ActionParameters": [
           {
-            "Id": 640,
+            "Id": 98,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2825,
             "Name": "JsonModel",
             "Value": "[DataZileLibere]",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 84,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 641,
+            "Id": 99,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2825,
             "Name": "EntityName",
             "Value": "ListZileLibere",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 84,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 642,
+            "Id": 100,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2825,
             "Name": "OnError",
             "Value": {
-              "Id": 96,
-              "EventName": "OnError",
+              "Id": 4115,
+              "GlobalId": "40d000c8-f38e-4c0a-9a89-29e8aba21c23",
               "Actions": [],
               "IsInvalid": false
             },
+            "ActionStackId": 4115,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 84,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 643,
+            "Id": 101,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2825,
             "Name": "EnforceISODateTime",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 84,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           }
         ],
-        "DiagramUID": "Activity_0ih1hwo"
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
       },
       {
-        "Id": 85,
+        "Id": 2826,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Execute Actions for each List Entry",
         "ActionErrorMessage": null,
-        "Condition": null,
+        "ActionStackId": 4113,
         "ActionType": "ExecuteActionsOnEntityList",
-        "OrderIndex": 2,
+        "Condition": null,
+        "IsDeleted": false,
         "IsDisabled": false,
+        "OrderIndex": 2,
+        "DiagramUID": "Activity_0cza37q",
         "ActionParameters": [
           {
-            "Id": 644,
+            "Id": 102,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2826,
             "Name": "EntityName",
             "Value": "ListZileLibere",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 85,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 645,
+            "Id": 103,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2826,
             "Name": "ContextBehavior",
             "Value": "UpdateAllTokens",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 85,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 649,
+            "Id": 104,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2826,
             "Name": "ActionList",
             "Value": {
-              "Id": 97,
-              "EventName": "click",
+              "Id": 4116,
+              "GlobalId": "bef42cfb-d968-405e-b09f-c92ec74bdca5",
               "Actions": [
                 {
-                  "Id": 87,
+                  "Id": 2827,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": null,
                   "ActionErrorMessage": null,
-                  "Condition": null,
+                  "ActionStackId": 4116,
                   "ActionType": "LoadEntitiesFromJson",
-                  "OrderIndex": 0,
+                  "Condition": null,
+                  "IsDeleted": false,
                   "IsDisabled": false,
+                  "OrderIndex": 0,
+                  "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 653,
+                      "Id": 108,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2827,
                       "Name": "JsonModel",
                       "Value": "[ListZileLibere:date]",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 87,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 654,
+                      "Id": 109,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2827,
                       "Name": "EntityName",
                       "Value": "ListDataZileLibere",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 87,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 655,
+                      "Id": 110,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2827,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 99,
-                        "EventName": "OnError",
+                        "Id": 4118,
+                        "GlobalId": "4218bc86-3c79-4006-abd2-7e491b9467cd",
                         "Actions": [],
                         "IsInvalid": false
                       },
+                      "ActionStackId": 4118,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 87,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 656,
+                      "Id": 111,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2827,
                       "Name": "EnforceISODateTime",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 87,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     }
                   ],
-                  "DiagramUID": null
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
                 },
                 {
-                  "Id": 88,
+                  "Id": 2828,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": null,
                   "ActionErrorMessage": null,
-                  "Condition": null,
+                  "ActionStackId": 4116,
                   "ActionType": "ExecuteActionsOnEntityList",
-                  "OrderIndex": 1,
+                  "Condition": null,
+                  "IsDeleted": false,
                   "IsDisabled": false,
+                  "OrderIndex": 1,
+                  "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 657,
+                      "Id": 112,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2828,
                       "Name": "EntityName",
                       "Value": "ListDataZileLibere",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 88,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 658,
+                      "Id": 113,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2828,
                       "Name": "ContextBehavior",
                       "Value": "UpdateAllTokens",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 88,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 662,
+                      "Id": 114,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2828,
                       "Name": "ActionList",
                       "Value": {
-                        "Id": 100,
-                        "EventName": "click",
+                        "Id": 4119,
+                        "GlobalId": "c169183d-b011-473d-a03c-895621a8c9f5",
                         "Actions": [
                           {
-                            "Id": 90,
+                            "Id": 2829,
+                            "GlobalId": "00000000-0000-0000-0000-000000000000",
                             "Description": null,
                             "ActionErrorMessage": null,
-                            "Condition": null,
+                            "ActionStackId": 4119,
                             "ActionType": "PlantAnApp.CreateEntity.87cb2871-7416-4ed7-ae3a-efe9228a5edf",
-                            "OrderIndex": 0,
+                            "Condition": null,
+                            "IsDeleted": false,
                             "IsDisabled": false,
+                            "OrderIndex": 0,
+                            "DiagramUID": null,
                             "ActionParameters": [
                               {
-                                "Id": 666,
+                                "Id": 118,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2829,
                                 "Name": "ConnectionString",
                                 "Value": null,
+                                "ActionStackId": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
-                                "ActionId": 90,
-                                "OrderIndex": 0
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               },
                               {
-                                "Id": 667,
+                                "Id": 119,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2829,
                                 "Name": "Luna",
                                 "Value": "[Helper:ConversieDataLuna(data=\"[ListDataZileLibere:date]\")]",
+                                "ActionStackId": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
-                                "ActionId": 90,
-                                "OrderIndex": 0
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               },
                               {
-                                "Id": 668,
+                                "Id": 120,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2829,
                                 "Name": "Zi",
                                 "Value": "[Helper:ConversieDataZi(data=\"[ListDataZileLibere:date]\")]",
+                                "ActionStackId": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
-                                "ActionId": 90,
-                                "OrderIndex": 0
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               },
                               {
-                                "Id": 669,
+                                "Id": 121,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2829,
                                 "Name": "An",
                                 "Value": "[Helper:ConversieDataAn(data=\"[ListDataZileLibere:date]\")]",
+                                "ActionStackId": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
-                                "ActionId": 90,
-                                "OrderIndex": 0
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               },
                               {
-                                "Id": 670,
+                                "Id": 122,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2829,
                                 "Name": "Nume",
                                 "Value": "[ListZileLibere:name]",
+                                "ActionStackId": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
-                                "ActionId": 90,
-                                "OrderIndex": 0
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               },
                               {
-                                "Id": 671,
+                                "Id": 123,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2829,
                                 "Name": "OnError",
                                 "Value": {
-                                  "Id": 102,
-                                  "EventName": "OnError",
+                                  "Id": 4121,
+                                  "GlobalId": "09fd5127-a313-415a-9a89-1c52831b07ab",
                                   "Actions": [],
                                   "IsInvalid": false
                                 },
+                                "ActionStackId": 4121,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
-                                "ActionId": 90,
-                                "OrderIndex": 0
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               },
                               {
-                                "Id": 672,
+                                "Id": 124,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2829,
                                 "Name": "OutputToken",
                                 "Value": null,
+                                "ActionStackId": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,
-                                "ActionId": 90,
-                                "OrderIndex": 0
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               }
                             ],
-                            "DiagramUID": null
+                            "Parameters": {},
+                            "Metadata": {},
+                            "HasActionParameters": false
                           }
                         ],
                         "IsInvalid": false
                       },
+                      "ActionStackId": 4119,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 88,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 663,
+                      "Id": 115,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2828,
                       "Name": "ContinueOnError",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 88,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 664,
+                      "Id": 116,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2828,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 101,
-                        "EventName": "OnError",
+                        "Id": 4120,
+                        "GlobalId": "21d7851c-7b08-40c5-85d8-05c0b1eec9bb",
                         "Actions": [],
                         "IsInvalid": false
                       },
+                      "ActionStackId": 4120,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 88,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 665,
+                      "Id": 117,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2828,
                       "Name": "Filters",
                       "Value": [],
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 88,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     }
                   ],
-                  "DiagramUID": null
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
                 }
               ],
               "IsInvalid": false
             },
+            "ActionStackId": 4116,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 85,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 650,
+            "Id": 105,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2826,
             "Name": "ContinueOnError",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 85,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 651,
+            "Id": 106,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2826,
             "Name": "OnError",
             "Value": {
-              "Id": 98,
-              "EventName": "OnError",
+              "Id": 4117,
+              "GlobalId": "0a612bad-2244-4848-93f7-59924f4dc40f",
               "Actions": [],
               "IsInvalid": false
             },
+            "ActionStackId": 4117,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 85,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 652,
+            "Id": 107,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2826,
             "Name": "Filters",
             "Value": [],
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 85,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           }
         ],
-        "DiagramUID": "Activity_0cza37q"
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
       }
     ],
     "IsInvalid": false
   },
+  "ActionStackId": 0,
   "CreatedBy": 3,
   "CreatedOn": "2025-10-08T10:48:02.9779617+00:00",
   "LastModifiedBy": 3,

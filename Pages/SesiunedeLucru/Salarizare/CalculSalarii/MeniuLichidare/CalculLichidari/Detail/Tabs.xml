@@ -1,4 +1,4 @@
-<module type="avtTabsPro" version="05.27.33.00">
+<module type="avtTabsPro" version="05.28.91.00">
     <contentKey />
     <moduleID>902</moduleID>
     <alignment />
@@ -16,7 +16,92 @@
     <header />
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
     <title>Tabs</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>6ad21b2b-fa8e-44de-8a94-f47a679e5271</uniqueId>
@@ -31,7 +116,7 @@
     <tabmodulesettings />
     <definition>avt.TabsPro</definition>
     <moduledefinition>avt.TabsPro</moduledefinition>
-    <content type="avtTabsPro" version="05.27.33.00"><![CDATA[&lt;TabsPro&gt;
+    <content type="avtTabsPro" version="05.28.91.00"><![CDATA[&lt;TabsPro&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;False&lt;/TabsFullWidth&gt;
   &lt;IsCollapsible&gt;False&lt;/IsCollapsible&gt;
@@ -65,9 +150,9 @@
   &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
   &lt;WidgetProvider&gt;{&quot;name&quot;:&quot;WidgetProvider&quot;,&quot;value&quot;:&quot;Bootstrap5&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/WidgetProvider&gt;
   &lt;OpenAction&gt;{&quot;name&quot;:&quot;OpenAction&quot;,&quot;value&quot;:&quot;Click&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/OpenAction&gt;
-  &lt;RevisionNumber&gt;14&lt;/RevisionNumber&gt;
+  &lt;RevisionNumber&gt;18&lt;/RevisionNumber&gt;
   &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-  &lt;RevisionLastChangedDate&gt;2026-04-15T10:27:04.3492822+00:00&lt;/RevisionLastChangedDate&gt;
+  &lt;RevisionLastChangedDate&gt;2026-05-20T15:20:07.1981996+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;Tabs&gt;
     &lt;Tab&gt;
       &lt;Title&gt;Details&lt;/Title&gt;
@@ -89,6 +174,30 @@
         &lt;en-US&gt;Details&lt;/en-US&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;901&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;901&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;901&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;901&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;901&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;

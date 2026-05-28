@@ -1,23 +1,27 @@
 {
-  "id": 103,
   "globalId": "59242fa6-f59c-4372-b073-cdd9c01c4495",
   "namespace": {
-    "id": 9,
     "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
     "name": "Initializari",
     "isSystem": false
   },
   "name": "ZileLucratoare_old",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "UserSession",
+  "cacheTimeSec": 0,
+  "cacheLayer": "userSession",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "DECLARE @Anul INT = '[TknParams:Anul]'; \nDECLARE @Luna INT = '[TknParams:Luna]'; \n\nWITH Zile AS ( SELECT DATEFROMPARTS(@Anul, @Luna, 1) AS Data \n\nUNION ALL \n\nSELECT DATEADD(DAY, 1, Data) FROM Zile \n\nWHERE MONTH(DATEADD(DAY, 1, Data)) = @Luna ) \n\nSELECT COUNT(*) AS ZileLucratoare\nFROM Zile z\nWHERE DATENAME(WEEKDAY, z.Data) NOT IN ('Saturday', 'Sunday')\n  AND (NOT EXISTS \n    (\n        SELECT 1\n        FROM app.ZiLibera zl\n        WHERE zl.An = @Anul\n          AND zl.Luna = @Luna\n          AND zl.Zi = DAY(z.Data)\n          \n    )  and NOT EXISTS (\n        SELECT 1\n        FROM app.ZiLiberaCCM zl\n        WHERE zl.An = @Anul\n          AND zl.Luna = @Luna\n          AND zl.Zi = DAY(z.Data)\n          )\n          \n          );",
-    "defaultColumn": "",
-    "columns": "ZileLucratoare",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "ZileLucratoare",
+    "connStr": "",
+    "params": [
+      "Anul",
+      "Luna"
+    ]
   }
 }

@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.125.00">
+<module type="ActionForm" version="05.28.225.00">
     <contentKey />
     <moduleID>445</moduleID>
     <alignment />
@@ -16,7 +16,92 @@
     <header />
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
     <title>Angajat Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>9d08dc31-fe2e-4c71-a9f6-3812a70d92d7</uniqueId>
@@ -31,7 +116,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.125.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[280]]&gt;&lt;/Id&gt;
@@ -1260,8 +1345,8 @@
   &lt;Settings&gt;
     &lt;Title&gt;Angajat Form&lt;/Title&gt;
     &lt;CssName&gt;angajat-form&lt;/CssName&gt;
-    &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.125&lt;/Build&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.225&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -1278,7 +1363,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.125&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
     &lt;TabId&gt;51&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -1310,7 +1395,6 @@
     &lt;BaseId&gt;dnn445&lt;/BaseId&gt;
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;RevisionNumber&gt;26&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;alexandra.vasilescu@ro.post&lt;/RevisionLastChangedBy&gt;
@@ -1318,278 +1402,227 @@
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.69&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Add&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckAddPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.69&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;EventName&gt;init&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckAddPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Angajat&quot;},{&quot;name&quot;:&quot;original:TaskUserID&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Email&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:DisplayName&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Marca&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodJudet&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:OficiuTeritorial&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodOficiu&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodFunctie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ClasaGrilaSalarizare&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ImpozabilScutit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TipNorma&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Procent&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProcentFidelitate&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProcentManagement&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:StareAngajat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Sindicat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodSucursala&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Luna&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Anul&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.InitializeVariablesWithDefaultValues&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.CreateEntity.4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.69&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewAngajatId&quot;,&quot;TaskUserID&quot;:&quot;[p_TaskUserID]&quot;,&quot;Email&quot;:&quot;[p_Email]&quot;,&quot;DisplayName&quot;:&quot;[p_DisplayName]&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;CodJudet&quot;:&quot;[p_CodJudet]&quot;,&quot;OficiuTeritorial&quot;:&quot;[p_OficiuTeritorial]&quot;,&quot;CodOficiu&quot;:&quot;[p_CodOficiu]&quot;,&quot;CodFunctie&quot;:&quot;[p_CodFunctie]&quot;,&quot;ClasaGrilaSalarizare&quot;:&quot;[p_ClasaGrilaSalarizare]&quot;,&quot;ImpozabilScutit&quot;:&quot;[p_ImpozabilScutit]&quot;,&quot;TipNorma&quot;:&quot;[p_TipNorma]&quot;,&quot;Procent&quot;:&quot;[p_Procent]&quot;,&quot;ProcentFidelitate&quot;:&quot;[p_ProcentFidelitate]&quot;,&quot;ProcentManagement&quot;:&quot;[p_ProcentManagement]&quot;,&quot;StareAngajat&quot;:&quot;[p_StareAngajat]&quot;,&quot;Sindicat&quot;:&quot;[p_Sindicat]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Add&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.CreateEntity&quot;,&quot;EntityIdentifier&quot;:&quot;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Add.CreateEntity&lt;/PAP_InternalIdentifier&gt;
-        &lt;EntityIdentifier&gt;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/EntityIdentifier&gt;
-        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.UpdateEntity.4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AngajatId=]&quot;,&quot;TaskUserID&quot;:&quot;[p_TaskUserID]&quot;,&quot;Email&quot;:&quot;[p_Email]&quot;,&quot;DisplayName&quot;:&quot;[p_DisplayName]&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;CodJudet&quot;:&quot;[p_CodJudet]&quot;,&quot;OficiuTeritorial&quot;:&quot;[p_OficiuTeritorial]&quot;,&quot;CodOficiu&quot;:&quot;[p_CodOficiu]&quot;,&quot;CodFunctie&quot;:&quot;[p_CodFunctie]&quot;,&quot;ClasaGrilaSalarizare&quot;:&quot;[p_ClasaGrilaSalarizare]&quot;,&quot;ImpozabilScutit&quot;:&quot;[p_ImpozabilScutit]&quot;,&quot;TipNorma&quot;:&quot;[p_TipNorma]&quot;,&quot;Procent&quot;:&quot;[p_Procent]&quot;,&quot;ProcentFidelitate&quot;:&quot;[p_ProcentFidelitate]&quot;,&quot;ProcentManagement&quot;:&quot;[p_ProcentManagement]&quot;,&quot;StareAngajat&quot;:&quot;[p_StareAngajat]&quot;,&quot;Sindicat&quot;:&quot;[p_Sindicat]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.UpdateEntity&quot;,&quot;EntityIdentifier&quot;:&quot;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Update.UpdateEntity&lt;/PAP_InternalIdentifier&gt;
-        &lt;EntityIdentifier&gt;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/EntityIdentifier&gt;
-        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;EventName&gt;init&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Check if in edit mode&lt;/Description&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:AngajatId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Angajat&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Angajat&quot;},{&quot;name&quot;:&quot;original:TaskUserID&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Email&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:DisplayName&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Marca&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodJudet&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:OficiuTeritorial&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodOficiu&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodFunctie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ClasaGrilaSalarizare&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ImpozabilScutit&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:TipNorma&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Procent&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProcentFidelitate&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:ProcentManagement&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:StareAngajat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Sindicat&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CodSucursala&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Luna&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Anul&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.CheckEditMode&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;!string.IsNullOrWhiteSpace([QueryString:AngajatId=])&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.CheckEditMode&lt;/PAP_InternalIdentifier&gt;
         &lt;PAP_GeneratedCondition&gt;!string.IsNullOrWhiteSpace([QueryString:AngajatId=])&lt;/PAP_GeneratedCondition&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
+      &lt;Description&gt;Check if in edit mode&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Angajat&quot;}]}&lt;/ActionData&gt;
+      &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:AngajatId=])&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;Condition /&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.69&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/Angajati/Detail?AngajatId=[NewAngajatId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Add&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.ConfirmationToast&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Add.ConfirmationToast&lt;/PAP_InternalIdentifier&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;d6035e1d-f6a3-4883-9f5f-1c22d01da7f6&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.RefreshDetailForm&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshDetailForm&lt;/PAP_InternalIdentifier&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.ReadEntity.4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.72&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AngajatId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadEntityValues&quot;,&quot;EntityIdentifier&quot;:&quot;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.LoadEntityValues&lt;/PAP_InternalIdentifier&gt;
         &lt;EntityIdentifier&gt;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/EntityIdentifier&gt;
         &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;PlantAnApp.ReadEntity.4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AngajatId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;init&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Condition /&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.69&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;b1873dbb-9e3c-45a4-a790-dd4262f8d289&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;init&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;445&lt;/ModuleId&gt;
       &lt;FieldName&gt;Add&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.RefreshGrid&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckAddPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Add&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Add.CreateEntity&lt;/PAP_InternalIdentifier&gt;
+        &lt;EntityIdentifier&gt;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/EntityIdentifier&gt;
+        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;PlantAnApp.CreateEntity.4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewAngajatId&quot;,&quot;TaskUserID&quot;:&quot;[p_TaskUserID]&quot;,&quot;Email&quot;:&quot;[p_Email]&quot;,&quot;DisplayName&quot;:&quot;[p_DisplayName]&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;CodJudet&quot;:&quot;[p_CodJudet]&quot;,&quot;OficiuTeritorial&quot;:&quot;[p_OficiuTeritorial]&quot;,&quot;CodOficiu&quot;:&quot;[p_CodOficiu]&quot;,&quot;CodFunctie&quot;:&quot;[p_CodFunctie]&quot;,&quot;ClasaGrilaSalarizare&quot;:&quot;[p_ClasaGrilaSalarizare]&quot;,&quot;ImpozabilScutit&quot;:&quot;[p_ImpozabilScutit]&quot;,&quot;TipNorma&quot;:&quot;[p_TipNorma]&quot;,&quot;Procent&quot;:&quot;[p_Procent]&quot;,&quot;ProcentFidelitate&quot;:&quot;[p_ProcentFidelitate]&quot;,&quot;ProcentManagement&quot;:&quot;[p_ProcentManagement]&quot;,&quot;StareAngajat&quot;:&quot;[p_StareAngajat]&quot;,&quot;Sindicat&quot;:&quot;[p_Sindicat]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Add&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Add.ConfirmationToast&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;HideTime&quot;:&quot;10000&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;},&quot;Stack&quot;:&quot;3&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/Angajati/Detail?AngajatId=[NewAngajatId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
+      &lt;Condition /&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Add&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Add.RefreshGrid&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;b970fc97-228a-4b03-8cf2-8de314bf45e4&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Update&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.RefreshDetailTitleForm&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshDetailTitleForm&lt;/PAP_InternalIdentifier&gt;
-      &lt;/Metadata&gt;
+      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;b1873dbb-9e3c-45a4-a790-dd4262f8d289&quot;}}&lt;/ActionData&gt;
+      &lt;Condition /&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.69&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;4128c1f4-c4f0-4656-bc65-bbf79d4d0d4a&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;445&lt;/ModuleId&gt;
       &lt;FieldName&gt;Add&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.ClosePopup&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Add.ClosePopup&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;4128c1f4-c4f0-4656-bc65-bbf79d4d0d4a&quot;}}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/Angajati/Detail?AngajatId=[QueryString:AngajatId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;445&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.ConfirmationToast&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Update.UpdateEntity&lt;/PAP_InternalIdentifier&gt;
+        &lt;EntityIdentifier&gt;4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/EntityIdentifier&gt;
+        &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;PlantAnApp.UpdateEntity.4ed4fc83-1032-4f81-b9e2-6fa062a856a4&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AngajatId=]&quot;,&quot;TaskUserID&quot;:&quot;[p_TaskUserID]&quot;,&quot;Email&quot;:&quot;[p_Email]&quot;,&quot;DisplayName&quot;:&quot;[p_DisplayName]&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;CodJudet&quot;:&quot;[p_CodJudet]&quot;,&quot;OficiuTeritorial&quot;:&quot;[p_OficiuTeritorial]&quot;,&quot;CodOficiu&quot;:&quot;[p_CodOficiu]&quot;,&quot;CodFunctie&quot;:&quot;[p_CodFunctie]&quot;,&quot;ClasaGrilaSalarizare&quot;:&quot;[p_ClasaGrilaSalarizare]&quot;,&quot;ImpozabilScutit&quot;:&quot;[p_ImpozabilScutit]&quot;,&quot;TipNorma&quot;:&quot;[p_TipNorma]&quot;,&quot;Procent&quot;:&quot;[p_Procent]&quot;,&quot;ProcentFidelitate&quot;:&quot;[p_ProcentFidelitate]&quot;,&quot;ProcentManagement&quot;:&quot;[p_ProcentManagement]&quot;,&quot;StareAngajat&quot;:&quot;[p_StareAngajat]&quot;,&quot;Sindicat&quot;:&quot;[p_Sindicat]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshDetailForm&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;d6035e1d-f6a3-4883-9f5f-1c22d01da7f6&quot;,&quot;Value&quot;:&quot;&quot;},&quot;Params&quot;:null}&lt;/ActionData&gt;
+      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshDetailTitleForm&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;b970fc97-228a-4b03-8cf2-8de314bf45e4&quot;,&quot;Value&quot;:&quot;&quot;},&quot;Params&quot;:null}&lt;/ActionData&gt;
+      &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Update&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Update.ConfirmationToast&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;HideTime&quot;:&quot;10000&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;},&quot;Stack&quot;:&quot;3&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Salarizare/Angajati/Detail?AngajatId=[QueryString:AngajatId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;b1873dbb-9e3c-45a4-a790-dd4262f8d289&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;445&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.RefreshGrid&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Update.RefreshGrid&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;b1873dbb-9e3c-45a4-a790-dd4262f8d289&quot;}}&lt;/ActionData&gt;
+      &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-03-26T13:14:26.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;4128c1f4-c4f0-4656-bc65-bbf79d4d0d4a&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;445&lt;/ModuleId&gt;
       &lt;FieldName&gt;Update&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Update.ClosePopup&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Button.Update.ClosePopup&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;4128c1f4-c4f0-4656-bc65-bbf79d4d0d4a&quot;}}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
 &lt;/ActionForm&gt;]]></content>

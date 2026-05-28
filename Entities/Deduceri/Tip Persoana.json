@@ -1,0 +1,415 @@
+{
+  "Children": [],
+  "DisplayInMenu": false,
+  "ParentPageId": 264,
+  "DisplayAfter": null,
+  "RecordNamePropertyId": 799,
+  "UpdateRecordNameProperty": null,
+  "ShowDashboardModule": false,
+  "GenerateApiAccess": false,
+  "Properties": [
+    {
+      "Id": 799,
+      "GlobalId": "2889332b-852e-4327-a1da-731a5286c200",
+      "EntityVersionId": 73,
+      "Name": "Fel Persoana",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 800,
+      "GlobalId": "302378a8-1500-4325-a45d-116d0b2c1106",
+      "EntityVersionId": 73,
+      "Name": "Denumire",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 816,
+      "GlobalId": "bc29040e-8651-4764-adeb-a9d7c5932988",
+      "EntityVersionId": 73,
+      "Name": "Grad",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 817,
+      "GlobalId": "f1305092-31ed-4568-91d3-8b4ef43bc7fc",
+      "EntityVersionId": 73,
+      "Name": "Procent",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 818,
+      "GlobalId": "b185d19b-db40-43e6-8319-b1f99dfa90f8",
+      "EntityVersionId": 73,
+      "Name": "Anul",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
+    }
+  ],
+  "RolePermissions": {
+    "9": [
+      {
+        "Id": 1597,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1598,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "true"
+      },
+      {
+        "Id": 1599,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      },
+      {
+        "Id": 1600,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 9,
+        "RoleName": "Users",
+        "Value": "all"
+      }
+    ],
+    "13": [
+      {
+        "Id": 1601,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1602,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "true"
+      },
+      {
+        "Id": 1603,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      },
+      {
+        "Id": 1604,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 13,
+        "RoleName": "Payroll_Operator",
+        "Value": "all"
+      }
+    ],
+    "6": [
+      {
+        "Id": 1605,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1606,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "true"
+      },
+      {
+        "Id": 1607,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1608,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      }
+    ],
+    "7": [
+      {
+        "Id": 1609,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1610,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "true"
+      },
+      {
+        "Id": 1611,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1612,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      }
+    ],
+    "5": [
+      {
+        "Id": 1613,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1614,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "true"
+      },
+      {
+        "Id": 1615,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1616,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      }
+    ],
+    "8": [
+      {
+        "Id": 1617,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1618,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "true"
+      },
+      {
+        "Id": 1619,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1620,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      }
+    ]
+  },
+  "Id": 73,
+  "GlobalId": "4eda3178-6de2-4e7f-b405-2f740ac34dc5",
+  "ConfigGenerationGlobalId": "4eda3178-6de2-4e7f-b405-2f740ac34dc5",
+  "VersionId": 73,
+  "EntityTabId": 257,
+  "Name": "Tip Persoana",
+  "PluralName": "Tip Persoane",
+  "PageUiLibrary": 2,
+  "CreatedDate": "2026-05-19T06:15:42.59",
+  "CreatedBy": "Carmen Mardare",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-05-21T07:05:57.95",
+  "Icon": "table",
+  "Type": 0,
+  "BuiltInType": null,
+  "EnableIndexing": false,
+  "NamespaceUid": "30ff03aa-f784-4258-8b6d-4c4fe38ed850",
+  "EntityTabGlobalId": "bb842998-dd4b-4c16-aa12-66b7266efdc6",
+  "EntityParentTabGlobalId": "5106f753-873d-4d00-93d9-e65cca6e530b"
+}

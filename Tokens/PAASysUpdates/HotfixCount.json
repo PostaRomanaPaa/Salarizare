@@ -1,8 +1,6 @@
 {
-  "id": 162,
   "globalId": "3a9acbe7-1500-49fd-b7e2-efbfbdb4168a",
   "namespace": {
-    "id": 3,
     "globalId": "235ea98a-72de-43fb-9311-36d7cc09216b",
     "name": "PAASysUpdates",
     "description": "",
@@ -10,15 +8,18 @@
   },
   "name": "HotfixCount",
   "description": "Counts available hotfixes from Hotfixes table",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "SELECT COUNT(PH.Id) AS HotfixCount\r\nFROM {databaseOwner}[{objectQualifier}PlantAnApp_Updates_Hotfixes] AS PH\r\nINNER JOIN {databaseOwner}[{objectQualifier}Packages] AS P ON P.FriendlyName = PH.DnnFriendlyName\r\nWHERE (\r\n   SELECT CASE WHEN convert(int, parsename(PH.Version, 3)) > convert(int, parsename(PH.InstalledVersion, 3)) THEN 'greater'  \r\n               WHEN convert(int, parsename(PH.Version, 3)) < convert(int, parsename(PH.InstalledVersion, 3)) THEN 'smaller'  \r\n               ELSE CASE   \r\n               WHEN convert(int, parsename(PH.Version, 2)) > convert(int, parsename(PH.InstalledVersion, 2)) THEN 'greater'  \r\n               WHEN convert(int, parsename(PH.Version, 2)) < convert(int, parsename(PH.InstalledVersion, 2)) THEN 'smaller'  \r\n               ELSE CASE   \r\n               WHEN convert(int, parsename(PH.Version, 1)) > convert(int, parsename(PH.InstalledVersion, 1)) THEN 'greater'  \r\n               WHEN convert(int, parsename(PH.Version, 1)) < convert(int, parsename(PH.InstalledVersion, 1)) THEN 'smaller'  \r\n               ELSE 'equal'  \r\n               END END END\r\n\t) = 'greater'",
-    "defaultColumn": "",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": []
   }
 }

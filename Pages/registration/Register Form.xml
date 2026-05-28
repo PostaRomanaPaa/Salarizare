@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.125.00">
+<module type="ActionForm" version="05.28.225.00">
     <contentKey />
     <moduleID>367</moduleID>
     <alignment />
@@ -23,6 +23,90 @@
             <allowaccess>true</allowaccess>
             <rolename>Administrators</rolename>
         </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
     </modulepermissions>
     <title>Register Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
@@ -33,7 +117,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.125.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[21]]&gt;&lt;/Id&gt;
@@ -371,8 +455,8 @@
   &lt;Settings&gt;
     &lt;Title&gt;Register Form&lt;/Title&gt;
     &lt;CssName&gt;register-form&lt;/CssName&gt;
-    &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.125&lt;/Build&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.225&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;p&amp;gt;This is a sample text, edit this to match the purpose and describe the resource you&#39;re targeting (page, file).&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href = &quot;[FormUrl]&quot;&amp;gt;ACCESS this resource&amp;lt;/a&amp;gt; now.&amp;lt;/p&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -389,7 +473,7 @@
     &lt;FieldSpacing&gt;loose&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;367&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.125&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
     &lt;TabId&gt;32&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -421,7 +505,6 @@
     &lt;BaseId&gt;dnn367&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;RevisionNumber&gt;0&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy /&gt;
@@ -429,83 +512,65 @@
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;UserManagement_UserRegistration&lt;/ActionType&gt;
+      &lt;ModuleId&gt;367&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Register&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-09-12T10:25:03.943&lt;/LastModified&gt;
-      &lt;LastModifiedBy xsi:nil=&quot;true&quot; /&gt;
-      &lt;ActionData&gt;{&quot;UsernameField&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Email&quot;,&quot;IsExpression&quot;:false},&quot;RegisterWithEmail&quot;:true,&quot;PasswordField&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Password&quot;,&quot;IsExpression&quot;:false},&quot;RandomPass&quot;:&quot;&quot;,&quot;EmailField&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Email&quot;,&quot;IsExpression&quot;:false},&quot;FirstName&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;FirstName&quot;,&quot;IsExpression&quot;:false},&quot;LastName&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;LastName&quot;,&quot;IsExpression&quot;:false},&quot;SendDnnMail&quot;:&quot;&quot;,&quot;LoginIfExists&quot;:&quot;&quot;,&quot;Authorization&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Authorize&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
+      &lt;ActionType&gt;UserManagement_UserRegistration&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;UsernameField&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Email&quot;},&quot;RegisterWithEmail&quot;:true,&quot;PasswordField&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Password&quot;},&quot;RandomPass&quot;:false,&quot;EmailField&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Email&quot;},&quot;FirstName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;FirstName&quot;},&quot;LastName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;LastName&quot;},&quot;SendDnnMail&quot;:false,&quot;Authorization&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Authorize&quot;}}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;367&lt;/ModuleId&gt;
       &lt;FieldName&gt;Register&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;GrantUserRole&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-09-12T10:25:03.943&lt;/LastModified&gt;
-      &lt;LastModifiedBy xsi:nil=&quot;true&quot; /&gt;
-      &lt;ActionData&gt;{&quot;RoleId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;9&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;RoleNames&quot;:&quot;&quot;,&quot;DateSelectionMode&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ExtensionDays&quot;:&quot;&quot;,&quot;StartDate&quot;:{&quot;Date&quot;:&quot;&quot;},&quot;StartDateToken&quot;:&quot;&quot;,&quot;ExpireDate&quot;:{&quot;Date&quot;:&quot;&quot;},&quot;ExpireDateToken&quot;:&quot;&quot;,&quot;RoleExpiration&quot;:&quot;&quot;}&lt;/ActionData&gt;
+      &lt;ActionType&gt;GrantUserRole&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;RoleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;9&quot;},&quot;RoleNames&quot;:null,&quot;DateSelectionMode&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null},&quot;ExtensionDays&quot;:null,&quot;StartDate&quot;:{&quot;Date&quot;:&quot;&quot;},&quot;StartDateToken&quot;:null,&quot;ExpireDate&quot;:{&quot;Date&quot;:&quot;&quot;},&quot;ExpireDateToken&quot;:null,&quot;RoleExpiration&quot;:null}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;367&lt;/ModuleId&gt;
       &lt;FieldName&gt;Register&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;UserManagement_UserLogin&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-09-12T10:25:03.943&lt;/LastModified&gt;
-      &lt;LastModifiedBy xsi:nil=&quot;true&quot; /&gt;
-      &lt;ActionData&gt;{&quot;UsernameField&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Email&quot;,&quot;IsExpression&quot;:false},&quot;PasswordField&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Password&quot;,&quot;IsExpression&quot;:false},&quot;TryEmailAsUsername&quot;:&quot;&quot;}&lt;/ActionData&gt;
+      &lt;ActionType&gt;UserManagement_UserLogin&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;UsernameField&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Email&quot;},&quot;PasswordField&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Password&quot;},&quot;TryEmailAsUsername&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;367&lt;/ModuleId&gt;
       &lt;FieldName&gt;Register&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-09-12T10:25:03.943&lt;/LastModified&gt;
-      &lt;LastModifiedBy xsi:nil=&quot;true&quot; /&gt;
-      &lt;ActionData&gt;{&quot;Heading&quot;:&quot;User registered! Redirecting in 5 seconds...&quot;,&quot;Message&quot;:&quot;&quot;,&quot;Icon&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BgColor&quot;:&quot;&quot;,&quot;Transition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;fade&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;AllowToastClose&quot;:&quot;&quot;,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;HideTime&quot;:&quot;4000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;bottom-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TextAlignment&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;&quot;}&lt;/ActionData&gt;
+      &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Heading&quot;:&quot;User registered! Redirecting in 5 seconds...&quot;,&quot;Message&quot;:null,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;},&quot;BgColor&quot;:null,&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;fade&quot;},&quot;AllowToastClose&quot;:false,&quot;CallBackJsCode&quot;:null,&quot;HideTime&quot;:&quot;4000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;bottom-center&quot;},&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;center&quot;},&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:null}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;367&lt;/ModuleId&gt;
       &lt;FieldName&gt;Register&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Delay 5 seconds&lt;/Description&gt;
-      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-09-12T10:25:03.943&lt;/LastModified&gt;
-      &lt;LastModifiedBy xsi:nil=&quot;true&quot; /&gt;
-      &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;QueryTimeout&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;WAITFOR DELAY &#39;00:00:05&#39;&quot;,&quot;BindTokens&quot;:&quot;&quot;,&quot;OutputTokenName&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:&quot;&quot;,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;367&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Register&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
+      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
+      &lt;Description&gt;Delay 5 seconds&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;WAITFOR DELAY &#39;00:00:05&#39;&quot;,&quot;BindTokens&quot;:null,&quot;OutputTokenName&quot;:null,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RedirectToUrl&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2025-09-12T10:25:03.943&lt;/LastModified&gt;
-      &lt;LastModifiedBy xsi:nil=&quot;true&quot; /&gt;
-      &lt;ActionData&gt;{&quot;Url&quot;:&quot;/&quot;,&quot;EscapeUrl&quot;:&quot;&quot;,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;,&quot;ForceDownload&quot;:&quot;&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;367&lt;/ModuleId&gt;
       &lt;FieldName&gt;Register&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RedirectToUrl&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Url&quot;:&quot;/&quot;,&quot;EscapeUrl&quot;:false,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false,&quot;ForceDownload&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
 &lt;/ActionForm&gt;]]></content>

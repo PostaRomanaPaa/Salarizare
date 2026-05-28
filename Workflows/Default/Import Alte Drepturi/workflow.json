@@ -26,97 +26,135 @@
   "IsDebug": false,
   "IsSystem": false,
   "ActionList": {
-    "Id": 117,
-    "EventName": "Event",
+    "Id": 4132,
+    "GlobalId": "caa6e5d7-fe55-4295-80f6-33f94533a498",
     "Actions": [
       {
-        "Id": 102,
+        "Id": 2836,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Create List from Excel (.xlsx)",
         "ActionErrorMessage": null,
-        "Condition": null,
+        "ActionStackId": 4132,
         "ActionType": "LoadEntitiesFromExcelFile",
-        "OrderIndex": 0,
+        "Condition": null,
+        "IsDeleted": false,
         "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_0ldeesg",
         "ActionParameters": [
           {
-            "Id": 757,
+            "Id": 175,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "FilePath",
             "Value": "[FilePathURL]",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 758,
+            "Id": 176,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "EntityName",
             "Value": "ListaAlteDrepturi",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 759,
+            "Id": 177,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "UseFirstRowAsColumnNames",
             "Value": true,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 760,
+            "Id": 178,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "IncludeAllFields",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 761,
+            "Id": 179,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "SheetName",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 762,
+            "Id": 180,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "StartRow",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 763,
+            "Id": 181,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "EndRow",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 764,
+            "Id": 182,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "OnError",
             "Value": {
-              "Id": 118,
-              "EventName": "OnError",
+              "Id": 4133,
+              "GlobalId": "f9c3c741-7838-4de8-a331-22f6c0d20e59",
               "Actions": [],
               "IsInvalid": false
             },
+            "ActionStackId": 4133,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 765,
+            "Id": 183,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2836,
             "Name": "EntityProps",
             "Value": [
               {
@@ -132,165 +170,230 @@
                 "value": "Impozit"
               }
             ],
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 102,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           }
         ],
-        "DiagramUID": "Activity_0ldeesg"
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
       },
       {
-        "Id": 103,
+        "Id": 2837,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Execute Action for each List Entry",
         "ActionErrorMessage": null,
-        "Condition": null,
+        "ActionStackId": 4132,
         "ActionType": "ExecuteActionsOnEntityList",
-        "OrderIndex": 1,
+        "Condition": null,
+        "IsDeleted": false,
         "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_167kqw6",
         "ActionParameters": [
           {
-            "Id": 766,
+            "Id": 184,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2837,
             "Name": "EntityName",
             "Value": "ListaAlteDrepturi",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 103,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 767,
+            "Id": 185,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2837,
             "Name": "ContextBehavior",
             "Value": "UpdateAllTokens",
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 103,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 782,
+            "Id": 186,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2837,
             "Name": "ActionList",
             "Value": {
-              "Id": 119,
-              "EventName": "click",
+              "Id": 4134,
+              "GlobalId": "ed5343b9-261b-4481-8826-1c286fdbad7c",
               "Actions": [
                 {
-                  "Id": 146,
+                  "Id": 2841,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": null,
                   "ActionErrorMessage": null,
-                  "Condition": null,
+                  "ActionStackId": 4134,
                   "ActionType": "PlantAnApp.CreateEntity.6d747b98-d047-46d4-ba50-b3c1799b3d69",
-                  "OrderIndex": 0,
+                  "Condition": null,
+                  "IsDeleted": false,
                   "IsDisabled": false,
+                  "OrderIndex": 0,
+                  "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 1108,
+                      "Id": 223,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2841,
                       "Name": "ConnectionString",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 146,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 1109,
+                      "Id": 224,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2841,
                       "Name": "CodAlteDrepturi",
                       "Value": "[ListaAlteDrepturi:Cod Alte Drepturi]",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 146,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 1110,
+                      "Id": 225,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2841,
                       "Name": "DenumireAlteDrepturi",
                       "Value": "[ListaAlteDrepturi:Denumire Alte Drepturi]",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 146,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 1111,
+                      "Id": 226,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2841,
                       "Name": "Impozit",
                       "Value": "[ListaAlteDrepturi:Impozit]",
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 146,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 1112,
+                      "Id": 227,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2841,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 176,
-                        "EventName": "OnError",
+                        "Id": 4141,
+                        "GlobalId": "801afbb0-b7d4-4e5b-a654-a3fe2707d98b",
                         "Actions": [],
                         "IsInvalid": false
                       },
+                      "ActionStackId": 4141,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 146,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     },
                     {
-                      "Id": 1113,
+                      "Id": 228,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2841,
                       "Name": "OutputToken",
                       "Value": null,
+                      "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
-                      "ActionId": 146,
-                      "OrderIndex": 0
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     }
                   ],
-                  "DiagramUID": null
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
                 }
               ],
               "IsInvalid": false
             },
+            "ActionStackId": 4134,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 103,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 783,
+            "Id": 187,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2837,
             "Name": "ContinueOnError",
             "Value": null,
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 103,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 784,
+            "Id": 188,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2837,
             "Name": "OnError",
             "Value": {
-              "Id": 121,
-              "EventName": "OnError",
+              "Id": 4135,
+              "GlobalId": "3ec1d9d5-5989-48f9-a574-0e8e308e52c8",
               "Actions": [],
               "IsInvalid": false
             },
+            "ActionStackId": 4135,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 103,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           },
           {
-            "Id": 785,
+            "Id": 189,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2837,
             "Name": "Filters",
             "Value": [],
+            "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
-            "ActionId": 103,
-            "OrderIndex": 0
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
           }
         ],
-        "DiagramUID": "Activity_167kqw6"
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
       }
     ],
     "IsInvalid": false
   },
+  "ActionStackId": 0,
   "CreatedBy": 9,
   "CreatedOn": "2025-10-16T13:39:32.1964001+00:00",
   "LastModifiedBy": 9,

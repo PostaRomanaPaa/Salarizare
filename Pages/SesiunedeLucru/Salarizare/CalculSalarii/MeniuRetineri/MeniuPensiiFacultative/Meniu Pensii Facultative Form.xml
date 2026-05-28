@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.125.00">
+<module type="ActionForm" version="05.28.225.00">
     <contentKey />
     <moduleID>945</moduleID>
     <alignment />
@@ -16,7 +16,92 @@
     <header />
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
     <title>Meniu Pensii Facultative Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>49299a81-6339-47be-b7cf-6c0915fac368</uniqueId>
@@ -26,7 +111,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.125.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[1781]]&gt;&lt;/Id&gt;
@@ -354,8 +439,8 @@
   &lt;Settings&gt;
     &lt;Title&gt;Meniu Pensii Facultative Form&lt;/Title&gt;
     &lt;CssName&gt;meniu-pensii-facultative-form&lt;/CssName&gt;
-    &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.125&lt;/Build&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.225&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;&amp;lt;a href=&quot;[FormUrl]&quot;&amp;gt;Click here to change.&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -374,7 +459,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;945&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.125&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
     &lt;TabId&gt;206&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -406,7 +491,6 @@
     &lt;BaseId&gt;dnn945&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;RootClasses /&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;RevisionNumber&gt;66&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
@@ -414,101 +498,80 @@
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Redirect Pensii Facultative&lt;/Description&gt;
-      &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
+      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
+      &lt;FieldName&gt;ImportFisieredelaFonduriledePensii&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-05-08T10:39:28.113&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:208,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
+      &lt;ActionType&gt;ShowToast&lt;/ActionType&gt;
+      &lt;Description&gt;Import pana pe 14 a lunii calendaristice curente&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;Heading&quot;:null,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Dupa data de [Initializari:CalcLichidDayLimit] nu mai aveti drept de IMPORT FISIERE.&amp;lt;/p&amp;gt;&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;warning&quot;},&quot;BgColor&quot;:&quot;#2d88a6&quot;,&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;AllowToastClose&quot;:true,&quot;CallBackJsCode&quot;:null,&quot;HideTime&quot;:&quot;10000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;bottom-center&quot;},&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;},&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;0 &amp;amp;&amp;amp; ([DateTime:Now].Day &amp;gt; [Initializari:CalcLichidDayLimit])&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
+      &lt;FieldName&gt;ImportFisieredelaFonduriledePensii&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;207&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;945&lt;/ModuleId&gt;
       &lt;FieldName&gt;PensiiFacultative&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Import pana pe 14 a lunii calendaristice curente&lt;/Description&gt;
-      &lt;ActionType&gt;ShowToast&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;0 &amp;amp;&amp;amp; ([DateTime:Now].Day &amp;gt; [Initializari:CalcLichidDayLimit])&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-05-08T10:39:28.113&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Heading&quot;:&quot;&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Dupa data de [Initializari:CalcLichidDayLimit] nu mai aveti drept de IMPORT FISIERE.&amp;lt;/p&amp;gt;&quot;,&quot;Icon&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;warning&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BgColor&quot;:&quot;#2d88a6&quot;,&quot;Transition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;AllowToastClose&quot;:true,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;HideTime&quot;:&quot;10000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;bottom-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TextAlignment&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
-      &lt;FieldName&gt;ImportFisieredelaFonduriledePensii&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;Verificare Perioada Transmitere fisiere&lt;/Description&gt;
-      &lt;ActionType&gt;ShowToast&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;0 &amp;amp;&amp;amp; ([DateTime:Now].Day &amp;lt; 15  ||  [DateTime:Now].Day &amp;gt; 26)&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-05-08T10:39:28.13&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Heading&quot;:&quot;Atentie!&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Exportul este permis doar&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;intre 15 si 26 ale lunii.&amp;lt;/p&amp;gt;&quot;,&quot;Icon&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;warning&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BgColor&quot;:&quot;#2d88a6&quot;,&quot;Transition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;AllowToastClose&quot;:true,&quot;CallBackJsCode&quot;:&quot;&quot;,&quot;HideTime&quot;:&quot;10000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;mid-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;TextAlignment&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
-      &lt;FieldName&gt;GenerarefisiereCSVsiExportfisierecatreFonduri&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-05-08T10:39:28.113&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:227,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
+      &lt;Description&gt;Redirect Pensii Facultative&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;208&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
       &lt;ModuleId&gt;945&lt;/ModuleId&gt;
       &lt;FieldName&gt;ListareCentralizata&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-05-08T10:39:28.113&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:207,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:&quot;&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
-      &lt;FieldName&gt;ImportFisieredelaFonduriledePensii&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
+      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;227&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
+      &lt;FieldName&gt;GenerarefisiereCSVsiExportfisierecatreFonduri&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowToast&lt;/ActionType&gt;
+      &lt;Description&gt;Verificare Perioada Transmitere fisiere&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;Heading&quot;:&quot;Atentie!&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Exportul este permis doar&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;intre 15 si 26 ale lunii.&amp;lt;/p&amp;gt;&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;warning&quot;},&quot;BgColor&quot;:&quot;#2d88a6&quot;,&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;AllowToastClose&quot;:true,&quot;CallBackJsCode&quot;:null,&quot;HideTime&quot;:&quot;10000&quot;,&quot;Stack&quot;:&quot;1&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;mid-center&quot;},&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;center&quot;},&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;0 &amp;amp;&amp;amp; ([DateTime:Now].Day &amp;lt; 15  ||  [DateTime:Now].Day &amp;gt; 26)&lt;/Condition&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;Description&gt;export fisiere CSV&lt;/Description&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
+      &lt;FieldName&gt;GenerarefisiereCSVsiExportfisierecatreFonduri&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;ActionType&gt;PlantAnApp.ExecuteWorkflow.f365166e19ac45f3a60f4037a1116fed&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-05-08T10:39:28.13&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;InputHelpText&quot;:&quot;&quot;,&quot;CodSucursala&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;Anul&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;Luna&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:&quot;&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;945&lt;/ModuleId&gt;
-      &lt;FieldName&gt;GenerarefisiereCSVsiExportfisierecatreFonduri&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
-      &lt;Metadata /&gt;
+      &lt;Description&gt;export fisiere CSV&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;InputHelpText&quot;:null,&quot;CodSucursala&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;Anul&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;Luna&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-05-08T10:39:28.13&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;9&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:217,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;EnforceCurrentLocale&quot;:&quot;&quot;,&quot;QueryString&quot;:&quot;&quot;,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:&quot;&quot;,&quot;PopupTitle&quot;:&quot;&quot;,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
       &lt;ModuleId&gt;945&lt;/ModuleId&gt;
       &lt;FieldName&gt;GenerarefisiereCSVsiExportfisierecatreFonduri&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
       &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;217&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
 &lt;/ActionForm&gt;]]></content>

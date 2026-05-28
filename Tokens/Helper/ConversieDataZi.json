@@ -1,23 +1,26 @@
 {
-  "id": 42,
   "globalId": "c15eaafc-a5c1-4af3-938f-ae1c01bf500b",
   "namespace": {
-    "id": 7,
     "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
     "name": "Helper",
     "isSystem": false
   },
   "name": "ConversieDataZi",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "db",
     "sql": "SELECT DAY(CONVERT(DATE, '[TknParams:data]', 111))",
-    "defaultColumn": "",
-    "columns": "",
-    "connectionString": "",
-    "type": "db"
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": [
+      "data"
+    ]
   }
 }

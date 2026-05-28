@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.27.125.00">
+<module type="ActionForm" version="05.28.225.00">
     <contentKey />
     <moduleID>546</moduleID>
     <alignment />
@@ -16,7 +16,92 @@
     <header />
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
-    <modulepermissions />
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
     <title>Details Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>ce14e598-8909-45ce-a704-b034ccfb3fd5</uniqueId>
@@ -31,7 +116,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.27.125.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[613]]&gt;&lt;/Id&gt;
@@ -84,8 +169,8 @@
   &lt;Settings&gt;
     &lt;Title&gt;Details Form&lt;/Title&gt;
     &lt;CssName&gt;details-form&lt;/CssName&gt;
-    &lt;Version&gt;5.27.0&lt;/Version&gt;
-    &lt;Build&gt;5.27.125&lt;/Build&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.225&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -102,7 +187,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;546&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.27.125&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
     &lt;TabId&gt;86&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -134,7 +219,6 @@
     &lt;BaseId&gt;dnn546&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;RootClasses&gt;detail-form-root&lt;/RootClasses&gt;
-    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
     &lt;RevisionNumber&gt;7&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;alexandra.vasilescu@ro.post&lt;/RevisionLastChangedBy&gt;
@@ -142,50 +226,41 @@
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2026-03-26T13:13:52.707&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;546&lt;/ModuleId&gt;
-      &lt;EventName&gt;init&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckViewPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckViewPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-03-26T13:13:52.72&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:An&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;546&lt;/ModuleId&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.InitializeVariablesWithDefaultValues&lt;/PAP_InternalIdentifier&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:An&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.ReadEntity.0e761b5e-981b-4c39-ad90-6b3ef2dad9a0&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2026-03-26T13:13:52.737&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;5&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AnId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;546&lt;/ModuleId&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadVariablesValues&quot;,&quot;EntityIdentifier&quot;:&quot;0e761b5e-981b-4c39-ad90-6b3ef2dad9a0&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.LoadVariablesValues&lt;/PAP_InternalIdentifier&gt;
         &lt;EntityIdentifier&gt;0e761b5e-981b-4c39-ad90-6b3ef2dad9a0&lt;/EntityIdentifier&gt;
         &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
       &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;PlantAnApp.ReadEntity.0e761b5e-981b-4c39-ad90-6b3ef2dad9a0&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:AnId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;init&lt;/EventName&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Action.CheckViewPermissions&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+      &lt;/Metadata&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
+      &lt;Condition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Payroll_Operator] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
 &lt;/ActionForm&gt;]]></content>

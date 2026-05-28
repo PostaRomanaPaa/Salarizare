@@ -1,0 +1,513 @@
+{
+  "Children": [],
+  "DisplayInMenu": false,
+  "ParentPageId": 264,
+  "DisplayAfter": null,
+  "RecordNamePropertyId": 784,
+  "UpdateRecordNameProperty": null,
+  "ShowDashboardModule": false,
+  "GenerateApiAccess": false,
+  "Properties": [
+    {
+      "Id": 784,
+      "GlobalId": "a943b848-7cde-4cf3-9dde-3d987c589dda",
+      "EntityVersionId": 72,
+      "Name": "Cod Sucursala",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 785,
+      "GlobalId": "1ebb9efe-6956-431e-bb2e-0b5ed40c5ad9",
+      "EntityVersionId": 72,
+      "Name": "Marca",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 786,
+      "GlobalId": "c8e2b2b9-354b-472a-a1d7-f195291ab422",
+      "EntityVersionId": 72,
+      "Name": "CNP Alta Persoana",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 787,
+      "GlobalId": "82f9d282-c227-43e8-8f75-92fbe6884e30",
+      "EntityVersionId": 72,
+      "Name": "Nume Alta Persoana",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 788,
+      "GlobalId": "7606c543-9468-4ca4-ac30-d4648f52e40c",
+      "EntityVersionId": 72,
+      "Name": "Prenume Alta Persoana",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 789,
+      "GlobalId": "d38fee62-b2ba-4978-8b48-844efa9dfd80",
+      "EntityVersionId": 72,
+      "Name": "Fel Persoana",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 6
+    },
+    {
+      "Id": 790,
+      "GlobalId": "99440247-3133-4ef9-8af1-56db2461f743",
+      "EntityVersionId": 72,
+      "Name": "Data De Inceput",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 791,
+      "GlobalId": "0b2d2f75-7d1f-4635-8b8d-b5e9e42ca360",
+      "EntityVersionId": 72,
+      "Name": "Data De Sfarsit",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 8
+    },
+    {
+      "Id": 792,
+      "GlobalId": "a5666008-5c8e-4746-b04b-b8caed705083",
+      "EntityVersionId": 72,
+      "Name": "Grad",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": false,
+      "OrderIndex": 9
+    },
+    {
+      "Id": 793,
+      "GlobalId": "a675091d-6994-471f-9976-d32df84832bb",
+      "EntityVersionId": 72,
+      "Name": "Procent",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 10
+    },
+    {
+      "Id": 794,
+      "GlobalId": "6ea2aa26-e626-4a06-9120-702a4fb9f1fe",
+      "EntityVersionId": 72,
+      "Name": "Data Nasterii Copil",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 11
+    },
+    {
+      "Id": 795,
+      "GlobalId": "5cf531b0-13aa-4165-bbe4-41a67cb19ff3",
+      "EntityVersionId": 72,
+      "Name": "Alt Procent",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 12
+    }
+  ],
+  "RolePermissions": {
+    "6": [
+      {
+        "Id": 1581,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1582,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "true"
+      },
+      {
+        "Id": 1583,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 1584,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 6,
+        "RoleName": "Admins",
+        "Value": "all"
+      }
+    ],
+    "7": [
+      {
+        "Id": 1585,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1586,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "true"
+      },
+      {
+        "Id": 1587,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 1588,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 7,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      }
+    ],
+    "5": [
+      {
+        "Id": 1589,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1590,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "true"
+      },
+      {
+        "Id": 1591,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 1592,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 5,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      }
+    ],
+    "8": [
+      {
+        "Id": 1593,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1594,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "true"
+      },
+      {
+        "Id": 1595,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 1596,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 8,
+        "RoleName": "Managers",
+        "Value": "all"
+      }
+    ]
+  },
+  "Id": 72,
+  "GlobalId": "8ca2a9b1-4331-46a5-8f48-691c4a79a1c7",
+  "ConfigGenerationGlobalId": "8ca2a9b1-4331-46a5-8f48-691c4a79a1c7",
+  "VersionId": 72,
+  "EntityTabId": 254,
+  "Name": "Persoana Intretinere",
+  "PluralName": "Persoane Intretinere",
+  "PageUiLibrary": 2,
+  "CreatedDate": "2026-05-15T09:26:34.4433333",
+  "CreatedBy": "Carmen Mardare",
+  "LastModifiedBy": "Carmen Mardare",
+  "LastModifiedOn": "2026-05-25T12:51:08.5366667",
+  "Icon": "table",
+  "Type": 0,
+  "BuiltInType": null,
+  "EnableIndexing": false,
+  "NamespaceUid": "30ff03aa-f784-4258-8b6d-4c4fe38ed850",
+  "EntityTabGlobalId": "26fc5c63-90a9-48c3-a563-e6313e5c9326",
+  "EntityParentTabGlobalId": "5106f753-873d-4d00-93d9-e65cca6e530b"
+}

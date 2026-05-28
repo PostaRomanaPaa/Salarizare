@@ -1,23 +1,27 @@
 {
-  "id": 117,
   "globalId": "f18f1b25-9d80-47a0-8778-1927e0c17dd0",
   "namespace": {
-    "id": 7,
     "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
     "name": "Helper",
     "isSystem": false
   },
   "name": "AvansCOBadge",
   "description": "",
-  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
   "defaultValue": "",
-  "cacheTime": 0,
-  "cacheLayer": "Global",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
   "src": {
+    "type": "razor",
     "compiledRazorLocation": "host",
-    "additionalAssemblies": "",
-    "debug": false,
+    "assemblies": "",
+    "debugScript": false,
+    "lang": "csharp",
     "language": "csharp",
-    "type": "razor"
+    "params": [
+      "Tip"
+    ]
   }
 }

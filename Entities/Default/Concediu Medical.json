@@ -969,6 +969,84 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 2
+    },
+    {
+      "Id": 1175,
+      "GlobalId": "55bcdc8f-f0b5-4931-a690-8256712023f0",
+      "EntityVersionId": 40,
+      "Name": "Cronic",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 38
+    },
+    {
+      "Id": 1176,
+      "GlobalId": "8efb8973-09bc-451f-8df3-6b822c8a310f",
+      "EntityVersionId": 40,
+      "Name": "Diminuare 1 Zi Unitate",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 39
+    },
+    {
+      "Id": 1177,
+      "GlobalId": "47a6d94b-bc52-4c79-9803-a30801b2adbb",
+      "EntityVersionId": 40,
+      "Name": "Diminuare 1 Zi F",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 40
     }
   ],
   "RolePermissions": {
@@ -1236,7 +1314,7 @@
   "CreatedDate": "2025-11-11T11:19:39.32",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Alexandra Vasilescu",
-  "LastModifiedOn": "2026-03-26T13:17:17.7066667",
+  "LastModifiedOn": "2026-06-02T12:10:50.01",
   "Icon": "book-medical",
   "Type": 0,
   "BuiltInType": null,

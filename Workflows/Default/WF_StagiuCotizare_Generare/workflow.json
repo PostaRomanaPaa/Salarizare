@@ -1,0 +1,1683 @@
+{
+  "InputFields": [
+    {
+      "Id": 117,
+      "Name": "CodSucursala",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 52,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 118,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 52,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 119,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 52,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    }
+  ],
+  "OutputFields": [],
+  "Id": 52,
+  "GlobalId": "945169af-84fb-4939-b713-a15d696287e5",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "945169af-84fb-4939-b713-a15d696287e5",
+  "EnvironmentId": 1,
+  "Name": "WF_StagiuCotizare_Generare",
+  "Description": "motorul fiscal payroll:\n-BazaCalculBrut\n-BazaContributii\n-CalculPersoaneIntretinere",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 6319,
+    "GlobalId": "dda48263-08d5-4ba2-ba3a-e809e5948ba0",
+    "Actions": [
+      {
+        "Id": 4400,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Delete BazaContributii",
+        "ActionErrorMessage": null,
+        "ActionStackId": 6319,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_04q29is",
+        "ActionParameters": [
+          {
+            "Id": 17593,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17594,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17595,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17596,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "SqlQuery",
+            "Value": "DELETE FROM app.StagiuCotizare\r\nWHERE Anul = @Anul\r\n  AND Luna = @Luna\r\n  AND CodSucursala = @CodSucursala",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17597,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "OnError",
+            "Value": {
+              "Id": 6320,
+              "GlobalId": "ca1d289f-67af-449d-bb70-d626bdbe52b4",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 6320,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17598,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17599,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17600,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17601,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17602,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4400,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 4401,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Execute Actions BazaContributii",
+        "ActionErrorMessage": null,
+        "ActionStackId": 6319,
+        "ActionType": "ExecuteActions",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_1l6m6ru",
+        "ActionParameters": [
+          {
+            "Id": 17683,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4401,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 6321,
+              "GlobalId": "bdad5e20-ebe4-4e3f-a6c6-d59abb0ab60e",
+              "Actions": [
+                {
+                  "Id": 4402,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "Insert Stagiu Cotizare",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 0,
+                  "DiagramUID": "643a7aca-f73c-4549-9986-9b384c79cc92",
+                  "ActionParameters": [
+                    {
+                      "Id": 17603,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17604,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17605,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17606,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "SqlQuery",
+                      "Value": "INSERT INTO app.StagiuCotizare\r\n(\r\n    -------------------------------------------------\r\n    -- Identificare\r\n    -------------------------------------------------\r\n    Marca,\r\n    CodSucursala,\r\n    Luna,\r\n    Anul,\r\n\r\n    -------------------------------------------------\r\n    -- Zile payroll\r\n    -------------------------------------------------\r\n    ZileLucrate,\r\n    ZileCO,\r\n    ZileCM,\r\n    ZileCFS,\r\n    ZileNemotivate,\r\n    ZileDelegatie,\r\n    ZileAsimilate,\r\n\r\n    -------------------------------------------------\r\n    -- Ore payroll\r\n    -------------------------------------------------\r\n    OreLucrate,\r\n    OreCO,\r\n    OreCM,\r\n    OreSuspendate,\r\n\r\n    -------------------------------------------------\r\n    -- Venituri contributive\r\n    -------------------------------------------------\r\n    VenitCAS,\r\n    VenitCASS,\r\n    VenitCAM,\r\n    VenitCM,\r\n    VenitFNUASS,\r\n    VenitBrut,\r\n    VenitImpozabil,\r\n\r\n    -------------------------------------------------\r\n    -- Contributii\r\n    -------------------------------------------------\r\n    CASRetinut,\r\n    CASSRetinut,\r\n    CAMCalculat,\r\n    ImpozitRetinut,\r\n\r\n    -------------------------------------------------\r\n    -- Date contractuale / D112\r\n    -------------------------------------------------\r\n    TipContract,\r\n    TipNorma,\r\n    NormaZilnica,\r\n    TipAsigurat,\r\n    TipVenitD112,\r\n    ConditiiMunca,\r\n    CodIndemnizatieCM,\r\n    CodCOR,\r\n    CasaPensii,\r\n    CasaSanatate,\r\n    Judet,\r\n\r\n    -------------------------------------------------\r\n    -- Situatii speciale\r\n    -------------------------------------------------\r\n    EsteCCC,\r\n    EsteCM,\r\n    EstePensionar,\r\n    EsteScutitCAS,\r\n    EsteScutitCASS,\r\n    ContractSuspendat,\r\n    AreFacilitati,\r\n    EsteAsimilat,\r\n\r\n    -------------------------------------------------\r\n    -- Tip stagiu\r\n    -------------------------------------------------\r\n    TipStagiu,\r\n\r\n    -------------------------------------------------\r\n    -- Audit\r\n    -------------------------------------------------\r\n    EsteProcesat,\r\n    Status,\r\n    MesajValidare,\r\n    DataCalcul,\r\n    CreatedDate\r\n)\r\n\r\nSELECT\r\n\r\n    -------------------------------------------------\r\n    -- Identificare\r\n    -------------------------------------------------\r\n    ep.Marca,\r\n    ep.CodSucursala,\r\n    ep.Luna,\r\n    ep.Anul,\r\n\r\n    -------------------------------------------------\r\n    -- Zile payroll\r\n    -------------------------------------------------\r\n    ISNULL(ep.ZileLucrateTotal,0) AS ZileLucrate,\r\n\r\n    ISNULL(ep.ZileCO,0) AS ZileCO,\r\n\r\n    ISNULL(ep.ZileCM,0) AS ZileCM,\r\n\r\n    ISNULL(ep.ZileCFS,0) AS ZileCFS,\r\n\r\n    ISNULL(ep.ZileNemotivate,0) AS ZileNemotivate,\r\n\r\n    ISNULL(ep.ZileDelegatie,0) AS ZileDelegatie,\r\n\r\n    CASE\r\n        WHEN ISNULL(s.Stare,0) = 1\r\n        THEN ISNULL(ep.ZileLucrateTotal,0)\r\n        ELSE 0\r\n    END AS ZileAsimilate,\r\n\r\n    -------------------------------------------------\r\n    -- Ore payroll\r\n    -------------------------------------------------\r\n    ISNULL(ep.OreLucrate,0) AS OreLucrate,\r\n\r\n    ISNULL(ep.ZileCO,0)\r\n        * CAST(ISNULL(s.TipNorma,1) * 8 AS INT) AS OreCO,\r\n\r\n    ISNULL(ep.ZileCM,0)\r\n        * CAST(ISNULL(s.TipNorma,1) * 8 AS INT) AS OreCM,\r\n\r\n    (\r\n        ISNULL(ep.ZileCFS,0)\r\n        +\r\n        ISNULL(ep.ZileNemotivate,0)\r\n    )\r\n        * CAST(ISNULL(s.TipNorma,1) * 8 AS INT) AS OreSuspendate,\r\n\r\n    -------------------------------------------------\r\n    -- Venituri contributive\r\n    -------------------------------------------------\r\n    ISNULL(bc.BazaCAS,0) AS VenitCAS,\r\n\r\n    ISNULL(bc.BazaCASS,0) AS VenitCASS,\r\n\r\n    ISNULL(bc.BazaCAM,0) AS VenitCAM,\r\n\r\n    0 AS VenitCM,\r\n\r\n    0 AS VenitFNUASS,\r\n\r\n    ISNULL(bc.BrutTotal,0) AS VenitBrut,\r\n\r\n    ISNULL(bc.VenitImpozabil,0) AS VenitImpozabil,\r\n\r\n    -------------------------------------------------\r\n    -- Contributii\r\n    -------------------------------------------------\r\n    ISNULL(bc.CAS,0) AS CASRetinut,\r\n\r\n    ISNULL(bc.CASS,0) AS CASSRetinut,\r\n\r\n    ISNULL(bc.CAM,0) AS CAMCalculat,\r\n\r\n    ISNULL(bc.ImpozitFinal,0) AS ImpozitRetinut,\r\n\r\n    -------------------------------------------------\r\n    -- Date contractuale / D112\r\n    -------------------------------------------------\r\n    ISNULL(s.TipAngajare,'STANDARD') AS TipContract,\r\n\r\n    ISNULL(s.TipNorma,1) AS TipNorma,\r\n\r\n    CAST(ISNULL(s.TipNorma,1) * 8 AS INT) AS NormaZilnica,\r\n\r\n    '' AS TipAsigurat,\r\n\r\n    'SALAR' AS TipVenitD112,\r\n\r\n    'Normale' AS ConditiiMunca,\r\n\r\n    '' AS CodIndemnizatieCM,\r\n\r\n   ISNULL(s.CodFunctie,0) AS CodCOR, --de adaugat cod COR din nomenclator COR\r\n\r\n    '' AS CasaPensii,\r\n\r\n    ISNULL(s.CodSanatate,'') AS CasaSanatate,\r\n\r\n    ISNULL(s.Judet,'') AS Judet,\r\n\r\n    -------------------------------------------------\r\n    -- Situatii speciale\r\n    -------------------------------------------------\r\n    CASE\r\n        WHEN ISNULL(s.Stare,0) = 1\r\n        THEN 1\r\n        ELSE 0\r\n    END AS EsteCCC,\r\n\r\n    CASE\r\n        WHEN ISNULL(ep.ZileCM,0) > 0\r\n        THEN 1\r\n        ELSE 0\r\n    END AS EsteCM,\r\n\r\n    CASE\r\n        WHEN ISNULL(s.Stare,0) = 3\r\n        THEN 1\r\n        ELSE 0\r\n    END AS EstePensionar,\r\n\r\n    0 AS EsteScutitCAS,\r\n\r\n    0 AS EsteScutitCASS,\r\n\r\n    CASE\r\n        WHEN ISNULL(s.Stare,0) = 7\r\n        THEN 1\r\n        ELSE 0\r\n    END AS ContractSuspendat,\r\n\r\n    0 AS AreFacilitati,\r\n\r\n    CASE\r\n        WHEN ISNULL(s.Stare,0) = 1\r\n        THEN 1\r\n        ELSE 0\r\n    END AS EsteAsimilat,\r\n\r\n    -------------------------------------------------\r\n    -- Tip stagiu\r\n    -------------------------------------------------\r\n    CASE\r\n        WHEN ISNULL(s.Stare,0) = 1\r\n        THEN 'CCC'\r\n\r\n        WHEN ISNULL(ep.ZileCM,0) > 0\r\n        THEN 'CM'\r\n\r\n        ELSE 'CONTRIBUTIV'\r\n    END AS TipStagiu,\r\n\r\n    -------------------------------------------------\r\n    -- Audit\r\n    -------------------------------------------------\r\n    0 AS EsteProcesat,\r\n\r\n    1 AS Status,\r\n\r\n    '' AS MesajValidare,\r\n\r\n    SYSDATETIMEOFFSET() AS DataCalcul,\r\n\r\n    SYSDATETIMEOFFSET() AS CreatedDate\r\n\r\nFROM app.ExceptiiPrezenta ep\r\n\r\nINNER JOIN app.BazaContributii bc\r\n    ON bc.Marca = ep.Marca\r\n   AND bc.Luna = ep.Luna\r\n   AND bc.Anul = ep.Anul\r\n   AND bc.CodSucursala = ep.CodSucursala\r\n\r\nINNER JOIN app.Salariat s\r\n    ON s.Marca = ep.Marca\r\n\r\nWHERE ep.Luna = @Luna\r\n  AND ep.Anul = @Anul\r\n  AND ep.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17607,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6322,
+                        "GlobalId": "155132a2-0d34-416c-8d7d-20e4b4015f30",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6322,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17608,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17609,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17610,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17611,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "OutputTokenName",
+                      "Value": "ListaBazaContributii",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17612,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4402,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4403,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "1. Calcul Stagiu Contributive -CAS",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 1,
+                  "DiagramUID": "621be4f6-5177-4c50-8c46-8eeae97807ed",
+                  "ActionParameters": [
+                    {
+                      "Id": 17613,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17614,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17615,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17616,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE sc\r\nSET\r\n\r\n    sc.ZileStagiuCAS =\r\n\r\n        ISNULL(sc.ZileLucrate,0)\r\n\r\n        + ISNULL(sc.ZileCO,0)\r\n\r\n        + ISNULL(sc.ZileCM,0)\r\n\r\n        - ISNULL(sc.ZileCFS,0)\r\n\r\n        - ISNULL(sc.ZileNemotivate,0),\r\n\r\n    sc.LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nFROM app.StagiuCotizare sc\r\n\r\nWHERE sc.Luna = @Luna\r\n  AND sc.Anul = @Anul\r\n  AND sc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17617,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6323,
+                        "GlobalId": "0a84cfae-4346-4473-a2d2-89e98922dde0",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6323,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17618,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17619,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17620,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17621,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17622,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4403,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4404,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "2. Calcul Stagiu Contributive -CASS",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 2,
+                  "DiagramUID": "6252a0e9-0aa0-4348-a582-d27328a98b10",
+                  "ActionParameters": [
+                    {
+                      "Id": 17623,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17624,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17625,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17626,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE sc\r\nSET\r\n\r\n    sc.ZileStagiuCASS =\r\n\r\n        ISNULL(sc.ZileStagiuCAS,0),\r\n\r\n    sc.LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nFROM app.StagiuCotizare sc\r\n\r\nWHERE sc.Luna = @Luna\r\n  AND sc.Anul = @Anul\r\n  AND sc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17627,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6324,
+                        "GlobalId": "2772a825-8563-4880-8364-74aee3d374ae",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6324,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17628,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17629,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17630,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17631,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17632,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4404,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4405,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "3. Calcul Stagiu CM",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 3,
+                  "DiagramUID": "fa0b8492-4319-49cf-bc43-368a5bdb1995",
+                  "ActionParameters": [
+                    {
+                      "Id": 17633,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17634,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17635,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17636,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE sc\r\nSET\r\n\r\n    -------------------------------------------------\r\n    -- Flag CM\r\n    -------------------------------------------------\r\n    sc.EsteCM =\r\n\r\n        CASE\r\n            WHEN ISNULL(cm.ZileCM,0) > 0\r\n            THEN 1\r\n            ELSE 0\r\n        END,\r\n\r\n    -------------------------------------------------\r\n    -- Zile CM\r\n    -------------------------------------------------\r\n    sc.ZileCM =\r\n\r\n        ISNULL(cm.ZileCM,0),\r\n\r\n    sc.ZileStagiuCM =\r\n\r\n        ISNULL(cm.NrZileStagiuCotiz,0),\r\n\r\n    sc.ZileAsimilate =\r\n\r\n        ISNULL(cm.NrZileAsimilate,0),\r\n\r\n    -------------------------------------------------\r\n    -- Venituri CM\r\n    -------------------------------------------------\r\n    sc.VenitCM =\r\n\r\n        ISNULL(cm.SumaUnitate,0),\r\n\r\n    sc.VenitFNUASS =\r\n\r\n        ISNULL(cm.SumaPlatitadinCAS,0),\r\n\r\n    -------------------------------------------------\r\n    -- Audit CM\r\n    -------------------------------------------------\r\n    sc.ProcCM =\r\n\r\n        ISNULL(cm.ProcentCM,0),\r\n\r\n    sc.CodIndemnizatieCM =\r\n\r\n        cm.Codindemn,\r\n\r\n    sc.CodUrgentaCM =\r\n\r\n        cm.CodUrgenta,\r\n\r\n    sc.EsteCMCronic =\r\n\r\n        CASE\r\n            WHEN ISNULL(cm.Cronic,'NU') = 'DA'\r\n            THEN 1\r\n            ELSE 0\r\n        END,\r\n\r\n    sc.EsteCMContinuare =\r\n\r\n        CASE\r\n            WHEN ISNULL(cm.CMContinuare,'NU') = 'DA'\r\n            THEN 1\r\n            ELSE 0\r\n        END,\r\n\r\n    -------------------------------------------------\r\n    -- Audit\r\n    -------------------------------------------------\r\n    sc.LastModifiedDate = SYSDATETIMEOFFSET(),\r\n\r\n    sc.EsteProcesat = 0\r\n\r\nFROM app.StagiuCotizare sc\r\n\r\nLEFT JOIN\r\n(\r\n    SELECT\r\n\r\n        cm.Marca,\r\n        cm.Luna,\r\n        cm.Anul,\r\n        cm.CodSucursala,\r\n\r\n        SUM(ISNULL(cm.ZilePlatiteUnitate,0))     AS ZileCM,\r\n\r\n        SUM(ISNULL(cm.SumaUnitate,0))             AS SumaUnitate,\r\n\r\n        SUM(ISNULL(cm.SumaPlatitadinCAS,0))       AS SumaPlatitadinCAS,\r\n\r\n        MAX(ISNULL(cm.NrZileStagiuCotiz,0))       AS NrZileStagiuCotiz,\r\n\r\n        MAX(ISNULL(cm.NrZileAsimilate,0))         AS NrZileAsimilate,\r\n\r\n        MAX(ISNULL(cm.ProcentCM,0))               AS ProcentCM,\r\n\r\n        MAX(cm.Codindemn)                         AS Codindemn,\r\n\r\n        MAX(cm.CodUrgenta)                        AS CodUrgenta,\r\n\r\n        MAX(cm.Cronic)                            AS Cronic,\r\n\r\n        MAX(cm.CMContinuare)                      AS CMContinuare\r\n\r\n    FROM app.ConcediuMedical cm\r\n\r\n    GROUP BY\r\n        cm.Marca,\r\n        cm.Luna,\r\n        cm.Anul,\r\n        cm.CodSucursala\r\n\r\n) cm\r\n\r\n    ON cm.Marca = sc.Marca\r\n   AND cm.Luna = sc.Luna\r\n   AND cm.Anul = sc.Anul\r\n   AND cm.CodSucursala = sc.CodSucursala\r\n\r\nWHERE sc.Luna = @Luna\r\n  AND sc.Anul = @Anul\r\n  AND sc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17637,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6325,
+                        "GlobalId": "80131c68-f55b-4561-a9fd-42d5a964b064",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6325,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17638,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17639,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17640,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17641,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17642,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4405,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4406,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "4. Calcul Stagiu Somaj",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 4,
+                  "DiagramUID": "4b1c0287-50fa-4103-8813-ff44389c06ec",
+                  "ActionParameters": [
+                    {
+                      "Id": 17643,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17644,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17645,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17646,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE sc\r\nSET\r\n\r\n    sc.ZileStagiuSomaj =\r\n\r\n        ISNULL(sc.ZileStagiuCAS,0),\r\n\r\n    sc.LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nFROM app.StagiuCotizare sc\r\n\r\nWHERE sc.Luna = @Luna\r\n  AND sc.Anul = @Anul\r\n  AND sc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17647,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6326,
+                        "GlobalId": "adb1ad51-7bf4-46e3-9f7b-0bc3f412e1ec",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6326,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17648,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17649,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17650,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17651,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17652,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4406,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4407,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "5. Total Stagiu",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 5,
+                  "DiagramUID": "23d6ed06-335f-4d62-a4e5-f9755402e360",
+                  "ActionParameters": [
+                    {
+                      "Id": 17653,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17654,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17655,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17656,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE sc\r\nSET\r\n\r\n    sc.ZileStagiuTotal =\r\n\r\n        ISNULL(sc.ZileStagiuCAS,0),\r\n\r\n    sc.LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nFROM app.StagiuCotizare sc\r\n\r\nWHERE sc.Luna = @Luna\r\n  AND sc.Anul = @Anul\r\n  AND sc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17657,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6327,
+                        "GlobalId": "1b25dbfd-aff7-4f9e-a85e-6674da557d8f",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6327,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17658,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17659,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17660,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17661,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17662,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4407,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4408,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "6. Falg-uri Speciale",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 6,
+                  "DiagramUID": "e002608c-be60-4901-ad2d-4065f98e06ee",
+                  "ActionParameters": [
+                    {
+                      "Id": 17663,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17664,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17665,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17666,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE sc\r\nSET\r\n\r\n    sc.TipStagiu =\r\n\r\n        CASE\r\n            WHEN ISNULL(sc.EsteCCC,0) = 1\r\n                THEN 'CCC'\r\n\r\n            WHEN ISNULL(sc.EsteCM,0) = 1\r\n                THEN 'CM'\r\n\r\n            WHEN ISNULL(sc.EsteAsimilat,0) = 1\r\n                THEN 'ASIMILAT'\r\n\r\n            ELSE 'CONTRIBUTIV'\r\n        END,\r\n\r\n    sc.LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nFROM app.StagiuCotizare sc\r\n\r\nWHERE sc.Luna = @Luna\r\n  AND sc.Anul = @Anul\r\n  AND sc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17667,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6328,
+                        "GlobalId": "85d5bd8d-0552-430d-bbc9-c6b1a1d655d9",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6328,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17668,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17669,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17670,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17671,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17672,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4408,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4409,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "7. Calcul Final",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6321,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 7,
+                  "DiagramUID": "eb6107cc-271d-4150-898c-51c78e6d450f",
+                  "ActionParameters": [
+                    {
+                      "Id": 17673,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17674,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17675,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17676,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE sc\r\nSET\r\n\r\n    sc.TipStagiu =\r\n\r\n        CASE\r\n            WHEN ISNULL(sc.EsteCCC,0) = 1\r\n                THEN 'CCC'\r\n\r\n            WHEN ISNULL(sc.EsteCM,0) = 1\r\n                THEN 'CM'\r\n\r\n            WHEN ISNULL(sc.EsteAsimilat,0) = 1\r\n                THEN 'ASIMILAT'\r\n\r\n            ELSE 'CONTRIBUTIV'\r\n        END,\r\n\r\n    sc.LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nFROM app.StagiuCotizare sc\r\n\r\nWHERE sc.Luna = @Luna\r\n  AND sc.Anul = @Anul\r\n  AND sc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17677,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6329,
+                        "GlobalId": "e3346956-9057-499a-9890-e8369bae9bd6",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6329,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17678,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17679,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17680,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17681,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17682,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4409,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ActionStackId": 6321,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17684,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4401,
+            "Name": "OnError",
+            "Value": {
+              "Id": 6330,
+              "GlobalId": "ad2557bd-b195-4bdf-9b93-1f670a05fc1d",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 6330,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 9,
+  "CreatedOn": "2026-06-01T09:34:14.6313254+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-06-02T16:25:43.7671115+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

@@ -2,7 +2,21 @@
   "InputFields": [
     {
       "Id": 106,
-      "Name": "FilePathURL",
+      "Name": "FisierExcel",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "EntityRef",
+      "EntityVersionId": 3,
+      "WorkflowId": 47,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 123,
+      "Name": "CodSucursala",
       "DefaultValue": "",
       "Type": "Input",
       "InputType": "Text",
@@ -12,7 +26,35 @@
       "IsDeleted": false,
       "Required": false,
       "Description": null,
-      "OrderIndex": 0
+      "OrderIndex": 1
+    },
+    {
+      "Id": 124,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 47,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 125,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 47,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 3
     }
   ],
   "OutputFields": [],
@@ -47,7 +89,7 @@
             "GlobalId": "00000000-0000-0000-0000-000000000000",
             "ActionId": 4077,
             "Name": "FilePath",
-            "Value": "[FilePathURL]",
+            "Value": "[File:GetLink(FileIdentifier=[FisierExcel])]",
             "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
@@ -508,7 +550,7 @@
   "CreatedBy": 6,
   "CreatedOn": "2026-05-25T07:34:05.7603991+00:00",
   "LastModifiedBy": 6,
-  "LastModifiedOn": "2026-05-25T11:04:34.735334+00:00",
+  "LastModifiedOn": "2026-06-02T11:29:34.2314887+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"

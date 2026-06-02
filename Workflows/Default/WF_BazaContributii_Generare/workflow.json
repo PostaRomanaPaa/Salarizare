@@ -1,0 +1,1683 @@
+{
+  "InputFields": [
+    {
+      "Id": 114,
+      "Name": "CodSucursala",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 51,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 115,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 51,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 116,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 51,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    }
+  ],
+  "OutputFields": [],
+  "Id": 51,
+  "GlobalId": "ab2d4f4b-b9d5-45ee-a9a5-c007c1f8cbb6",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "ab2d4f4b-b9d5-45ee-a9a5-c007c1f8cbb6",
+  "EnvironmentId": 1,
+  "Name": "WF_BazaContributii_Generare",
+  "Description": "motorul fiscal payroll:\n-BazaCalculBrut\n-CalculPersoaneIntretinere",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 6183,
+    "GlobalId": "43da5df9-e1a6-4772-899f-aba263c57f8d",
+    "Actions": [
+      {
+        "Id": 4347,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Delete BazaContributii",
+        "ActionErrorMessage": null,
+        "ActionStackId": 6183,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_04q29is",
+        "ActionParameters": [
+          {
+            "Id": 17215,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17216,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17217,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17218,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "SqlQuery",
+            "Value": "DELETE FROM app.BazaContributii\r\nWHERE Anul = @Anul\r\n  AND Luna = @Luna\r\n  AND CodSucursala = @CodSucursala",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17219,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "OnError",
+            "Value": {
+              "Id": 6184,
+              "GlobalId": "5580a473-ec9e-4ca1-9e7f-2d1ae8ecb158",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 6184,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17220,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17221,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17222,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17223,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17224,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4347,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 4348,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Execute Actions BazaContributii",
+        "ActionErrorMessage": null,
+        "ActionStackId": 6183,
+        "ActionType": "ExecuteActions",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_1l6m6ru",
+        "ActionParameters": [
+          {
+            "Id": 17295,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4348,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 6185,
+              "GlobalId": "c508cd15-7887-423e-8423-125c1e368742",
+              "Actions": [
+                {
+                  "Id": 4349,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "Insert BazaContributii",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 0,
+                  "DiagramUID": "643a7aca-f73c-4549-9986-9b384c79cc92",
+                  "ActionParameters": [
+                    {
+                      "Id": 17225,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17226,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17227,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17228,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "SqlQuery",
+                      "Value": "INSERT INTO app.BazaContributii\r\n(\r\n    Marca,\r\n    CodSucursala,\r\n    Luna,\r\n    Anul,\r\n\r\n    BrutContributiv,\r\n    BrutImpozabil,\r\n\r\n    BazaCAS,\r\n    BazaCASS,\r\n    BazaCAM,\r\n\r\n    DeducereStandard,\r\n    DeducereSuplimentara,\r\n    DeducereTotala,\r\n\r\n    ProcCAS,\r\n    ProcCASS,\r\n    ProcCAM,\r\n    ProcImpozit,\r\n\r\n    CAS,\r\n    CASS,\r\n    CAM,\r\n\r\n    VenitImpozabil,\r\n    BazaImpozabila,\r\n    Impozit,\r\n\r\n    ScutireImpozit,\r\n    ImpozitFinal,\r\n\r\n\r\n    EsteProcesat,\r\n    Status,\r\n\r\n    CreatedDate\r\n)\r\n\r\nSELECT\r\n\r\n    bcb.Marca,\r\n    bcb.CodSucursala,\r\n    bcb.Luna,\r\n    bcb.Anul,\r\n\r\n    -------------------------------------------------\r\n    -- Bruturi fiscale\r\n    -------------------------------------------------\r\n    ISNULL(bcb.BrutContributiv,0),\r\n\r\n    ISNULL(bcb.BrutImpozabil,0),\r\n\r\n    -------------------------------------------------\r\n    -- Baze initiale\r\n    -------------------------------------------------\r\n    ISNULL(bcb.BrutContributiv,0),\r\n\r\n    ISNULL(bcb.BrutContributiv,0),\r\n\r\n    ISNULL(bcb.BrutContributiv,0),\r\n\r\n    -------------------------------------------------\r\n    -- Deduceri\r\n    -------------------------------------------------\r\n    ISNULL(cpi.DeducereStandard,0),\r\n    \r\n    ISNULL(cpi.DedSuplimTotala,0),\r\n\r\n    ISNULL(cpi.DeducereFinala,0),\r\n\r\n    -------------------------------------------------\r\n    -- Procente snapshot\r\n    -------------------------------------------------\r\n    tc.ProcCAS,\r\n    tc.ProcCASS,\r\n    tc.ProcCAM,\r\n    tc.ProcImpozit,\r\n\r\n    -------------------------------------------------\r\n    -- Contributii initiale\r\n    -------------------------------------------------\r\n    0,\r\n    0,\r\n    0,\r\n\r\n    -------------------------------------------------\r\n    -- Fiscalitate initiala\r\n    -------------------------------------------------\r\n    0,\r\n    0,\r\n    0,\r\n    \r\n    -------------------------------------------------\r\n    -- Scutire impozit\r\n    -------------------------------------------------\r\n    0,\r\n\r\n    -------------------------------------------------\r\n    -- Impozit final\r\n    -------------------------------------------------\r\n    0,\r\n    \r\n    -------------------------------------------------\r\n    -- Audit\r\n    -------------------------------------------------\r\n    0,\r\n    1,\r\n\r\n    SYSDATETIMEOFFSET()\r\n\r\nFROM app.BazaCalculBrut bcb\r\n\r\nLEFT JOIN app.CalculPersoaneIntretinere cpi\r\n    ON cpi.Marca = bcb.Marca\r\n   AND cpi.Luna = bcb.Luna\r\n   AND cpi.Anul = bcb.Anul\r\n   AND cpi.CodSucursala = bcb.CodSucursala\r\n\r\nCROSS APPLY\r\n(\r\n    SELECT\r\n\r\n        MAX(CASE WHEN Contributie='CAS' THEN Procent END) AS ProcCAS,\r\n\r\n        MAX(CASE WHEN Contributie='CASS' THEN Procent END) AS ProcCASS,\r\n\r\n        MAX(CASE WHEN Contributie='CAM' THEN Procent END) AS ProcCAM,\r\n\r\n        MAX(CASE WHEN Contributie='IMPOZIT' THEN Procent END) AS ProcImpozit\r\n\r\n    FROM app.TipContributie\r\n\r\n) tc\r\n\r\nWHERE bcb.Luna = @Luna\r\n  AND bcb.Anul = @Anul\r\n  AND bcb.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17229,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6186,
+                        "GlobalId": "b8d4560c-0cb3-4229-aa0a-41e81c428985",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6186,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17230,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17231,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17232,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17233,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "OutputTokenName",
+                      "Value": "ListaBazaContributii",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17234,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4349,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4350,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "1. Calcul CAS",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 1,
+                  "DiagramUID": "621be4f6-5177-4c50-8c46-8eeae97807ed",
+                  "ActionParameters": [
+                    {
+                      "Id": 17235,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17236,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17237,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17238,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE bc\r\nSET\r\n\r\n    bc.CAS =\r\n\r\n        ROUND\r\n        (\r\n            ISNULL(bc.BazaCAS,0)\r\n\r\n            *\r\n\r\n            (ISNULL(bc.ProcCAS,0) / 100)\r\n\r\n        ,0),\r\n\r\n    bc.LastModifiedDate = SYSDATETIMEOFFSET(),\r\n\r\n    bc.EsteProcesat = 0\r\n\r\nFROM app.BazaContributii bc\r\n\r\nWHERE bc.Luna = @Luna\r\n  AND bc.Anul = @Anul\r\n  AND bc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17239,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6187,
+                        "GlobalId": "b5f973c9-87cd-46ba-baf0-bb3883ba4164",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6187,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17240,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17241,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17242,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17243,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17244,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4350,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4351,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "2. Calcul CASS",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 2,
+                  "DiagramUID": "6252a0e9-0aa0-4348-a582-d27328a98b10",
+                  "ActionParameters": [
+                    {
+                      "Id": 17245,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17246,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17247,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17248,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE bc\r\nSET\r\n\r\n    bc.CASS =\r\n\r\n        ROUND\r\n        (\r\n            ISNULL(bc.BazaCASS,0)\r\n\r\n            *\r\n\r\n            (ISNULL(bc.ProcCASS,0) / 100)\r\n\r\n        ,0),\r\n\r\n    bc.LastModifiedDate = SYSDATETIMEOFFSET(),\r\n\r\n    bc.EsteProcesat = 0\r\n\r\nFROM app.BazaContributii bc\r\n\r\nWHERE bc.Luna = @Luna\r\n  AND bc.Anul = @Anul\r\n  AND bc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17249,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6188,
+                        "GlobalId": "3e698fc6-bc0f-48ab-b12e-02d43d8cd840",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6188,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17250,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17251,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17252,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17253,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17254,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4351,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4352,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "3. Calcul CAM",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 3,
+                  "DiagramUID": "fa0b8492-4319-49cf-bc43-368a5bdb1995",
+                  "ActionParameters": [
+                    {
+                      "Id": 17255,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17256,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17257,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17258,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE bc\r\nSET\r\n\r\n    bc.CAM =\r\n\r\n        ROUND\r\n        (\r\n            ISNULL(bc.BazaCAM,0)\r\n\r\n            *\r\n\r\n            (ISNULL(bc.ProcCAM,0) / 100)\r\n\r\n        ,0),\r\n\r\n    bc.LastModifiedDate = SYSDATETIMEOFFSET(),\r\n\r\n    bc.EsteProcesat = 0\r\n\r\nFROM app.BazaContributii bc\r\n\r\nWHERE bc.Luna = @Luna\r\n  AND bc.Anul = @Anul\r\n  AND bc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17259,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6189,
+                        "GlobalId": "fba8378f-9f22-4a99-aff2-35d769d17f68",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6189,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17260,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17261,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17262,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17263,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17264,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4352,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4353,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "4. Venit Impozabil",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 4,
+                  "DiagramUID": "4b1c0287-50fa-4103-8813-ff44389c06ec",
+                  "ActionParameters": [
+                    {
+                      "Id": 17265,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17266,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17267,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17268,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE bc\r\nSET\r\n\r\n    bc.VenitImpozabil =\r\n\r\n        ISNULL(bc.BrutImpozabil,0)\r\n\r\n        - ISNULL(bc.CAS,0)\r\n\r\n        - ISNULL(bc.CASS,0),\r\n\r\n    bc.LastModifiedDate = SYSDATETIMEOFFSET(),\r\n\r\n    bc.EsteProcesat = 0\r\n\r\nFROM app.BazaContributii bc\r\n\r\nWHERE bc.Luna = @Luna\r\n  AND bc.Anul = @Anul\r\n  AND bc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17269,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6190,
+                        "GlobalId": "89cf3998-9b09-4984-a256-b14b6dc9c2ea",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6190,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17270,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17271,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17272,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17273,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17274,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4353,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4354,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "5. Baza Impozabila",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 5,
+                  "DiagramUID": "23d6ed06-335f-4d62-a4e5-f9755402e360",
+                  "ActionParameters": [
+                    {
+                      "Id": 17275,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17276,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17277,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17278,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE bc\r\nSET\r\n\r\n    bc.BazaImpozabila =\r\n\r\n        CASE\r\n            WHEN\r\n            (\r\n                ISNULL(bc.VenitImpozabil,0)\r\n\r\n                - ISNULL(bc.DeducereTotala,0)\r\n            ) < 0\r\n\r\n            THEN 0\r\n\r\n            ELSE\r\n            (\r\n                ISNULL(bc.VenitImpozabil,0)\r\n\r\n                - ISNULL(bc.DeducereTotala,0)\r\n            )\r\n        END,\r\n\r\n    bc.LastModifiedDate = SYSDATETIMEOFFSET(),\r\n\r\n    bc.EsteProcesat = 0\r\n\r\nFROM app.BazaContributii bc\r\n\r\nWHERE bc.Luna = @Luna\r\n  AND bc.Anul = @Anul\r\n  AND bc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17279,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6191,
+                        "GlobalId": "2d0795d0-b2c3-40d7-9436-e5fd01288bf6",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6191,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17280,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17281,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17282,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17283,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17284,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4354,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4355,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "6. Impozit",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 6,
+                  "DiagramUID": "e002608c-be60-4901-ad2d-4065f98e06ee",
+                  "ActionParameters": [
+                    {
+                      "Id": 17285,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17286,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17287,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17288,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE bc\r\nSET\r\n\r\n    bc.Impozit =\r\n\r\n        ROUND\r\n        (\r\n            ISNULL(bc.BazaImpozabila,0)\r\n\r\n            *\r\n\r\n            (ISNULL(bc.ProcImpozit,0) / 100)\r\n\r\n        ,0),\r\n\r\n    bc.LastModifiedDate = SYSDATETIMEOFFSET(),\r\n\r\n    bc.EsteProcesat = 1\r\n\r\nFROM app.BazaContributii bc\r\n\r\nWHERE bc.Luna = @Luna\r\n  AND bc.Anul = @Anul\r\n  AND bc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17289,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6192,
+                        "GlobalId": "d1bb7e70-5118-413a-ab4c-21f172f2ea4c",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6192,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17290,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17291,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17292,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17293,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17294,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4355,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 4361,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "7. Calcul Impozit Final",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 6185,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 7,
+                  "DiagramUID": "eb6107cc-271d-4150-898c-51c78e6d450f",
+                  "ActionParameters": [
+                    {
+                      "Id": 17368,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17369,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17370,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17371,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE bc\r\nSET\r\n\r\n    bc.ImpozitFinal =\r\n\r\n        CASE\r\n            WHEN\r\n            (\r\n                ISNULL(bc.Impozit,0)\r\n\r\n                - ISNULL(bc.ScutireImpozit,0)\r\n            ) < 0\r\n\r\n            THEN 0\r\n\r\n            ELSE\r\n            (\r\n                ISNULL(bc.Impozit,0)\r\n\r\n                - ISNULL(bc.ScutireImpozit,0)\r\n            )\r\n        END,\r\n\r\n    bc.LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nFROM app.BazaContributii bc\r\n\r\nWHERE bc.Luna = @Luna\r\n  AND bc.Anul = @Anul\r\n  AND bc.CodSucursala = @CodSucursala",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17372,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 6211,
+                        "GlobalId": "2eb4213e-f069-4f8c-8104-cb68f4dd5446",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 6211,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17373,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17374,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17375,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17376,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 17377,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4361,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ActionStackId": 6185,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 17296,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 4348,
+            "Name": "OnError",
+            "Value": {
+              "Id": 6193,
+              "GlobalId": "a9b248af-aca5-4aa7-92e4-dcf1516d336d",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 6193,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 9,
+  "CreatedOn": "2026-06-01T07:28:39.2932016+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-06-01T08:14:41.2295688+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

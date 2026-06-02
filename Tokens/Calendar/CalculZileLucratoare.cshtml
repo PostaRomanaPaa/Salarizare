@@ -2,68 +2,75 @@
 @using System
 @using System.Collections.Generic
 @using System.Globalization
-@using avt.MyTokens.Core.Objects
 
 @{
-    // TokenParameters (TknParamsObject – MyTokens)
-    var tknParams = TokenParameters as TknParamsObject;
+    //---------------------------------------------------
+    // Parametri
+    //---------------------------------------------------
+    var startParam =
+        TokenParameters.Properties["StartDate"] + "";
 
-    if (tknParams == null)
+    var endParam =
+        TokenParameters.Properties["EndDate"] + "";
+
+    if (String.IsNullOrWhiteSpace(startParam)
+        || String.IsNullOrWhiteSpace(endParam))
     {
         @:0
         return;
     }
 
-    ITokenObject startObj;
-    ITokenObject endObj;
-
-    if (!tknParams.Properties.TryGetValue("StartDate", out startObj))
+    //---------------------------------------------------
+    // Formate acceptate
+    //---------------------------------------------------
+    var formats = new[]
     {
-        startObj = new ValueObject<object>("");
-    }
-
-    if (!tknParams.Properties.TryGetValue("EndDate", out endObj))
-    {
-        endObj = new ValueObject<object>("");
-    }
-
-    var startParam = startObj.ToString();
-    var endParam   = endObj.ToString();
+        "MM/dd/yyyy",
+        "M/d/yyyy",
+        "dd/MM/yyyy",
+        "d/M/yyyy"
+    };
 
     DateTime startDate;
     DateTime endDate;
 
-    // FORMAT: luna/zi/an ->
-    var dateFormat = "MM/dd/yyyy";
-    var culture = CultureInfo.InvariantCulture;
-
+    //---------------------------------------------------
     // Parse StartDate
-    if (!DateTime.TryParseExact(startParam, dateFormat, culture,
-            DateTimeStyles.None, out startDate))
+    //---------------------------------------------------
+    if (!DateTime.TryParseExact(
+            startParam,
+            formats,
+            CultureInfo.InvariantCulture,
+            DateTimeStyles.None,
+            out startDate))
     {
-        if (!DateTime.TryParse(startParam, out startDate))
-        {
-            @:0
-            return;
-        }
+        @:0
+        return;
     }
 
+    //---------------------------------------------------
     // Parse EndDate
-    if (!DateTime.TryParseExact(endParam, dateFormat, culture,
-            DateTimeStyles.None, out endDate))
+    //---------------------------------------------------
+    if (!DateTime.TryParseExact(
+            endParam,
+            formats,
+            CultureInfo.InvariantCulture,
+            DateTimeStyles.None,
+            out endDate))
     {
-        if (!DateTime.TryParse(endParam, out endDate))
-        {
-            @:0
-            return;
-        }
+        @:0
+        return;
     }
 
-    // Normalizam la date (fara timp)
+    //---------------------------------------------------
+    // Normalizează
+    //---------------------------------------------------
     startDate = startDate.Date;
-    endDate = endDate.Date;
+    endDate   = endDate.Date;
 
-    // Daca userul a inversat datele, le schimbam
+    //---------------------------------------------------
+    // Inversare automată
+    //---------------------------------------------------
     if (endDate < startDate)
     {
         var temp = startDate;
@@ -71,78 +78,41 @@
         endDate = temp;
     }
 
-    // --- Sarbatori legale Romania 2025–2027 ---
-
+    //---------------------------------------------------
+    // Sărbători legale
+    //---------------------------------------------------
     var holidays = new HashSet<DateTime>
     {
-        // 2025
-        new DateTime(2025, 1, 1),
-        new DateTime(2025, 1, 2),
-        new DateTime(2025, 1, 6),
-        new DateTime(2025, 1, 7),
-        new DateTime(2025, 1, 24),
-        new DateTime(2025, 4, 18), // Vinerea Mare
-        new DateTime(2025, 4, 20), // Paste
-        new DateTime(2025, 4, 21), // A 2-a zi Paste
-        new DateTime(2025, 5, 1),
-        new DateTime(2025, 6, 1),
-        new DateTime(2025, 6, 8),  // Rusalii
-        new DateTime(2025, 6, 9),  // A 2-a zi Rusalii
-        new DateTime(2025, 8, 15),
-        new DateTime(2025, 11, 30),
-        new DateTime(2025, 12, 1),
-        new DateTime(2025, 12, 25),
-        new DateTime(2025, 12, 26),
-
-        // 2026
-        new DateTime(2026, 1, 1),
-        new DateTime(2026, 1, 2),
-        new DateTime(2026, 1, 6),
-        new DateTime(2026, 1, 7),
-        new DateTime(2026, 1, 24),
-        new DateTime(2026, 4, 10), // Vinerea Mare
-        new DateTime(2026, 4, 12), // Paste
-        new DateTime(2026, 4, 13), // A 2-a zi Paste
-        new DateTime(2026, 5, 1),
-        new DateTime(2026, 5, 31), // Rusalii
-        new DateTime(2026, 6, 1),  // A 2-a zi Rusalii + Ziua Copilului
-        new DateTime(2026, 8, 15),
-        new DateTime(2026, 11, 30),
-        new DateTime(2026, 12, 1),
-        new DateTime(2026, 12, 25),
-        new DateTime(2026, 12, 26),
-
-        // 2027
-        new DateTime(2027, 1, 1),
-        new DateTime(2027, 1, 2),
-        new DateTime(2027, 1, 6),
-        new DateTime(2027, 1, 7),
-        new DateTime(2027, 1, 24),
-        new DateTime(2027, 4, 30), // Vinerea Mare
-        new DateTime(2027, 5, 1),  // Ziua Muncii
-        new DateTime(2027, 5, 2),  // Paste
-        new DateTime(2027, 5, 3),  // A 2-a zi Paste
-        new DateTime(2027, 6, 1),  // Ziua Copilului
-        new DateTime(2027, 6, 20), // Rusalii
-        new DateTime(2027, 6, 21), // A 2-a zi Rusalii
-        new DateTime(2027, 8, 15),
-        new DateTime(2027, 11, 30),
-        new DateTime(2027, 12, 1),
-        new DateTime(2027, 12, 25),
-        new DateTime(2027, 12, 26)
+        new DateTime(2025,1,1),
+        new DateTime(2025,1,2),
+        new DateTime(2025,1,24),
+        new DateTime(2025,4,18),
+        new DateTime(2025,4,21),
+        new DateTime(2025,5,1),
+        new DateTime(2025,6,9),
+        new DateTime(2025,8,15),
+        new DateTime(2025,12,1),
+        new DateTime(2025,12,25),
+        new DateTime(2025,12,26)
     };
 
-    // --- Calcul zile lucratoare (fara weekend + fara sarbatori) ---
-
+    //---------------------------------------------------
+    // Calcul zile lucrătoare
+    //---------------------------------------------------
     int workingDays = 0;
 
-    for (var date = startDate; date <= endDate; date = date.AddDays(1))
+    for (
+        var currentDate = startDate;
+        currentDate <= endDate;
+        currentDate = currentDate.AddDays(1)
+    )
     {
         bool isWeekend =
-            date.DayOfWeek == DayOfWeek.Saturday ||
-            date.DayOfWeek == DayOfWeek.Sunday;
+            currentDate.DayOfWeek == DayOfWeek.Saturday
+            || currentDate.DayOfWeek == DayOfWeek.Sunday;
 
-        bool isHoliday = holidays.Contains(date);
+        bool isHoliday =
+            holidays.Contains(currentDate);
 
         if (!isWeekend && !isHoliday)
         {
@@ -150,5 +120,8 @@
         }
     }
 
+    //---------------------------------------------------
+    // Return rezultat
+    //---------------------------------------------------
     @workingDays
 }

@@ -1463,6 +1463,58 @@
       "IsFilterable": false,
       "IsSortable": true,
       "OrderIndex": 22
+    },
+    {
+      "Id": 1390,
+      "GlobalId": "3273bad5-b93b-4a3f-8d98-203f6a8ee2da",
+      "EntityVersionId": 80,
+      "Name": "Zile Lucratoare",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 57
+    },
+    {
+      "Id": 1391,
+      "GlobalId": "07ca21c4-cafa-4a8c-9021-8a6ea5cfde30",
+      "EntityVersionId": 80,
+      "Name": "Zile Lucrate",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 58
     }
   ],
   "RolePermissions": {
@@ -1646,7 +1698,7 @@
   "CreatedDate": "2026-05-31T14:20:57.74",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-06-02T16:08:33.0633333",
+  "LastModifiedOn": "2026-06-05T14:59:14.5066667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

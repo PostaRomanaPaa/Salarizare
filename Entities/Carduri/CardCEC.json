@@ -81,7 +81,7 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
+      "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
       "OrderIndex": 3
@@ -107,7 +107,7 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
+      "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
       "OrderIndex": 4
@@ -132,37 +132,11 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": false,
+      "IsRequired": true,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
       "OrderIndex": 5
-    },
-    {
-      "Id": 1161,
-      "GlobalId": "4aa48f8e-6f94-421d-b85d-edc794166203",
-      "EntityVersionId": 89,
-      "Name": "Id Client CEC",
-      "Type": {
-        "Id": "Decimal",
-        "Name": "Number (Decimal)",
-        "InputType": {
-          "Id": "Decimal",
-          "Name": "Number (Decimal)",
-          "ValueType": 8,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": true,
-      "OrderIndex": 6
     },
     {
       "Id": 1162,
@@ -215,6 +189,32 @@
       "IsFilterable": true,
       "IsSortable": true,
       "OrderIndex": 8
+    },
+    {
+      "Id": 1344,
+      "GlobalId": "4a698729-3787-454b-9da1-41b73e2b286a",
+      "EntityVersionId": 89,
+      "Name": "Id Client CEC",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 6
     }
   ],
   "RolePermissions": {
@@ -398,7 +398,7 @@
   "CreatedDate": "2026-06-02T11:33:59.17",
   "CreatedBy": "Razvan Dumitru",
   "LastModifiedBy": "Razvan Dumitru",
-  "LastModifiedOn": "2026-06-02T11:54:21.27",
+  "LastModifiedOn": "2026-06-04T09:41:33.1066667",
   "Icon": "credit-card",
   "Type": 0,
   "BuiltInType": null,

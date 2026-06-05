@@ -3,145 +3,15 @@
   "DisplayInMenu": false,
   "ParentPageId": 285,
   "DisplayAfter": null,
-  "RecordNamePropertyId": 715,
+  "RecordNamePropertyId": 1224,
   "UpdateRecordNameProperty": null,
   "ShowDashboardModule": false,
   "GenerateApiAccess": false,
   "Properties": [
     {
-      "Id": 715,
-      "GlobalId": "cc5c3628-d07a-4993-9d23-de1335019a83",
-      "EntityVersionId": 67,
-      "Name": "Marca",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": true,
-      "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 2
-    },
-    {
-      "Id": 716,
-      "GlobalId": "b65b7e53-dcb3-4649-bb9e-0b404fd60b44",
-      "EntityVersionId": 67,
-      "Name": "Nume",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 3
-    },
-    {
-      "Id": 717,
-      "GlobalId": "e9c35d88-509a-419a-8e5c-9e22ca780feb",
-      "EntityVersionId": 67,
-      "Name": "CNP",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 4
-    },
-    {
-      "Id": 718,
-      "GlobalId": "f86589d4-7db9-4201-a8c8-b23a28ce870d",
-      "EntityVersionId": 67,
-      "Name": "Cont IBAN",
-      "Type": {
-        "Id": "Text",
-        "Name": "Text",
-        "InputType": {
-          "Id": "Text",
-          "Name": "Text",
-          "ValueType": 2,
-          "Length": 450,
-          "Icon": "short_text"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 5
-    },
-    {
-      "Id": 719,
-      "GlobalId": "b2ecad51-1f5c-41bd-a4d1-ab098e92cacf",
-      "EntityVersionId": 67,
-      "Name": "Id Client BCR",
-      "Type": {
-        "Id": "Decimal",
-        "Name": "Number (Decimal)",
-        "InputType": {
-          "Id": "Decimal",
-          "Name": "Number (Decimal)",
-          "ValueType": 8,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 6
-    },
-    {
-      "Id": 796,
-      "GlobalId": "407caadd-0da6-4b18-b2d8-6e27882b1691",
-      "EntityVersionId": 67,
+      "Id": 1223,
+      "GlobalId": "9a1c2150-dcb1-4717-9502-ad8532fc077c",
+      "EntityVersionId": 93,
       "Name": "Cod Sucursala",
       "Type": {
         "Id": "Text",
@@ -165,19 +35,45 @@
       "OrderIndex": 1
     },
     {
-      "Id": 1130,
-      "GlobalId": "c7850fed-048f-43ac-95f5-250791295f03",
-      "EntityVersionId": 67,
-      "Name": "rrr",
+      "Id": 1224,
+      "GlobalId": "35e38769-4be0-40a3-8dc9-4313f6720d7c",
+      "EntityVersionId": 93,
+      "Name": "Marca",
       "Type": {
-        "Id": "Decimal",
-        "Name": "Number (Decimal)",
+        "Id": "Text",
+        "Name": "Text",
         "InputType": {
-          "Id": "Decimal",
-          "Name": "Number (Decimal)",
-          "ValueType": 8,
-          "Length": 4,
-          "Icon": "looks_one"
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 1225,
+      "GlobalId": "481ed1c4-07fe-4dec-a823-5f6e3f32cfe8",
+      "EntityVersionId": 93,
+      "Name": "Nume",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
         }
       },
       "DefaultValue": null,
@@ -185,15 +81,67 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
+      "IsSearchable": true,
       "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 7
+      "IsSortable": true,
+      "OrderIndex": 3
     },
     {
-      "Id": 1164,
-      "GlobalId": "73339025-77ee-4367-87a4-6d4513c36860",
-      "EntityVersionId": 67,
+      "Id": 1226,
+      "GlobalId": "0b6275fe-4401-4009-9cf4-5c59b67e4907",
+      "EntityVersionId": 93,
+      "Name": "CNP",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 1227,
+      "GlobalId": "371537c9-ab91-46f1-8f14-4c08136e13f7",
+      "EntityVersionId": 93,
+      "Name": "Cont IBAN",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 1229,
+      "GlobalId": "181ec9a8-0d4c-408d-b709-e5cede99b816",
+      "EntityVersionId": 93,
       "Name": "DAC",
       "Type": {
         "Id": "Decimal",
@@ -213,13 +161,13 @@
       "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 8
+      "IsSortable": true,
+      "OrderIndex": 7
     },
     {
-      "Id": 1167,
-      "GlobalId": "04c188ee-7a5d-44be-a3f1-8e744693f5db",
-      "EntityVersionId": 67,
+      "Id": 1230,
+      "GlobalId": "201f0d73-c781-4b31-95c9-79849b505667",
+      "EntityVersionId": 93,
       "Name": "Valid",
       "Type": {
         "Id": "Boolean",
@@ -240,13 +188,39 @@
       "IsSearchable": false,
       "IsFilterable": true,
       "IsSortable": true,
-      "OrderIndex": 9
+      "OrderIndex": 8
+    },
+    {
+      "Id": 1339,
+      "GlobalId": "011d85a9-5ded-4c88-bdee-970c95ec6477",
+      "EntityVersionId": 93,
+      "Name": "Id Client BCR",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 6
     }
   ],
   "RolePermissions": {
     "6": [
       {
-        "Id": 1493,
+        "Id": 1933,
         "PermissionType": {
           "Id": 1,
           "Name": "Can View"
@@ -256,7 +230,7 @@
         "Value": "all"
       },
       {
-        "Id": 1494,
+        "Id": 1934,
         "PermissionType": {
           "Id": 2,
           "Name": "Can Add"
@@ -266,7 +240,7 @@
         "Value": "true"
       },
       {
-        "Id": 1495,
+        "Id": 1935,
         "PermissionType": {
           "Id": 3,
           "Name": "Can Edit"
@@ -276,7 +250,7 @@
         "Value": "all"
       },
       {
-        "Id": 1496,
+        "Id": 1936,
         "PermissionType": {
           "Id": 4,
           "Name": "Can Delete"
@@ -288,7 +262,7 @@
     ],
     "7": [
       {
-        "Id": 1497,
+        "Id": 1937,
         "PermissionType": {
           "Id": 1,
           "Name": "Can View"
@@ -298,7 +272,7 @@
         "Value": "all"
       },
       {
-        "Id": 1498,
+        "Id": 1938,
         "PermissionType": {
           "Id": 2,
           "Name": "Can Add"
@@ -308,7 +282,7 @@
         "Value": "true"
       },
       {
-        "Id": 1499,
+        "Id": 1939,
         "PermissionType": {
           "Id": 3,
           "Name": "Can Edit"
@@ -318,7 +292,7 @@
         "Value": "all"
       },
       {
-        "Id": 1500,
+        "Id": 1940,
         "PermissionType": {
           "Id": 4,
           "Name": "Can Delete"
@@ -330,7 +304,7 @@
     ],
     "5": [
       {
-        "Id": 1501,
+        "Id": 1941,
         "PermissionType": {
           "Id": 1,
           "Name": "Can View"
@@ -340,7 +314,7 @@
         "Value": "all"
       },
       {
-        "Id": 1502,
+        "Id": 1942,
         "PermissionType": {
           "Id": 2,
           "Name": "Can Add"
@@ -350,7 +324,7 @@
         "Value": "true"
       },
       {
-        "Id": 1503,
+        "Id": 1943,
         "PermissionType": {
           "Id": 3,
           "Name": "Can Edit"
@@ -360,7 +334,7 @@
         "Value": "all"
       },
       {
-        "Id": 1504,
+        "Id": 1944,
         "PermissionType": {
           "Id": 4,
           "Name": "Can Delete"
@@ -372,7 +346,7 @@
     ],
     "8": [
       {
-        "Id": 1505,
+        "Id": 1945,
         "PermissionType": {
           "Id": 1,
           "Name": "Can View"
@@ -382,7 +356,7 @@
         "Value": "all"
       },
       {
-        "Id": 1506,
+        "Id": 1946,
         "PermissionType": {
           "Id": 2,
           "Name": "Can Add"
@@ -392,7 +366,7 @@
         "Value": "true"
       },
       {
-        "Id": 1507,
+        "Id": 1947,
         "PermissionType": {
           "Id": 3,
           "Name": "Can Edit"
@@ -402,7 +376,7 @@
         "Value": "all"
       },
       {
-        "Id": 1508,
+        "Id": 1948,
         "PermissionType": {
           "Id": 4,
           "Name": "Can Delete"
@@ -413,23 +387,23 @@
       }
     ]
   },
-  "Id": 67,
-  "GlobalId": "af6eb005-888b-49ca-ac20-0390137f8572",
-  "ConfigGenerationGlobalId": "af6eb005-888b-49ca-ac20-0390137f8572",
-  "VersionId": 67,
-  "EntityTabId": 230,
+  "Id": 93,
+  "GlobalId": "63a0bf91-d84f-455f-81cc-457653b6d087",
+  "ConfigGenerationGlobalId": "63a0bf91-d84f-455f-81cc-457653b6d087",
+  "VersionId": 93,
+  "EntityTabId": 305,
   "Name": "CardBCR",
   "PluralName": "CarduriBCR",
   "PageUiLibrary": 2,
-  "CreatedDate": "2026-05-13T07:42:24.49",
-  "CreatedBy": "Alexandra Vasilescu",
+  "CreatedDate": "2026-06-03T09:55:21.6833333",
+  "CreatedBy": "Razvan Dumitru",
   "LastModifiedBy": "Razvan Dumitru",
-  "LastModifiedOn": "2026-06-02T11:48:03.2433333",
+  "LastModifiedOn": "2026-06-04T09:29:50.41",
   "Icon": "credit-card",
   "Type": 0,
   "BuiltInType": null,
   "EnableIndexing": false,
   "NamespaceUid": "97833b9a-0126-4633-8efe-7cee6c859297",
-  "EntityTabGlobalId": "ccecad42-e8fc-4c9e-bae6-1b8bd9de9d03",
+  "EntityTabGlobalId": "5e50c5b4-cf71-448b-a771-8488807300d8",
   "EntityParentTabGlobalId": "3fe67b2b-ac4c-4d7a-8224-c3c3eb36a485"
 }

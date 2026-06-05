@@ -57,7 +57,7 @@
       "IsRequired": true,
       "IsSearchable": true,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 2
     },
     {
@@ -81,9 +81,9 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
+      "IsSearchable": true,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 3
     },
     {
@@ -107,9 +107,9 @@
       "EntityVersionRefId": null,
       "IsDeleted": false,
       "IsRequired": false,
-      "IsSearchable": false,
+      "IsSearchable": true,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 4
     },
     {
@@ -132,37 +132,11 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": false,
+      "IsRequired": true,
       "IsSearchable": false,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 5
-    },
-    {
-      "Id": 1127,
-      "GlobalId": "db3284d0-cf17-4880-9e07-ea028860bf09",
-      "EntityVersionId": 85,
-      "Name": "Id Client BCR",
-      "Type": {
-        "Id": "Decimal",
-        "Name": "Number (Decimal)",
-        "InputType": {
-          "Id": "Decimal",
-          "Name": "Number (Decimal)",
-          "ValueType": 8,
-          "Length": 4,
-          "Icon": "looks_one"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
-      "OrderIndex": 6
     },
     {
       "Id": 1128,
@@ -187,7 +161,7 @@
       "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 7
     },
     {
@@ -212,9 +186,35 @@
       "IsDeleted": false,
       "IsRequired": false,
       "IsSearchable": false,
-      "IsFilterable": false,
+      "IsFilterable": true,
       "IsSortable": true,
       "OrderIndex": 8
+    },
+    {
+      "Id": 1340,
+      "GlobalId": "a9dec8e9-c171-4bc9-b6a3-593d619d9a20",
+      "EntityVersionId": 85,
+      "Name": "Id Client MIL",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 6
     }
   ],
   "RolePermissions": {
@@ -397,8 +397,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2026-06-02T11:22:36.0266667",
   "CreatedBy": "Razvan Dumitru",
-  "LastModifiedBy": "Razvan Dumitru",
-  "LastModifiedOn": "2026-06-02T12:01:50.23",
+  "LastModifiedBy": "Mara Moldoveanu",
+  "LastModifiedOn": "2026-06-04T09:30:09.5166667",
   "Icon": "credit-card",
   "Type": 0,
   "BuiltInType": null,

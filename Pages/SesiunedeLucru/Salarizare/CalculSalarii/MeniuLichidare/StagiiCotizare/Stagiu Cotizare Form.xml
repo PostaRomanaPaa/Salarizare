@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.28.225.00">
+<module type="ActionForm" version="05.28.226.00">
     <contentKey />
     <moduleID>1188</moduleID>
     <alignment />
@@ -116,7 +116,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[2719]]&gt;&lt;/Id&gt;
@@ -3425,7 +3425,7 @@
     &lt;Title&gt;Stagiu Cotizare Form&lt;/Title&gt;
     &lt;CssName&gt;stagiu-cotizare-form&lt;/CssName&gt;
     &lt;Version&gt;5.28.0&lt;/Version&gt;
-    &lt;Build&gt;5.28.225&lt;/Build&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -3442,7 +3442,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;1188&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
     &lt;TabId&gt;277&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -3475,9 +3475,9 @@
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
     &lt;RootClasses /&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;32&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;34&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-06-02T16:26:48.5408895+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2026-06-10T14:46:23.2679732+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;

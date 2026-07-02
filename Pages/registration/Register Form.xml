@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.28.225.00">
+<module type="ActionForm" version="05.28.226.00">
     <contentKey />
     <moduleID>367</moduleID>
     <alignment />
@@ -117,7 +117,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[21]]&gt;&lt;/Id&gt;
@@ -456,7 +456,7 @@
     &lt;Title&gt;Register Form&lt;/Title&gt;
     &lt;CssName&gt;register-form&lt;/CssName&gt;
     &lt;Version&gt;5.28.0&lt;/Version&gt;
-    &lt;Build&gt;5.28.225&lt;/Build&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;p&amp;gt;This is a sample text, edit this to match the purpose and describe the resource you&#39;re targeting (page, file).&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href = &quot;[FormUrl]&quot;&amp;gt;ACCESS this resource&amp;lt;/a&amp;gt; now.&amp;lt;/p&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -473,7 +473,7 @@
     &lt;FieldSpacing&gt;loose&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;367&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
     &lt;TabId&gt;32&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -559,7 +559,7 @@
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;Description&gt;Delay 5 seconds&lt;/Description&gt;
-      &lt;ActionData&gt;{&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;WAITFOR DELAY &#39;00:00:05&#39;&quot;,&quot;BindTokens&quot;:null,&quot;OutputTokenName&quot;:null,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;WAITFOR DELAY &#39;00:00:05&#39;&quot;,&quot;BindTokens&quot;:null,&quot;OutputTokenName&quot;:null,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false,&quot;UseTransactions&quot;:true}&lt;/ActionData&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;

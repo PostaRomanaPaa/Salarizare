@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.28.225.00">
+<module type="ActionForm" version="05.28.226.00">
     <contentKey />
     <moduleID>764</moduleID>
     <alignment />
@@ -117,7 +117,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[1243]]&gt;&lt;/Id&gt;
@@ -308,7 +308,7 @@
     &lt;Title&gt;Pagina Concedii Odihna Form&lt;/Title&gt;
     &lt;CssName&gt;pagina-concedii-odihna-form&lt;/CssName&gt;
     &lt;Version&gt;5.28.0&lt;/Version&gt;
-    &lt;Build&gt;5.28.225&lt;/Build&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;&amp;lt;a href=&quot;[FormUrl]&quot;&amp;gt;Click here to change.&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -327,7 +327,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;764&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
     &lt;TabId&gt;141&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -360,9 +360,9 @@
     &lt;PopupName /&gt;
     &lt;RootClasses /&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;14&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;17&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-04-17T10:34:41.2764058+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2026-06-30T12:53:42.5895066+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -374,6 +374,16 @@
       &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
       &lt;Description&gt;Redirectare catre Formularul CO&lt;/Description&gt;
       &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;146&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;764&lt;/ModuleId&gt;
+      &lt;FieldName&gt;StateplataavansConcediideOdihna&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RedirectToPage&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;358&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false}&lt;/ActionData&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;

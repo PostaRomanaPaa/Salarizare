@@ -32,7 +32,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 1
+      "OrderIndex": 5
     },
     {
       "Id": 213,
@@ -58,13 +58,13 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 2
+      "OrderIndex": 6
     },
     {
       "Id": 215,
       "GlobalId": "f5d65545-0e94-4ec9-800d-20bc1b753213",
       "EntityVersionId": 20,
-      "Name": "Cod Certificat",
+      "Name": "ID Cod Certificat",
       "Type": {
         "Id": "EntityRef",
         "Name": "Entity Reference",
@@ -83,8 +83,8 @@
       "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": true,
-      "IsSortable": false,
-      "OrderIndex": 3
+      "IsSortable": true,
+      "OrderIndex": 1
     },
     {
       "Id": 216,
@@ -110,7 +110,189 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 1458,
+      "GlobalId": "37a6827a-d95b-4f96-b9ff-ba8a61935b80",
+      "EntityVersionId": 20,
+      "Name": "Situatie",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 1459,
+      "GlobalId": "910b0435-3498-46aa-86c3-b4e6e67e4b1e",
+      "EntityVersionId": 20,
+      "Name": "Tip Limita",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 1460,
+      "GlobalId": "455ccb21-9143-4c6b-8c02-0700cf107f28",
+      "EntityVersionId": 20,
+      "Name": "Conditie Aplicare",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
       "OrderIndex": 4
+    },
+    {
+      "Id": 1461,
+      "GlobalId": "861d37ed-800a-4b25-b422-a6592645a62a",
+      "EntityVersionId": 20,
+      "Name": "Valabil De La",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 8
+    },
+    {
+      "Id": 1462,
+      "GlobalId": "85489583-9ed7-47f9-80c8-b6888fd8c6e9",
+      "EntityVersionId": 20,
+      "Name": "Valabil Pana La",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 9
+    },
+    {
+      "Id": 1463,
+      "GlobalId": "b93652cd-4f69-4805-a95d-541da93fb7a2",
+      "EntityVersionId": 20,
+      "Name": "Activ",
+      "Type": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "InputType": {
+          "Id": "Boolean",
+          "Name": "Boolean",
+          "ValueType": 0,
+          "Length": 1,
+          "Icon": "check_circle_outline"
+        }
+      },
+      "DefaultValue": "true",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 10
+    },
+    {
+      "Id": 1464,
+      "GlobalId": "bb989abb-1efd-4bf3-9923-a61b38ea4b29",
+      "EntityVersionId": 20,
+      "Name": "Observatii",
+      "Type": {
+        "Id": "LargeText",
+        "Name": "Large Text",
+        "InputType": {
+          "Id": "LargeText",
+          "Name": "Large Text",
+          "ValueType": 2,
+          "Length": 2147483647,
+          "Icon": "notes"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 11
     }
   ],
   "RolePermissions": {
@@ -377,8 +559,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-07T09:10:54.57",
   "CreatedBy": "Carmen Mardare",
-  "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-03-26T13:16:49.53",
+  "LastModifiedBy": "Alexandra Vasilescu",
+  "LastModifiedOn": "2026-06-15T13:39:45.15",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

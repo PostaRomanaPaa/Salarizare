@@ -1,7 +1,7 @@
 {
   "InputFields": [],
   "OutputFields": [],
-  "Id": 43,
+  "Id": 83,
   "GlobalId": "ef26cf67-5294-48b9-b1f3-66b050ee77aa",
   "ContractId": null,
   "ConfigGenerationGlobalId": "ef26cf67-5294-48b9-b1f3-66b050ee77aa",
@@ -11,15 +11,15 @@
   "IsDebug": false,
   "IsSystem": true,
   "ActionList": {
-    "Id": 5239,
-    "GlobalId": "ccd017f2-7493-4943-b827-d47ecfdf4de6",
+    "Id": 8661,
+    "GlobalId": "7e45db5b-9903-4c2c-ade6-4a6c5ef5e3ce",
     "Actions": [
       {
-        "Id": 3649,
+        "Id": 5997,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Load SuperUser",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "LoadUser",
         "Condition": null,
         "IsDeleted": false,
@@ -28,9 +28,9 @@
         "DiagramUID": "Activity_0cg5cm7",
         "ActionParameters": [
           {
-            "Id": 14042,
+            "Id": 25134,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3649,
+            "ActionId": 5997,
             "Name": "Id",
             "Value": "1",
             "ActionStackId": null,
@@ -41,9 +41,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14043,
+            "Id": 25135,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3649,
+            "ActionId": 5997,
             "Name": "Portal",
             "Value": null,
             "ActionStackId": null,
@@ -59,11 +59,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3650,
+        "Id": 5998,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Check if app is marked as Development",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "ApplyTokens",
         "Condition": null,
         "IsDeleted": false,
@@ -72,9 +72,9 @@
         "DiagramUID": "Activity_1p21pyr",
         "ActionParameters": [
           {
-            "Id": 14044,
+            "Id": 25136,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3650,
+            "ActionId": 5998,
             "Name": "TokenizeTokenNames",
             "Value": null,
             "ActionStackId": null,
@@ -85,9 +85,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14045,
+            "Id": 25137,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3650,
+            "ActionId": 5998,
             "Name": "RecursionCount",
             "Value": "1",
             "ActionStackId": null,
@@ -98,9 +98,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14046,
+            "Id": 25138,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3650,
+            "ActionId": 5998,
             "Name": "Tokens",
             "Value": [
               {
@@ -121,11 +121,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3651,
+        "Id": 5999,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Clear tables before getting new entries",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "RunSql",
         "Condition": null,
         "IsDeleted": false,
@@ -134,9 +134,9 @@
         "DiagramUID": "Activity_0xxjjdc",
         "ActionParameters": [
           {
-            "Id": 14047,
+            "Id": 25139,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "ConnectionString",
             "Value": null,
             "ActionStackId": null,
@@ -147,9 +147,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14048,
+            "Id": 25140,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "QueryTimeout",
             "Value": null,
             "ActionStackId": null,
@@ -160,9 +160,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14049,
+            "Id": 25141,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "SqlQuery",
             "Value": "-- Clear Updates table before getting new entries\r\nDELETE FROM {databaseOwner}[{objectQualifier}PlantAnApp_Updates]\r\n\r\n-- Clear Hotfixes table before getting new entries\r\nDELETE FROM {databaseOwner}[{objectQualifier}PlantAnApp_Updates_Hotfixes]\r\n\r\n-- Clear Specific Updates table before getting new entries\r\nDELETE FROM {databaseOwner}[{objectQualifier}PlantAnApp_Updates_SpecificUpdates]\r\n\r\n-- Clear Add-ons table before getting new entries\r\nDELETE FROM {databaseOwner}[{objectQualifier}PlantAnApp_Updates_Addons]\r\n\r\n-- Clear Cumulative Hotfixes Package table before getting new entries\r\nDELETE FROM paa.Updates_CumulativeHotfixes\r\n\r\n-- Clear Cumulative Hotfixes table before getting new entries\r\nDELETE FROM paa.Updates_Cumulative",
             "ActionStackId": null,
@@ -173,17 +173,17 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14050,
+            "Id": 25142,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "OnError",
             "Value": {
-              "Id": 5240,
-              "GlobalId": "a912b60e-50ff-47b2-8d48-5f4a6b4e7d77",
+              "Id": 8662,
+              "GlobalId": "ff2fc210-0e92-4a3d-90d8-4991b2bffcc1",
               "Actions": [],
               "IsInvalid": false
             },
-            "ActionStackId": 5240,
+            "ActionStackId": 8662,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -191,9 +191,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14051,
+            "Id": 25143,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "ShowErrors",
             "Value": null,
             "ActionStackId": null,
@@ -204,9 +204,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14052,
+            "Id": 25144,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "DbConnector",
             "Value": {
               "Entry": "",
@@ -224,9 +224,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14053,
+            "Id": 25145,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "BindTokens",
             "Value": [],
             "ActionStackId": null,
@@ -237,9 +237,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14054,
+            "Id": 25146,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "OutputTokenName",
             "Value": null,
             "ActionStackId": null,
@@ -250,9 +250,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14055,
+            "Id": 25147,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3651,
+            "ActionId": 5999,
             "Name": "ExtractColumns",
             "Value": [],
             "ActionStackId": null,
@@ -268,11 +268,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3652,
+        "Id": 6000,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Updates",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "ExecuteActions",
         "Condition": null,
         "IsDeleted": false,
@@ -281,20 +281,20 @@
         "DiagramUID": "Activity_17zio2h",
         "ActionParameters": [
           {
-            "Id": 14082,
+            "Id": 25174,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3652,
+            "ActionId": 6000,
             "Name": "ActionList",
             "Value": {
-              "Id": 5241,
-              "GlobalId": "5468c27e-894d-4e6f-8106-8ff5c59c2b49",
+              "Id": 8663,
+              "GlobalId": "f86d1352-9c6e-4933-93ea-c5595ac2b1d9",
               "Actions": [
                 {
-                  "Id": 3653,
+                  "Id": 6001,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "Get Updates",
                   "ActionErrorMessage": null,
-                  "ActionStackId": 5241,
+                  "ActionStackId": 8663,
                   "ActionType": "ServerRequestHttpClient",
                   "Condition": null,
                   "IsDeleted": false,
@@ -303,9 +303,9 @@
                   "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 14056,
+                      "Id": 25148,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "URL",
                       "Value": "https://services.plantanapp.com/api/GetAppUpdates",
                       "ActionStackId": null,
@@ -316,9 +316,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14057,
+                      "Id": 25149,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "UrlTokenContext",
                       "Value": "Url",
                       "ActionStackId": null,
@@ -329,9 +329,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14058,
+                      "Id": 25150,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "UseSSL",
                       "Value": null,
                       "ActionStackId": null,
@@ -342,9 +342,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14059,
+                      "Id": 25151,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "Certificate",
                       "Value": null,
                       "ActionStackId": null,
@@ -355,9 +355,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14060,
+                      "Id": 25152,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "Timeout",
                       "Value": null,
                       "ActionStackId": null,
@@ -368,9 +368,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14061,
+                      "Id": 25153,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "HttpMethod",
                       "Value": "GET",
                       "ActionStackId": null,
@@ -381,9 +381,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14062,
+                      "Id": 25154,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "Data",
                       "Value": "ReleaseVersion=[PAASysUpdates:ReleaseVersion]",
                       "ActionStackId": null,
@@ -394,9 +394,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14063,
+                      "Id": 25155,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "DoNotEscapeTokens",
                       "Value": null,
                       "ActionStackId": null,
@@ -407,9 +407,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14064,
+                      "Id": 25156,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "DisableReferer",
                       "Value": null,
                       "ActionStackId": null,
@@ -420,9 +420,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14065,
+                      "Id": 25157,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "UseDNNProxySettings",
                       "Value": null,
                       "ActionStackId": null,
@@ -433,9 +433,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14066,
+                      "Id": 25158,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "AddCurrentCookies",
                       "Value": null,
                       "ActionStackId": null,
@@ -446,9 +446,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14067,
+                      "Id": 25159,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "IgnoreErrors",
                       "Value": null,
                       "ActionStackId": null,
@@ -459,17 +459,17 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14068,
+                      "Id": 25160,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 5242,
-                        "GlobalId": "d31a20e7-7cf4-45f1-8332-fdf770e99890",
+                        "Id": 8664,
+                        "GlobalId": "05693cdb-5863-4e50-bf8b-588c0d706bf8",
                         "Actions": [],
                         "IsInvalid": false
                       },
-                      "ActionStackId": 5242,
+                      "ActionStackId": 8664,
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "OrderIndex": 0,
@@ -477,9 +477,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14069,
+                      "Id": 25161,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "CookieContainerToken",
                       "Value": null,
                       "ActionStackId": null,
@@ -490,9 +490,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14070,
+                      "Id": 25162,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "Headers",
                       "Value": [],
                       "ActionStackId": null,
@@ -503,9 +503,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14071,
+                      "Id": 25163,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "OutputTokenName",
                       "Value": "UpdatesJSON",
                       "ActionStackId": null,
@@ -516,9 +516,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14072,
+                      "Id": 25164,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3653,
+                      "ActionId": 6001,
                       "Name": "OutputHeaders",
                       "Value": [],
                       "ActionStackId": null,
@@ -534,11 +534,11 @@
                   "HasActionParameters": false
                 },
                 {
-                  "Id": 3654,
+                  "Id": 6002,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "Insert Updates",
                   "ActionErrorMessage": null,
-                  "ActionStackId": 5241,
+                  "ActionStackId": 8663,
                   "ActionType": "RunSql",
                   "Condition": null,
                   "IsDeleted": false,
@@ -547,9 +547,9 @@
                   "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 14073,
+                      "Id": 25165,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "ConnectionString",
                       "Value": null,
                       "ActionStackId": null,
@@ -560,9 +560,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14074,
+                      "Id": 25166,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "QueryTimeout",
                       "Value": null,
                       "ActionStackId": null,
@@ -573,9 +573,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14075,
+                      "Id": 25167,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "SqlQuery",
                       "Value": "SELECT Title, DnnFriendlyName, Version\r\nINTO #TempUpdates\r\nFROM OPENJSON(@json)\r\nWITH (\r\n    Title NVARCHAR(450),\r\n    DnnFriendlyName NVARCHAR(450),\r\n    Version NVARCHAR(450)\r\n);\r\n\r\nCREATE INDEX IX_TempUpdates_DnnFriendlyName ON #TempUpdates(DnnFriendlyName);\r\n\r\nINSERT INTO {databaseOwner}[{objectQualifier}PlantAnApp_Updates] (Title, DnnFriendlyName, Version, CreatedDate)\r\nSELECT \r\n    s.Title,\r\n    s.DnnFriendlyName,\r\n    s.Version,\r\n    GETDATE()\r\nFROM #TempUpdates AS s\r\nLEFT JOIN {databaseOwner}[{objectQualifier}PlantAnApp_Updates] AS t WITH (UPDLOCK, HOLDLOCK)\r\n    ON t.DnnFriendlyName = s.DnnFriendlyName\r\nWHERE t.DnnFriendlyName IS NULL;\r\n\r\nDROP TABLE #TempUpdates;",
                       "ActionStackId": null,
@@ -586,17 +586,17 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14076,
+                      "Id": 25168,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 5243,
-                        "GlobalId": "82bf5dda-e750-4e37-99e4-42b29ed3a49a",
+                        "Id": 8665,
+                        "GlobalId": "e8ae62de-b096-4b80-a95d-885b847cff83",
                         "Actions": [],
                         "IsInvalid": false
                       },
-                      "ActionStackId": 5243,
+                      "ActionStackId": 8665,
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "OrderIndex": 0,
@@ -604,9 +604,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14077,
+                      "Id": 25169,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "ShowErrors",
                       "Value": true,
                       "ActionStackId": null,
@@ -617,9 +617,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14078,
+                      "Id": 25170,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "DbConnector",
                       "Value": {
                         "Entry": "",
@@ -637,9 +637,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14079,
+                      "Id": 25171,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "BindTokens",
                       "Value": [
                         {
@@ -655,9 +655,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14080,
+                      "Id": 25172,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "OutputTokenName",
                       "Value": null,
                       "ActionStackId": null,
@@ -668,9 +668,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14081,
+                      "Id": 25173,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3654,
+                      "ActionId": 6002,
                       "Name": "ExtractColumns",
                       "Value": [],
                       "ActionStackId": null,
@@ -688,7 +688,7 @@
               ],
               "IsInvalid": false
             },
-            "ActionStackId": 5241,
+            "ActionStackId": 8663,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -696,17 +696,17 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14083,
+            "Id": 25175,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3652,
+            "ActionId": 6000,
             "Name": "OnError",
             "Value": {
-              "Id": 5244,
-              "GlobalId": "bd1b9a06-8c3b-4406-b2ea-299365b81fa7",
+              "Id": 8666,
+              "GlobalId": "57e36097-673f-4a43-966d-50aa8032e625",
               "Actions": [],
               "IsInvalid": false
             },
-            "ActionStackId": 5244,
+            "ActionStackId": 8666,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -719,11 +719,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3655,
+        "Id": 6003,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Split",
         "ActionErrorMessage": "",
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "PlantAnApp.ExecuteConditionally",
         "Condition": "",
         "IsDeleted": false,
@@ -736,11 +736,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3658,
+        "Id": 6006,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Insert Hotfixes",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "RunSql",
         "Condition": null,
         "IsDeleted": false,
@@ -749,9 +749,9 @@
         "DiagramUID": "Activity_0eqdzwv",
         "ActionParameters": [
           {
-            "Id": 14123,
+            "Id": 25215,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "ConnectionString",
             "Value": null,
             "ActionStackId": null,
@@ -762,9 +762,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14124,
+            "Id": 25216,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "QueryTimeout",
             "Value": null,
             "ActionStackId": null,
@@ -775,9 +775,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14125,
+            "Id": 25217,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "SqlQuery",
             "Value": "SELECT\r\n    FeatureType,\r\n    ChangeType,\r\n    [Date],\r\n    Version,\r\n    DnnFriendlyName,\r\n    Details,\r\n    Product AS ProductId,\r\n    Link,\r\n    State,\r\n    Priority,\r\n    [Order]\r\nINTO #TempHotfixes\r\nFROM OPENJSON(@json)\r\nWITH (\r\n    FeatureType NVARCHAR(450),\r\n    ChangeType NVARCHAR(450),\r\n    [Date] DATE,\r\n    Version NVARCHAR(450),\r\n    DnnFriendlyName NVARCHAR(450),\r\n    Details NVARCHAR(MAX),\r\n    Product NVARCHAR(450),\r\n    Link NVARCHAR(2000),\r\n    State NVARCHAR(450),\r\n    Priority INT,\r\n    [Order] INT\r\n);\r\n\r\nCREATE INDEX IX_TempHotfixes_DnnFriendlyName ON #TempHotfixes(DnnFriendlyName);\r\n\r\nINSERT INTO {databaseOwner}[{objectQualifier}PlantAnApp_Updates_Hotfixes] (\r\n    FeatureType, ChangeType, [Date], Version, DnnFriendlyName, Details,\r\n    InstalledVersion, ProductId, Link, State, CreatedDate, Priority, [Order]\r\n)\r\nSELECT\r\n    h.FeatureType,\r\n    h.ChangeType,\r\n    h.[Date],\r\n    h.Version,\r\n    h.DnnFriendlyName,\r\n    h.Details,\r\n    p.Version AS InstalledVersion,\r\n    h.ProductId,\r\n    h.Link,\r\n    h.State,\r\n    GETDATE(),\r\n    h.Priority,\r\n    h.[Order]\r\nFROM #TempHotfixes AS h\r\nLEFT JOIN {databaseOwner}[{objectQualifier}Packages] AS p\r\n    ON p.FriendlyName = h.DnnFriendlyName\r\nLEFT JOIN {databaseOwner}[{objectQualifier}PlantAnApp_Updates_Hotfixes] AS t WITH (UPDLOCK, HOLDLOCK)\r\n    ON t.ProductId = h.ProductId\r\nWHERE t.ProductId IS NULL\r\n  AND ISNULL(p.Version,'00.00.00') <> '00.00.00'\r\n  AND (\r\n        CAST(PARSENAME(h.Version,3) AS INT) > CAST(PARSENAME(ISNULL(p.Version,'0.0.0'),3) AS INT)\r\n     OR (CAST(PARSENAME(h.Version,3) AS INT) = CAST(PARSENAME(ISNULL(p.Version,'0.0.0'),3) AS INT)\r\n         AND CAST(PARSENAME(h.Version,2) AS INT) > CAST(PARSENAME(ISNULL(p.Version,'0.0.0'),2) AS INT))\r\n     OR (CAST(PARSENAME(h.Version,3) AS INT) = CAST(PARSENAME(ISNULL(p.Version,'0.0.0'),3) AS INT)\r\n         AND CAST(PARSENAME(h.Version,2) AS INT) = CAST(PARSENAME(ISNULL(p.Version,'0.0.0'),2) AS INT)\r\n         AND CAST(PARSENAME(h.Version,1) AS INT) > CAST(PARSENAME(ISNULL(p.Version,'0.0.0'),1) AS INT))\r\n  );\r\n\r\nDROP TABLE #TempHotfixes;",
             "ActionStackId": null,
@@ -788,17 +788,17 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14126,
+            "Id": 25218,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "OnError",
             "Value": {
-              "Id": 5249,
-              "GlobalId": "da40638b-24d3-46de-8f06-b15722f31da5",
+              "Id": 8671,
+              "GlobalId": "340acbca-f655-41bc-a382-b72ac03444cd",
               "Actions": [],
               "IsInvalid": false
             },
-            "ActionStackId": 5249,
+            "ActionStackId": 8671,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -806,9 +806,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14127,
+            "Id": 25219,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "ShowErrors",
             "Value": true,
             "ActionStackId": null,
@@ -819,9 +819,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14128,
+            "Id": 25220,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "DbConnector",
             "Value": {
               "Entry": "",
@@ -839,9 +839,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14129,
+            "Id": 25221,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "BindTokens",
             "Value": [
               {
@@ -857,9 +857,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14130,
+            "Id": 25222,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "OutputTokenName",
             "Value": null,
             "ActionStackId": null,
@@ -870,9 +870,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14131,
+            "Id": 25223,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3658,
+            "ActionId": 6006,
             "Name": "ExtractColumns",
             "Value": [],
             "ActionStackId": null,
@@ -888,11 +888,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3659,
+        "Id": 6007,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Split",
         "ActionErrorMessage": "",
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "PlantAnApp.ExecuteConditionally",
         "Condition": "",
         "IsDeleted": false,
@@ -905,11 +905,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3662,
+        "Id": 6010,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Insert specific updates",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "RunSql",
         "Condition": null,
         "IsDeleted": false,
@@ -918,9 +918,9 @@
         "DiagramUID": "Activity_0f8nf9k",
         "ActionParameters": [
           {
-            "Id": 14171,
+            "Id": 25263,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "ConnectionString",
             "Value": null,
             "ActionStackId": null,
@@ -931,9 +931,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14172,
+            "Id": 25264,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "QueryTimeout",
             "Value": null,
             "ActionStackId": null,
@@ -944,9 +944,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14173,
+            "Id": 25265,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "SqlQuery",
             "Value": "SELECT \r\n    Product, \r\n    Version, \r\n    Info, \r\n    Link, \r\n    State, \r\n    Priority\r\nINTO #TempSpecificUpdates\r\nFROM OPENJSON(@json)\r\nWITH (\r\n    Product NVARCHAR(450),\r\n    Version NVARCHAR(450),\r\n    Info NVARCHAR(MAX),\r\n    Link NVARCHAR(2000),\r\n    State NVARCHAR(450),\r\n    Priority INT\r\n);\r\n\r\nCREATE INDEX IX_TempSpecificUpdates_Product_Version ON #TempSpecificUpdates(Product, Version);\r\n\r\nINSERT INTO {databaseOwner}[{objectQualifier}PlantAnApp_Updates_SpecificUpdates] (\r\n    Product, Version, Info, Link, State, CreatedDate, Priority\r\n)\r\nSELECT \r\n    s.Product,\r\n    s.Version,\r\n    s.Info,\r\n    s.Link,\r\n    s.State,\r\n    GETDATE(),\r\n    s.Priority\r\nFROM #TempSpecificUpdates AS s\r\nLEFT JOIN {databaseOwner}[{objectQualifier}PlantAnApp_Updates_SpecificUpdates] AS t WITH (UPDLOCK, HOLDLOCK)\r\n    ON t.Product = s.Product AND t.Version = s.Version\r\nWHERE t.Product IS NULL;\r\n\r\nDROP TABLE #TempSpecificUpdates;",
             "ActionStackId": null,
@@ -957,17 +957,17 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14174,
+            "Id": 25266,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "OnError",
             "Value": {
-              "Id": 5254,
-              "GlobalId": "44f792de-5aa0-42b9-8d86-95f6f08985e5",
+              "Id": 8676,
+              "GlobalId": "8f826c2b-4e8d-4eae-8c3a-7a8e1249b650",
               "Actions": [],
               "IsInvalid": false
             },
-            "ActionStackId": 5254,
+            "ActionStackId": 8676,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -975,9 +975,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14175,
+            "Id": 25267,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "ShowErrors",
             "Value": true,
             "ActionStackId": null,
@@ -988,9 +988,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14176,
+            "Id": 25268,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "DbConnector",
             "Value": {
               "Entry": "",
@@ -1008,9 +1008,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14177,
+            "Id": 25269,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "BindTokens",
             "Value": [
               {
@@ -1026,9 +1026,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14178,
+            "Id": 25270,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "OutputTokenName",
             "Value": null,
             "ActionStackId": null,
@@ -1039,9 +1039,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14179,
+            "Id": 25271,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3662,
+            "ActionId": 6010,
             "Name": "ExtractColumns",
             "Value": [],
             "ActionStackId": null,
@@ -1057,11 +1057,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3663,
+        "Id": 6011,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Add-ons",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "ExecuteActions",
         "Condition": null,
         "IsDeleted": false,
@@ -1070,20 +1070,20 @@
         "DiagramUID": "Activity_0ai5xbw",
         "ActionParameters": [
           {
-            "Id": 14206,
+            "Id": 25298,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3663,
+            "ActionId": 6011,
             "Name": "ActionList",
             "Value": {
-              "Id": 5255,
-              "GlobalId": "77d2f96c-29cb-4993-97f9-44616e8c845d",
+              "Id": 8677,
+              "GlobalId": "a56b1d96-57ee-4556-a5a9-1636c352fe79",
               "Actions": [
                 {
-                  "Id": 3664,
+                  "Id": 6012,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "Get Add-ons",
                   "ActionErrorMessage": null,
-                  "ActionStackId": 5255,
+                  "ActionStackId": 8677,
                   "ActionType": "ServerRequestHttpClient",
                   "Condition": null,
                   "IsDeleted": false,
@@ -1092,9 +1092,9 @@
                   "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 14180,
+                      "Id": 25272,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "URL",
                       "Value": "https://services.plantanapp.com/api/GetNewAddons?ReleaseVersion=[PAASysUpdates:ReleaseVersion]",
                       "ActionStackId": null,
@@ -1105,9 +1105,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14181,
+                      "Id": 25273,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "UrlTokenContext",
                       "Value": "Url",
                       "ActionStackId": null,
@@ -1118,9 +1118,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14182,
+                      "Id": 25274,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "UseSSL",
                       "Value": null,
                       "ActionStackId": null,
@@ -1131,9 +1131,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14183,
+                      "Id": 25275,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "Certificate",
                       "Value": null,
                       "ActionStackId": null,
@@ -1144,9 +1144,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14184,
+                      "Id": 25276,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "Timeout",
                       "Value": null,
                       "ActionStackId": null,
@@ -1157,9 +1157,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14185,
+                      "Id": 25277,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "HttpMethod",
                       "Value": "GET",
                       "ActionStackId": null,
@@ -1170,9 +1170,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14186,
+                      "Id": 25278,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "Data",
                       "Value": null,
                       "ActionStackId": null,
@@ -1183,9 +1183,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14187,
+                      "Id": 25279,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "DoNotEscapeTokens",
                       "Value": null,
                       "ActionStackId": null,
@@ -1196,9 +1196,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14188,
+                      "Id": 25280,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "DisableReferer",
                       "Value": null,
                       "ActionStackId": null,
@@ -1209,9 +1209,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14189,
+                      "Id": 25281,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "UseDNNProxySettings",
                       "Value": null,
                       "ActionStackId": null,
@@ -1222,9 +1222,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14190,
+                      "Id": 25282,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "AddCurrentCookies",
                       "Value": null,
                       "ActionStackId": null,
@@ -1235,9 +1235,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14191,
+                      "Id": 25283,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "IgnoreErrors",
                       "Value": null,
                       "ActionStackId": null,
@@ -1248,17 +1248,17 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14192,
+                      "Id": 25284,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 5256,
-                        "GlobalId": "c6a09c05-6122-4ca6-b133-2c034f498612",
+                        "Id": 8678,
+                        "GlobalId": "9d4757c4-9b5c-4147-809b-254af2713b77",
                         "Actions": [],
                         "IsInvalid": false
                       },
-                      "ActionStackId": 5256,
+                      "ActionStackId": 8678,
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "OrderIndex": 0,
@@ -1266,9 +1266,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14193,
+                      "Id": 25285,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "CookieContainerToken",
                       "Value": null,
                       "ActionStackId": null,
@@ -1279,9 +1279,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14194,
+                      "Id": 25286,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "Headers",
                       "Value": [],
                       "ActionStackId": null,
@@ -1292,9 +1292,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14195,
+                      "Id": 25287,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "OutputTokenName",
                       "Value": "AddonsJSON",
                       "ActionStackId": null,
@@ -1305,9 +1305,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14196,
+                      "Id": 25288,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3664,
+                      "ActionId": 6012,
                       "Name": "OutputHeaders",
                       "Value": [],
                       "ActionStackId": null,
@@ -1323,11 +1323,11 @@
                   "HasActionParameters": false
                 },
                 {
-                  "Id": 3665,
+                  "Id": 6013,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "Insert Add-ons",
                   "ActionErrorMessage": null,
-                  "ActionStackId": 5255,
+                  "ActionStackId": 8677,
                   "ActionType": "RunSql",
                   "Condition": null,
                   "IsDeleted": false,
@@ -1336,9 +1336,9 @@
                   "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 14197,
+                      "Id": 25289,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "ConnectionString",
                       "Value": null,
                       "ActionStackId": null,
@@ -1349,9 +1349,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14198,
+                      "Id": 25290,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "QueryTimeout",
                       "Value": null,
                       "ActionStackId": null,
@@ -1362,9 +1362,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14199,
+                      "Id": 25291,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "SqlQuery",
                       "Value": "SELECT \r\n    DnnFriendlyName, \r\n    Code, \r\n    Title, \r\n    Version, \r\n    Description, \r\n    Link\r\nINTO #TempAddons\r\nFROM OPENJSON(@json)\r\nWITH (\r\n    DnnFriendlyName NVARCHAR(450),\r\n    Code NVARCHAR(450),\r\n    Title NVARCHAR(450),\r\n    Version NVARCHAR(450),\r\n    Description NVARCHAR(MAX),\r\n    Link NVARCHAR(2000)\r\n);\r\n\r\nCREATE INDEX IX_TempAddons_Code ON #TempAddons(Code);\r\n\r\nINSERT INTO {databaseOwner}[{objectQualifier}PlantAnApp_Updates_Addons] (\r\n    DnnFriendlyName, Code, Title, Version, Description, Link, CreatedDate\r\n)\r\nSELECT \r\n    s.DnnFriendlyName,\r\n    s.Code,\r\n    s.Title,\r\n    s.Version,\r\n    s.Description,\r\n    s.Link,\r\n    GETDATE()\r\nFROM #TempAddons AS s\r\nLEFT JOIN {databaseOwner}[{objectQualifier}PlantAnApp_Updates_Addons] AS t WITH (UPDLOCK, HOLDLOCK)\r\n    ON t.Code = s.Code\r\nWHERE t.Code IS NULL;\r\n\r\nDROP TABLE #TempAddons;",
                       "ActionStackId": null,
@@ -1375,17 +1375,17 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14200,
+                      "Id": 25292,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 5257,
-                        "GlobalId": "26421027-9c2c-46b1-9e5a-99c6bcfe2a95",
+                        "Id": 8679,
+                        "GlobalId": "bff17353-c652-4bcb-b1b6-be165a81a4d5",
                         "Actions": [],
                         "IsInvalid": false
                       },
-                      "ActionStackId": 5257,
+                      "ActionStackId": 8679,
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "OrderIndex": 0,
@@ -1393,9 +1393,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14201,
+                      "Id": 25293,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "ShowErrors",
                       "Value": true,
                       "ActionStackId": null,
@@ -1406,9 +1406,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14202,
+                      "Id": 25294,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "DbConnector",
                       "Value": {
                         "Entry": "",
@@ -1426,9 +1426,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14203,
+                      "Id": 25295,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "BindTokens",
                       "Value": [
                         {
@@ -1444,9 +1444,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14204,
+                      "Id": 25296,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "OutputTokenName",
                       "Value": null,
                       "ActionStackId": null,
@@ -1457,9 +1457,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14205,
+                      "Id": 25297,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3665,
+                      "ActionId": 6013,
                       "Name": "ExtractColumns",
                       "Value": [],
                       "ActionStackId": null,
@@ -1477,7 +1477,7 @@
               ],
               "IsInvalid": false
             },
-            "ActionStackId": 5255,
+            "ActionStackId": 8677,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -1485,17 +1485,17 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14207,
+            "Id": 25299,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3663,
+            "ActionId": 6011,
             "Name": "OnError",
             "Value": {
-              "Id": 5258,
-              "GlobalId": "c8755462-52ed-4b2b-be55-192632c7887d",
+              "Id": 8680,
+              "GlobalId": "fe20fcb9-8c94-480a-a32d-49873396a33c",
               "Actions": [],
               "IsInvalid": false
             },
-            "ActionStackId": 5258,
+            "ActionStackId": 8680,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -1508,11 +1508,11 @@
         "HasActionParameters": false
       },
       {
-        "Id": 3666,
+        "Id": 6014,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Cumulative Hotfixes",
         "ActionErrorMessage": null,
-        "ActionStackId": 5239,
+        "ActionStackId": 8661,
         "ActionType": "ExecuteActions",
         "Condition": null,
         "IsDeleted": false,
@@ -1521,20 +1521,20 @@
         "DiagramUID": "Activity_0va4i92",
         "ActionParameters": [
           {
-            "Id": 14234,
+            "Id": 25326,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3666,
+            "ActionId": 6014,
             "Name": "ActionList",
             "Value": {
-              "Id": 5259,
-              "GlobalId": "54c36c46-6a07-4efa-af09-173273a215fc",
+              "Id": 8681,
+              "GlobalId": "409dbada-e12d-464b-bfae-5571c1d8097e",
               "Actions": [
                 {
-                  "Id": 3667,
+                  "Id": 6015,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "Get Cumulative Hotfixes",
                   "ActionErrorMessage": null,
-                  "ActionStackId": 5259,
+                  "ActionStackId": 8681,
                   "ActionType": "ServerRequestHttpClient",
                   "Condition": null,
                   "IsDeleted": false,
@@ -1543,9 +1543,9 @@
                   "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 14208,
+                      "Id": 25300,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "URL",
                       "Value": "https://build.internal.plantanapp.com/api/GetCumulativeHotfixes",
                       "ActionStackId": null,
@@ -1556,9 +1556,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14209,
+                      "Id": 25301,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "UrlTokenContext",
                       "Value": "Url",
                       "ActionStackId": null,
@@ -1569,9 +1569,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14210,
+                      "Id": 25302,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "UseSSL",
                       "Value": null,
                       "ActionStackId": null,
@@ -1582,9 +1582,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14211,
+                      "Id": 25303,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "Certificate",
                       "Value": null,
                       "ActionStackId": null,
@@ -1595,9 +1595,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14212,
+                      "Id": 25304,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "Timeout",
                       "Value": null,
                       "ActionStackId": null,
@@ -1608,9 +1608,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14213,
+                      "Id": 25305,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "HttpMethod",
                       "Value": "GET",
                       "ActionStackId": null,
@@ -1621,9 +1621,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14214,
+                      "Id": 25306,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "Data",
                       "Value": "ReleaseVersion=[PAASysUpdates:ReleaseVersion]\nDevCheck=[CheckApp]",
                       "ActionStackId": null,
@@ -1634,9 +1634,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14215,
+                      "Id": 25307,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "DoNotEscapeTokens",
                       "Value": null,
                       "ActionStackId": null,
@@ -1647,9 +1647,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14216,
+                      "Id": 25308,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "DisableReferer",
                       "Value": null,
                       "ActionStackId": null,
@@ -1660,9 +1660,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14217,
+                      "Id": 25309,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "UseDNNProxySettings",
                       "Value": null,
                       "ActionStackId": null,
@@ -1673,9 +1673,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14218,
+                      "Id": 25310,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "AddCurrentCookies",
                       "Value": null,
                       "ActionStackId": null,
@@ -1686,9 +1686,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14219,
+                      "Id": 25311,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "IgnoreErrors",
                       "Value": null,
                       "ActionStackId": null,
@@ -1699,17 +1699,17 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14220,
+                      "Id": 25312,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 5260,
-                        "GlobalId": "91f134af-4970-4893-bceb-c8a0aee73b3a",
+                        "Id": 8682,
+                        "GlobalId": "5a5fce64-fa40-4be9-b7a0-88741e1a627d",
                         "Actions": [],
                         "IsInvalid": false
                       },
-                      "ActionStackId": 5260,
+                      "ActionStackId": 8682,
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "OrderIndex": 0,
@@ -1717,9 +1717,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14221,
+                      "Id": 25313,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "CookieContainerToken",
                       "Value": null,
                       "ActionStackId": null,
@@ -1730,9 +1730,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14222,
+                      "Id": 25314,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "Headers",
                       "Value": [],
                       "ActionStackId": null,
@@ -1743,9 +1743,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14223,
+                      "Id": 25315,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "OutputTokenName",
                       "Value": "CumulativeHotfixesJSON",
                       "ActionStackId": null,
@@ -1756,9 +1756,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14224,
+                      "Id": 25316,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3667,
+                      "ActionId": 6015,
                       "Name": "OutputHeaders",
                       "Value": [],
                       "ActionStackId": null,
@@ -1774,11 +1774,11 @@
                   "HasActionParameters": false
                 },
                 {
-                  "Id": 3668,
+                  "Id": 6016,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "Insert Cumulative Hotfixes",
                   "ActionErrorMessage": null,
-                  "ActionStackId": 5259,
+                  "ActionStackId": 8681,
                   "ActionType": "RunSql",
                   "Condition": null,
                   "IsDeleted": false,
@@ -1787,9 +1787,9 @@
                   "DiagramUID": null,
                   "ActionParameters": [
                     {
-                      "Id": 14225,
+                      "Id": 25317,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "ConnectionString",
                       "Value": null,
                       "ActionStackId": null,
@@ -1800,9 +1800,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14226,
+                      "Id": 25318,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "QueryTimeout",
                       "Value": null,
                       "ActionStackId": null,
@@ -1813,9 +1813,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14227,
+                      "Id": 25319,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "SqlQuery",
                       "Value": "SELECT\r\n    Id,\r\n    Title,\r\n    Description,\r\n    [Date],\r\n    Severity,\r\n    Priority,\r\n    Packages AS PackagesJSON\r\nINTO #TempCumulative\r\nFROM OPENJSON(@json)\r\nWITH (\r\n    Id INT,\r\n    Title NVARCHAR(450),\r\n    Description NVARCHAR(MAX),\r\n    [Date] DATE,\r\n    Severity NVARCHAR(450),\r\n    Priority INT,\r\n    Packages NVARCHAR(MAX)\r\n);\r\n\r\nCREATE INDEX IX_TempCumulative_Id ON #TempCumulative(Id);\r\n\r\nINSERT INTO paa.Updates_Cumulative (\r\n    Id, Title, Description, [Date], Severity, Priority\r\n)\r\nSELECT \r\n    s.Id,\r\n    s.Title,\r\n    s.Description,\r\n    s.[Date],\r\n    s.Severity,\r\n    s.Priority\r\nFROM #TempCumulative AS s\r\nLEFT JOIN paa.Updates_Cumulative AS t WITH (UPDLOCK, HOLDLOCK)\r\n    ON t.Id = s.Id\r\nWHERE t.Id IS NULL;\r\n\r\nINSERT INTO paa.Updates_CumulativeHotfixes (\r\n    Id, CumulativeId, FeatureType, ChangeType, [Date], Version, DnnFriendlyName, Title,\r\n    Details, InstalledVersion, ProductID, Link, Severity, Priority, [Order]\r\n)\r\nSELECT\r\n    p.ProductChangeId,\r\n    c.Id AS CumulativeId,\r\n    p.FeatureType,\r\n    p.ChangeType,\r\n    p.[Date],\r\n    p.Version,\r\n    p.DnnFriendlyName,\r\n    p.Title AS PackageTitle,\r\n    p.Details,\r\n    i.Version AS InstalledVersion,\r\n    p.ProductId,\r\n    p.Link,\r\n    p.Severity AS PackageSeverity,\r\n    p.Priority AS PackagePriority,\r\n    p.[Order]\r\nFROM #TempCumulative AS c\r\nCROSS APPLY OPENJSON(c.PackagesJSON)\r\nWITH (\r\n    ProductChangeId INT,\r\n    ProductId INT,\r\n    DnnFriendlyName NVARCHAR(450),\r\n    FeatureType NVARCHAR(450),\r\n    Title NVARCHAR(MAX),\r\n    Details NVARCHAR(MAX),\r\n    ChangeType NVARCHAR(450),\r\n    Severity NVARCHAR(450),\r\n    Priority INT,\r\n    Version NVARCHAR(450),\r\n    [Date] DATE,\r\n    Link NVARCHAR(2000),\r\n    [Order] INT\r\n) AS p\r\nLEFT JOIN {databaseOwner}[{objectQualifier}Packages] AS i ON i.FriendlyName = p.DnnFriendlyName\r\nLEFT JOIN paa.Updates_CumulativeHotfixes AS t WITH (UPDLOCK, HOLDLOCK)\r\n    ON t.ProductID = p.ProductID AND t.CumulativeId = c.Id\r\nWHERE \r\n    t.ProductID IS NULL\r\n    AND ISNULL(i.Version,'00.00.00') <> '00.00.00'\r\n    AND (\r\n        CAST(PARSENAME(p.Version,3) AS INT) > CAST(PARSENAME(ISNULL(i.Version,'0.0.0'),3) AS INT)\r\n        OR (\r\n            CAST(PARSENAME(p.Version,3) AS INT) = CAST(PARSENAME(ISNULL(i.Version,'0.0.0'),3) AS INT)\r\n            AND CAST(PARSENAME(p.Version,2) AS INT) > CAST(PARSENAME(ISNULL(i.Version,'0.0.0'),2) AS INT)\r\n        )\r\n        OR (\r\n            CAST(PARSENAME(p.Version,3) AS INT) = CAST(PARSENAME(ISNULL(i.Version,'0.0.0'),3) AS INT)\r\n            AND CAST(PARSENAME(p.Version,2) AS INT) = CAST(PARSENAME(ISNULL(i.Version,'0.0.0'),2) AS INT)\r\n            AND CAST(PARSENAME(p.Version,1) AS INT) > CAST(PARSENAME(ISNULL(i.Version,'0.0.0'),1) AS INT)\r\n        )\r\n    );\r\n\r\nDELETE c\r\nFROM paa.Updates_Cumulative AS c\r\nWHERE NOT EXISTS (\r\n    SELECT 1\r\n    FROM paa.Updates_CumulativeHotfixes AS h\r\n    WHERE h.CumulativeId = c.Id\r\n);\r\n\r\nDROP TABLE #TempCumulative;",
                       "ActionStackId": null,
@@ -1826,17 +1826,17 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14228,
+                      "Id": 25320,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "OnError",
                       "Value": {
-                        "Id": 5261,
-                        "GlobalId": "ff7f8619-9de3-4456-8415-033c99f8cf9c",
+                        "Id": 8683,
+                        "GlobalId": "fb06329a-a9dd-4d53-9a5d-98ce4aeade2b",
                         "Actions": [],
                         "IsInvalid": false
                       },
-                      "ActionStackId": 5261,
+                      "ActionStackId": 8683,
                       "ParentParameterId": null,
                       "IsExpression": false,
                       "OrderIndex": 0,
@@ -1844,9 +1844,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14229,
+                      "Id": 25321,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "ShowErrors",
                       "Value": true,
                       "ActionStackId": null,
@@ -1857,9 +1857,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14230,
+                      "Id": 25322,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "DbConnector",
                       "Value": {
                         "Entry": "",
@@ -1877,9 +1877,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14231,
+                      "Id": 25323,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "BindTokens",
                       "Value": [
                         {
@@ -1895,9 +1895,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14232,
+                      "Id": 25324,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "OutputTokenName",
                       "Value": "PackagesJSON",
                       "ActionStackId": null,
@@ -1908,9 +1908,9 @@
                       "LastModifiedBy": null
                     },
                     {
-                      "Id": 14233,
+                      "Id": 25325,
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 3668,
+                      "ActionId": 6016,
                       "Name": "ExtractColumns",
                       "Value": [],
                       "ActionStackId": null,
@@ -1928,7 +1928,7 @@
               ],
               "IsInvalid": false
             },
-            "ActionStackId": 5259,
+            "ActionStackId": 8681,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -1936,17 +1936,17 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 14235,
+            "Id": 25327,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3666,
+            "ActionId": 6014,
             "Name": "OnError",
             "Value": {
-              "Id": 5262,
-              "GlobalId": "429c245e-3aa4-4169-8016-02b97f55ba38",
+              "Id": 8684,
+              "GlobalId": "c391a03a-0f0f-4d45-8f4c-7c51ece50612",
               "Actions": [],
               "IsInvalid": false
             },
-            "ActionStackId": 5262,
+            "ActionStackId": 8684,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,

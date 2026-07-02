@@ -630,6 +630,19 @@
                       "OrderIndex": 0,
                       "LastModified": "0001-01-01T00:00:00+00:00",
                       "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 22642,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 2864,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
                     }
                   ],
                   "Parameters": {},
@@ -1176,6 +1189,19 @@
                                 "OrderIndex": 0,
                                 "LastModified": "0001-01-01T00:00:00+00:00",
                                 "LastModifiedBy": null
+                              },
+                              {
+                                "Id": 22643,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2868,
+                                "Name": "UseTransactions",
+                                "Value": true,
+                                "ActionStackId": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
                               }
                             ],
                             "Parameters": {},
@@ -1469,6 +1495,19 @@
                                 "ActionId": 2872,
                                 "Name": "ExtractColumns",
                                 "Value": [],
+                                "ActionStackId": null,
+                                "ParentParameterId": null,
+                                "IsExpression": false,
+                                "OrderIndex": 0,
+                                "LastModified": "0001-01-01T00:00:00+00:00",
+                                "LastModifiedBy": null
+                              },
+                              {
+                                "Id": 22644,
+                                "GlobalId": "00000000-0000-0000-0000-000000000000",
+                                "ActionId": 2872,
+                                "Name": "UseTransactions",
+                                "Value": true,
                                 "ActionStackId": null,
                                 "ParentParameterId": null,
                                 "IsExpression": false,

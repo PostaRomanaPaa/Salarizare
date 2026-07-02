@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.28.225.00">
+<module type="ActionForm" version="05.28.226.00">
     <contentKey />
     <moduleID>507</moduleID>
     <alignment />
@@ -116,7 +116,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[416]]&gt;&lt;/Id&gt;
@@ -137,21 +137,21 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCod:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Cod=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eDenumire:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Denumire=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container boolean\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003echeck_circle_outline\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eValid:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Valid=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCod Sindicat:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:CodSindicat=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eDenumire Sindicat:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:DenumireSindicat=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container boolean\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003echeck_circle_outline\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eValid:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Valid=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eCotizatie:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Cotizatie=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container integer\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003elooks_one\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eSuma:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:Suma=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
       &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;entity-details-container&quot;&gt;
     &lt;div class=&quot;properties-container integer&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
             &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
-            &lt;span class=&quot;entity-property-name&quot;&gt;Cod:&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Cod Sindicat:&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;entity-value&quot;&gt;[original:Cod=&#39;-&#39;]&lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:CodSindicat=&#39;-&#39;]&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;properties-container text&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
             &lt;span class=&quot;material-icons&quot;&gt;short_text&lt;/span&gt;
-            &lt;span class=&quot;entity-property-name&quot;&gt;Denumire:&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Denumire Sindicat:&lt;/span&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;entity-value&quot;&gt;[original:Denumire=&#39;-&#39;]&lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:DenumireSindicat=&#39;-&#39;]&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;properties-container boolean&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
@@ -159,6 +159,20 @@
             &lt;span class=&quot;entity-property-name&quot;&gt;Valid:&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class=&quot;entity-value&quot;&gt;[original:Valid=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container integer&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Cotizatie:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Cotizatie=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container integer&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;looks_one&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;Suma:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:Suma=&#39;-&#39;]&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
@@ -184,7 +198,7 @@
     &lt;Title&gt;Details Form&lt;/Title&gt;
     &lt;CssName&gt;details-form&lt;/CssName&gt;
     &lt;Version&gt;5.28.0&lt;/Version&gt;
-    &lt;Build&gt;5.28.225&lt;/Build&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -201,7 +215,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;507&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
     &lt;TabId&gt;72&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -234,9 +248,9 @@
     &lt;PopupName /&gt;
     &lt;RootClasses&gt;detail-form-root&lt;/RootClasses&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;9&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;11&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-03-26T13:24:11.9587597+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2026-06-08T11:18:32.2665024+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -247,7 +261,7 @@
       &lt;/Metadata&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Cod&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Denumire&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Valid&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:Cod&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Denumire&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Valid&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Cotizatie&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Suma&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;

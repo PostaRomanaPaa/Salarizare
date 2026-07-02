@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.28.225.00">
+<module type="ActionForm" version="05.28.226.00">
     <contentKey />
     <moduleID>876</moduleID>
     <alignment />
@@ -27,13 +27,13 @@
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Citizen Developers</rolename>
+            <rolename>Low-Code Engineer</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
+            <rolename>Citizen Developers</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
@@ -129,7 +129,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[1587]]&gt;&lt;/Id&gt;
@@ -317,13 +317,13 @@
     &lt;/Field&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[1633]]&gt;&lt;/Id&gt;
-      &lt;Title&gt;&lt;![CDATA[Calcul Agenti]]&gt;&lt;/Title&gt;
+      &lt;Title&gt;&lt;![CDATA[Calcul Agenti / Vizualizare Exceptii]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
       &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
       &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
       &lt;OverrideName /&gt;
-      &lt;Name&gt;CalculAgenti&lt;/Name&gt;
+      &lt;Name&gt;CalculAgentiVizualizareExceptii&lt;/Name&gt;
       &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
       &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
       &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
@@ -368,7 +368,7 @@
       &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
-      &lt;EnableCondition&gt;[Helper:TokenStatusCalcul] != 2 &amp;amp;&amp;amp; [Helper:TokenStatusCalcul] != 3&lt;/EnableCondition&gt;
+      &lt;EnableCondition&gt;[Helper:TokenStatusCalcul] != 2 &amp;amp;&amp;amp; [Helper:TokenStatusCalcul] != 3 &amp;amp;&amp;amp; [Helper:TokenStatusCalcul] != 4&lt;/EnableCondition&gt;
       &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
       &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
       &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
@@ -458,7 +458,7 @@
     &lt;Title&gt;Meniu Agenti Form&lt;/Title&gt;
     &lt;CssName&gt;meniu-agenti-form&lt;/CssName&gt;
     &lt;Version&gt;5.28.0&lt;/Version&gt;
-    &lt;Build&gt;5.28.225&lt;/Build&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate&gt;&amp;lt;p&amp;gt;This is a sample text, edit this to match the purpose and describe the resource you&#39;re targeting (page, file).&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href = &quot;[FormUrl]&quot;&amp;gt;ACCESS this resource&amp;lt;/a&amp;gt; now.&amp;lt;/p&amp;gt;&lt;/FrontEndTemplate&gt;
@@ -475,7 +475,7 @@
     &lt;FieldSpacing&gt;loose&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;876&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
     &lt;TabId&gt;184&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -508,9 +508,9 @@
     &lt;PopupName /&gt;
     &lt;RootClasses /&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;66&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;73&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;alexandra.vasilescu@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-03-23T13:28:14.3018498+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2026-06-09T14:12:13.6731573+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -535,30 +535,31 @@
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
       &lt;ModuleId&gt;876&lt;/ModuleId&gt;
-      &lt;FieldName&gt;CalculAgenti&lt;/FieldName&gt;
+      &lt;FieldName&gt;CalculAgentiVizualizareExceptii&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;Metadata /&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
       &lt;Description&gt;Verifica daca sunt prestatii invalide&lt;/Description&gt;
-      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:3064,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;;WITH Parametri AS (\n    SELECT [Initializari:ZileLucratoare_old(Anul = [GetOrSession:YearV],Luna = [GetOrSession:MonthV])] AS ZileLucratoare\n),\nExceptiiLichidate AS (\n    SELECT a.Marca, a.CodSucursala\n    FROM app.Salariat a\n    CROSS JOIN Parametri p\n    OUTER APPLY (\n        SELECT SUM(\n            CASE WHEN c.Interval1DatadeInceput IS NOT NULL AND MONTH(c.Interval1DatadeInceput) = @Luna AND YEAR(c.Interval1DatadeInceput) = @Anul THEN ISNULL(c.NrZileCO1, 0) ELSE 0 END + \n            CASE WHEN c.Interval2DatadeInceput IS NOT NULL AND MONTH(c.Interval2DatadeInceput) = @Luna AND YEAR(c.Interval2DatadeInceput) = @Anul THEN ISNULL(c.NrZileCO2, 0) ELSE 0 END + \n            CASE WHEN c.Interval3DatadeInceput IS NOT NULL AND MONTH(c.Interval3DatadeInceput) = @Luna AND YEAR(c.Interval3DatadeInceput) = @Anul THEN ISNULL(c.NrZileCO3, 0) ELSE 0 END\n        ) AS ZileCOLuna\n        FROM app.ConcediudeOdihna c\n        WHERE c.Marca = a.Marca AND c.CodSucursala = a.CodSucursala AND c.CodSucursala = @CodSucursala\n    ) co\n    OUTER APPLY (\n        SELECT SUM(m.TotZileLucratoare) AS ZileCMLuna\n        FROM app.ConcediuMedical m\n        WHERE m.Marca = a.Marca AND m.CodSucursala = @CodSucursala AND m.AnulDePlata = @Anul AND m.LunaDePlata = @Luna\n    ) cm\n    CROSS APPLY (\n        SELECT CASE WHEN p.ZileLucratoare - ISNULL(co.ZileCOLuna, 0) - ISNULL(cm.ZileCMLuna, 0) &amp;lt;= 0 THEN 0 ELSE p.ZileLucratoare - ISNULL(co.ZileCOLuna, 0) - ISNULL(cm.ZileCMLuna, 0) END AS ZileLucrate\n    ) zl\n    WHERE zl.ZileLucrate = 0 AND a.Anul = @Anul AND a.Luna = @Luna AND a.CodSucursala = @CodSucursala\n)\nSELECT COUNT(DISTINCT ex.Marca) AS NumarImpostori\nFROM ExceptiiLichidate ex\nINNER JOIN app.Agent ag \n    ON ex.Marca = ag.Marca AND ex.CodSucursala = ag.CodSucursala AND ag.Anul = @Anul AND ag.Luna = @Luna;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;name&quot;:&quot;CodSucursala&quot;},{&quot;value&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;name&quot;:&quot;Anul&quot;},{&quot;value&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;name&quot;:&quot;Luna&quot;}],&quot;OutputTokenName&quot;:&quot;NrImpostori&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3065,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;[SetSession:NrMarciConcediu=[NrImpostori]]&quot;,&quot;name&quot;:&quot;NrMarciConcediu&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3066,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;RedirectToPage&quot;,&quot;Condition&quot;:&quot;[NrImpostori] &amp;gt; 0&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;180&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3067,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;Result.StopExecution&quot;,&quot;Condition&quot;:&quot;[NrImpostori] &amp;gt; 0&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;ModuleId&gt;876&lt;/ModuleId&gt;
-      &lt;FieldName&gt;CalculAgenti&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;Metadata /&gt;
-      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
-      &lt;Description&gt;Calcularea sumelor de prestatii de introdus in lichidare&lt;/Description&gt;
-      &lt;ActionData&gt;{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;/* ========= CSAG - Informix faithful version (ROUND half-up) ========= */\n\n;WITH BrutRaw AS (\n    /* 1️⃣ Brut cu zecimale */\n    SELECT\n        a.Marca,\n\n        SUM(\n            CASE\n                WHEN UPPER(a.CodPrestatie) &amp;lt;&amp;gt; &#39;E&#39;\n                     AND ISNULL(a.Procent, 0) &amp;lt;&amp;gt; 0\n                THEN a.Suma * a.Procent\n\n                WHEN UPPER(a.CodPrestatie) &amp;lt;&amp;gt; &#39;E&#39;\n                     AND ISNULL(a.Procent, 0) = 0\n                THEN ISNULL(p.SumaFixa, 0) * a.Suma\n\n                ELSE 0\n            END\n        ) AS BrutDecimal,\n\n        SUM(\n            CASE\n                WHEN UPPER(a.CodPrestatie) = &#39;E&#39;\n                THEN a.Suma * a.Procent\n                ELSE 0\n            END\n        ) AS TutunDecimal\n\n    FROM app.Agent a\n\n    OUTER APPLY (\n        SELECT TOP 1 p.SumaFixa\n        FROM app.TSPrestatie p\n        WHERE p.CodSucursala = a.CodSucursala\n          AND p.CodPrestatie = a.CodPrestatie\n    ) p\n\n    WHERE a.CodSucursala = @CodSucursala\n      AND a.Anul = @An\n      AND a.Luna = @Luna\n\n    GROUP BY a.Marca\n),\n\nBrut AS (\n    /* 2️⃣ ROUND exact ca dec(15,0) */\n    SELECT\n        Marca,\n        CAST(ROUND(BrutDecimal, 0) AS INT)  AS BrutFaraE,\n        CAST(ROUND(TutunDecimal, 0) AS INT) AS Tutun\n    FROM BrutRaw\n),\n\nCuTransa AS (\n    /* 3️⃣ Determinare tranșă */\n    SELECT\n        b.*,\n        l.LimitaInferioara AS LimiCurenta,\n        l.LimitaSuperioara,\n        l.Procent AS ProcCurent\n    FROM Brut b\n    OUTER APPLY (\n        SELECT TOP 1 *\n        FROM app.LimitaPrestatiiAg l\n        WHERE b.BrutFaraE BETWEEN l.LimitaInferioara AND l.LimitaSuperioara\n        ORDER BY l.LimitaInferioara DESC\n    ) l\n),\n\nSel1Raw AS (\n    /* 4️⃣ Sel1 cu zecimale */\n    SELECT\n        x.Marca,\n        SUM(\n            (l.LimitaSuperioara - l.LimitaInferioara + 1)\n            * l.Procent\n        ) AS Sel1Decimal\n    FROM CuTransa x\n    JOIN app.LimitaPrestatiiAg l\n      ON l.LimitaInferioara &amp;lt; x.LimiCurenta\n    GROUP BY x.Marca\n),\n\nSel1 AS (\n    /* 5️⃣ ROUND exact ca &#238;n Informix */\n    SELECT\n        Marca,\n        CAST(ROUND(ISNULL(Sel1Decimal, 0), 0) AS INT) AS Sel1\n    FROM Sel1Raw\n),\n\nRezultat AS (\n    /* 6️⃣ Aplicare progresiv exact ca &#238;n 4GL */\n    SELECT\n        x.Marca,\n        x.BrutFaraE,\n        ISNULL(s.Sel1, 0) AS Sel1,\n        x.Tutun,\n\n        /* partea din tranșa curentă – ROUND half-up */\n        CAST(\n            ROUND(\n                (x.BrutFaraE - x.LimiCurenta)\n                * x.ProcCurent\n            , 0)\n        AS INT) AS ParteCurenta,\n\n        /* total final */\n        CAST(\n            ROUND(\n                (x.BrutFaraE - x.LimiCurenta)\n                * x.ProcCurent\n            , 0)\n        AS INT)\n        + ISNULL(s.Sel1, 0)\n        + x.Tutun AS TotalFinal\n\n    FROM CuTransa x\n    LEFT JOIN Sel1 s ON s.Marca = x.Marca\n)\n\n/* ================= MERGE ================= */\n\nMERGE app.CalculAgent AS tgt\nUSING (\n    SELECT\n        @CodSucursala AS CodSucursala,\n        @An           AS Anul,\n        @Luna         AS Luna,\n        Marca,\n        TotalFinal\n    FROM Rezultat\n) AS src\nON  tgt.CodSucursala = src.CodSucursala\nAND tgt.Anul    = src.Anul\nAND tgt.Luna  = src.Luna\nAND tgt.Marca        = src.Marca\n\nWHEN MATCHED THEN\n    UPDATE SET\n        tgt.Suma = src.TotalFinal,\n        tgt.LastModifiedDate = SYSDATETIMEOFFSET(),\n        tgt.LastModifiedBy = @UserId\n\nWHEN NOT MATCHED THEN\n    INSERT (\n        CodSucursala,\n        Anul,\n        Luna,\n        Marca,\n        Suma,\n        CreatedDate,\n        CreatedBy,\n        Status\n    )\n    VALUES (\n        src.CodSucursala,\n        src.Anul,\n        src.Luna,\n        src.Marca,\n        src.TotalFinal,\n        SYSDATETIMEOFFSET(),\n        @UserId,\n        1\n    )\n    WHEN NOT MATCHED BY SOURCE \n     AND tgt.CodSucursala = @CodSucursala \n     AND tgt.Anul = @An \n     AND tgt.Luna = @Luna \nTHEN \n    DELETE;;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;name&quot;:&quot;CodSucursala&quot;},{&quot;value&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;name&quot;:&quot;An&quot;},{&quot;value&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;name&quot;:&quot;Luna&quot;},{&quot;value&quot;:&quot;[User:UserId]&quot;,&quot;name&quot;:&quot;UserId&quot;}],&quot;OutputTokenName&quot;:null,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:3064,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;;WITH PrezentaFinala AS (\n    SELECT\n        ep.Marca,\n        ep.CodSucursala,\n        ep.Anul,\n        ep.Luna,\n        MAX(ISNULL(ep.ZileLucrateTotal, 0)) AS ZileLucrateTotal\n    FROM app.ExceptiiPrezenta ep\n    WHERE ep.Anul = @Anul\n      AND ep.Luna = @Luna\n      AND ep.CodSucursala = @CodSucursala\n      AND ep.Marca IS NOT NULL\n    GROUP BY\n        ep.Marca,\n        ep.CodSucursala,\n        ep.Anul,\n        ep.Luna\n)\nSELECT\n    COUNT(DISTINCT ag.Marca) AS NumarMarciDistincte\nFROM app.Agent ag\nINNER JOIN PrezentaFinala ep\n    ON ep.Marca = ag.Marca\n   AND ep.CodSucursala = ag.CodSucursala\n   AND ep.Anul = ag.Anul\n   AND ep.Luna = ag.Luna\nWHERE ag.Anul = @Anul\n  AND ag.Luna = @Luna\n  AND ag.CodSucursala = @CodSucursala\n  AND ep.ZileLucrateTotal = 0;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;name&quot;:&quot;CodSucursala&quot;},{&quot;value&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;name&quot;:&quot;Anul&quot;},{&quot;value&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;name&quot;:&quot;Luna&quot;}],&quot;OutputTokenName&quot;:&quot;NrImpostori&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false,&quot;UseTransactions&quot;:true},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3065,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;[SetSession:NrMarciConcediu=[NrImpostori]]&quot;,&quot;name&quot;:&quot;NrMarciConcediu&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3066,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;RedirectToPage&quot;,&quot;Condition&quot;:&quot;[NrImpostori] &amp;gt; 0&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;PageId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;180&quot;},&quot;EnforceCurrentLocale&quot;:false,&quot;QueryString&quot;:null,&quot;QueryStringUseUrlProvider&quot;:true,&quot;OpenInPopup&quot;:false,&quot;PopupTitle&quot;:null,&quot;OpenInNewTab&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3067,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4419,&quot;ActionType&quot;:&quot;Result.StopExecution&quot;,&quot;Condition&quot;:&quot;[NrImpostori] &amp;gt; 0&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
       &lt;Condition /&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
       &lt;ModuleId&gt;876&lt;/ModuleId&gt;
-      &lt;FieldName&gt;CalculAgenti&lt;/FieldName&gt;
+      &lt;FieldName&gt;CalculAgentiVizualizareExceptii&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
+      &lt;Description&gt;Calcularea sumelor de prestatii de introdus in lichidare&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;/* ========= CSAG - Informix faithful version (ROUND half-up) ========= */\n\n;WITH BrutRaw AS (\n    /* 1️⃣ Brut cu zecimale */\n    SELECT\n        a.Marca,\n\n        SUM(\n            CASE\n                WHEN UPPER(a.CodPrestatie) &amp;lt;&amp;gt; &#39;E&#39;\n                     AND ISNULL(a.Procent, 0) &amp;lt;&amp;gt; 0\n                THEN a.Suma * a.Procent\n\n                WHEN UPPER(a.CodPrestatie) &amp;lt;&amp;gt; &#39;E&#39;\n                     AND ISNULL(a.Procent, 0) = 0\n                THEN ISNULL(p.SumaFixa, 0) * a.Suma\n\n                ELSE 0\n            END\n        ) AS BrutDecimal,\n\n        SUM(\n            CASE\n                WHEN UPPER(a.CodPrestatie) = &#39;E&#39;\n                THEN a.Suma * a.Procent\n                ELSE 0\n            END\n        ) AS TutunDecimal\n\n    FROM app.Agent a\n\n    OUTER APPLY (\n        SELECT TOP 1 p.SumaFixa\n        FROM app.TSPrestatie p\n        WHERE p.CodSucursala = a.CodSucursala\n          AND p.CodPrestatie = a.CodPrestatie\n    ) p\n\n    WHERE a.CodSucursala = @CodSucursala\n      AND a.Anul = @An\n      AND a.Luna = @Luna\n\n    GROUP BY a.Marca\n),\n\nBrut AS (\n    /* 2️⃣ ROUND exact ca dec(15,0) */\n    SELECT\n        Marca,\n        CAST(ROUND(BrutDecimal, 0) AS INT)  AS BrutFaraE,\n        CAST(ROUND(TutunDecimal, 0) AS INT) AS Tutun\n    FROM BrutRaw\n),\n\nCuTransa AS (\n    /* 3️⃣ Determinare tranșă */\n    SELECT\n        b.*,\n        l.LimitaInferioara AS LimiCurenta,\n        l.LimitaSuperioara,\n        l.Procent AS ProcCurent\n    FROM Brut b\n    OUTER APPLY (\n        SELECT TOP 1 *\n        FROM app.LimitaPrestatiiAg l\n        WHERE b.BrutFaraE BETWEEN l.LimitaInferioara AND l.LimitaSuperioara\n        ORDER BY l.LimitaInferioara DESC\n    ) l\n),\n\nSel1Raw AS (\n    /* 4️⃣ Sel1 cu zecimale */\n    SELECT\n        x.Marca,\n        SUM(\n            (l.LimitaSuperioara - l.LimitaInferioara + 1)\n            * l.Procent\n        ) AS Sel1Decimal\n    FROM CuTransa x\n    JOIN app.LimitaPrestatiiAg l\n      ON l.LimitaInferioara &amp;lt; x.LimiCurenta\n    GROUP BY x.Marca\n),\n\nSel1 AS (\n    /* 5️⃣ ROUND exact ca &#238;n Informix */\n    SELECT\n        Marca,\n        CAST(ROUND(ISNULL(Sel1Decimal, 0), 0) AS INT) AS Sel1\n    FROM Sel1Raw\n),\n\nRezultat AS (\n    /* 6️⃣ Aplicare progresiv exact ca &#238;n 4GL */\n    SELECT\n        x.Marca,\n        x.BrutFaraE,\n        ISNULL(s.Sel1, 0) AS Sel1,\n        x.Tutun,\n\n        /* partea din tranșa curentă – ROUND half-up */\n        CAST(\n            ROUND(\n                (x.BrutFaraE - x.LimiCurenta)\n                * x.ProcCurent\n            , 0)\n        AS INT) AS ParteCurenta,\n\n        /* total final */\n        CAST(\n            ROUND(\n                (x.BrutFaraE - x.LimiCurenta)\n                * x.ProcCurent\n            , 0)\n        AS INT)\n        + ISNULL(s.Sel1, 0)\n        + x.Tutun AS TotalFinal\n\n    FROM CuTransa x\n    LEFT JOIN Sel1 s ON s.Marca = x.Marca\n)\n\n/* ================= MERGE ================= */\n\nMERGE app.CalculAgent AS tgt\nUSING (\n    SELECT\n        @CodSucursala AS CodSucursala,\n        @An           AS Anul,\n        @Luna         AS Luna,\n        Marca,\n        TotalFinal\n    FROM Rezultat\n) AS src\nON  tgt.CodSucursala = src.CodSucursala\nAND tgt.Anul    = src.Anul\nAND tgt.Luna  = src.Luna\nAND tgt.Marca        = src.Marca\n\nWHEN MATCHED THEN\n    UPDATE SET\n        tgt.Suma = src.TotalFinal,\n        tgt.LastModifiedDate = SYSDATETIMEOFFSET(),\n        tgt.LastModifiedBy = @UserId\n\nWHEN NOT MATCHED THEN\n    INSERT (\n        CodSucursala,\n        Anul,\n        Luna,\n        Marca,\n        Suma,\n        CreatedDate,\n        CreatedBy,\n        Status\n    )\n    VALUES (\n        src.CodSucursala,\n        src.Anul,\n        src.Luna,\n        src.Marca,\n        src.TotalFinal,\n        SYSDATETIMEOFFSET(),\n        @UserId,\n        1\n    )\n    WHEN NOT MATCHED BY SOURCE \n     AND tgt.CodSucursala = @CodSucursala \n     AND tgt.Anul = @An \n     AND tgt.Luna = @Luna \nTHEN \n    DELETE;;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[GetOrSession:BranchV]&quot;,&quot;name&quot;:&quot;CodSucursala&quot;},{&quot;value&quot;:&quot;[GetOrSession:YearV]&quot;,&quot;name&quot;:&quot;An&quot;},{&quot;value&quot;:&quot;[GetOrSession:MonthV]&quot;,&quot;name&quot;:&quot;Luna&quot;},{&quot;value&quot;:&quot;[User:UserId]&quot;,&quot;name&quot;:&quot;UserId&quot;}],&quot;OutputTokenName&quot;:null,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false,&quot;UseTransactions&quot;:true}&lt;/ActionData&gt;
+      &lt;Condition /&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;876&lt;/ModuleId&gt;
+      &lt;FieldName&gt;CalculAgentiVizualizareExceptii&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;Metadata /&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;

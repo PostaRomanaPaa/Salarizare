@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.28.225.00">
+<module type="ActionForm" version="05.28.226.00">
     <contentKey />
     <moduleID>871</moduleID>
     <alignment />
@@ -116,7 +116,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[1568]]&gt;&lt;/Id&gt;
@@ -687,7 +687,7 @@ document.getElementById(&quot;dnn871Submit&quot;).click();
     &lt;Title&gt;Remiza Form&lt;/Title&gt;
     &lt;CssName&gt;remiza-form&lt;/CssName&gt;
     &lt;Version&gt;5.28.0&lt;/Version&gt;
-    &lt;Build&gt;5.28.225&lt;/Build&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -704,7 +704,7 @@ document.getElementById(&quot;dnn871Submit&quot;).click();
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;871&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
     &lt;TabId&gt;182&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -737,9 +737,9 @@ document.getElementById(&quot;dnn871Submit&quot;).click();
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
     &lt;RootClasses /&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;42&lt;/RevisionNumber&gt;
-    &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-05-21T06:36:47.1517788+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionNumber&gt;44&lt;/RevisionNumber&gt;
+    &lt;RevisionLastChangedBy&gt;alexandra.vasilescu@ro.post&lt;/RevisionLastChangedBy&gt;
+    &lt;RevisionLastChangedDate&gt;2026-06-10T09:10:24.2227382+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -787,7 +787,7 @@ document.getElementById(&quot;dnn871Submit&quot;).click();
       &lt;Metadata /&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
-      &lt;ActionData&gt;{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;select r.*, s.Nume from app.Remiza r\nLEFT JOIN app.Salariat s \non r.Marca = s.Marca and r.CodSucursala = s.CodSucursala and r.Anul = s.Anul and r.Luna = s.Luna \n\nwhere  r.Id = @IdSalariat&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[QueryString:RemizaId]&quot;,&quot;name&quot;:&quot;IdSalariat&quot;}],&quot;OutputTokenName&quot;:&quot;original&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;select r.*, s.Nume from app.Remiza r\nLEFT JOIN app.Salariat s \non r.Marca = s.Marca and r.CodSucursala = s.CodSucursala and r.Anul = s.Anul and r.Luna = s.Luna \n\nwhere  r.Id = @IdSalariat&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[QueryString:RemizaId]&quot;,&quot;name&quot;:&quot;IdSalariat&quot;}],&quot;OutputTokenName&quot;:&quot;original&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false,&quot;UseTransactions&quot;:true}&lt;/ActionData&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
@@ -983,7 +983,7 @@ document.getElementById(&quot;dnn871Submit&quot;).click();
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
       &lt;Description&gt;Autofill Nume&lt;/Description&gt;
-      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:3060,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Search Salariati&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=\&quot;\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;SELECT Nume FROM app.Salariat WHERE Marca = @Marca\nAND CodSucursala=&#39;[GetOrSession:BranchV]&#39;\nand Anul=&#39;[GetOrSession:YearV]&#39;\nand Luna=&#39;[GetOrSession:MonthV]&#39;;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[p_Marca]&quot;,&quot;name&quot;:&quot;Marca&quot;}],&quot;OutputTokenName&quot;:&quot;Nume&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3061,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;test Nume&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;LogEvent&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;EventType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null},&quot;UserID&quot;:null,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;NumeRemize&quot;}]},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3062,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Nume&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=&#39;&#39;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;p_Nume&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3063,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Nume gol&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[p_Marca] ==\&quot;\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;p_Nume&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:3060,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Search Salariati&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=\&quot;\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;SqlQuery&quot;:&quot;SELECT Nume FROM app.Salariat WHERE Marca = @Marca\nAND CodSucursala=&#39;[GetOrSession:BranchV]&#39;\nand Anul=&#39;[GetOrSession:YearV]&#39;\nand Luna=&#39;[GetOrSession:MonthV]&#39;;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[p_Marca]&quot;,&quot;name&quot;:&quot;Marca&quot;}],&quot;OutputTokenName&quot;:&quot;Nume&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false,&quot;UseTransactions&quot;:true},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3061,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;test Nume&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;LogEvent&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;EventType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null},&quot;UserID&quot;:null,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;NumeRemize&quot;}]},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3062,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Nume&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[p_Marca] !=&#39;&#39;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;[Nume]&quot;,&quot;name&quot;:&quot;p_Nume&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:3063,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;Nume gol&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4416,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[p_Marca] ==\&quot;\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;&quot;,&quot;name&quot;:&quot;p_Nume&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;

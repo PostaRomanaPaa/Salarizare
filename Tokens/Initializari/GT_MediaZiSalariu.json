@@ -1,0 +1,28 @@
+{
+  "globalId": "aaba71c4-82d6-45d6-a505-de885001e325",
+  "namespace": {
+    "globalId": "027ee67c-e55b-4f15-805d-3782f25f361a",
+    "name": "Initializari",
+    "isSystem": false
+  },
+  "name": "GT_MediaZiSalariu",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "db",
+    "sql": "DECLARE @Marca NVARCHAR(50) = '[TknParams:Marca]';\r\n\r\nSELECT\r\n\r\nCAST\r\n(\r\n    ROUND\r\n    (\r\n        (\r\n            ISNULL(ngs.Salariu,0)\r\n            *\r\n            ISNULL(s.TipNorma,1)\r\n            *\r\n            (\r\n                1 + ISNULL(s.ProcentLoialitate,0)\r\n            )\r\n        )\r\n\r\n        /\r\n\r\n        NULLIF\r\n        (\r\n            [Initializari:ZileLucratoare_old(\r\n                Anul='[TknParams:Anul]',\r\n                Luna='[TknParams:Luna]'\r\n            )]\r\n        ,0)\r\n\r\n    ,0)\r\n\r\nAS DECIMAL(18,2)\r\n\r\n) AS MediaZiSalariu\r\n\r\nFROM app.Salariat s\r\nINNER JOIN app.NomGrilaSalarizare ngs\r\n    ON ngs.Clasa = s.Clasa\r\nWHERE s.Marca = @Marca",
+    "col": "MediaZiSalariu",
+    "cols": "MediaZiSalariu",
+    "connStr": "",
+    "params": [
+      "Marca",
+      "Anul",
+      "Luna"
+    ]
+  }
+}

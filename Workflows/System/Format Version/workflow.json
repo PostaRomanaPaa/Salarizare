@@ -1,13 +1,13 @@
 {
   "InputFields": [
     {
-      "Id": 93,
+      "Id": 168,
       "Name": "ReleaseVersion",
       "DefaultValue": "",
       "Type": "Input",
       "InputType": "Text",
       "EntityVersionId": null,
-      "WorkflowId": 39,
+      "WorkflowId": 79,
       "ContractFieldId": null,
       "IsDeleted": false,
       "Required": true,
@@ -17,13 +17,13 @@
   ],
   "OutputFields": [
     {
-      "Id": 94,
+      "Id": 169,
       "Name": "Version",
       "DefaultValue": "[Version]",
       "Type": "Output",
       "InputType": "Text",
       "EntityVersionId": null,
-      "WorkflowId": 39,
+      "WorkflowId": 79,
       "ContractFieldId": null,
       "IsDeleted": false,
       "Required": false,
@@ -31,7 +31,7 @@
       "OrderIndex": 0
     }
   ],
-  "Id": 39,
+  "Id": 79,
   "GlobalId": "1f497b52-dcd0-4450-bc0b-54a5ffc46eef",
   "ContractId": null,
   "ConfigGenerationGlobalId": "1f497b52-dcd0-4450-bc0b-54a5ffc46eef",
@@ -41,15 +41,15 @@
   "IsDebug": false,
   "IsSystem": true,
   "ActionList": {
-    "Id": 5231,
-    "GlobalId": "f3058628-2eee-4a49-9566-9d48795de6b6",
+    "Id": 8653,
+    "GlobalId": "538d9576-b753-424c-85ce-06151ec2bae6",
     "Actions": [
       {
-        "Id": 3645,
+        "Id": 5993,
         "GlobalId": "00000000-0000-0000-0000-000000000000",
         "Description": "Server Request",
         "ActionErrorMessage": null,
-        "ActionStackId": 5231,
+        "ActionStackId": 8653,
         "ActionType": "ServerRequestHttpClient",
         "Condition": null,
         "IsDeleted": false,
@@ -58,9 +58,9 @@
         "DiagramUID": "Activity_1xdffua",
         "ActionParameters": [
           {
-            "Id": 13974,
+            "Id": 25066,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "URL",
             "Value": "https://services.plantanapp.com/api/FormatVersion?ReleaseVersion=[ReleaseVersion]",
             "ActionStackId": null,
@@ -71,9 +71,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13975,
+            "Id": 25067,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "UrlTokenContext",
             "Value": "Url",
             "ActionStackId": null,
@@ -84,9 +84,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13976,
+            "Id": 25068,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "UseSSL",
             "Value": null,
             "ActionStackId": null,
@@ -97,9 +97,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13977,
+            "Id": 25069,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "Certificate",
             "Value": null,
             "ActionStackId": null,
@@ -110,9 +110,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13978,
+            "Id": 25070,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "Timeout",
             "Value": null,
             "ActionStackId": null,
@@ -123,9 +123,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13979,
+            "Id": 25071,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "HttpMethod",
             "Value": "GET",
             "ActionStackId": null,
@@ -136,9 +136,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13980,
+            "Id": 25072,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "Data",
             "Value": null,
             "ActionStackId": null,
@@ -149,9 +149,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13981,
+            "Id": 25073,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "DoNotEscapeTokens",
             "Value": null,
             "ActionStackId": null,
@@ -162,9 +162,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13982,
+            "Id": 25074,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "DisableReferer",
             "Value": null,
             "ActionStackId": null,
@@ -175,9 +175,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13983,
+            "Id": 25075,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "UseDNNProxySettings",
             "Value": null,
             "ActionStackId": null,
@@ -188,9 +188,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13984,
+            "Id": 25076,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "AddCurrentCookies",
             "Value": null,
             "ActionStackId": null,
@@ -201,9 +201,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13985,
+            "Id": 25077,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "IgnoreErrors",
             "Value": null,
             "ActionStackId": null,
@@ -214,17 +214,17 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13986,
+            "Id": 25078,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "OnError",
             "Value": {
-              "Id": 5232,
-              "GlobalId": "2e494ef1-6fe1-4ed6-ac7e-bb8a4b00e059",
+              "Id": 8654,
+              "GlobalId": "2c3bc6d8-f0c1-46e6-a085-f38c7095b73e",
               "Actions": [],
               "IsInvalid": false
             },
-            "ActionStackId": 5232,
+            "ActionStackId": 8654,
             "ParentParameterId": null,
             "IsExpression": false,
             "OrderIndex": 0,
@@ -232,9 +232,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13987,
+            "Id": 25079,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "CookieContainerToken",
             "Value": null,
             "ActionStackId": null,
@@ -245,9 +245,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13988,
+            "Id": 25080,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "Headers",
             "Value": [],
             "ActionStackId": null,
@@ -258,9 +258,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13989,
+            "Id": 25081,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "OutputTokenName",
             "Value": "Version",
             "ActionStackId": null,
@@ -271,9 +271,9 @@
             "LastModifiedBy": null
           },
           {
-            "Id": 13990,
+            "Id": 25082,
             "GlobalId": "00000000-0000-0000-0000-000000000000",
-            "ActionId": 3645,
+            "ActionId": 5993,
             "Name": "OutputHeaders",
             "Value": [],
             "ActionStackId": null,

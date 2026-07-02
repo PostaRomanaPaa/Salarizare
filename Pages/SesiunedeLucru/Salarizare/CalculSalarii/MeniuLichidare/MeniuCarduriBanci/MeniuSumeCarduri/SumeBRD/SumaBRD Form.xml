@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.28.225.00">
+<module type="ActionForm" version="05.28.226.00">
     <contentKey />
     <moduleID>1252</moduleID>
     <alignment />
@@ -116,7 +116,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.28.225.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[2991]]&gt;&lt;/Id&gt;
@@ -178,7 +178,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;open-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:CodSucursala]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:CodSucursala]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;,&quot;DeferRequestBy&quot;:&quot;300&quot;,&quot;Readonly&quot;:false,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
       &lt;AutocompleteUrl /&gt;
       &lt;AutofillName&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
@@ -202,6 +202,10 @@
       &lt;/ConfirmationOfTextBox&gt;
       &lt;MaxLength&gt;450&lt;/MaxLength&gt;
       &lt;AllowTokens /&gt;
+      &lt;DeferRequestBy&gt;300&lt;/DeferRequestBy&gt;
+      &lt;Readonly&gt;False&lt;/Readonly&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
       &lt;Value&gt;&lt;![CDATA[[original:CodSucursala]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;True&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -216,7 +220,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;12&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;1&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -260,7 +264,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;96&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;24&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;2&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -304,7 +308,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;84&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;36&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;3&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -370,7 +374,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;12&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;48&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;4&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -436,7 +440,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;24&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;60&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;5&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -502,7 +506,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;36&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;72&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;6&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -568,7 +572,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;48&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;84&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;7&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -635,7 +639,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;60&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;96&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;8&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -659,7 +663,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;open-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:TipPlata]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:TipPlata]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;,&quot;DeferRequestBy&quot;:&quot;300&quot;,&quot;Readonly&quot;:false,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
       &lt;AutocompleteUrl /&gt;
       &lt;AutofillName&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
@@ -683,6 +687,10 @@
       &lt;/ConfirmationOfTextBox&gt;
       &lt;MaxLength&gt;450&lt;/MaxLength&gt;
       &lt;AllowTokens /&gt;
+      &lt;DeferRequestBy&gt;300&lt;/DeferRequestBy&gt;
+      &lt;Readonly&gt;False&lt;/Readonly&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
       &lt;Value&gt;&lt;![CDATA[[original:TipPlata]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -697,7 +705,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;108&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;9&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -763,7 +771,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;72&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;120&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;10&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -827,7 +835,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;120&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;132&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;11&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -851,7 +859,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;open-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:MesajValidare]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:MesajValidare]&quot;,&quot;AutocompleteUrl&quot;:&quot;&quot;,&quot;AutofillName&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;AutofillAttribute&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Mask&quot;:&quot;&quot;,&quot;MaskOptions&quot;:&quot;{}&quot;,&quot;ConfirmationOfTextBox&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;MaxLength&quot;:450,&quot;AllowTokens&quot;:&quot;&quot;,&quot;DeferRequestBy&quot;:&quot;300&quot;,&quot;Readonly&quot;:false,&quot;SaveToReport&quot;:false,&quot;SecureInput&quot;:true}&lt;/InputData&gt;
       &lt;AutocompleteUrl /&gt;
       &lt;AutofillName&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
@@ -875,6 +883,10 @@
       &lt;/ConfirmationOfTextBox&gt;
       &lt;MaxLength&gt;450&lt;/MaxLength&gt;
       &lt;AllowTokens /&gt;
+      &lt;DeferRequestBy&gt;300&lt;/DeferRequestBy&gt;
+      &lt;Readonly&gt;False&lt;/Readonly&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;SecureInput&gt;True&lt;/SecureInput&gt;
       &lt;Value&gt;&lt;![CDATA[[original:MesajValidare]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
       &lt;IsActive&gt;True&lt;/IsActive&gt;
@@ -889,7 +901,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;144&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;12&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -955,7 +967,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;144&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;156&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;13&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -1021,7 +1033,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;156&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;168&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;14&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -1045,13 +1057,20 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;dropdown-autocomplete&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Status]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;PlantAnApp.EntityRecords&quot;,&quot;Parameters&quot;:{&quot;EntityVersionId&quot;:&quot;55&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Status]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;PlantAnApp.EntityRecords&quot;,&quot;Parameters&quot;:{&quot;EntityVersionId&quot;:&quot;55&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;,&quot;LinkTo&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false},&quot;NoResults&quot;:&quot;No results found&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;DisplayNumber&gt;5&lt;/DisplayNumber&gt;
       &lt;DataSource&gt;
         &lt;Value&gt;PlantAnApp.EntityRecords&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/DataSource&gt;
       &lt;DisableDropdownOnClick /&gt;
+      &lt;LinkTo&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;System.Collections.ArrayList&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/LinkTo&gt;
+      &lt;NoResults&gt;No results found&lt;/NoResults&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Flag&gt;dropdown&lt;/Flag&gt;
       &lt;Value&gt;&lt;![CDATA[[original:Status]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
@@ -1067,7 +1086,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;180&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;15&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -1136,7 +1155,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;168&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;192&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;16&lt;/RowIndex&gt;
       &lt;ColSpan&gt;6&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -1205,7 +1224,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;174&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;198&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;16&lt;/RowIndex&gt;
       &lt;ColSpan&gt;6&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
@@ -1215,7 +1234,7 @@
     &lt;Title&gt;SumaBRD Form&lt;/Title&gt;
     &lt;CssName&gt;sumabrd-form&lt;/CssName&gt;
     &lt;Version&gt;5.28.0&lt;/Version&gt;
-    &lt;Build&gt;5.28.225&lt;/Build&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -1232,7 +1251,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;1252&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.28.225&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
     &lt;TabId&gt;299&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -1265,9 +1284,9 @@
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
     &lt;RootClasses&gt;buzz&lt;/RootClasses&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;29&lt;/RevisionNumber&gt;
-    &lt;RevisionLastChangedBy&gt;razvan.dumitru@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-06-04T12:58:39.3960062+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionNumber&gt;30&lt;/RevisionNumber&gt;
+    &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
+    &lt;RevisionLastChangedDate&gt;2026-06-11T11:08:48.0063546+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -1360,7 +1379,7 @@
       &lt;/Metadata&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.19414aee-8157-451d-b9ca-267f8cb10275&lt;/ActionType&gt;
-      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewSumaBRDId&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;Nume&quot;:&quot;[p_Nume]&quot;,&quot;Cont&quot;:&quot;[p_Cont]&quot;,&quot;Suma&quot;:&quot;[p_Suma]&quot;,&quot;Valid&quot;:&quot;[p_Valid]&quot;,&quot;Recreat&quot;:&quot;[p_Recreat]&quot;,&quot;DataPlatii&quot;:&quot;[p_DataPlatii]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;DenumireFisier&quot;:&quot;[p_DenumireFisier]&quot;,&quot;CNP&quot;:&quot;[p_CNP]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;MesajValidare&quot;:&quot;[p_MesajValidare]&quot;,&quot;TipPlata&quot;:&quot;[p_TipPlata]&quot;,&quot;Status&quot;:&quot;[r_StatusId]&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewSumaBRDId&quot;,&quot;Marca&quot;:&quot;[p_Marca]&quot;,&quot;Nume&quot;:&quot;[p_Nume]&quot;,&quot;Cont&quot;:&quot;[p_Cont]&quot;,&quot;Suma&quot;:&quot;[p_Suma]&quot;,&quot;Valid&quot;:&quot;[p_Valid]&quot;,&quot;Recreat&quot;:&quot;[p_Recreat]&quot;,&quot;DataPlatii&quot;:&quot;[p_DataPlatii]&quot;,&quot;Anul&quot;:&quot;[p_Anul]&quot;,&quot;Luna&quot;:&quot;[p_Luna]&quot;,&quot;DenumireFisier&quot;:&quot;[p_DenumireFisier]&quot;,&quot;CNP&quot;:&quot;[p_CNP]&quot;,&quot;CodSucursala&quot;:&quot;[p_CodSucursala]&quot;,&quot;MesajValidare&quot;:&quot;[p_MesajValidare]&quot;,&quot;TipPlata&quot;:&quot;[p_TipPlata:Text]&quot;,&quot;Status&quot;:&quot;[r_StatusId]&quot;,&quot;ConnectionString&quot;:null,&quot;OnError&quot;:[]}&lt;/ActionData&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
@@ -1372,7 +1391,7 @@
       &lt;/Metadata&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
-      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;HideTime&quot;:&quot;10000&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;},&quot;Stack&quot;:&quot;3&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuCarduriBanci/SumeCarduri/SumeBRD/Detail?SumaBRDId=[NewSumaBRDId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;HideTime&quot;:&quot;10000&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;},&quot;Stack&quot;:&quot;3&quot;,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuCarduriBanci/SumeCarduri/SumeBRD/Detail?SumaBRDId=[NewSumaBRDId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;,&quot;BgColor&quot;:null,&quot;CallBackJsCode&quot;:null,&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:null}}&lt;/ActionData&gt;
       &lt;Condition /&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;

@@ -12,7 +12,7 @@
       "Id": 64,
       "GlobalId": "f409769f-b7e3-46cb-9b1c-f6e8efd5add2",
       "EntityVersionId": 15,
-      "Name": "Cod",
+      "Name": "Cod Sindicat",
       "Type": {
         "Id": "Integer",
         "Name": "Number (Integer)",
@@ -31,14 +31,14 @@
       "IsRequired": true,
       "IsSearchable": false,
       "IsFilterable": false,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 1
     },
     {
       "Id": 65,
       "GlobalId": "3358dca4-dc2f-41be-9f86-99167bd6adca",
       "EntityVersionId": 15,
-      "Name": "Denumire",
+      "Name": "Denumire Sindicat",
       "Type": {
         "Id": "Text",
         "Name": "Text",
@@ -57,7 +57,7 @@
       "IsRequired": true,
       "IsSearchable": true,
       "IsFilterable": true,
-      "IsSortable": false,
+      "IsSortable": true,
       "OrderIndex": 2
     },
     {
@@ -80,11 +80,63 @@
       "NullRecordsValue": null,
       "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": true,
+      "IsRequired": false,
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 3
+    },
+    {
+      "Id": 1393,
+      "GlobalId": "c6a86a26-d6e0-49ed-acd2-21840a2acbe6",
+      "EntityVersionId": 15,
+      "Name": "Cotizatie",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 1394,
+      "GlobalId": "20453b8d-367d-4157-85e9-cbbd5d991a87",
+      "EntityVersionId": 15,
+      "Name": "Suma",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 5
     }
   ],
   "RolePermissions": {
@@ -352,7 +404,7 @@
   "CreatedDate": "2025-10-03T13:04:54.48",
   "CreatedBy": "Alexandra Vasilescu",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-03-26T13:24:10.4533333",
+  "LastModifiedOn": "2026-06-08T11:18:30.03",
   "Icon": "users",
   "Type": 0,
   "BuiltInType": null,

@@ -682,7 +682,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 41
+      "OrderIndex": 43
     },
     {
       "Id": 886,
@@ -708,7 +708,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 42
+      "OrderIndex": 44
     },
     {
       "Id": 887,
@@ -734,7 +734,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 43
+      "OrderIndex": 45
     },
     {
       "Id": 888,
@@ -760,7 +760,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 44
+      "OrderIndex": 46
     },
     {
       "Id": 889,
@@ -786,7 +786,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 45
+      "OrderIndex": 47
     },
     {
       "Id": 890,
@@ -812,7 +812,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 46
+      "OrderIndex": 48
     },
     {
       "Id": 891,
@@ -838,7 +838,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 47
+      "OrderIndex": 49
     },
     {
       "Id": 892,
@@ -864,7 +864,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 48
+      "OrderIndex": 50
     },
     {
       "Id": 893,
@@ -890,7 +890,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 49
+      "OrderIndex": 51
     },
     {
       "Id": 894,
@@ -916,7 +916,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 50
+      "OrderIndex": 52
     },
     {
       "Id": 895,
@@ -942,7 +942,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 51
+      "OrderIndex": 53
     },
     {
       "Id": 898,
@@ -1150,7 +1150,7 @@
       "IsSearchable": true,
       "IsFilterable": true,
       "IsSortable": true,
-      "OrderIndex": 53
+      "OrderIndex": 55
     },
     {
       "Id": 906,
@@ -1176,7 +1176,7 @@
       "IsSearchable": true,
       "IsFilterable": true,
       "IsSortable": true,
-      "OrderIndex": 54
+      "OrderIndex": 56
     },
     {
       "Id": 907,
@@ -1202,7 +1202,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 55
+      "OrderIndex": 57
     },
     {
       "Id": 909,
@@ -1228,7 +1228,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 57
+      "OrderIndex": 59
     },
     {
       "Id": 923,
@@ -1306,7 +1306,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 56
+      "OrderIndex": 58
     },
     {
       "Id": 927,
@@ -1384,7 +1384,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 52
+      "OrderIndex": 54
     },
     {
       "Id": 931,
@@ -1436,7 +1436,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 39
+      "OrderIndex": 41
     },
     {
       "Id": 933,
@@ -1476,6 +1476,58 @@
           "Id": "Integer",
           "Name": "Number (Integer)",
           "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 42
+    },
+    {
+      "Id": 1587,
+      "GlobalId": "41ee0741-7f35-4de0-af4f-b20a2d886524",
+      "EntityVersionId": 77,
+      "Name": "ZLP Ingrijire",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 39
+    },
+    {
+      "Id": 1588,
+      "GlobalId": "7f89342a-fcb3-429b-8ffd-c9daa1c055a9",
+      "EntityVersionId": 77,
+      "Name": "Ore ZLP Ingrijire",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
           "Length": 4,
           "Icon": "looks_one"
         }
@@ -1672,7 +1724,7 @@
   "CreatedDate": "2026-05-26T10:03:52.01",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-05-28T18:11:32.6333333",
+  "LastModifiedOn": "2026-07-24T06:39:16.9366667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

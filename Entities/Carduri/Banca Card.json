@@ -32,7 +32,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 2
+      "OrderIndex": 3
     },
     {
       "Id": 1423,
@@ -58,7 +58,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 3
+      "OrderIndex": 4
     },
     {
       "Id": 1424,
@@ -84,7 +84,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 4
+      "OrderIndex": 5
     },
     {
       "Id": 1425,
@@ -110,7 +110,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 5
+      "OrderIndex": 6
     },
     {
       "Id": 1426,
@@ -136,7 +136,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 6
+      "OrderIndex": 7
     },
     {
       "Id": 1427,
@@ -162,7 +162,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 1
+      "OrderIndex": 2
     },
     {
       "Id": 1428,
@@ -188,7 +188,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 7
+      "OrderIndex": 8
     },
     {
       "Id": 1429,
@@ -214,7 +214,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 8
+      "OrderIndex": 9
     },
     {
       "Id": 1430,
@@ -240,7 +240,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 9
+      "OrderIndex": 10
     },
     {
       "Id": 1431,
@@ -266,7 +266,59 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 10
+      "OrderIndex": 11
+    },
+    {
+      "Id": 1534,
+      "GlobalId": "c33a2516-f170-467e-b034-6278d763de02",
+      "EntityVersionId": 107,
+      "Name": "OrdineAfisare",
+      "Type": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "InputType": {
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 1535,
+      "GlobalId": "16c1a7c8-d738-4c83-97d2-87f3f9a04e37",
+      "EntityVersionId": 107,
+      "Name": "Activ",
+      "Type": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "InputType": {
+          "Id": "Boolean",
+          "Name": "Boolean",
+          "ValueType": 0,
+          "Length": 1,
+          "Icon": "check_circle_outline"
+        }
+      },
+      "DefaultValue": "true",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 12
     }
   ],
   "RolePermissions": {
@@ -450,7 +502,7 @@
   "CreatedDate": "2026-06-11T12:03:05.9566667",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-06-26T08:18:01.4266667",
+  "LastModifiedOn": "2026-07-03T16:59:49.9166667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

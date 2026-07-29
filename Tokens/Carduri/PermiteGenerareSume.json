@@ -1,0 +1,28 @@
+{
+  "globalId": "7cc87734-732b-413d-85e9-bf427102ec60",
+  "namespace": {
+    "globalId": "456692f7-6ed6-449a-b0c4-0fdc7a45f9b3",
+    "name": "Carduri",
+    "isSystem": false
+  },
+  "name": "PermiteGenerareSume",
+  "description": "Verifică dacă este permisă generarea sumelor bancare pentru banca și perioada selectate. Blochează generarea dacă există deja un fișier confirmat.",
+  "defaultValue": "-2",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "db",
+    "sql": "DECLARE @Banca NVARCHAR(20) =\r\n    UPPER(LTRIM(RTRIM('[TknParams:Banca]')));\r\n\r\nDECLARE @DataPlatii DATE =\r\n    CAST('[TknParams:DataPlatii]' AS DATE);\r\n\r\nDECLARE @TipPlata NVARCHAR(100) =\r\n    LTRIM(RTRIM('[TknParams:TipPlata]'));\r\n\r\nDECLARE @CodSucursala NVARCHAR(20) =\r\n    '[GetOrSession:BranchV]';\r\n\r\nDECLARE @Anul INT =\r\n    CAST('[GetOrSession:YearV]' AS INT);\r\n\r\nDECLARE @Luna INT =\r\n    CAST('[GetOrSession:MonthV]' AS INT);\r\n\r\nDECLARE @ExistaConfirmat INT = 0;\r\nDECLARE @ExistaAltTipPlata INT = 0;\r\n\r\n\r\n-------------------------------------------------\r\n-- Validare cod banca\r\n-------------------------------------------------\r\n\r\nIF @Banca NOT IN\r\n(\r\n    'BCR',\r\n    'BRD',\r\n    'BT',\r\n    'CEC',\r\n    'ING',\r\n    'MIL',\r\n    'RZB',\r\n    'UNI'\r\n)\r\nBEGIN\r\n    SELECT -1 AS PermiteGenerare;\r\n    RETURN;\r\nEND;\r\n\r\n\r\n-------------------------------------------------\r\n-- Centralizare sume pentru toate bancile\r\n-------------------------------------------------\r\n\r\n;WITH SumeBanci AS\r\n(\r\n    SELECT\r\n        'BCR' AS CodBanca,\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        Valid\r\n    FROM app.SumaBCR\r\n\r\n    UNION ALL\r\n\r\n    SELECT\r\n        'BRD',\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        Valid\r\n    FROM app.SumaBRD\r\n\r\n    UNION ALL\r\n\r\n    SELECT\r\n        'BT',\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        Valid\r\n    FROM app.SumaBT\r\n\r\n    UNION ALL\r\n\r\n    SELECT\r\n        'CEC',\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        valid\r\n    FROM app.SumaCEC\r\n\r\n    UNION ALL\r\n\r\n    SELECT\r\n        'ING',\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        valid\r\n    FROM app.SumaING\r\n\r\n    UNION ALL\r\n\r\n    SELECT\r\n        'MIL',\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        Valid\r\n    FROM app.SumaMIL\r\n\r\n    UNION ALL\r\n\r\n    SELECT\r\n        'RZB',\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        Valid\r\n    FROM app.SumaRZB\r\n\r\n    UNION ALL\r\n\r\n    SELECT\r\n        'UNI',\r\n        CodSucursala,\r\n        Anul,\r\n        Luna,\r\n        DataPlatii,\r\n        TipPlata,\r\n        Status,\r\n        valid\r\n    FROM app.SumaUNI\r\n)\r\n\r\nSELECT\r\n    -------------------------------------------------\r\n    -- Acelasi tip de plata este deja confirmat\r\n    -------------------------------------------------\r\n    @ExistaConfirmat =\r\n        CASE\r\n            WHEN EXISTS\r\n            (\r\n                SELECT 1\r\n                FROM SumeBanci s\r\n                WHERE s.CodBanca = @Banca\r\n                  AND s.CodSucursala = @CodSucursala\r\n                  AND s.Anul = @Anul\r\n                  AND s.Luna = @Luna\r\n\r\n                  AND CAST(s.DataPlatii AS DATE)\r\n                      = @DataPlatii\r\n\r\n                  AND LTRIM(RTRIM(ISNULL(s.TipPlata,'')))\r\n                      = @TipPlata\r\n\r\n                  AND s.Status in ( 2, 5)\r\n                  AND ISNULL(s.Valid,0) = 1\r\n                  \r\n            )\r\n            THEN 1\r\n            ELSE 0\r\n        END,\r\n\r\n    -------------------------------------------------\r\n    -- Exista alt tip de plata in aceeasi zi\r\n    -------------------------------------------------\r\n    @ExistaAltTipPlata =\r\n        CASE\r\n            WHEN EXISTS\r\n            (\r\n                SELECT 1\r\n                FROM SumeBanci s\r\n                WHERE s.CodBanca = @Banca\r\n                  AND s.CodSucursala = @CodSucursala\r\n                  AND s.Anul = @Anul\r\n                  AND s.Luna = @Luna\r\n\r\n                  AND CAST(s.DataPlatii AS DATE)\r\n                      = @DataPlatii\r\n\r\n                  AND LTRIM(RTRIM(ISNULL(s.TipPlata,'')))\r\n                      <> @TipPlata\r\n\r\n                  AND ISNULL(s.Status,1) IN (1,2,5)\r\n                  AND ISNULL(s.Valid,0) = 1\r\n            )\r\n            THEN 1\r\n            ELSE 0\r\n        END;\r\n\r\n\r\n-------------------------------------------------\r\n-- Rezultat token\r\n-------------------------------------------------\r\n\r\nSELECT\r\n    CASE\r\n        WHEN @ExistaConfirmat = 1\r\n            THEN 0\r\n\r\n        WHEN @ExistaAltTipPlata = 1\r\n            THEN 0\r\n\r\n        ELSE 1\r\n    END AS PermiteGenerare;",
+    "col": "PermiteGenerare",
+    "cols": "",
+    "connStr": "",
+    "params": [
+      "Banca",
+      "DataPlatii",
+      "TipPlata"
+    ]
+  }
+}

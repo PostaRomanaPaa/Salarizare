@@ -1215,7 +1215,7 @@
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;186&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;15&lt;/RowIndex&gt;
-      &lt;ColSpan&gt;9&lt;/ColSpan&gt;
+      &lt;ColSpan&gt;8&lt;/ColSpan&gt;
       &lt;ColOffset&gt;3&lt;/ColOffset&gt;
     &lt;/Field&gt;
     &lt;Field&gt;
@@ -1284,7 +1284,7 @@
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;198&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;16&lt;/RowIndex&gt;
-      &lt;ColSpan&gt;9&lt;/ColSpan&gt;
+      &lt;ColSpan&gt;8&lt;/ColSpan&gt;
       &lt;ColOffset&gt;3&lt;/ColOffset&gt;
     &lt;/Field&gt;
   &lt;/Fields&gt;
@@ -1344,9 +1344,9 @@
     &lt;PopupName /&gt;
     &lt;RootClasses&gt;buzz&lt;/RootClasses&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;394&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;400&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-06-29T13:31:39.7089117+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2026-07-28T08:21:57.0531255+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -1483,7 +1483,7 @@
       &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
       &lt;Description&gt;Verificare Status Calcul taxe Pensii Alimenatre&lt;/Description&gt;
       &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:3036,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:4373,&quot;ActionType&quot;:&quot;ShowToast&quot;,&quot;Condition&quot;:&quot;[Helper:TokenStatusCalculTaxePostale] == 1&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Heading&quot;:null,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Aveti Calcul Taxe Pensii Alimentare neconfirmat!&amp;lt;/p&amp;gt;&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;default&quot;},&quot;BgColor&quot;:&quot;#2d88a6&quot;,&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;},&quot;AllowToastClose&quot;:true,&quot;CallBackJsCode&quot;:null,&quot;HideTime&quot;:&quot;10000&quot;,&quot;Stack&quot;:&quot;3&quot;,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;mid-center&quot;},&quot;TextAlignment&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;center&quot;},&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
-      &lt;Condition&gt;[Helper:TokenStatusCalculTaxePostale] == 1 &amp;amp;&amp;amp; [GetOrSession:BranchV] !=&#39;A&#39;&lt;/Condition&gt;
+      &lt;Condition&gt;[Helper:TokenStatusCalculTaxePostale] == 1&lt;/Condition&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;

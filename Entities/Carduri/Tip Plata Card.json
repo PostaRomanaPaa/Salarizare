@@ -59,6 +59,32 @@
       "IsFilterable": true,
       "IsSortable": true,
       "OrderIndex": 2
+    },
+    {
+      "Id": 1536,
+      "GlobalId": "b9df9ada-8804-4a59-bc04-32f6281d1228",
+      "EntityVersionId": 106,
+      "Name": "Entitate",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 3
     }
   ],
   "RolePermissions": {
@@ -242,7 +268,7 @@
   "CreatedDate": "2026-06-11T11:59:26.8333333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-06-12T14:13:46.2833333",
+  "LastModifiedOn": "2026-07-06T07:04:05.7133333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

@@ -1,0 +1,298 @@
+{
+  "InputFields": [
+    {
+      "Id": 300,
+      "Name": "CodSucursala",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 104,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 301,
+      "Name": "Anul",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 104,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 302,
+      "Name": "Luna",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 104,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 303,
+      "Name": "Status",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 104,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 305,
+      "Name": "DataAcordare",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Date",
+      "EntityVersionId": null,
+      "WorkflowId": 104,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 5
+    },
+    {
+      "Id": 307,
+      "Name": "Tip",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 104,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 4
+    }
+  ],
+  "OutputFields": [],
+  "Id": 104,
+  "GlobalId": "12a62ee3-2d47-437a-9a2a-bddc147a795f",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "12a62ee3-2d47-437a-9a2a-bddc147a795f",
+  "EnvironmentId": 1,
+  "Name": "WF_Stergere Prime Copii",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 11314,
+    "GlobalId": "533f3db1-aaab-48eb-82dd-199911490fdd",
+    "Actions": [
+      {
+        "Id": 8340,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Run SQL Query",
+        "ActionErrorMessage": null,
+        "ActionStackId": 11314,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_1awex8n",
+        "ActionParameters": [
+          {
+            "Id": 37009,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37010,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37011,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37012,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "SqlQuery",
+            "Value": "DELETE FROM app.PrimaCopii\r\nwhere CodSucursala  =@CodSucursala\r\nand Anul = @Anul\r\nand Luna = @Luna\r\nand Tip = @Tip\r\nand DataAcordare = @DataAcordare\r\nand Status = @Status ",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37013,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "OnError",
+            "Value": {
+              "Id": 11315,
+              "GlobalId": "8215f6ca-aba0-4eda-939f-16b6a12ba1d2",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 11315,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37014,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37015,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37016,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              },
+              {
+                "name": "Status",
+                "value": "[Status]"
+              },
+              {
+                "name": "Tip",
+                "value": "[Tip]"
+              },
+              {
+                "name": "DataAcordare",
+                "value": "[DataAcordare]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37017,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 37018,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8340,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 6,
+  "CreatedOn": "2026-07-27T08:05:56.7907894+00:00",
+  "LastModifiedBy": 6,
+  "LastModifiedOn": "2026-07-27T09:49:33.384309+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "e77eed92-409a-4a30-9945-07ab5bae9079"
+}

@@ -113,32 +113,6 @@
       "OrderIndex": 4
     },
     {
-      "Id": 1412,
-      "GlobalId": "b7c7300c-fe05-4ad4-b9ce-78af5764e322",
-      "EntityVersionId": 104,
-      "Name": "Data Acordare",
-      "Type": {
-        "Id": "DateTimeOffset",
-        "Name": "Local Date and Time",
-        "InputType": {
-          "Id": "DateTimeOffset",
-          "Name": "Local Date and Time",
-          "ValueType": 6,
-          "Length": 10,
-          "Icon": "calendar_today"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": true,
-      "IsSearchable": true,
-      "IsFilterable": false,
-      "IsSortable": true,
-      "OrderIndex": 5
-    },
-    {
       "Id": 1413,
       "GlobalId": "08e776e2-1d0e-4464-95ae-eb3a4c067959",
       "EntityVersionId": 104,
@@ -215,6 +189,58 @@
       "IsFilterable": false,
       "IsSortable": true,
       "OrderIndex": 8
+    },
+    {
+      "Id": 1580,
+      "GlobalId": "bded2eb7-6f26-425f-9714-d5f0fdfbb278",
+      "EntityVersionId": 104,
+      "Name": "Status",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": "1",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 55,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 9
+    },
+    {
+      "Id": 1593,
+      "GlobalId": "65e1cece-bf03-4d2a-b49d-790aaeaf0b8d",
+      "EntityVersionId": 104,
+      "Name": "Data Acordare",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 10
     }
   ],
   "RolePermissions": {
@@ -440,7 +466,7 @@
   "CreatedDate": "2026-06-10T07:40:47.8666667",
   "CreatedBy": "Cristian Tudorache",
   "LastModifiedBy": "Cristian Tudorache",
-  "LastModifiedOn": "2026-06-29T09:28:50.1666667",
+  "LastModifiedOn": "2026-07-27T10:22:05.0766667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

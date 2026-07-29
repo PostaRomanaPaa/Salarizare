@@ -1,0 +1,24 @@
+{
+  "globalId": "1d3dfbef-9f72-4a5c-ba22-d1f4d26e0336",
+  "namespace": {
+    "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+    "name": "Helper",
+    "isSystem": false
+  },
+  "name": "TokenStatusTicheteMasaCorectii",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "db",
+    "sql": "SELECT CASE\r\n    WHEN NOT EXISTS\r\n    (\r\n        SELECT 1\r\n        FROM app.TichetMasaCorectii\r\n        WHERE CodSucursala = '[GetOrSession:BranchV]'\r\n          AND Anul = '[GetOrSession:YearV=0]'\r\n          AND Luna = '[GetOrSession:MonthV=0]'\r\n    )\r\n    THEN 0\r\n\r\n    WHEN EXISTS\r\n    (\r\n        SELECT 1\r\n        FROM app.TichetMasaCorectii\r\n        WHERE CodSucursala = '[GetOrSession:BranchV]'\r\n          AND Anul = '[GetOrSession:YearV=0]'\r\n          AND Luna = '[GetOrSession:MonthV=0]'\r\n          AND ISNULL(Status, 1) <> 2\r\n    )\r\n    THEN 1\r\n\r\n    ELSE 2\r\nEND AS TokenStatusTicheteMasaCorectii;",
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": []
+  }
+}

@@ -1,0 +1,907 @@
+{
+  "InputFields": [
+    {
+      "Id": 248,
+      "Name": "CodSucursala",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 97,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 249,
+      "Name": "DataPlatii",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "DateTime",
+      "EntityVersionId": null,
+      "WorkflowId": 97,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 3
+    },
+    {
+      "Id": 250,
+      "Name": "Anul",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 97,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 251,
+      "Name": "Luna",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 97,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 252,
+      "Name": "TipPlata",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 97,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 4
+    },
+    {
+      "Id": 253,
+      "Name": "Email",
+      "DefaultValue": "",
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 97,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 5
+    }
+  ],
+  "OutputFields": [],
+  "Id": 97,
+  "GlobalId": "d2d17f06-7dde-43cb-8854-16dab356ff1c",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "d2d17f06-7dde-43cb-8854-16dab356ff1c",
+  "EnvironmentId": 1,
+  "Name": "WF_Banci_SendEmail_CNPR Copy",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 10521,
+    "GlobalId": "f78ad973-7036-4127-9348-8601125d96dd",
+    "Actions": [
+      {
+        "Id": 7658,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Lista Fisiere from SQL",
+        "ActionErrorMessage": null,
+        "ActionStackId": 10521,
+        "ActionType": "LoadEntitiesFromSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_0zrsbcf",
+        "ActionParameters": [
+          {
+            "Id": 32765,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32766,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32767,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "SqlQuery",
+            "Value": "SELECT\n    Id,\n    FileId,\n    CodBanca,\n    DenumireFisier,\n    @Email as EmailDestinatarFormular,\n    TipPlata,\n    DataPlatii,\n    CodSucursala,\n    Luna,\n    Anul\nFROM app.BancaFisierTransfer\nWHERE Status = 8\n  AND FileId IS NOT NULL\n  AND CodSucursala = @CodSucursala\n  AND Luna = @Luna\n  AND Anul = @Anul\n  --AND CAST(DataPlatii AS DATE) = CAST(@DataPlatii AS DATE)\n  AND LTRIM(RTRIM(TipPlata)) = LTRIM(RTRIM(@TipPlata))\nORDER BY CodBanca, DenumireFisier;",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32768,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "EntityName",
+            "Value": "ListaTransfer",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32769,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "ClearBeforeLoad",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32770,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "OnError",
+            "Value": {
+              "Id": 10522,
+              "GlobalId": "e5112064-0b13-4a25-81d5-212c8ad99323",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 10522,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32771,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32772,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              },
+              {
+                "name": "TipPlata",
+                "value": "[TipPlata]"
+              },
+              {
+                "name": "Email",
+                "value": "[Email]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32773,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7658,
+            "Name": "EntityProps",
+            "Value": [
+              {
+                "name": "FileId",
+                "value": "FileId"
+              },
+              {
+                "name": "DenumireFisier",
+                "value": "DenumireFisier"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 7659,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Execute Actions for each List Entry",
+        "ActionErrorMessage": null,
+        "ActionStackId": 10521,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_0cxz91c",
+        "ActionParameters": [
+          {
+            "Id": 32774,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7659,
+            "Name": "EntityName",
+            "Value": "ListaTransfer",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32775,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7659,
+            "Name": "ContextBehavior",
+            "Value": "UpdateAllTokens",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32796,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7659,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 10523,
+              "GlobalId": "8177a4fc-3152-4a47-92d1-c07cbfa2c30b",
+              "Actions": [
+                {
+                  "Id": 7660,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "FileId",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 10523,
+                  "ActionType": "LogEvent",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 0,
+                  "DiagramUID": "f65da9b5-d3d9-4fd9-8ca1-2a191be91ffe",
+                  "ActionParameters": [
+                    {
+                      "Id": 32776,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7660,
+                      "Name": "EventType",
+                      "Value": "ADMIN_ALERT",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32777,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7660,
+                      "Name": "UserID",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32778,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7660,
+                      "Name": "LogProperties",
+                      "Value": [
+                        {
+                          "name": "fileid",
+                          "value": "[ListaTransfer:FileId]"
+                        },
+                        {
+                          "name": "email",
+                          "value": "[Email]"
+                        },
+                        {
+                          "name": "denfis",
+                          "value": "[ListaTransfer:DenumireFisier]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 7661,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "SendEmail",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 10523,
+                  "ActionType": "SendMail",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 1,
+                  "DiagramUID": "ab063f3b-8160-4824-9df2-8b7a51f47368",
+                  "ActionParameters": [
+                    {
+                      "Id": 32779,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "From",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32780,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "To",
+                      "Value": "[ListaTransfer:EmailDestinatarFormular]",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32781,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "DetermineEmail",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32782,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "ToAllUsers",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32783,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "ReplyTo",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32784,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "Cc",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32785,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "Bcc",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32786,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "Subject",
+                      "Value": "Transmitere fisiere [TipPlata] pentru [GetOrSession:Branch]",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32787,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "Format",
+                      "Value": "Html",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32788,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "DnnEmailTemplate",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32789,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "Body",
+                      "Value": "<p>Buna ziua,</p>\n<p>Pentru Data platii:&nbsp;<strong>[ListaTransfer:DataPlatii],</strong> reprezentand<strong> [ListaTransfer:TipPlata] </strong>vă transmitem fișierele:</p>\n<ul>\n<li><strong>[ListaTransfer:DenumireFisier]</strong></li>\n</ul>\n<p>test 07-07-2026</p>\n<p>Cu stima,<br>[GetOrSession:Branch]</p>",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32790,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "PortalFiles",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32791,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "FileToken1",
+                      "Value": "[ListaTransfer:FileId]",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32792,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 10524,
+                        "GlobalId": "e3185335-998f-4c08-81da-9dc2122cf67c",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 10524,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32793,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "IgnoreErros",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32794,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "Credentials",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "smtp",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 32795,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 7661,
+                      "Name": "Headers",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                }
+              ],
+              "IsInvalid": false
+            },
+            "ActionStackId": 10523,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32797,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7659,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32798,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7659,
+            "Name": "OnError",
+            "Value": {
+              "Id": 10525,
+              "GlobalId": "cbda1759-7a83-48e9-92fa-d772e1f968ad",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 10525,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32799,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7659,
+            "Name": "Filters",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 7662,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Set Transmitere",
+        "ActionErrorMessage": null,
+        "ActionStackId": 10521,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 2,
+        "DiagramUID": "Activity_0i0kb2r",
+        "ActionParameters": [
+          {
+            "Id": 32800,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32801,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32802,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "UseTransactions",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32803,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "SqlQuery",
+            "Value": "UPDATE app.BancaFisierTransfer\r\nSET\r\n    Status = 4,\r\n    DataTransmitere = GETDATE(),\r\n    EmailDestinatar = @Email,\r\n    MesajTransmitere = 'Fisier transmis cu succes'\r\nWHERE Status = 8\r\n  AND FileId IS NOT NULL\r\n  AND CodSucursala = @CodSucursala\r\n  AND Luna = @Luna\r\n  AND Anul = @Anul\r\n  AND DenumireFisier=@DenumireFisier\r\n  --AND CAST(DataPlatii AS DATE) = CAST(@DataPlatii AS DATE)\r\n  AND LTRIM(RTRIM(TipPlata)) = LTRIM(RTRIM(@TipPlata))\r\n  and FileId = @FileId;",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32804,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "OnError",
+            "Value": {
+              "Id": 10526,
+              "GlobalId": "8cb373ed-52bb-4894-aab9-0bd83579bb26",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 10526,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32805,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32806,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32807,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "DenumireFisier",
+                "value": "[ListaTransfer:DenumireFisier]"
+              },
+              {
+                "name": "TipPlata",
+                "value": "[ListaTransfer:TipPlata]"
+              },
+              {
+                "name": "Email",
+                "value": "[Email]"
+              },
+              {
+                "name": "FileId",
+                "value": "[ListaTransfer:FileId]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32808,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 32809,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 7662,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 9,
+  "CreatedOn": "2026-07-08T08:31:04.5874497+00:00",
+  "LastModifiedBy": 9,
+  "LastModifiedOn": "2026-07-08T08:31:33.1017263+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "97833b9a-0126-4633-8efe-7cee6c859297"
+}

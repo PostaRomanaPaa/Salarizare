@@ -35,32 +35,6 @@
       "OrderIndex": 2
     },
     {
-      "Id": 1400,
-      "GlobalId": "2e5692b4-f66d-418d-9564-be5b7ee0b905",
-      "EntityVersionId": 103,
-      "Name": "Data Acordare",
-      "Type": {
-        "Id": "DateTimeOffset",
-        "Name": "Local Date and Time",
-        "InputType": {
-          "Id": "DateTimeOffset",
-          "Name": "Local Date and Time",
-          "ValueType": 6,
-          "Length": 10,
-          "Icon": "calendar_today"
-        }
-      },
-      "DefaultValue": null,
-      "NullRecordsValue": null,
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": true,
-      "OrderIndex": 3
-    },
-    {
       "Id": 1401,
       "GlobalId": "e8dbac4e-bfeb-4128-851d-b402c5fed84a",
       "EntityVersionId": 103,
@@ -84,7 +58,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 4
+      "OrderIndex": 3
     },
     {
       "Id": 1402,
@@ -110,7 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 5
+      "OrderIndex": 4
     },
     {
       "Id": 1403,
@@ -134,9 +108,9 @@
       "IsDeleted": false,
       "IsRequired": false,
       "IsSearchable": false,
-      "IsFilterable": false,
+      "IsFilterable": true,
       "IsSortable": true,
-      "OrderIndex": 6
+      "OrderIndex": 5
     },
     {
       "Id": 1404,
@@ -162,7 +136,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 7
+      "OrderIndex": 6
     },
     {
       "Id": 1405,
@@ -188,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 8
+      "OrderIndex": 7
     },
     {
       "Id": 1406,
@@ -214,7 +188,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 9
+      "OrderIndex": 8
     },
     {
       "Id": 1407,
@@ -240,7 +214,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 10
+      "OrderIndex": 9
     },
     {
       "Id": 1415,
@@ -267,6 +241,58 @@
       "IsFilterable": false,
       "IsSortable": true,
       "OrderIndex": 1
+    },
+    {
+      "Id": 1578,
+      "GlobalId": "05c35fc9-559f-4571-b8af-18eff3fa3ed3",
+      "EntityVersionId": 103,
+      "Name": "Data Acordare",
+      "Type": {
+        "Id": "Date",
+        "Name": "Date",
+        "InputType": {
+          "Id": "Date",
+          "Name": "Date",
+          "ValueType": 3,
+          "Length": 3,
+          "Icon": "calendar_today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 10
+    },
+    {
+      "Id": 1579,
+      "GlobalId": "244a34ed-f5a6-42af-bbd5-620e8dec5b8e",
+      "EntityVersionId": 103,
+      "Name": "Status",
+      "Type": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "InputType": {
+          "Id": "EntityRef",
+          "Name": "Entity Reference",
+          "ValueType": 7,
+          "Length": 4,
+          "Icon": null
+        }
+      },
+      "DefaultValue": "1",
+      "NullRecordsValue": null,
+      "EntityVersionRefId": 55,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 11
     }
   ],
   "RolePermissions": {
@@ -492,7 +518,7 @@
   "CreatedDate": "2026-06-10T07:25:37.99",
   "CreatedBy": "Cristian Tudorache",
   "LastModifiedBy": "Cristian Tudorache",
-  "LastModifiedOn": "2026-06-10T07:45:19.0766667",
+  "LastModifiedOn": "2026-07-24T08:18:50.31",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

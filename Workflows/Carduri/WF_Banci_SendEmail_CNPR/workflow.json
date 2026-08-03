@@ -602,7 +602,7 @@
             "GlobalId": "00000000-0000-0000-0000-000000000000",
             "ActionId": 7872,
             "Name": "SqlQuery",
-            "Value": "UPDATE app.BancaFisierTransfer\r\nSET\r\n    Status = 4,\r\n    DataTransmitere = GETDATE(),\r\n    EmailDestinatar = @Email,\r\n    MesajTransmitere = 'Fisier transmis cu succes'\r\nWHERE FileId IN (\r\n    SELECT TRY_CAST(value AS INT)\r\n    FROM STRING_SPLIT(@ListaFisiere, ',')\r\n)",
+            "Value": "UPDATE app.BancaFisierTransfer\r\nSET\r\n    Status = 4,\r\n    DataTransmitere = GETDATE(),\r\n    EmailDestinatar = @Email,\r\n    MesajTransmitere = 'Fisier transmis prin Email cu succes'\r\nWHERE FileId IN (\r\n    SELECT TRY_CAST(value AS INT)\r\n    FROM STRING_SPLIT(@ListaFisiere, ',')\r\n)",
             "ActionStackId": null,
             "ParentParameterId": null,
             "IsExpression": false,
@@ -721,7 +721,7 @@
   "CreatedBy": 9,
   "CreatedOn": "2026-06-15T08:57:27.8615262+00:00",
   "LastModifiedBy": 9,
-  "LastModifiedOn": "2026-07-10T12:55:49.6559679+00:00",
+  "LastModifiedOn": "2026-07-30T06:24:51.4718686+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "97833b9a-0126-4633-8efe-7cee6c859297"

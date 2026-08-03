@@ -344,7 +344,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 18
+      "OrderIndex": 19
     },
     {
       "Id": 1479,
@@ -370,7 +370,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 17
+      "OrderIndex": 18
     },
     {
       "Id": 1490,
@@ -475,6 +475,32 @@
       "IsFilterable": false,
       "IsSortable": true,
       "OrderIndex": 14
+    },
+    {
+      "Id": 1619,
+      "GlobalId": "0fb8e1df-42b9-4ef9-8d93-2774ee4c30fb",
+      "EntityVersionId": 109,
+      "Name": "Data Preluare CNPR",
+      "Type": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "InputType": {
+          "Id": "DateTime",
+          "Name": "Date and Time",
+          "ValueType": 5,
+          "Length": 8,
+          "Icon": "today"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 17
     }
   ],
   "RolePermissions": {
@@ -658,7 +684,7 @@
   "CreatedDate": "2026-06-16T07:20:20.1133333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-07-09T14:01:50.5233333",
+  "LastModifiedOn": "2026-07-29T11:27:15.1166667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

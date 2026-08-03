@@ -1,0 +1,744 @@
+{
+  "InputFields": [
+    {
+      "Id": 325,
+      "Name": "CodSucursala",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 108,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 326,
+      "Name": "Anul",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 108,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 327,
+      "Name": "Luna",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 108,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 328,
+      "Name": "ZileLucratoare",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 108,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 3
+    }
+  ],
+  "OutputFields": [],
+  "Id": 108,
+  "GlobalId": "af1a287b-596a-4047-96ca-f9075eba4ff8",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "af1a287b-596a-4047-96ca-f9075eba4ff8",
+  "EnvironmentId": 1,
+  "Name": "WF_TicheteMasa-Export CSV",
+  "Description": "Genereaza fisierul CSV Edenred per sucursala",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 11659,
+    "GlobalId": "32f5d1b4-e47e-4113-b07d-d0fe9b349edd",
+    "Actions": [
+      {
+        "Id": 8661,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Validează datele Edenred și stabilește numele fișierului",
+        "ActionErrorMessage": null,
+        "ActionStackId": 11659,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_0yvs3aw",
+        "ActionParameters": [
+          {
+            "Id": 38960,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38961,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38962,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38963,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "SqlQuery",
+            "Value": "DECLARE @CodClient NVARCHAR(50);\r\nDECLARE @Acum DATETIME = GETDATE();\r\n\r\nIF ISNULL(@ZileLucratoare, 0) <= 0\r\nBEGIN\r\n    ;THROW 51000, N'Numărul zilelor lucrătoare trebuie să fie mai mare decât zero.', 1;\r\nEND;\r\n\r\nSELECT TOP (1)\r\n    @CodClient = LTRIM(RTRIM(CONVERT(NVARCHAR(50), s.CodclientEdenred)))\r\nFROM app.Sucursala AS s\r\nWHERE LTRIM(RTRIM(s.CodSucursala)) = LTRIM(RTRIM(@CodSucursala));\r\n\r\nIF NULLIF(@CodClient, N'') IS NULL\r\nBEGIN\r\n    ;THROW 51000, N'Lipsește Cod client Edenred pentru sucursala curentă.', 1;\r\nEND;\r\n\r\nIF NOT EXISTS\r\n(\r\n    SELECT 1\r\n    FROM app.TichetMasa AS tm\r\n    WHERE LTRIM(RTRIM(tm.CodSucursala)) = LTRIM(RTRIM(@CodSucursala))\r\n      AND tm.Anul = @Anul\r\n      AND tm.Luna = @Luna\r\n      AND ISNULL(tm.Status, 1) = 2\r\n      AND ISNULL(tm.NrTMTotal, 0) > 0\r\n)\r\nBEGIN\r\n    ;THROW 51000, N'Nu există tichete de masă confirmate, cu valoare pozitivă, pentru sucursala și perioada selectate.', 1;\r\nEND;\r\n\r\nSELECT\r\n    @CodClient + N'-'\r\n    + RIGHT(N'0' + CONVERT(NVARCHAR(2), DAY(@Acum)), 2)\r\n    + RIGHT(N'0' + CONVERT(NVARCHAR(2), MONTH(@Acum)), 2)\r\n    + RIGHT(CONVERT(NVARCHAR(4), YEAR(@Acum)), 2)\r\n    + RIGHT(N'0' + CONVERT(NVARCHAR(2), DATEPART(HOUR, @Acum)), 2)\r\n    + RIGHT(N'0' + CONVERT(NVARCHAR(2), DATEPART(MINUTE, @Acum)), 2)\r\n    + N'-TR' AS NumeFisierCsv;",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38964,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "OnError",
+            "Value": {
+              "Id": 11660,
+              "GlobalId": "f521e0d8-6555-439f-bf17-848b5e277c03",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 11660,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38965,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38966,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38967,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              },
+              {
+                "name": "ZileLucratoare",
+                "value": "[ZileLucratoare]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38968,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "OutputTokenName",
+            "Value": "EdenredFisier",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38969,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8661,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 8662,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Construiește lista de linii CSV Edenred",
+        "ActionErrorMessage": null,
+        "ActionStackId": 11659,
+        "ActionType": "LoadEntitiesFromSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 1,
+        "DiagramUID": "Activity_0z0nj5u",
+        "ActionParameters": [
+          {
+            "Id": 38970,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38971,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38972,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "SqlQuery",
+            "Value": "SELECT\r\n    LTRIM(RTRIM(CONVERT(NVARCHAR(50), s.CodclientEdenred))) AS CodClient,\r\n    N'1' AS Constanta1,\r\n    N'1' AS Constanta2,\r\n    N'1' AS NrCarnete,\r\n    CONVERT(NVARCHAR(10), CONVERT(INT, ISNULL(tm.NrTMTotal, 0))) AS NrTichete,\r\n    REPLACE(\r\n        CONVERT(\r\n            NVARCHAR(30),\r\n            CAST(ISNULL(tm.ValoareTichet, 0) AS DECIMAL(18, 2))\r\n        ),\r\n        N'.',\r\n        N','\r\n    ) AS ValoareTichet,\r\n    LEFT(\r\n        ISNULL(RTRIM(CONVERT(NVARCHAR(50), tm.CodOficiu)), N'')\r\n        + REPLICATE(N' ', 10),\r\n        10\r\n    ) AS CodOficiu,\r\n    LEFT(\r\n        ISNULL(RTRIM(CONVERT(NVARCHAR(200), tm.Nume)), N'')\r\n        + REPLICATE(N' ', 30),\r\n        30\r\n    ) AS Nume,\r\n    LEFT(\r\n        ISNULL(RTRIM(CONVERT(NVARCHAR(50), tm.CNP)), N'')\r\n        + REPLICATE(N' ', 13),\r\n        13\r\n    ) AS CNP,\r\n    N'P' AS TipBeneficiar,\r\n    CONVERT(NVARCHAR(10), @ZileLucratoare) AS ZileLucratoare,\r\n    CONVERT(\r\n        NVARCHAR(10),\r\n        CONVERT(INT, ISNULL(tm.ZileLucrateTotal, 0))\r\n    ) AS ZileLucrate,\r\n    N'' AS FinalGol\r\nFROM app.TichetMasa AS tm\r\nINNER JOIN app.Sucursala AS s\r\n    ON LTRIM(RTRIM(s.CodSucursala)) = LTRIM(RTRIM(tm.CodSucursala))\r\nWHERE LTRIM(RTRIM(tm.CodSucursala)) = LTRIM(RTRIM(@CodSucursala))\r\n  AND tm.Anul = @Anul\r\n  AND tm.Luna = @Luna\r\n  AND ISNULL(tm.Status, 1) = 2\r\n  AND ISNULL(tm.NrTMTotal, 0) > 0\r\nORDER BY\r\n    tm.CodOficiu,\r\n    tm.Marca,\r\n    tm.Id;",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38973,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "EntityName",
+            "Value": "EdenredCsvList",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38974,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "ClearBeforeLoad",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38975,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "OnError",
+            "Value": {
+              "Id": 11661,
+              "GlobalId": "27ba09bc-a7a8-4d2c-8cae-df1650605e8d",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 11661,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38976,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38977,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              },
+              {
+                "name": "ZileLucratoare",
+                "value": "[ZileLucratoare]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38978,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8662,
+            "Name": "EntityProps",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      },
+      {
+        "Id": 8663,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Generează fișierul CSV Edenred",
+        "ActionErrorMessage": null,
+        "ActionStackId": 11659,
+        "ActionType": "CSV",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 2,
+        "DiagramUID": "Activity_08l4lqf",
+        "ActionParameters": [
+          {
+            "Id": 38979,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "EntityName",
+            "Value": "EdenredCsvList",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38980,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "IncludeAllFields",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38981,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "RemoveFieldNames",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38982,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "FieldSeparator",
+            "Value": "semicolon",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38983,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "inlineSeparator",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38984,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "StorageLocation",
+            "Value": "File",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38985,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "AddCsvToAllowedFileTypes",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38986,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "EncodingOption",
+            "Value": "UTF8",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38987,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "Folder",
+            "Value": "/Salarizare/Export/TicheteMasa",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38988,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "Pattern",
+            "Value": "[EdenredFisier:NumeFisierCsv]",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38989,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "Duplicates",
+            "Value": "Overwrite",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38990,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "DisableForceDownload",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38991,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "Fields",
+            "Value": [
+              {
+                "name": "CodClient",
+                "value": "[CodClient]"
+              },
+              {
+                "name": "Constanta1",
+                "value": "[Constanta1]"
+              },
+              {
+                "name": "Constanta2",
+                "value": "[Constanta2]"
+              },
+              {
+                "name": "NrCarnete",
+                "value": "[NrCarnete]"
+              },
+              {
+                "name": "NrTichete",
+                "value": "[NrTichete]"
+              },
+              {
+                "name": "ValoareTichet",
+                "value": "[ValoareTichet]"
+              },
+              {
+                "name": "CodOficiu",
+                "value": "[CodOficiu]"
+              },
+              {
+                "name": "Nume",
+                "value": "[Nume]"
+              },
+              {
+                "name": "CNP",
+                "value": "[CNP]"
+              },
+              {
+                "name": "TipBeneficiar",
+                "value": "[TipBeneficiar]"
+              },
+              {
+                "name": "ZileLucratoare",
+                "value": "[ZileLucratoare]"
+              },
+              {
+                "name": "ZileLucrate",
+                "value": "[ZileLucrate]"
+              },
+              {
+                "name": "FinalGol",
+                "value": "[FinalGol]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38992,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "Criteria",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38993,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38994,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "StoreAbsoluteURL",
+            "Value": "EdenredCsvUrl",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38995,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "StoreRelativeURL",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38996,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "StorePhysicalPath",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 38997,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8663,
+            "Name": "StoreLinkClick",
+            "Value": "EdenredCsvLink",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 22,
+  "CreatedOn": "2026-07-31T15:13:58.1135102+00:00",
+  "LastModifiedBy": 22,
+  "LastModifiedOn": "2026-07-31T15:44:56.9604905+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

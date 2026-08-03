@@ -215,6 +215,32 @@
       "IsFilterable": false,
       "IsSortable": false,
       "OrderIndex": 1
+    },
+    {
+      "Id": 1638,
+      "GlobalId": "68bc555e-4067-4886-b1d7-83239ce7ccb0",
+      "EntityVersionId": 10,
+      "Name": "Cod client Edenred",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 9
     }
   ],
   "RolePermissions": {
@@ -481,8 +507,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2025-10-03T10:56:25.6333333",
   "CreatedBy": "Ciprian Aelenei",
-  "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-06-11T15:19:46.6166667",
+  "LastModifiedBy": "Vlad Curcan",
+  "LastModifiedOn": "2026-07-29T14:47:24.8",
   "Icon": "box-open",
   "Type": 0,
   "BuiltInType": null,

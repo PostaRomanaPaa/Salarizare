@@ -1,0 +1,24 @@
+{
+  "globalId": "45a3ed90-71d4-45e4-a105-fbf14dffd43b",
+  "namespace": {
+    "globalId": "b886d36e-c85d-4eb9-83c4-23dbdb73d213",
+    "name": "Helper",
+    "isSystem": false
+  },
+  "name": "TokenStatusFisiereEdenred",
+  "description": "Returnează 1 dacă toate sucursalele au fișier Edenred pentru perioada curentă, altfel 0.",
+  "defaultValue": "0",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "db",
+    "sql": "DECLARE @Anul INT =\r\n    TRY_CONVERT(INT, N'[GetOrSession:YearV]');\r\n\r\nDECLARE @Luna INT =\r\n    TRY_CONVERT(INT, N'[GetOrSession:MonthV]');\r\n\r\nDECLARE @TotalSucursale INT;\r\nDECLARE @FisiereGenerate INT;\r\n\r\nSELECT\r\n    @TotalSucursale =\r\n        COUNT(DISTINCT LTRIM(RTRIM(s.CodSucursala)))\r\nFROM app.Sucursala AS s\r\nWHERE NULLIF(LTRIM(RTRIM(s.CodSucursala)), N'') IS NOT NULL;\r\n\r\nSELECT\r\n    @FisiereGenerate =\r\n        COUNT(DISTINCT LTRIM(RTRIM(fe.CodSucursala)))\r\nFROM app.FisierEdenred AS fe\r\n\r\nINNER JOIN Files AS f\r\n    ON f.FileId = fe.FileId\r\n\r\nINNER JOIN app.Sucursala AS s\r\n    ON LTRIM(RTRIM(s.CodSucursala))\r\n     = LTRIM(RTRIM(fe.CodSucursala))\r\n\r\nWHERE fe.Anul = @Anul\r\n  AND fe.Luna = @Luna;\r\n\r\nSELECT\r\n    CASE\r\n        WHEN @TotalSucursale > 0\r\n         AND ISNULL(@FisiereGenerate, 0) = @TotalSucursale\r\n        THEN 1\r\n        ELSE 0\r\n    END AS TokenStatusFisiereEdenred;",
+    "col": "TokenStatusFisiereEdenred",
+    "cols": "",
+    "connStr": "",
+    "params": []
+  }
+}

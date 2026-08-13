@@ -38,7 +38,7 @@
       "Id": 234,
       "GlobalId": "8f356926-2160-4789-a17c-57ab5282823c",
       "EntityVersionId": 24,
-      "Name": "Deducere Personala de Baza",
+      "Name": "Minim Impozabil",
       "Type": {
         "Id": "Decimal",
         "Name": "Number (Decimal)",
@@ -87,55 +87,55 @@
       "OrderIndex": 2
     },
     {
-      "Id": 253,
-      "GlobalId": "584b071f-d5df-4094-8790-11f737bbca4e",
+      "Id": 1661,
+      "GlobalId": "c5f35f06-4f8a-469d-84b1-ac884e2e39b9",
       "EntityVersionId": 24,
       "Name": "Luna",
       "Type": {
-        "Id": "EntityRef",
-        "Name": "Entity Reference",
+        "Id": "Integer",
+        "Name": "Number (Integer)",
         "InputType": {
-          "Id": "EntityRef",
-          "Name": "Entity Reference",
-          "ValueType": 7,
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
           "Length": 4,
-          "Icon": null
+          "Icon": "looks_one"
         }
       },
       "DefaultValue": null,
       "NullRecordsValue": null,
-      "EntityVersionRefId": 22,
+      "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": true,
+      "IsRequired": false,
       "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 4
     },
     {
-      "Id": 254,
-      "GlobalId": "87c2d436-ef34-40cd-b60b-adc55ae78947",
+      "Id": 1662,
+      "GlobalId": "35f3ee61-09a7-4955-912b-5e0734878b3c",
       "EntityVersionId": 24,
-      "Name": "An",
+      "Name": "Anul",
       "Type": {
-        "Id": "EntityRef",
-        "Name": "Entity Reference",
+        "Id": "Integer",
+        "Name": "Number (Integer)",
         "InputType": {
-          "Id": "EntityRef",
-          "Name": "Entity Reference",
-          "ValueType": 7,
+          "Id": "Integer",
+          "Name": "Number (Integer)",
+          "ValueType": 1,
           "Length": 4,
-          "Icon": null
+          "Icon": "looks_one"
         }
       },
       "DefaultValue": null,
       "NullRecordsValue": null,
-      "EntityVersionRefId": 21,
+      "EntityVersionRefId": null,
       "IsDeleted": false,
-      "IsRequired": true,
+      "IsRequired": false,
       "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
       "OrderIndex": 5
     }
   ],
@@ -404,7 +404,7 @@
   "CreatedDate": "2025-10-16T09:53:16.3433333",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-03-26T13:14:51.0933333",
+  "LastModifiedOn": "2026-08-03T15:42:38.41",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

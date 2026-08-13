@@ -1,0 +1,270 @@
+{
+  "InputFields": [
+    {
+      "Id": 344,
+      "Name": "CodSucursala",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 113,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 345,
+      "Name": "Anul",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 113,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 346,
+      "Name": "Luna",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 113,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 2
+    },
+    {
+      "Id": 347,
+      "Name": "Status",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 113,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 3
+    }
+  ],
+  "OutputFields": [],
+  "Id": 113,
+  "GlobalId": "120636c9-d08b-422e-948e-5cf82ee9a531",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "120636c9-d08b-422e-948e-5cf82ee9a531",
+  "EnvironmentId": 1,
+  "Name": "WF_Confirmare Compensari Concedii de Odihna",
+  "Description": "",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 11919,
+    "GlobalId": "1e7a54f7-2396-4b3e-9f92-9126c5e6903d",
+    "Actions": [
+      {
+        "Id": 8846,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Run SQL Query",
+        "ActionErrorMessage": null,
+        "ActionStackId": 11919,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_1awex8n",
+        "ActionParameters": [
+          {
+            "Id": 39882,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39883,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39884,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39885,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "SqlQuery",
+            "Value": "UPDATE app.ConcediudeOdihnaCompensare\r\nSET Status = @Status \r\nwhere CodSucursala  =@CodSucursala\r\nand Anul = @Anul\r\nand Luna = @Luna",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39886,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "OnError",
+            "Value": {
+              "Id": 11920,
+              "GlobalId": "a6cf136f-c693-4a1a-b1f4-796d126445a1",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 11920,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39887,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39888,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39889,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              },
+              {
+                "name": "Status",
+                "value": "[Status]"
+              },
+              {
+                "name": "Tip",
+                "value": "[Tip]"
+              },
+              {
+                "name": "DataAcordare",
+                "value": "[DataAcordare]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39890,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39891,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8846,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 6,
+  "CreatedOn": "2026-08-13T06:23:36.2466917+00:00",
+  "LastModifiedBy": 6,
+  "LastModifiedOn": "2026-08-13T06:29:26.1877453+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "4247b850-d959-4343-8f60-dfca1900c1d2"
+}

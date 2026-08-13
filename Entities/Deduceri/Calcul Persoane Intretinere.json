@@ -266,7 +266,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 15
+      "OrderIndex": 16
     },
     {
       "Id": 830,
@@ -292,7 +292,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 17
+      "OrderIndex": 18
     },
     {
       "Id": 831,
@@ -318,7 +318,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 22
+      "OrderIndex": 23
     },
     {
       "Id": 832,
@@ -370,7 +370,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 18
+      "OrderIndex": 19
     },
     {
       "Id": 836,
@@ -422,7 +422,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 16
+      "OrderIndex": 17
     },
     {
       "Id": 838,
@@ -526,7 +526,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 19
+      "OrderIndex": 20
     },
     {
       "Id": 842,
@@ -552,7 +552,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 20
+      "OrderIndex": 21
     },
     {
       "Id": 843,
@@ -578,7 +578,59 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 21
+      "OrderIndex": 22
+    },
+    {
+      "Id": 1659,
+      "GlobalId": "a9f1348b-dfaa-4a31-bf08-332ef4b829c3",
+      "EntityVersionId": 75,
+      "Name": "DedSuplimSalariatSub26",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 15
+    },
+    {
+      "Id": 1660,
+      "GlobalId": "49c21cf9-afee-41bd-88e5-c70ab3174f83",
+      "EntityVersionId": 75,
+      "Name": "EsteSalariatSub26",
+      "Type": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "InputType": {
+          "Id": "Boolean",
+          "Name": "Boolean",
+          "ValueType": 0,
+          "Length": 1,
+          "Icon": "check_circle_outline"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 24
     }
   ],
   "RolePermissions": {
@@ -762,7 +814,7 @@
   "CreatedDate": "2026-05-19T12:01:19.9166667",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-05-21T07:05:31.31",
+  "LastModifiedOn": "2026-08-03T15:12:31.7566667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

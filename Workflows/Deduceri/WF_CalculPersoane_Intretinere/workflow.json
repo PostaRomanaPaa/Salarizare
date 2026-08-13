@@ -50,7 +50,7 @@
   "ConfigGenerationGlobalId": "ccd71d9c-fcbb-4cac-9596-b2d70792226b",
   "EnvironmentId": 1,
   "Name": "WF_CalculPersoane_Intretinere",
-  "Description": "",
+  "Description": "Calculeaza:\n- numărul persoanelor aflate în întreținere;\n- deducerea personală standard;\n- deducerile suplimentare eligibile;\n- deducerea totală utilizată ulterior la calculul impozitului.",
   "IsDebug": false,
   "IsSystem": false,
   "ActionList": {
@@ -309,7 +309,7 @@
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
                       "ActionId": 3983,
                       "Name": "SqlQuery",
-                      "Value": "/*=====================================================\r\n    2️⃣ Calcul Persoane Intretinere\r\n=====================================================*/\r\n;WITH Persoane AS\r\n(\r\n    SELECT\r\n        pi.Marca,\r\n\r\n        /*---------------------------------------------\r\n            Copii minori\r\n            FelPersoana = 2\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 2\r\n                 AND pi.DataNasteriiCopil >\r\n                     EOMONTH\r\n                     (\r\n                         DATEADD\r\n                         (\r\n                             YEAR,\r\n                             -18,\r\n                             DATEFROMPARTS([Anul],[Luna],1)\r\n                         )\r\n                     )\r\n                THEN 1\r\n            END\r\n        ) AS NumarCopiiMinori,\r\n\r\n        /*---------------------------------------------\r\n            Sot / Sotie\r\n            FelPersoana = 1\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 1\r\n                THEN 1\r\n            END\r\n        ) AS SotSotie,\r\n\r\n        /*---------------------------------------------\r\n            Alte Persoane\r\n            FelPersoana = 4\r\n        ---------------------------------------------*/\r\n        COUNT\r\n(\r\n    CASE\r\n        WHEN pi.FelPersoana = 4\r\n         AND pi.DataNasteriiCopil <=\r\n             EOMONTH\r\n             (\r\n                 DATEADD\r\n                 (\r\n                     YEAR,\r\n                     -26,\r\n                     DATEFROMPARTS([Anul],[Luna],1)\r\n                 )\r\n             )\r\n        THEN 1\r\n    END\r\n) AS AltePersoane,\r\n\r\n        /*---------------------------------------------\r\n            Persoane in intretinere sub 26 ani\r\n            FelPersoana = 4\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 4\r\n                 AND pi.DataNasteriiCopil >\r\n                     EOMONTH\r\n                     (\r\n                         DATEADD\r\n                         (\r\n                             YEAR,\r\n                             -26,\r\n                             DATEFROMPARTS([Anul],[Luna],1)\r\n                         )\r\n                     )\r\n                THEN 1\r\n            END\r\n        ) AS NumarTineri26,\r\n\r\n        /*---------------------------------------------\r\n            Handicap salariat\r\n            FelPersoana = 0\r\n        ---------------------------------------------*/\r\n        MAX\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 0\r\n                THEN pi.Grad\r\n            END\r\n        ) AS GradHandicap\r\n\r\n    FROM app.PersoanaIntretinere pi\r\n\r\n    INNER JOIN app.Salariat s\r\n        ON s.Marca = pi.Marca\r\n       AND s.CodSucursala = '[CodSucursala]'\r\n       AND s.Anul = [Anul]\r\n       AND s.Luna = [Luna]\r\n\r\n    WHERE\r\n        pi.DataDeInceput <= EOMONTH(DATEFROMPARTS([Anul],[Luna],1))\r\n    AND\r\n    (\r\n        pi.DataDeSfarsit IS NULL\r\n        OR pi.DataDeSfarsit >= DATEFROMPARTS([Anul],[Luna],1)\r\n    )\r\n\r\n    GROUP BY\r\n        pi.Marca\r\n)\r\n\r\nINSERT INTO app.CalculPersoaneIntretinere\r\n(\r\n    Marca,\r\n    CodSucursala,\r\n    Anul,\r\n    Luna,\r\n\r\n    NumarPersoane,\r\n    NumarCopiiMinori,\r\n    NumarTineri26,\r\n    SotSotie,\r\n    AltePersoane,\r\n\r\n    Handicap,\r\n    GradHandicap,\r\n\r\n    DedSuplimCopii,\r\n    DedSuplimAltePers\r\n)\r\nSELECT\r\n    s.Marca,\r\n    s.CodSucursala,\r\n\r\n    [Anul],\r\n    [Luna],\r\n\r\n    /*---------------------------------------------\r\n        Total Persoane Intretinere\r\n        MAX 4\r\n    ---------------------------------------------*/\r\n    CASE\r\n        WHEN\r\n        (\r\n            ISNULL(p.NumarCopiiMinori,0)\r\n            +\r\n            ISNULL(p.SotSotie,0)\r\n            +\r\n            ISNULL(p.NumarTineri26,0)\r\n            +\r\n            ISNULL(p.AltePersoane,0)\r\n        ) > 4\r\n\r\n        THEN 4\r\n\r\n        ELSE\r\n        (\r\n            ISNULL(p.NumarCopiiMinori,0)\r\n            +\r\n            ISNULL(p.SotSotie,0)\r\n            +\r\n            ISNULL(p.NumarTineri26,0)\r\n            +\r\n            ISNULL(p.AltePersoane,0)\r\n        )\r\n    END AS NumarPersoane,\r\n\r\n    ISNULL(p.NumarCopiiMinori,0),\r\n\r\n    ISNULL(p.NumarTineri26,0),\r\n\r\n    ISNULL(p.SotSotie,0),\r\n\r\n    ISNULL(p.AltePersoane,0),\r\n\r\n    /*---------------------------------------------\r\n        Handicap\r\n    ---------------------------------------------*/\r\n    CASE\r\n        WHEN p.GradHandicap IN (1,2)\r\n        THEN 1\r\n        ELSE 0\r\n    END AS Handicap,\r\n\r\n    p.GradHandicap,\r\n\r\n    /*---------------------------------------------\r\n        Deduceri suplimentare\r\n    ---------------------------------------------*/\r\n    ISNULL(p.NumarCopiiMinori,0) * 100,\r\n\r\n    ISNULL(p.NumarTineri26,0) * 100\r\n\r\nFROM app.Salariat s\r\n\r\nLEFT JOIN Persoane p\r\n    ON p.Marca = s.Marca\r\n\r\nWHERE\r\n    s.CodSucursala = '[CodSucursala]'\r\nAND s.Anul = [Anul]\r\nAND s.Luna = [Luna]",
+                      "Value": "/*=====================================================\r\n    1. Calcul persoane in intretinere\r\n\r\n    Logica 4GL:\r\n    - se numara toate persoanele active cu FelPersoana <> 0;\r\n    - totalul se plafoneaza la maximum 4;\r\n    - impartirea pe categorii este informativa.\r\n=====================================================*/\r\n\r\n;WITH Persoane AS\r\n(\r\n    SELECT\r\n        pi.Marca,\r\n\r\n        /*---------------------------------------------\r\n            Total persoane active pentru deducerea\r\n            standard.\r\n\r\n            Echivalent logic 4GL:\r\n                FelPersoana <> 0\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana <> 0\r\n                THEN 1\r\n            END\r\n        ) AS NumarPersoaneTotal,\r\n\r\n        /*---------------------------------------------\r\n            Copii minori\r\n            FelPersoana = 2\r\n            Nu au implinit 18 ani la sfarsitul\r\n            lunii payroll.\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 2\r\n                 AND pi.DataNasteriiCopil >\r\n                     EOMONTH\r\n                     (\r\n                         DATEADD\r\n                         (\r\n                             YEAR,\r\n                             -18,\r\n                             DATEFROMPARTS\r\n                             (\r\n                                 [Anul],\r\n                                 [Luna],\r\n                                 1\r\n                             )\r\n                         )\r\n                     )\r\n                THEN 1\r\n            END\r\n        ) AS NumarCopiiMinori,\r\n\r\n        /*---------------------------------------------\r\n            Sot / sotie\r\n            FelPersoana = 1\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 1\r\n                THEN 1\r\n            END\r\n        ) AS SotSotie,\r\n\r\n        /*---------------------------------------------\r\n            Persoane de tip 4 sub 26 ani\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 4\r\n                 AND pi.DataNasteriiCopil >\r\n                     EOMONTH\r\n                     (\r\n                         DATEADD\r\n                         (\r\n                             YEAR,\r\n                             -26,\r\n                             DATEFROMPARTS\r\n                             (\r\n                                 [Anul],\r\n                                 [Luna],\r\n                                 1\r\n                             )\r\n                         )\r\n                     )\r\n                THEN 1\r\n            END\r\n        ) AS NumarTineri26,\r\n\r\n        /*---------------------------------------------\r\n            Alte persoane\r\n            FelPersoana = 4\r\n\r\n            Include:\r\n            - persoane de cel putin 26 ani;\r\n            - persoane fara data nasterii;\r\n            - parinti sau alte persoane intretinute.\r\n        ---------------------------------------------*/\r\n        COUNT\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 4\r\n                 AND\r\n                 (\r\n                     pi.DataNasteriiCopil <=\r\n                         EOMONTH\r\n                         (\r\n                             DATEADD\r\n                             (\r\n                                 YEAR,\r\n                                 -26,\r\n                                 DATEFROMPARTS\r\n                                 (\r\n                                     [Anul],\r\n                                     [Luna],\r\n                                     1\r\n                                 )\r\n                             )\r\n                         )\r\n\r\n                     OR pi.DataNasteriiCopil IS NULL\r\n                 )\r\n                THEN 1\r\n            END\r\n        ) AS AltePersoane,\r\n\r\n        /*---------------------------------------------\r\n            Handicap salariat\r\n            FelPersoana = 0\r\n        ---------------------------------------------*/\r\n        MAX\r\n        (\r\n            CASE\r\n                WHEN pi.FelPersoana = 0\r\n                THEN pi.Grad\r\n            END\r\n        ) AS GradHandicap\r\n\r\n    FROM app.PersoanaIntretinere pi\r\n\r\n    INNER JOIN app.Salariat s\r\n        ON s.Marca = pi.Marca\r\n       AND s.CodSucursala = '[CodSucursala]'\r\n       AND s.Anul = [Anul]\r\n       AND s.Luna = [Luna]\r\n\r\n    /*---------------------------------------------\r\n        Persoana trebuie sa fie activa cel putin\r\n        o zi in luna payroll.\r\n    ---------------------------------------------*/\r\n    WHERE\r\n        pi.DataDeInceput <=\r\n            EOMONTH\r\n            (\r\n                DATEFROMPARTS\r\n                (\r\n                    [Anul],\r\n                    [Luna],\r\n                    1\r\n                )\r\n            )\r\n\r\n    AND\r\n    (\r\n        pi.DataDeSfarsit IS NULL\r\n\r\n        OR pi.DataDeSfarsit >=\r\n            DATEFROMPARTS\r\n            (\r\n                [Anul],\r\n                [Luna],\r\n                1\r\n            )\r\n    )\r\n\r\n    GROUP BY\r\n        pi.Marca\r\n)\r\n\r\nINSERT INTO app.CalculPersoaneIntretinere\r\n(\r\n    Marca,\r\n    CodSucursala,\r\n    Anul,\r\n    Luna,\r\n\r\n    NumarPersoane,\r\n    NumarCopiiMinori,\r\n    NumarTineri26,\r\n    SotSotie,\r\n    AltePersoane,\r\n\r\n    Handicap,\r\n    GradHandicap,\r\n\r\n    CoeficientPersoane,\r\n    CoeficientHandicap,\r\n    CoeficientTotal,\r\n\r\n    DedSuplimCopii,\r\n    DedSuplimTineri26,\r\n    DedSuplimAltePers,\r\n    DedSuplimSalariatSub26,\r\n    DedSuplimTotala,\r\n\r\n    DeducereStandard,\r\n    DeducereFinala,\r\n\r\n    DataCreare\r\n)\r\n\r\nSELECT\r\n    s.Marca,\r\n    s.CodSucursala,\r\n\r\n    [Anul],\r\n    [Luna],\r\n\r\n    /*---------------------------------------------\r\n        Total persoane active\r\n        Maximum 4 pentru grila deducerii standard\r\n    ---------------------------------------------*/\r\n    CASE\r\n        WHEN ISNULL(p.NumarPersoaneTotal, 0) > 4\r\n            THEN 4\r\n\r\n        ELSE ISNULL(p.NumarPersoaneTotal, 0)\r\n    END AS NumarPersoane,\r\n\r\n    ISNULL(p.NumarCopiiMinori, 0)\r\n        AS NumarCopiiMinori,\r\n\r\n    ISNULL(p.NumarTineri26, 0)\r\n        AS NumarTineri26,\r\n\r\n    ISNULL(p.SotSotie, 0)\r\n        AS SotSotie,\r\n\r\n    ISNULL(p.AltePersoane, 0)\r\n        AS AltePersoane,\r\n\r\n    /*---------------------------------------------\r\n        Handicap salariat\r\n    ---------------------------------------------*/\r\n    CASE\r\n        WHEN p.GradHandicap IN (1, 2)\r\n            THEN 1\r\n\r\n        ELSE 0\r\n    END AS Handicap,\r\n\r\n    p.GradHandicap,\r\n\r\n    /*---------------------------------------------\r\n        Coeficientii se calculeaza ulterior\r\n    ---------------------------------------------*/\r\n    CAST(0 AS DECIMAL(18, 4))\r\n        AS CoeficientPersoane,\r\n\r\n    CAST(0 AS DECIMAL(18, 4))\r\n        AS CoeficientHandicap,\r\n\r\n    CAST(0 AS DECIMAL(18, 4))\r\n        AS CoeficientTotal,\r\n\r\n    /*---------------------------------------------\r\n        Deducerile se calculeaza ulterior\r\n    ---------------------------------------------*/\r\n    CAST(0 AS DECIMAL(18, 2))\r\n        AS DedSuplimCopii,\r\n\r\n    CAST(0 AS DECIMAL(18, 2))\r\n        AS DedSuplimTineri26,\r\n\r\n    CAST(0 AS DECIMAL(18, 2))\r\n        AS DedSuplimAltePers,\r\n\r\n    CAST(0 AS DECIMAL(18, 2))\r\n        AS DedSuplimSalariatSub26,\r\n\r\n    CAST(0 AS DECIMAL(18, 2))\r\n        AS DedSuplimTotala,\r\n\r\n    CAST(0 AS DECIMAL(18, 2))\r\n        AS DeducereStandard,\r\n\r\n    CAST(0 AS DECIMAL(18, 2))\r\n        AS DeducereFinala,\r\n\r\n    SYSDATETIMEOFFSET()\r\n        AS DataCreare\r\n\r\nFROM app.Salariat s\r\n\r\nLEFT JOIN Persoane p\r\n    ON p.Marca = s.Marca\r\n\r\nWHERE\r\n    s.CodSucursala = '[CodSucursala]'\r\n\r\nAND s.Anul = [Anul]\r\n\r\nAND s.Luna = [Luna];",
                       "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
@@ -988,7 +988,7 @@
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
                       "ActionId": 3988,
                       "Name": "SqlQuery",
-                      "Value": "UPDATE app.CalculPersoaneIntretinere\r\nSET\r\n    DedSuplimCopii =\r\n        ISNULL(NumarCopiiMinori,0) * 100\r\nWHERE\r\n    Anul = @Anul\r\nAND Luna = @Luna\r\nAND CodSucursala = @CodSucursala",
+                      "Value": "/*=====================================================\r\n    5. Calcul DedSuplimCopii\r\n    Sursa: app.CopilMinorDeduceri\r\n=====================================================*/\r\n\r\nUPDATE cpi\r\nSET\r\n    cpi.DedSuplimCopii =\r\n        ISNULL(x.NumarCopiiEligibili, 0) * 100,\r\n\r\n    cpi.LastModifiedDate =\r\n        SYSDATETIMEOFFSET()\r\n\r\nFROM app.CalculPersoaneIntretinere cpi\r\n\r\nOUTER APPLY\r\n(\r\n    SELECT\r\n        COUNT(*) AS NumarCopiiEligibili\r\n\r\n    FROM app.CopilMinorDeduceri cmd\r\n\r\n    WHERE cmd.Marca = cpi.Marca\r\n\r\n      AND cmd.CodSucursala = cpi.CodSucursala\r\n\r\n      -------------------------------------------------\r\n      -- Copilul nu a implinit 18 ani\r\n      -- in luna payroll\r\n      -------------------------------------------------\r\n      AND cmd.DataNasteriiCopil >\r\n          EOMONTH\r\n          (\r\n              DATEADD\r\n              (\r\n                  YEAR,\r\n                  -18,\r\n                  DATEFROMPARTS\r\n                  (\r\n                      cpi.Anul,\r\n                      cpi.Luna,\r\n                      1\r\n                  )\r\n              )\r\n          )\r\n) x\r\n\r\nWHERE cpi.CodSucursala = @CodSucursala\r\n  AND cpi.Anul = @Anul\r\n  AND cpi.Luna = @Luna;",
                       "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
@@ -1111,7 +1111,7 @@
                   "ActionErrorMessage": null,
                   "ActionStackId": 5666,
                   "ActionType": "RunSql",
-                  "Condition": null,
+                  "Condition": "0",
                   "IsDeleted": false,
                   "IsDisabled": false,
                   "OrderIndex": 5,
@@ -1278,6 +1278,352 @@
                   "HasActionParameters": false
                 },
                 {
+                  "Id": 8708,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "6. Calcul EsteSalariatSub26",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 5666,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 6,
+                  "DiagramUID": "59f7a0d9-515d-4c52-bd0a-4eb8d5d402d0",
+                  "ActionParameters": [
+                    {
+                      "Id": 39138,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39139,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39140,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39141,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "SqlQuery",
+                      "Value": "/*=====================================================\r\n    6. Calcul EsteSalariatSub26\r\n    Verifica doar conditia de varsta\r\n=====================================================*/\r\n\r\nUPDATE cpi\r\nSET\r\n    cpi.EsteSalariatSub26 =\r\n        CASE\r\n            WHEN cn.DataNasteriiNumerica IS NOT NULL\r\n\r\n             AND cn.DataNasteriiNumerica >= prag.PragVarsta26\r\n\r\n            THEN 1\r\n            ELSE 0\r\n        END\r\n\r\nFROM app.CalculPersoaneIntretinere cpi\r\n\r\nINNER JOIN app.Salariat s\r\n    ON s.Marca = cpi.Marca\r\n   AND s.CodSucursala = cpi.CodSucursala\r\n   AND s.Anul = cpi.Anul\r\n   AND s.Luna = cpi.Luna\r\n\r\n/*-----------------------------------------------------\r\n    Prag varsta:\r\n    prima zi a lunii payroll minus 26 ani\r\n\r\n    Salariatul care implineste 26 ani in cursul lunii\r\n    ramane eligibil pentru luna respectiva.\r\n-----------------------------------------------------*/\r\nCROSS APPLY\r\n(\r\n    SELECT\r\n        CONVERT\r\n        (\r\n            INT,\r\n            CONVERT\r\n            (\r\n                CHAR(8),\r\n                DATEADD\r\n                (\r\n                    YEAR,\r\n                    -26,\r\n                    DATEFROMPARTS(cpi.Anul, cpi.Luna, 1)\r\n                ),\r\n                112\r\n            )\r\n        ) AS PragVarsta26\r\n) prag\r\n\r\n/*-----------------------------------------------------\r\n    Data nasterii extrasa din CNP ca YYYYMMDD\r\n-----------------------------------------------------*/\r\nCROSS APPLY\r\n(\r\n    SELECT\r\n        CASE\r\n            WHEN LEN(LTRIM(RTRIM(s.CNP))) = 13\r\n\r\n             AND SUBSTRING(LTRIM(RTRIM(s.CNP)), 1, 1)\r\n                    IN ('1', '2', '3', '4', '5', '6')\r\n\r\n             AND TRY_CONVERT\r\n                 (\r\n                     INT,\r\n                     SUBSTRING(LTRIM(RTRIM(s.CNP)), 2, 6)\r\n                 ) IS NOT NULL\r\n\r\n            THEN\r\n                CASE\r\n                    WHEN SUBSTRING\r\n                         (\r\n                             LTRIM(RTRIM(s.CNP)),\r\n                             1,\r\n                             1\r\n                         ) IN ('1', '2')\r\n                        THEN 19000000\r\n\r\n                    WHEN SUBSTRING\r\n                         (\r\n                             LTRIM(RTRIM(s.CNP)),\r\n                             1,\r\n                             1\r\n                         ) IN ('3', '4')\r\n                        THEN 18000000\r\n\r\n                    WHEN SUBSTRING\r\n                         (\r\n                             LTRIM(RTRIM(s.CNP)),\r\n                             1,\r\n                             1\r\n                         ) IN ('5', '6')\r\n                        THEN 20000000\r\n                END\r\n                +\r\n                TRY_CONVERT\r\n                (\r\n                    INT,\r\n                    SUBSTRING\r\n                    (\r\n                        LTRIM(RTRIM(s.CNP)),\r\n                        2,\r\n                        6\r\n                    )\r\n                )\r\n\r\n            ELSE NULL\r\n        END AS DataNasteriiNumerica\r\n) cn\r\n\r\nWHERE cpi.CodSucursala = @CodSucursala\r\n  AND cpi.Anul = @Anul\r\n  AND cpi.Luna = @Luna;",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39142,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 11719,
+                        "GlobalId": "cc0d7ecf-c114-42e7-be51-0a1b3ccfb39f",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 11719,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39143,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39144,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39145,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39146,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39147,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8708,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 8710,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "6.1. Calcul DedSuplimSalariatSub26",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 5666,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 7,
+                  "DiagramUID": "a34f0b7b-c123-4df5-b3d2-78b457dda18c",
+                  "ActionParameters": [
+                    {
+                      "Id": 39151,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39152,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39153,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39154,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "SqlQuery",
+                      "Value": "/*=====================================================\r\n    6.1. Calcul DedSuplimSalariatSub26\r\n\r\n    Conditii:\r\n    - salariat eligibil ca varsta;\r\n    - BrutImpozabil / VenitDeducere < SMBE + 2000;\r\n    - deducerea = 15% din SMBE.\r\n=====================================================*/\r\n\r\nUPDATE cpi\r\nSET\r\n    cpi.DedSuplimSalariatSub26 =\r\n        CASE\r\n            WHEN ISNULL(cpi.EsteSalariatSub26, 0) = 1\r\n\r\n             AND ISNULL(bcb.BrutImpozabil, 0)\r\n                    <\r\n                    (\r\n                        ISNULL(ts.SalariuMinimBrutpeEconomie, 0)\r\n                        + 2000\r\n                    )\r\n\r\n            THEN\r\n                CAST\r\n                (\r\n                    ROUND\r\n                    (\r\n                        CAST\r\n                        (\r\n                            ts.SalariuMinimBrutpeEconomie\r\n                            AS DECIMAL(18,4)\r\n                        )\r\n                        * CAST(0.15 AS DECIMAL(18,4)),\r\n                        0\r\n                    )\r\n                    AS DECIMAL(18,2)\r\n                )\r\n\r\n            ELSE\r\n                CAST(0 AS DECIMAL(18,2))\r\n        END,\r\n\r\n    cpi.LastModifiedDate =\r\n        SYSDATETIMEOFFSET()\r\n\r\nFROM app.CalculPersoaneIntretinere cpi\r\n\r\nINNER JOIN app.BazaCalculBrut bcb\r\n    ON bcb.Marca = cpi.Marca\r\n   AND bcb.CodSucursala = cpi.CodSucursala\r\n   AND bcb.Anul = cpi.Anul\r\n   AND bcb.Luna = cpi.Luna\r\n\r\nINNER JOIN app.TSSalariuMinimBrutpeEconomie ts\r\n    ON ts.Anul = cpi.Anul\r\n   AND ts.Luna = cpi.Luna\r\n\r\nWHERE cpi.CodSucursala = @CodSucursala\r\n  AND cpi.Anul = @Anul\r\n  AND cpi.Luna = @Luna;",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39155,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 11721,
+                        "GlobalId": "44102399-fa22-4acc-bc6f-f55b28238f78",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 11721,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39156,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39157,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39158,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39159,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 39160,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8710,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
                   "Id": 3989,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "7. Calcul DedSuplimAltePers",
@@ -1287,7 +1633,7 @@
                   "Condition": null,
                   "IsDeleted": false,
                   "IsDisabled": false,
-                  "OrderIndex": 6,
+                  "OrderIndex": 8,
                   "DiagramUID": "f8dde375-c48b-4781-a388-893b6788bae7",
                   "ActionParameters": [
                     {
@@ -1460,7 +1806,7 @@
                   "Condition": null,
                   "IsDeleted": false,
                   "IsDisabled": false,
-                  "OrderIndex": 7,
+                  "OrderIndex": 9,
                   "DiagramUID": "7172df49-85ef-4833-9db4-02da077cdba7",
                   "ActionParameters": [
                     {
@@ -1507,7 +1853,7 @@
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
                       "ActionId": 3990,
                       "Name": "SqlQuery",
-                      "Value": "UPDATE app.CalculPersoaneIntretinere\r\nSET\r\n    DedSuplimTotala =\r\n        ISNULL(DedSuplimCopii,0)\r\n        +\r\n        ISNULL(DedSuplimTineri26,0)\r\n        +\r\n        ISNULL(DedSuplimAltePers,0)\r\nWHERE\r\n    Anul = @Anul\r\nAND Luna = @Luna\r\nAND CodSucursala = @CodSucursala",
+                      "Value": "/*=====================================================\r\n    8. Calcul DedSuplimTotala\r\n=====================================================*/\r\n\r\nUPDATE app.CalculPersoaneIntretinere\r\nSET\r\n    DedSuplimTotala =\r\n        ISNULL(DedSuplimCopii, 0)\r\n        --+ ISNULL(DedSuplimAltePers, 0)\r\n        +\r\n        ISNULL(DedSuplimSalariatSub26, 0),\r\n\r\n    LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nWHERE CodSucursala = @CodSucursala\r\n  AND Anul = @Anul\r\n  AND Luna = @Luna;",
                       "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
@@ -1624,179 +1970,6 @@
                   "HasActionParameters": false
                 },
                 {
-                  "Id": 4012,
-                  "GlobalId": "00000000-0000-0000-0000-000000000000",
-                  "Description": "10. Calcul DeducereTotala",
-                  "ActionErrorMessage": null,
-                  "ActionStackId": 5666,
-                  "ActionType": "RunSql",
-                  "Condition": null,
-                  "IsDeleted": false,
-                  "IsDisabled": false,
-                  "OrderIndex": 8,
-                  "DiagramUID": "5c7f1831-3db4-4d9a-a055-0b757017d8a5",
-                  "ActionParameters": [
-                    {
-                      "Id": 15541,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "ConnectionString",
-                      "Value": null,
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15542,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "QueryTimeout",
-                      "Value": null,
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15543,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "UseTransactions",
-                      "Value": true,
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15544,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "SqlQuery",
-                      "Value": "UPDATE c\r\nSET\r\n    c.DeducereFinala =\r\n        ISNULL(c.DeducereStandard,0)\r\n        +\r\n        ISNULL(c.DedSuplimTotala,0)\r\nFROM app.CalculPersoaneIntretinere c\r\n\r\nWHERE\r\n    c.Anul = @Anul\r\nAND c.Luna = @Luna\r\nAND c.CodSucursala = @CodSucursala",
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15545,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "OnError",
-                      "Value": {
-                        "Id": 5697,
-                        "GlobalId": "1b8b576b-55a6-446d-a538-58432d1143ef",
-                        "Actions": [],
-                        "IsInvalid": false
-                      },
-                      "ActionStackId": 5697,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15546,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "ShowErrors",
-                      "Value": null,
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15547,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "DbConnector",
-                      "Value": {
-                        "Entry": "",
-                        "Group": "",
-                        "EntireGroup": false,
-                        "Type": "Database",
-                        "IsExpression": false,
-                        "Expression": ""
-                      },
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15548,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "BindTokens",
-                      "Value": [
-                        {
-                          "name": "CodSucursala",
-                          "value": "[CodSucursala]"
-                        },
-                        {
-                          "name": "Anul",
-                          "value": "[Anul]"
-                        },
-                        {
-                          "name": "Luna",
-                          "value": "[Luna]"
-                        }
-                      ],
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15549,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "OutputTokenName",
-                      "Value": null,
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    },
-                    {
-                      "Id": 15550,
-                      "GlobalId": "00000000-0000-0000-0000-000000000000",
-                      "ActionId": 4012,
-                      "Name": "ExtractColumns",
-                      "Value": [],
-                      "ActionStackId": null,
-                      "ParentParameterId": null,
-                      "IsExpression": false,
-                      "OrderIndex": 0,
-                      "LastModified": "0001-01-01T00:00:00+00:00",
-                      "LastModifiedBy": null
-                    }
-                  ],
-                  "Parameters": {},
-                  "Metadata": {},
-                  "HasActionParameters": false
-                },
-                {
                   "Id": 4344,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "9. Calcul Deducere Standard",
@@ -1806,7 +1979,7 @@
                   "Condition": null,
                   "IsDeleted": false,
                   "IsDisabled": false,
-                  "OrderIndex": 9,
+                  "OrderIndex": 10,
                   "DiagramUID": "e47e8380-cc2f-4bb4-a5da-ea60ac4ac797",
                   "ActionParameters": [
                     {
@@ -1853,7 +2026,7 @@
                       "GlobalId": "00000000-0000-0000-0000-000000000000",
                       "ActionId": 4344,
                       "Name": "SqlQuery",
-                      "Value": "UPDATE cpi\r\nSET\r\n    cpi.DeducereStandard = d.Deducere\r\nFROM app.CalculPersoaneIntretinere cpi\r\n\r\nINNER JOIN app.BazaCalculBrut bcb\r\n    ON bcb.Marca = cpi.Marca\r\n   AND bcb.CodSucursala = cpi.CodSucursala\r\n   AND bcb.Anul = cpi.Anul\r\n   AND bcb.Luna = cpi.Luna\r\n\r\nINNER JOIN app.TSDeducereBaza d\r\n    ON d.Anul = cpi.Anul\r\n\r\n   AND ISNULL(bcb.BrutImpozabil,0)\r\n       BETWEEN d.VenitMin AND d.VenitMax\r\n\r\n   AND d.PersoaneIntretinere =\r\n       CASE\r\n           WHEN cpi.NumarPersoane > 4\r\n           THEN 4\r\n           ELSE cpi.NumarPersoane\r\n       END\r\n\r\nWHERE\r\n    cpi.Anul = @Anul\r\nAND cpi.Luna = @Luna\r\nAND cpi.CodSucursala = @CodSucursala",
+                      "Value": "/*=====================================================\r\n    9. Calcul Deducere Standard\r\n\r\n    VenitDeducere = BrutImpozabil\r\n\r\n    Observatie:\r\n    BrutImpozabil cuprinde deja valoarea tichetelor\r\n    de masa, conform WF Baza Calcul Brut.\r\n=====================================================*/\r\n\r\nUPDATE cpi\r\nSET\r\n    -------------------------------------------------\r\n    -- Venitul utilizat pentru alegerea grilei\r\n    -------------------------------------------------\r\n    cpi.VenitDeducere =\r\n        CAST\r\n        (\r\n            ROUND\r\n            (\r\n                ISNULL(bcb.BrutImpozabil, 0),\r\n                0\r\n            )\r\n            AS INT\r\n        ),\r\n\r\n    -------------------------------------------------\r\n    -- Deducerea standard din grila fiscala\r\n    -------------------------------------------------\r\n    cpi.DeducereStandard =\r\n        ISNULL(d.Deducere, 0),\r\n\r\n    cpi.LastModifiedDate =\r\n        SYSDATETIMEOFFSET()\r\n\r\nFROM app.CalculPersoaneIntretinere cpi\r\n\r\nINNER JOIN app.BazaCalculBrut bcb\r\n    ON bcb.Marca = cpi.Marca\r\n   AND bcb.CodSucursala = cpi.CodSucursala\r\n   AND bcb.Anul = cpi.Anul\r\n   AND bcb.Luna = cpi.Luna\r\n\r\nOUTER APPLY\r\n(\r\n    SELECT TOP 1\r\n        td.Deducere\r\n\r\n    FROM app.TSDeducereBaza td\r\n\r\n    WHERE td.Anul = cpi.Anul\r\n\r\n      -------------------------------------------------\r\n      -- Venitul utilizat la selectarea intervalului\r\n      -------------------------------------------------\r\n      AND ISNULL(bcb.BrutImpozabil, 0)\r\n            BETWEEN td.VenitMin AND td.VenitMax\r\n\r\n      -------------------------------------------------\r\n      -- Numar persoane, plafonat la maximum 4\r\n      -------------------------------------------------\r\n      AND td.PersoaneIntretinere =\r\n          CASE\r\n              WHEN ISNULL(cpi.NumarPersoane, 0) > 4\r\n                  THEN 4\r\n\r\n              ELSE ISNULL(cpi.NumarPersoane, 0)\r\n          END\r\n\r\n    ORDER BY\r\n        td.VenitMin,\r\n        td.Id\r\n) d\r\n\r\nWHERE cpi.Anul = @Anul\r\n  AND cpi.Luna = @Luna\r\n  AND cpi.CodSucursala = @CodSucursala;",
                       "ActionStackId": null,
                       "ParentParameterId": null,
                       "IsExpression": false,
@@ -1970,6 +2143,179 @@
                   "HasActionParameters": false
                 },
                 {
+                  "Id": 4012,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "10. Calcul DeducereFinala",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 5666,
+                  "ActionType": "RunSql",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 11,
+                  "DiagramUID": "5c7f1831-3db4-4d9a-a055-0b757017d8a5",
+                  "ActionParameters": [
+                    {
+                      "Id": 15541,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15542,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15543,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15544,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE app.CalculPersoaneIntretinere\r\nSET\r\n    DeducereFinala =\r\n        ISNULL(DeducereStandard, 0)\r\n        +\r\n        ISNULL(DedSuplimTotala, 0),\r\n\r\n    LastModifiedDate = SYSDATETIMEOFFSET()\r\n\r\nWHERE CodSucursala = @CodSucursala\r\n  AND Anul = @Anul\r\n  AND Luna = @Luna;",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15545,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 5697,
+                        "GlobalId": "1b8b576b-55a6-446d-a538-58432d1143ef",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 5697,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15546,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15547,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15548,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15549,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 15550,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 4012,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
                   "Id": 4011,
                   "GlobalId": "00000000-0000-0000-0000-000000000000",
                   "Description": "11. Reset Payroll",
@@ -1979,7 +2325,7 @@
                   "Condition": null,
                   "IsDeleted": false,
                   "IsDisabled": false,
-                  "OrderIndex": 10,
+                  "OrderIndex": 12,
                   "DiagramUID": "e4991da3-a4f9-4c9c-b16e-dbf2d51bdbdb",
                   "ActionParameters": [
                     {
@@ -2182,7 +2528,7 @@
   "CreatedBy": 9,
   "CreatedOn": "2026-05-19T12:12:07.736374+00:00",
   "LastModifiedBy": 9,
-  "LastModifiedOn": "2026-06-17T15:25:07.3673776+00:00",
+  "LastModifiedOn": "2026-08-05T11:04:08.2749483+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "30ff03aa-f784-4258-8b6d-4c4fe38ed850"

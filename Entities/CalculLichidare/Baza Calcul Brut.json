@@ -526,7 +526,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 34
+      "OrderIndex": 35
     },
     {
       "Id": 962,
@@ -552,7 +552,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 35
+      "OrderIndex": 36
     },
     {
       "Id": 963,
@@ -578,7 +578,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 36
+      "OrderIndex": 37
     },
     {
       "Id": 964,
@@ -604,7 +604,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 37
+      "OrderIndex": 38
     },
     {
       "Id": 965,
@@ -630,7 +630,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 38
+      "OrderIndex": 39
     },
     {
       "Id": 966,
@@ -656,7 +656,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 39
+      "OrderIndex": 40
     },
     {
       "Id": 967,
@@ -682,7 +682,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 41
+      "OrderIndex": 42
     },
     {
       "Id": 968,
@@ -708,7 +708,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 44
+      "OrderIndex": 45
     },
     {
       "Id": 969,
@@ -734,7 +734,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 45
+      "OrderIndex": 46
     },
     {
       "Id": 970,
@@ -760,7 +760,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 46
+      "OrderIndex": 47
     },
     {
       "Id": 971,
@@ -786,7 +786,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 48
+      "OrderIndex": 49
     },
     {
       "Id": 972,
@@ -812,7 +812,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 50
+      "OrderIndex": 51
     },
     {
       "Id": 973,
@@ -838,7 +838,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 53
+      "OrderIndex": 54
     },
     {
       "Id": 974,
@@ -864,7 +864,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 54
+      "OrderIndex": 55
     },
     {
       "Id": 975,
@@ -890,7 +890,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 55
+      "OrderIndex": 56
     },
     {
       "Id": 976,
@@ -916,7 +916,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 56
+      "OrderIndex": 57
     },
     {
       "Id": 977,
@@ -1072,7 +1072,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 51
+      "OrderIndex": 52
     },
     {
       "Id": 990,
@@ -1098,7 +1098,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 52
+      "OrderIndex": 53
     },
     {
       "Id": 991,
@@ -1124,7 +1124,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 42
+      "OrderIndex": 43
     },
     {
       "Id": 992,
@@ -1150,7 +1150,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 43
+      "OrderIndex": 44
     },
     {
       "Id": 993,
@@ -1176,7 +1176,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 47
+      "OrderIndex": 48
     },
     {
       "Id": 994,
@@ -1202,7 +1202,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 49
+      "OrderIndex": 50
     },
     {
       "Id": 995,
@@ -1280,7 +1280,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 40
+      "OrderIndex": 41
     },
     {
       "Id": 1179,
@@ -1488,7 +1488,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 57
+      "OrderIndex": 58
     },
     {
       "Id": 1391,
@@ -1514,7 +1514,33 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 58
+      "OrderIndex": 59
+    },
+    {
+      "Id": 1685,
+      "GlobalId": "55a0d6b1-f419-44f2-a25a-188f3bdfb42d",
+      "EntityVersionId": 80,
+      "Name": "Brut Nocivitate",
+      "Type": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "InputType": {
+          "Id": "Decimal",
+          "Name": "Number (Decimal)",
+          "ValueType": 8,
+          "Length": 4,
+          "Icon": "looks_one"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 34
     }
   ],
   "RolePermissions": {
@@ -1698,7 +1724,7 @@
   "CreatedDate": "2026-05-31T14:20:57.74",
   "CreatedBy": "Carmen Mardare",
   "LastModifiedBy": "Carmen Mardare",
-  "LastModifiedOn": "2026-06-05T14:59:14.5066667",
+  "LastModifiedOn": "2026-08-11T12:01:56.4",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

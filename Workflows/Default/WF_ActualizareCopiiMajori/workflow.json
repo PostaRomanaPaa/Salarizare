@@ -1,0 +1,244 @@
+{
+  "InputFields": [
+    {
+      "Id": 336,
+      "Name": "CodSucursala",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 111,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 0
+    },
+    {
+      "Id": 337,
+      "Name": "Anul",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 111,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 1
+    },
+    {
+      "Id": 338,
+      "Name": "Luna",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 111,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": true,
+      "Description": null,
+      "OrderIndex": 2
+    }
+  ],
+  "OutputFields": [],
+  "Id": 111,
+  "GlobalId": "568bd9f6-5cef-4727-a116-a7da01ea50a1",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "568bd9f6-5cef-4727-a116-a7da01ea50a1",
+  "EnvironmentId": 1,
+  "Name": "WF_ActualizareCopiiMajori",
+  "Description": "Inchide incadrarile 2/3 ale copiilor care au implinit 18 ani in luna anterioara si creeaza incadrari 4 din prima zi a lunii calculate.",
+  "IsDebug": false,
+  "IsSystem": false,
+  "ActionList": {
+    "Id": 11852,
+    "GlobalId": "3b092bbd-4097-403d-b060-3d19bafae876",
+    "Actions": [
+      {
+        "Id": 8795,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Actualizare copii deveniti majori",
+        "ActionErrorMessage": null,
+        "ActionStackId": 11852,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_11blyts",
+        "ActionParameters": [
+          {
+            "Id": 39509,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39510,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39511,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39512,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "SqlQuery",
+            "Value": "SET NOCOUNT ON;\r\nSET XACT_ABORT ON;\r\n\r\nIF @CodSucursala IS NULL\r\n   OR LTRIM(RTRIM(@CodSucursala)) = ''\r\nBEGIN\r\n    ;THROW 51000, 'CodSucursala nu este completata.', 1;\r\nEND;\r\n\r\nIF @Anul IS NULL\r\n   OR @Anul NOT BETWEEN 1900 AND 9999\r\n   OR @Luna IS NULL\r\n   OR @Luna NOT BETWEEN 1 AND 12\r\nBEGIN\r\n    ;THROW 51000, 'Anul sau luna de calcul nu sunt valide.', 1;\r\nEND;\r\n\r\nDECLARE @PrimaZiLunaCalcul DATE =\r\n    DATEFROMPARTS(@Anul, @Luna, 1);\r\n\r\nDECLARE @PrimaZiLunaAnterioara DATE =\r\n    DATEADD(MONTH, -1, @PrimaZiLunaCalcul);\r\n\r\nDECLARE @UltimaZiLunaAnterioara DATE =\r\n    EOMONTH(@PrimaZiLunaAnterioara);\r\n\r\n/*\r\n    Selectam copiii care:\r\n    - au tipul 2 sau 3;\r\n    - au implinit 18 ani in luna anterioara;\r\n    - aveau incadrarea activa la sfarsitul lunii;\r\n    - nu au deja noua incadrare cu tipul 4.\r\n*/\r\nSELECT\r\n    p.Id AS IdVechi,\r\n    p.CodSucursala,\r\n    p.Marca,\r\n    p.CNPAltaPersoana,\r\n    p.NumeAltaPersoana,\r\n    p.PrenumeAltaPersoana,\r\n    p.FelPersoana AS FelPersoanaVechi,\r\n    p.DataDeInceput AS DataDeInceputVeche,\r\n    p.DataDeSfarsit AS DataDeSfarsitOriginala,\r\n    p.Grad,\r\n    p.DataNasteriiCopil,\r\n    p.AltProcent,\r\n\r\n    CAST\r\n    (\r\n        COALESCE(config.Procent, 1)\r\n        AS DECIMAL(18, 4)\r\n    ) AS ProcentNou\r\n\r\nINTO #Majori\r\n\r\nFROM app.PersoanaIntretinere p WITH (UPDLOCK, HOLDLOCK)\r\n\r\nOUTER APPLY\r\n(\r\n    SELECT MAX(tp.Procent) AS Procent\r\n    FROM app.TipPersoana tp\r\n    WHERE tp.FelPersoana = 4\r\n      AND tp.Anul = @Anul\r\n      AND\r\n      (\r\n          tp.Grad = p.Grad\r\n          OR (tp.Grad IS NULL AND p.Grad IS NULL)\r\n      )\r\n) config\r\n\r\nWHERE p.CodSucursala = @CodSucursala\r\n  AND p.FelPersoana IN ('2', '3')\r\n\r\n  AND NULLIF(\r\n        LTRIM(RTRIM(p.CNPAltaPersoana)),\r\n        ''\r\n      ) IS NOT NULL\r\n\r\n  AND p.DataNasteriiCopil >=\r\n      DATEADD(YEAR, -18, @PrimaZiLunaAnterioara)\r\n\r\n  AND p.DataNasteriiCopil <\r\n      DATEADD(YEAR, -18, @PrimaZiLunaCalcul)\r\n\r\n  AND\r\n  (\r\n      p.DataDeInceput IS NULL\r\n      OR p.DataDeInceput <= @UltimaZiLunaAnterioara\r\n  )\r\n\r\n  AND\r\n  (\r\n      p.DataDeSfarsit IS NULL\r\n      OR p.DataDeSfarsit > @UltimaZiLunaAnterioara\r\n  )\r\n\r\n  AND NOT EXISTS\r\n  (\r\n      SELECT 1\r\n      FROM app.PersoanaIntretinere p4\r\n      WHERE p4.CodSucursala = p.CodSucursala\r\n        AND p4.Marca = p.Marca\r\n        AND LTRIM(RTRIM(p4.CNPAltaPersoana)) =\r\n            LTRIM(RTRIM(p.CNPAltaPersoana))\r\n        AND p4.FelPersoana = '4'\r\n        AND p4.DataDeInceput = @PrimaZiLunaCalcul\r\n  );\r\n\r\n/*\r\n    Nu procesam date ambigue: acelasi CNP nu poate avea\r\n    mai multe incadrari 2/3 active simultan.\r\n*/\r\nIF EXISTS\r\n(\r\n    SELECT 1\r\n    FROM #Majori\r\n    GROUP BY\r\n        CodSucursala,\r\n        Marca,\r\n        LTRIM(RTRIM(CNPAltaPersoana))\r\n    HAVING COUNT(*) > 1\r\n)\r\nBEGIN\r\n    ;THROW 51000,\r\n        'Exista persoane cu incadrari 2/3 active duplicate.',\r\n        1;\r\nEND;\r\n\r\n/*\r\n    Inchidem incadrarea veche in ultima zi\r\n    a lunii in care copilul a implinit 18 ani.\r\n*/\r\nUPDATE p\r\nSET p.DataDeSfarsit = @UltimaZiLunaAnterioara\r\nFROM app.PersoanaIntretinere p\r\nINNER JOIN #Majori m\r\n    ON m.IdVechi = p.Id\r\nWHERE p.CodSucursala = @CodSucursala\r\n  AND p.FelPersoana IN ('2', '3');\r\n\r\n/*\r\n    Cream incadrarea 4 din prima zi a lunii urmatoare.\r\n*/\r\nINSERT INTO app.PersoanaIntretinere\r\n(\r\n    CodSucursala,\r\n    Marca,\r\n    CNPAltaPersoana,\r\n    NumeAltaPersoana,\r\n    PrenumeAltaPersoana,\r\n    FelPersoana,\r\n    DataDeInceput,\r\n    DataDeSfarsit,\r\n    Grad,\r\n    Procent,\r\n    DataNasteriiCopil,\r\n    AltProcent\r\n)\r\nSELECT\r\n    m.CodSucursala,\r\n    m.Marca,\r\n    m.CNPAltaPersoana,\r\n    m.NumeAltaPersoana,\r\n    m.PrenumeAltaPersoana,\r\n    '4',\r\n    @PrimaZiLunaCalcul,\r\n    m.DataDeSfarsitOriginala,\r\n    m.Grad,\r\n    m.ProcentNou,\r\n    m.DataNasteriiCopil,\r\n    m.AltProcent\r\nFROM #Majori m\r\nWHERE NOT EXISTS\r\n(\r\n    SELECT 1\r\n    FROM app.PersoanaIntretinere p4\r\n    WHERE p4.CodSucursala = m.CodSucursala\r\n      AND p4.Marca = m.Marca\r\n      AND LTRIM(RTRIM(p4.CNPAltaPersoana)) =\r\n          LTRIM(RTRIM(m.CNPAltaPersoana))\r\n      AND p4.FelPersoana = '4'\r\n      AND p4.DataDeInceput = @PrimaZiLunaCalcul\r\n);",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39513,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "OnError",
+            "Value": {
+              "Id": 11853,
+              "GlobalId": "844845b5-4974-4d93-8c04-fd26895d074b",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 11853,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39514,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39515,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39516,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "name": "CodSucursala",
+                "value": "[CodSucursala]"
+              },
+              {
+                "name": "Anul",
+                "value": "[Anul]"
+              },
+              {
+                "name": "Luna",
+                "value": "[Luna]"
+              }
+            ],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39517,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "OutputTokenName",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 39518,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 8795,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": 22,
+  "CreatedOn": "2026-08-08T21:16:25.4366225+00:00",
+  "LastModifiedBy": 22,
+  "LastModifiedOn": "2026-08-08T21:30:55.9725268+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

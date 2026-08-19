@@ -3,7 +3,7 @@
   "DisplayInMenu": false,
   "ParentPageId": -1,
   "DisplayAfter": null,
-  "RecordNamePropertyId": 1432,
+  "RecordNamePropertyId": 1686,
   "UpdateRecordNameProperty": null,
   "ShowDashboardModule": false,
   "GenerateApiAccess": false,
@@ -32,7 +32,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 5
+      "OrderIndex": 6
     },
     {
       "Id": 1433,
@@ -58,7 +58,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 7
     },
     {
       "Id": 1434,
@@ -84,7 +84,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 7
+      "OrderIndex": 8
     },
     {
       "Id": 1435,
@@ -110,7 +110,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 8
+      "OrderIndex": 9
     },
     {
       "Id": 1436,
@@ -136,7 +136,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 9
+      "OrderIndex": 10
     },
     {
       "Id": 1437,
@@ -162,7 +162,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 10
+      "OrderIndex": 11
     },
     {
       "Id": 1438,
@@ -188,7 +188,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 11
+      "OrderIndex": 12
     },
     {
       "Id": 1439,
@@ -214,7 +214,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 12
+      "OrderIndex": 13
     },
     {
       "Id": 1440,
@@ -240,7 +240,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 13
+      "OrderIndex": 14
     },
     {
       "Id": 1441,
@@ -266,7 +266,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 14
+      "OrderIndex": 15
     },
     {
       "Id": 1442,
@@ -292,7 +292,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 15
+      "OrderIndex": 16
     },
     {
       "Id": 1443,
@@ -318,7 +318,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 16
+      "OrderIndex": 17
     },
     {
       "Id": 1444,
@@ -344,7 +344,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 17
+      "OrderIndex": 18
     },
     {
       "Id": 1445,
@@ -370,7 +370,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 18
+      "OrderIndex": 19
     },
     {
       "Id": 1446,
@@ -396,7 +396,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 19
+      "OrderIndex": 20
     },
     {
       "Id": 1447,
@@ -422,7 +422,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 20
+      "OrderIndex": 21
     },
     {
       "Id": 1448,
@@ -448,7 +448,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 21
+      "OrderIndex": 22
     },
     {
       "Id": 1449,
@@ -474,7 +474,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 22
+      "OrderIndex": 23
     },
     {
       "Id": 1450,
@@ -500,7 +500,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 23
+      "OrderIndex": 24
     },
     {
       "Id": 1512,
@@ -526,7 +526,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 24
+      "OrderIndex": 25
     },
     {
       "Id": 1581,
@@ -604,7 +604,7 @@
       "IsSearchable": true,
       "IsFilterable": false,
       "IsSortable": true,
-      "OrderIndex": 4
+      "OrderIndex": 5
     },
     {
       "Id": 1618,
@@ -631,6 +631,32 @@
       "IsFilterable": true,
       "IsSortable": true,
       "OrderIndex": 1
+    },
+    {
+      "Id": 1686,
+      "GlobalId": "8739e504-02a5-4410-af1d-8efaae1321df",
+      "EntityVersionId": 108,
+      "Name": "IDsalariat",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": true,
+      "IsSortable": true,
+      "OrderIndex": 4
     }
   ],
   "RolePermissions": {
@@ -846,7 +872,7 @@
   "CreatedDate": "2026-06-12T14:21:12.6366667",
   "CreatedBy": "Ciprian Aelenei",
   "LastModifiedBy": "Ciprian Aelenei",
-  "LastModifiedOn": "2026-07-29T07:14:31.4666667",
+  "LastModifiedOn": "2026-08-13T11:13:46.8633333",
   "Icon": "umbrella-beach",
   "Type": 0,
   "BuiltInType": null,

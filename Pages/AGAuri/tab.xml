@@ -1,5 +1,5 @@
 <tab>
-    <content>Detail</content>
+    <content>AGAuri</content>
     <contentKey />
     <containersrc>[G]containers/PageBuilder/nocardnotitle.ascx</containersrc>
     <cultureCode />
@@ -7,7 +7,7 @@
     <disabled>false</disabled>
     <enddate>0001-01-01T00:00:00</enddate>
     <issecure>false</issecure>
-    <visible>false</visible>
+    <visible>true</visible>
     <issystem>false</issystem>
     <keywords />
     <pageheadtext />
@@ -16,7 +16,7 @@
     <sitemappriority>0.5</sitemappriority>
     <skinsrc>[G]skins/pagebuilder/default-bs5.ascx</skinsrc>
     <startdate>0001-01-01T00:00:00</startdate>
-    <name>Detail</name>
+    <name>AGAuri</name>
     <title />
     <url type="Normal" />
     <tabpermissions>
@@ -43,18 +43,6 @@
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Managers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Payroll_Operator</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Users</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
@@ -195,11 +183,5 @@
             <settingvalue>table</settingvalue>
         </tabsetting>
     </tabsettings>
-    <tabUrls>
-        <tabUrl SeqNum="1" Url="/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="2" Url="/Salarizare-test/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="3" Url="/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="4" Url="/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="5" Url="/Sesiune-de-Lucru/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-    </tabUrls>
+    <tabUrls />
 </tab>

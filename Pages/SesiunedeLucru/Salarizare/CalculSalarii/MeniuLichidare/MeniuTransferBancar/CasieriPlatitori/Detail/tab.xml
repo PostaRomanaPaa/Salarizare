@@ -1,7 +1,7 @@
 <tab>
-    <content>Casieri Platitori</content>
+    <content>Detail</content>
     <contentKey />
-    <containersrc />
+    <containersrc>[G]containers/PageBuilder/nocardnotitle.ascx</containersrc>
     <cultureCode />
     <description />
     <disabled>false</disabled>
@@ -14,9 +14,9 @@
     <permanentredirect>false</permanentredirect>
     <refreshinterval>-1</refreshinterval>
     <sitemappriority>0.5</sitemappriority>
-    <skinsrc />
+    <skinsrc>[G]skins/pagebuilder/default-bs5.ascx</skinsrc>
     <startdate>0001-01-01T00:00:00</startdate>
-    <name>Casieri Platitori</name>
+    <name>Detail</name>
     <title />
     <url type="Normal" />
     <tabpermissions>
@@ -191,23 +191,16 @@
     </tabpermissions>
     <tabsettings>
         <tabsetting>
-            <settingname>LinkNewWindow</settingname>
-            <settingvalue>False</settingvalue>
-        </tabsetting>
-        <tabsetting>
-            <settingname>AllowIndex</settingname>
-            <settingvalue>True</settingvalue>
-        </tabsetting>
-        <tabsetting>
             <settingname>Pa_IconClass</settingname>
             <settingvalue>table</settingvalue>
         </tabsetting>
     </tabsettings>
     <tabUrls>
-        <tabUrl SeqNum="1" Url="/Casieri-Platitori" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="2" Url="/Salarizare-test/Nomenclatoare/Casieri-Platitori" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="3" Url="/Salarizare/Nomenclatoare/Casieri-Platitori" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="4" Url="/Salarizare/Nomenclatoare/Casieri-Platitori" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="5" Url="/Sesiune-de-Lucru/Salarizare/Nomenclatoare/Casieri-Platitori" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="1" Url="/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="2" Url="/Salarizare-test/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="3" Url="/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="4" Url="/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="5" Url="/Sesiune-de-Lucru/Salarizare/Nomenclatoare/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="6" Url="/Casieri-Platitori/Detail" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
     </tabUrls>
 </tab>

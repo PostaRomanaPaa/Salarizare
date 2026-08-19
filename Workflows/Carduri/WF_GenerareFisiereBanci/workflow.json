@@ -6506,6 +6506,772 @@
                   "Parameters": {},
                   "Metadata": {},
                   "HasActionParameters": false
+                },
+                {
+                  "Id": 8936,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "Creare Lista ALTE",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 9102,
+                  "ActionType": "LoadEntitiesFromSql",
+                  "Condition": "[CodBanca] == \"ALTE\"",
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 33,
+                  "DiagramUID": "18d2f727-57cd-40e4-9d36-aa8e4a90eb69",
+                  "ActionParameters": [
+                    {
+                      "Id": 40338,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40339,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40340,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "SqlQuery",
+                      "Value": ";WITH DateALTE AS\r\n(\r\n    SELECT\r\n        s.Marca,\r\n        s.Nume,\r\n        s.CNP,\r\n        s.Suma,\r\n        s.TipPlata,\r\n\r\n        UPPER\r\n        (\r\n            REPLACE\r\n            (\r\n                LTRIM(RTRIM(ISNULL(s.Cont, N''))),\r\n                N' ',\r\n                N''\r\n            )\r\n        ) AS ContNormalizat,\r\n\r\n        SUBSTRING\r\n        (\r\n            UPPER\r\n            (\r\n                REPLACE\r\n                (\r\n                    LTRIM(RTRIM(ISNULL(s.Cont, N''))),\r\n                    N' ',\r\n                    N''\r\n                )\r\n            ),\r\n            5,\r\n            4\r\n        ) AS CodBancaBeneficiar\r\n\r\n    FROM app.SumaALTE s\r\n\r\n    WHERE s.CodSucursala = @CodSucursala\r\n      AND s.Anul = @Anul\r\n      AND s.Luna = @Luna\r\n      AND LTRIM(RTRIM(s.TipPlata))\r\n          = LTRIM(RTRIM(@TipPlata))\r\n      AND CAST(s.DataPlatii AS DATE)\r\n          = CAST(@DataPlatii AS DATE)\r\n)\r\n\r\nSELECT\r\n    ROW_NUMBER() OVER\r\n    (\r\n        ORDER BY\r\n            CodBancaBeneficiar,\r\n            Nume,\r\n            Marca\r\n    ) AS [Numar OP],\r\n\r\n    CAST(Suma AS DECIMAL(18,2)) AS [Suma],\r\n\r\n    ContNormalizat AS [IBAN Beneficiar],\r\n\r\n    CodBancaBeneficiar AS [Banca Beneficiar],\r\n\r\n    Nume AS [Nume Beneficiar],\r\n\r\n    CNP AS [Cod fiscal beneficiar],\r\n\r\n    TipPlata AS [Detalii 1],\r\n\r\n    CAST(N'' AS NVARCHAR(1)) AS [Detalii 2],\r\n\r\n    N'RON' AS [Valuta (RON)],\r\n\r\n    CAST(N'' AS NVARCHAR(1)) AS [Plata buget],\r\n\r\n    CAST(N'' AS NVARCHAR(1)) AS [Nume platitor],\r\n\r\n    CAST(N'' AS NVARCHAR(1)) AS [IBAN Platitor],\r\n\r\n    CAST(N'' AS NVARCHAR(1)) AS [Banca platitor],\r\n\r\n    CAST(N'' AS NVARCHAR(1)) AS [Cod fiscal platitor]\r\n\r\nFROM DateALTE\r\n\r\nORDER BY\r\n    CodBancaBeneficiar,\r\n    Nume,\r\n    Marca;",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40341,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "EntityName",
+                      "Value": "ALTEList",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40342,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "ClearBeforeLoad",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40343,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 12048,
+                        "GlobalId": "4221ae15-2f75-4d57-a130-5970dfe78f16",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 12048,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40344,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40345,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "Anul",
+                          "value": "[Anul]"
+                        },
+                        {
+                          "name": "Luna",
+                          "value": "[Luna]"
+                        },
+                        {
+                          "name": "TipPlata",
+                          "value": "[TipPlata]"
+                        },
+                        {
+                          "name": "CodBanca",
+                          "value": "[CodBanca]"
+                        },
+                        {
+                          "name": "DataPlatii",
+                          "value": "[DataPlatii]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40346,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8936,
+                      "Name": "EntityProps",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 8937,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "Fisier ALTE",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 9102,
+                  "ActionType": "CSV",
+                  "Condition": "[CodBanca] == \"ALTE\"",
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 34,
+                  "DiagramUID": "cfe68d4f-8a9d-47f5-8b8d-8412ca96591f",
+                  "ActionParameters": [
+                    {
+                      "Id": 40347,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "EntityName",
+                      "Value": "ALTEList",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40348,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "IncludeAllFields",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40349,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "RemoveFieldNames",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40350,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "FieldSeparator",
+                      "Value": "semicolon",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40351,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "inlineSeparator",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40352,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "StorageLocation",
+                      "Value": "File",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40353,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "AddCsvToAllowedFileTypes",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40354,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "EncodingOption",
+                      "Value": "UTF8",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40355,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "Folder",
+                      "Value": "/Salarizare/Export/TransferBancar",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40356,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "Pattern",
+                      "Value": "[DenumireFisier]",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40357,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "Duplicates",
+                      "Value": "Overwrite",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40358,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "DisableForceDownload",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40359,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "Criteria",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40360,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "OutputTokenName",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40361,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "StoreAbsoluteURL",
+                      "Value": "FisierCSV",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40362,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "StoreRelativeURL",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40363,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "StorePhysicalPath",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40364,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8937,
+                      "Name": "StoreLinkClick",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 8938,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "FileID ALTE",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 9102,
+                  "ActionType": "RunSql",
+                  "Condition": "[CodBanca] == \"ALTE\"",
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 35,
+                  "DiagramUID": "d382a197-eccb-4c02-aecb-624a6a54dd20",
+                  "ActionParameters": [
+                    {
+                      "Id": 40365,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40366,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40367,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40368,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "SqlQuery",
+                      "Value": "SELECT TOP 1\r\n    FileId,\r\n    FileName\r\nFROM Files\r\nWHERE FileName = @DenumireFisier + '.csv'\r\nORDER BY FileId DESC;",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40369,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 12049,
+                        "GlobalId": "895ca201-a1c4-41ab-b061-ef31b2575eef",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 12049,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40370,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40371,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40372,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "DenumireFisier",
+                          "value": "[DenumireFisier]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40373,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "OutputTokenName",
+                      "Value": "FisierGenerat",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40374,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8938,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
+                },
+                {
+                  "Id": 8939,
+                  "GlobalId": "00000000-0000-0000-0000-000000000000",
+                  "Description": "Update FileID ALTE",
+                  "ActionErrorMessage": null,
+                  "ActionStackId": 9102,
+                  "ActionType": "RunSql",
+                  "Condition": "[CodBanca] == \"ALTE\"",
+                  "IsDeleted": false,
+                  "IsDisabled": false,
+                  "OrderIndex": 36,
+                  "DiagramUID": "be66edfd-0785-4ab4-a40b-3430a45f8ed7",
+                  "ActionParameters": [
+                    {
+                      "Id": 40375,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "ConnectionString",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40376,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "QueryTimeout",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40377,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "UseTransactions",
+                      "Value": true,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40378,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "SqlQuery",
+                      "Value": "UPDATE app.BancaFisierTransfer\r\nSET\r\n    FileId = @FileId,\r\n    Status = 8,\r\n    DataGenerare = GETDATE()\r\nWHERE CodBanca = @CodBanca\r\n  AND CodSucursala = @CodSucursala\r\n  AND DenumireFisier = @DenumireFisier;",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40379,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "OnError",
+                      "Value": {
+                        "Id": 12050,
+                        "GlobalId": "9ea88d74-fcbc-471f-ba53-0c6b7155780b",
+                        "Actions": [],
+                        "IsInvalid": false
+                      },
+                      "ActionStackId": 12050,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40380,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "ShowErrors",
+                      "Value": null,
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40381,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "DbConnector",
+                      "Value": {
+                        "Entry": "",
+                        "Group": "",
+                        "EntireGroup": false,
+                        "Type": "Database",
+                        "IsExpression": false,
+                        "Expression": ""
+                      },
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40382,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "BindTokens",
+                      "Value": [
+                        {
+                          "name": "CodSucursala",
+                          "value": "[CodSucursala]"
+                        },
+                        {
+                          "name": "CodBanca",
+                          "value": "[Banci:CodBanca]"
+                        },
+                        {
+                          "name": "DenumireFisier",
+                          "value": "[DenumireFisier]"
+                        },
+                        {
+                          "name": "FileId",
+                          "value": "[FisierGenerat:FileId]"
+                        }
+                      ],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40383,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "OutputTokenName",
+                      "Value": "FisierGenerat",
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    },
+                    {
+                      "Id": 40384,
+                      "GlobalId": "00000000-0000-0000-0000-000000000000",
+                      "ActionId": 8939,
+                      "Name": "ExtractColumns",
+                      "Value": [],
+                      "ActionStackId": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "OrderIndex": 0,
+                      "LastModified": "0001-01-01T00:00:00+00:00",
+                      "LastModifiedBy": null
+                    }
+                  ],
+                  "Parameters": {},
+                  "Metadata": {},
+                  "HasActionParameters": false
                 }
               ],
               "IsInvalid": false
@@ -6546,8 +7312,8 @@
   "ActionStackId": 0,
   "CreatedBy": 9,
   "CreatedOn": "2026-06-11T14:30:31.841696+00:00",
-  "LastModifiedBy": 23,
-  "LastModifiedOn": "2026-07-27T12:12:02.7681211+00:00",
+  "LastModifiedBy": 22,
+  "LastModifiedOn": "2026-08-17T16:22:00.9171684+00:00",
   "DiagramXML": null,
   "IsCorrupted": false,
   "NamespaceUid": "97833b9a-0126-4633-8efe-7cee6c859297"

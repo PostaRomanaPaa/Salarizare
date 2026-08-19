@@ -874,6 +874,18 @@
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/BanciFisiereTransferuriCNPR/tab.xml"
     },
     {
+      "GlobalId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ParentPageGlobalId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "TabPath": "//SesiunedeLucru//Salarizare//CalculSalarii//MeniuLichidare//MeniuTransferBancar//CasieriPlatitori//Detail",
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ParentPageGlobalId": "d59c9607-f5d0-479f-9856-b35ef997496e",
+      "TabPath": "//SesiunedeLucru//Salarizare//CalculSalarii//MeniuLichidare//MeniuTransferBancar//CasieriPlatitori",
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/tab.xml"
+    },
+    {
       "GlobalId": "d59c9607-f5d0-479f-9856-b35ef997496e",
       "ParentPageGlobalId": "b6ea477c-fbc1-4898-8c18-b82b4ada42f9",
       "TabPath": "//SesiunedeLucru//Salarizare//CalculSalarii//MeniuLichidare//MeniuTransferBancar",
@@ -1611,17 +1623,6 @@
       "ContentPath": "Pages/SesiunedeLucru/tab.xml"
     },
     {
-      "GlobalId": "91af957d-f1db-4514-925c-b3f49f41f871",
-      "ParentPageGlobalId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
-      "TabPath": "//CasieriPlatitori//Detail",
-      "ContentPath": "Pages/CasieriPlatitori/Detail/tab.xml"
-    },
-    {
-      "GlobalId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
-      "TabPath": "//CasieriPlatitori",
-      "ContentPath": "Pages/CasieriPlatitori/tab.xml"
-    },
-    {
       "GlobalId": "9d817182-e0e2-4e09-847a-297f83a0ba57",
       "TabPath": "//EvidentaCarduri",
       "ContentPath": "Pages/EvidentaCarduri/tab.xml"
@@ -1647,6 +1648,17 @@
       "GlobalId": "c827e1d0-2d6b-44b3-9371-e863faef07ac",
       "TabPath": "//FisiereEdenred",
       "ContentPath": "Pages/FisiereEdenred/tab.xml"
+    },
+    {
+      "GlobalId": "6a701661-db64-4901-91a5-791fed6e358c",
+      "ParentPageGlobalId": "12c09187-0c0b-41bc-a12b-a24f431a0909",
+      "TabPath": "//AGAuri//Detail",
+      "ContentPath": "Pages/AGAuri/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "12c09187-0c0b-41bc-a12b-a24f431a0909",
+      "TabPath": "//AGAuri",
+      "ContentPath": "Pages/AGAuri/tab.xml"
     }
   ],
   "Modules": [
@@ -1831,42 +1843,6 @@
       "ContentPath": "Pages/SesiunedeLucru/SessionForm.xml"
     },
     {
-      "GlobalId": "6db173db-374e-4cfd-a02c-4a56c9e41f30",
-      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
-      "ModuleTitle": "Header",
-      "FriendlyName": "Text/HTML",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/CasieriPlatitori/Header.xml"
-    },
-    {
-      "GlobalId": "910036e5-5f87-424f-bfd5-07d72bd87be4",
-      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
-      "ModuleTitle": "Casieri Platitori Listing",
-      "FriendlyName": "avt.ActionGrid",
-      "PaneName": "ContentPane",
-      "Order": 3,
-      "ContentPath": "Pages/CasieriPlatitori/Casieri Platitori Listing.xml"
-    },
-    {
-      "GlobalId": "c9aa6c9f-6366-438a-ac5d-a7f8435daca1",
-      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
-      "ModuleTitle": "Casier Platitor Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 5,
-      "ContentPath": "Pages/CasieriPlatitori/Casier Platitor Form.xml"
-    },
-    {
-      "GlobalId": "3c5c0eec-5cc7-40d6-ae52-c7db449d420d",
-      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/CasieriPlatitori/SessionForm.xml"
-    },
-    {
       "GlobalId": "c80292e1-ee15-42e9-9474-1e0984159abc",
       "ParentPageId": "9d817182-e0e2-4e09-847a-297f83a0ba57",
       "ModuleTitle": "Enter Title",
@@ -1957,6 +1933,42 @@
       "ContentPath": "Pages/FisiereEdenred/SessionForm.xml"
     },
     {
+      "GlobalId": "dced790a-15fd-4170-94cc-7cee450569d1",
+      "ParentPageId": "12c09187-0c0b-41bc-a12b-a24f431a0909",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/AGAuri/Header.xml"
+    },
+    {
+      "GlobalId": "efd995c8-1373-4bfb-bc5b-bcfdc9292243",
+      "ParentPageId": "12c09187-0c0b-41bc-a12b-a24f431a0909",
+      "ModuleTitle": "AGAuri Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/AGAuri/AGAuri Listing.xml"
+    },
+    {
+      "GlobalId": "cc5b41c1-2d71-44b3-9eb2-5952a5013b87",
+      "ParentPageId": "12c09187-0c0b-41bc-a12b-a24f431a0909",
+      "ModuleTitle": "AGA Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/AGAuri/AGA Form.xml"
+    },
+    {
+      "GlobalId": "8f27aaab-0e2e-49a6-b6d1-aab3f83f2ad3",
+      "ParentPageId": "12c09187-0c0b-41bc-a12b-a24f431a0909",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/AGAuri/SessionForm.xml"
+    },
+    {
       "GlobalId": "743bd34d-1e35-439c-a2f0-03ff9b244c22",
       "ParentPageId": "472569c4-dc40-4e62-8a6e-0540e607a15b",
       "ModuleTitle": "Salarizare Form",
@@ -1973,51 +1985,6 @@
       "PaneName": "MBP_1",
       "Order": 1,
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/Session Form.xml"
-    },
-    {
-      "GlobalId": "1a5108f1-dc01-4828-a131-12fb953802b5",
-      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
-      "ModuleTitle": "Header Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 1,
-      "ContentPath": "Pages/CasieriPlatitori/Detail/Header Form.xml"
-    },
-    {
-      "GlobalId": "9493d8a9-7cf7-47bf-be6e-905ef8083618",
-      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
-      "ModuleTitle": "Details Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 3,
-      "ContentPath": "Pages/CasieriPlatitori/Detail/Details Form.xml"
-    },
-    {
-      "GlobalId": "de88f162-2202-4a0b-992d-28ca7dcb091a",
-      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
-      "ModuleTitle": "Casier Platitor Form",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "ContentPane",
-      "Order": 5,
-      "ContentPath": "Pages/CasieriPlatitori/Detail/Casier Platitor Form.xml"
-    },
-    {
-      "GlobalId": "9e97c221-54b0-4a91-b8f7-f4b43c833157",
-      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
-      "ModuleTitle": "Tabs",
-      "FriendlyName": "avt.TabsPro",
-      "PaneName": "ContentPane",
-      "Order": 7,
-      "ContentPath": "Pages/CasieriPlatitori/Detail/Tabs.xml"
-    },
-    {
-      "GlobalId": "6dd1fc68-e9c2-4d7f-a6e8-7c36173e8f31",
-      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
-      "ModuleTitle": "SessionForm",
-      "FriendlyName": "avt.Action Form",
-      "PaneName": "MBP_1",
-      "Order": 1,
-      "ContentPath": "Pages/CasieriPlatitori/Detail/SessionForm.xml"
     },
     {
       "GlobalId": "3c164f84-31d9-44f6-9703-18dc290a853f",
@@ -2108,6 +2075,51 @@
       "PaneName": "MBP_1",
       "Order": 1,
       "ContentPath": "Pages/FisiereEdenred/Detail/SessionForm.xml"
+    },
+    {
+      "GlobalId": "65b89398-bb24-4551-9c3e-1ecddd756dff",
+      "ParentPageId": "6a701661-db64-4901-91a5-791fed6e358c",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/AGAuri/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "f5a15406-dbb1-4746-a542-b949ee04d2c9",
+      "ParentPageId": "6a701661-db64-4901-91a5-791fed6e358c",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/AGAuri/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "3b89dbe2-82d8-4857-aaa7-00c10dc5d2b2",
+      "ParentPageId": "6a701661-db64-4901-91a5-791fed6e358c",
+      "ModuleTitle": "AGA Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/AGAuri/Detail/AGA Form.xml"
+    },
+    {
+      "GlobalId": "77e29bac-e955-4fb4-85b5-f981d10808a3",
+      "ParentPageId": "6a701661-db64-4901-91a5-791fed6e358c",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/AGAuri/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "79e6a037-61cd-4334-a99e-017a3b1508ff",
+      "ParentPageId": "6a701661-db64-4901-91a5-791fed6e358c",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/AGAuri/Detail/SessionForm.xml"
     },
     {
       "GlobalId": "7ba5658d-ae2c-440a-9906-08dc62155111",
@@ -5125,12 +5137,30 @@
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuConcediideOdihna/ConcediideOdihnaCompensari/Concedii de Odihna Compensari Listing.xml"
     },
     {
+      "GlobalId": "a7a6ec1e-f1d4-4ece-b442-91bb7739a7c8",
+      "ParentPageId": "20d4d399-466c-4b0c-8f75-e562e22e87d2",
+      "ModuleTitle": "Anulare Compensari Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuConcediideOdihna/ConcediideOdihnaCompensari/Anulare Compensari Form.xml"
+    },
+    {
+      "GlobalId": "dbe243bc-3f74-4596-b2cc-98db25316319",
+      "ParentPageId": "20d4d399-466c-4b0c-8f75-e562e22e87d2",
+      "ModuleTitle": "Confirmare Compensari Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuConcediideOdihna/ConcediideOdihnaCompensari/Confirmare Compensari Form.xml"
+    },
+    {
       "GlobalId": "66ca2742-ac04-4713-882f-1085a061b76d",
       "ParentPageId": "20d4d399-466c-4b0c-8f75-e562e22e87d2",
       "ModuleTitle": "Concediu de Odihna Compensare Form",
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
-      "Order": 5,
+      "Order": 9,
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuConcediideOdihna/ConcediideOdihnaCompensari/Concediu de Odihna Compensare Form.xml"
     },
     {
@@ -8194,6 +8224,42 @@
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/BanciFisiereTransferuriCNPR/SessionForm.xml"
     },
     {
+      "GlobalId": "6db173db-374e-4cfd-a02c-4a56c9e41f30",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Header.xml"
+    },
+    {
+      "GlobalId": "910036e5-5f87-424f-bfd5-07d72bd87be4",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "Casieri Platitori Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Casieri Platitori Listing.xml"
+    },
+    {
+      "GlobalId": "c9aa6c9f-6366-438a-ac5d-a7f8435daca1",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "Casier Platitor Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Casier Platitor Form.xml"
+    },
+    {
+      "GlobalId": "3c5c0eec-5cc7-40d6-ae52-c7db449d420d",
+      "ParentPageId": "9d701339-32f6-4cd3-9b6d-44a3159c9d0b",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/SessionForm.xml"
+    },
+    {
       "GlobalId": "325f4700-d251-4485-8a43-59142279e439",
       "ParentPageId": "acbcb9b5-6239-45d7-9b18-bf7cc6ea1cb9",
       "ModuleTitle": "Header",
@@ -8498,6 +8564,51 @@
       "PaneName": "MBP_1",
       "Order": 1,
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuConcediideOdihna/ConcediideOdihnaCompensari/Import-Compensari-Concedii-de-Odihna/SessionForm.xml"
+    },
+    {
+      "GlobalId": "1a5108f1-dc01-4828-a131-12fb953802b5",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "9493d8a9-7cf7-47bf-be6e-905ef8083618",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "de88f162-2202-4a0b-992d-28ca7dcb091a",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Casier Platitor Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Detail/Casier Platitor Form.xml"
+    },
+    {
+      "GlobalId": "9e97c221-54b0-4a91-b8f7-f4b43c833157",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "6dd1fc68-e9c2-4d7f-a6e8-7c36173e8f31",
+      "ParentPageId": "91af957d-f1db-4514-925c-b3f49f41f871",
+      "ModuleTitle": "SessionForm",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "MBP_1",
+      "Order": 1,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/CasieriPlatitori/Detail/SessionForm.xml"
     },
     {
       "GlobalId": "a8a12127-41b9-4305-b034-baa5294e2ae2",
@@ -10327,12 +10438,21 @@
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/MeniuSumeCarduri/SumeALTE/SumeALTE Listing.xml"
     },
     {
+      "GlobalId": "c5c50cb3-5494-44c2-990a-eb24052bd348",
+      "ParentPageId": "5d34c2ad-8950-497f-b803-bc0443dc37d9",
+      "ModuleTitle": "Filtrare Fisier ALTE Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/MeniuSumeCarduri/SumeALTE/Filtrare Fisier ALTE Form.xml"
+    },
+    {
       "GlobalId": "01568b07-5dd7-4130-b805-0d2f9ddb19ca",
       "ParentPageId": "5d34c2ad-8950-497f-b803-bc0443dc37d9",
       "ModuleTitle": "SumaALTE Form",
       "FriendlyName": "avt.Action Form",
       "PaneName": "ContentPane",
-      "Order": 5,
+      "Order": 7,
       "ContentPath": "Pages/SesiunedeLucru/Salarizare/CalculSalarii/MeniuLichidare/MeniuTransferBancar/MeniuSumeCarduri/SumeALTE/SumaALTE Form.xml"
     },
     {
@@ -13576,6 +13696,11 @@
       "GlobalId": "933e7b34-7240-4a88-8e9e-e376b40a2aa1",
       "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
       "ContentPath": "Entities/Default/Concediu de Odihna Compensare.json"
+    },
+    {
+      "GlobalId": "297b4cf1-e4b7-499e-b967-6152c733eba9",
+      "NamespaceGlobalId": "aab56f4c-22d9-4c57-b926-05685ffb59d6",
+      "ContentPath": "Entities/Default/AGA.json"
     }
   ],
   "ApiMethods": [

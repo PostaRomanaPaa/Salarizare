@@ -24,49 +24,7 @@
             <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>VIEW</permissionkey>
             <allowaccess>true</allowaccess>
-            <rolename>Admins</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Citizen Developers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Managers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
             <rolename>Users</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>VIEW</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Payroll_Operator</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Citizen Developers</rolename>
-        </permission>
-        <permission>
-            <permissioncode>SYSTEM_TAB</permissioncode>
-            <permissionkey>EDIT</permissionkey>
-            <allowaccess>true</allowaccess>
-            <rolename>Low-Code Engineer</rolename>
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
@@ -189,24 +147,10 @@
             <rolename>Content Managers</rolename>
         </permission>
     </tabpermissions>
-    <tabsettings>
-        <tabsetting>
-            <settingname>LinkNewWindow</settingname>
-            <settingvalue>False</settingvalue>
-        </tabsetting>
-        <tabsetting>
-            <settingname>AllowIndex</settingname>
-            <settingvalue>True</settingvalue>
-        </tabsetting>
-        <tabsetting>
-            <settingname>Pa_IconClass</settingname>
-            <settingvalue>book-medical</settingvalue>
-        </tabsetting>
-    </tabsettings>
+    <tabsettings />
     <tabUrls>
-        <tabUrl SeqNum="1" Url="/Salarizare/Concedii-Medicale" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="2" Url="/Salarizare-test/Calcul-Salarii/Concedii-Medicale" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="1" Url="/Salarizare-test/Calcul-Salarii/Concedii-Medicale" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
+        <tabUrl SeqNum="2" Url="/Salarizare/Calcul-Salarii/Concedii-Medicale" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
         <tabUrl SeqNum="3" Url="/Salarizare/Calcul-Salarii/Concedii-Medicale" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
-        <tabUrl SeqNum="4" Url="/Salarizare/Calcul-Salarii/Concedii-Medicale" QueryString="" HttpStatus="301" CultureCode="" IsSystem="True" />
     </tabUrls>
 </tab>

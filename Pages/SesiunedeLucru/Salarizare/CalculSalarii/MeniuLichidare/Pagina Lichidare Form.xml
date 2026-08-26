@@ -323,13 +323,13 @@
     &lt;/Field&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[2622]]&gt;&lt;/Id&gt;
-      &lt;Title&gt;&lt;![CDATA[Exceptii Prezenta]]&gt;&lt;/Title&gt;
+      &lt;Title&gt;&lt;![CDATA[Prezenta Lunara]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
       &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
       &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
       &lt;OverrideName /&gt;
-      &lt;Name&gt;ExceptiiPrezenta&lt;/Name&gt;
+      &lt;Name&gt;PrezentaLunara&lt;/Name&gt;
       &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
       &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
       &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
@@ -454,7 +454,7 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;49&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;50&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;4&lt;/RowIndex&gt;
       &lt;ColSpan&gt;10&lt;/ColSpan&gt;
       &lt;ColOffset&gt;1&lt;/ColOffset&gt;
@@ -1413,9 +1413,9 @@
     &lt;PopupName /&gt;
     &lt;RootClasses&gt;buzz&lt;/RootClasses&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;408&lt;/RevisionNumber&gt;
-    &lt;RevisionLastChangedBy&gt;vlad.curcan@ro.post&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-08-05T14:44:55.9913681+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionNumber&gt;409&lt;/RevisionNumber&gt;
+    &lt;RevisionLastChangedBy&gt;maria.mardare@ro.post&lt;/RevisionLastChangedBy&gt;
+    &lt;RevisionLastChangedDate&gt;2026-08-25T12:44:03.6660926+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -1441,7 +1441,7 @@
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
       &lt;ModuleId&gt;811&lt;/ModuleId&gt;
-      &lt;FieldName&gt;ExceptiiPrezenta&lt;/FieldName&gt;
+      &lt;FieldName&gt;PrezentaLunara&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;Metadata /&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
